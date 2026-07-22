@@ -1,6 +1,8 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
+import styles from './arrow-button.module.css';
+
 @customElement('gallery-arrow')
 export class GalleryArrow extends LitElement {
   @property()
@@ -18,7 +20,7 @@ export class GalleryArrow extends LitElement {
 
     return html`
       <button
-        class="btn btn-ghost btn-circle btn-sm text-white hover:bg-primary hover:text-primary-content"
+        class=${`btn btn-ghost btn-square btn-sm text-white hover:bg-primary hover:text-primary-content ${styles.button}`}
         type="button"
         aria-label=${this.label}
       >
