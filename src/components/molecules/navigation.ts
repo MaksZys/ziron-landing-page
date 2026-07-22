@@ -1,15 +1,15 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-import '../atoms/ziron-nav-link';
+import '../atoms/navigation-link';
 
 export type NavigationLink = {
   href: string;
   label: string;
 };
 
-@customElement('ziron-navigation')
-export class ZironNavigation extends LitElement {
+@customElement('primary-navigation')
+export class PrimaryNavigation extends LitElement {
   @property({ attribute: false })
   links: NavigationLink[] = [];
 
@@ -24,7 +24,7 @@ export class ZironNavigation extends LitElement {
           ${this.links.map(
             (link) => html`
               <li>
-                <ziron-nav-link .href=${link.href} .label=${link.label}></ziron-nav-link>
+                <navigation-link .href=${link.href} .label=${link.label}></navigation-link>
               </li>
             `,
           )}
@@ -36,6 +36,6 @@ export class ZironNavigation extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'ziron-navigation': ZironNavigation;
+    'primary-navigation': PrimaryNavigation;
   }
 }

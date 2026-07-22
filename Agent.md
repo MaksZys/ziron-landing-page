@@ -96,20 +96,23 @@ Place page-level composition in `src/views/`.
 
 Views may:
 
-- Arrange organisms into a complete page.
+- Compose atoms, molecules, and organisms directly when that makes the page structure easier to understand.
+- Keep page-specific markup and its interaction state together in the view.
 - Own page-level content selection and routing state.
 - Coordinate transitions between page sections or routes.
 
 Views must not:
 
-- Reimplement atoms, molecules, or organisms.
+- Reimplement an existing reusable atom, molecule, or organism.
 - Contain large reusable UI fragments.
 - Hide reusable business or interaction logic in the page template.
 
-Dependency direction is one-way:
+Dependency direction is one-way, but a layer may skip intermediate layers:
 
 ```text
-views -> organisms -> molecules -> atoms
+views -> organisms, molecules, atoms
+organisms -> molecules, atoms
+molecules -> atoms
 ```
 
 Never import upward or create circular dependencies.
@@ -118,7 +121,8 @@ Never import upward or create circular dependencies.
 
 - Create one primary Lit component per file.
 - Name files and custom element tags after their responsibility.
-- Prefix custom element tags consistently, for example `ziron-button` and `ziron-gallery`.
+- Do not prefix generic component files, classes, or tags with `ziron`; use concise responsibility names such as `logo.ts`, `gallery-navigation.ts`, and `<gallery-navigation>`.
+- Custom element tags must still contain the browser-required hyphen and should use the shortest clear two-part name.
 - Use named class exports unless an established local convention requires otherwise.
 - Define properties and events as typed public APIs.
 - Keep internal reactive state private.
@@ -135,6 +139,12 @@ Never import upward or create circular dependencies.
 ### Styling Lit Components
 
 Tailwind and DaisyUI utilities must be able to reach rendered markup. Follow the project's established Lit styling strategy. If none exists, render presentational components into the light DOM so the single compiled Tailwind/DaisyUI stylesheet applies consistently.
+
+- Place view-specific styles in a CSS Module beside the view, for example `home-view.module.css`.
+- Place component-specific styles in a CSS Module beside that component.
+- Import the module from its owning TypeScript file and reference the generated class map in the template.
+- Keep `src/styles/index.css` limited to Tailwind/DaisyUI setup, shared theme tokens, resets, and truly global base rules.
+- Do not collect unrelated view or component selectors in the global stylesheet.
 
 When using light DOM:
 
@@ -366,7 +376,7 @@ If routing is added, verify that direct navigation, refresh, asset loading, and 
 Before declaring a change complete:
 
 1. Confirm every new component is in `atoms`, `molecules`, or `organisms`.
-2. Confirm dependency direction remains `views -> organisms -> molecules -> atoms`.
+2. Confirm dependencies only point downward; views may compose any component layer directly.
 3. Confirm new visual values come from the shared theme.
 4. Confirm behavior works at mobile size first and does not overflow.
 5. Confirm controls work with keyboard and touch/pointer input.

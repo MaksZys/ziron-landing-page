@@ -1,8 +1,8 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('ziron-nav-link')
-export class ZironNavLink extends LitElement {
+@customElement('navigation-link')
+export class NavigationLinkElement extends LitElement {
   @property()
   href = '#';
 
@@ -27,6 +27,6 @@ export class ZironNavLink extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'ziron-nav-link': ZironNavLink;
+    'navigation-link': NavigationLinkElement;
   }
 }

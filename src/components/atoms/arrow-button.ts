@@ -1,8 +1,8 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('ziron-arrow-button')
-export class ZironArrowButton extends LitElement {
+@customElement('gallery-arrow')
+export class GalleryArrow extends LitElement {
   @property()
   direction: 'next' | 'previous' = 'next';
 
@@ -41,6 +41,6 @@ export class ZironArrowButton extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'ziron-arrow-button': ZironArrowButton;
+    'gallery-arrow': GalleryArrow;
   }
 }

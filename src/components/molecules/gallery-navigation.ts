@@ -1,12 +1,13 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-import type { NavigationLink } from './ziron-navigation';
-import '../atoms/ziron-arrow-button';
-import '../atoms/ziron-logo';
+import type { NavigationLink } from './navigation';
+import '../atoms/arrow-button';
+import '../atoms/logo';
+import styles from './gallery-navigation.module.css';
 
-@customElement('ziron-gallery-navigation')
-export class ZironGalleryNavigation extends LitElement {
+@customElement('gallery-navigation')
+export class GalleryNavigation extends LitElement {
   @property({ attribute: false })
   links: NavigationLink[] = [];
 
@@ -18,47 +19,47 @@ export class ZironGalleryNavigation extends LitElement {
   }
 
   protected override render() {
+    const menuClass = this.menuOpen ? `${styles.menu} ${styles.menuOpen}` : styles.menu;
+
     return html`
-      <div class="gallery-dock">
+      <div class=${styles.dock}>
         <nav
           id="gallery-menu"
-          class=${this.menuOpen ? 'gallery-menu gallery-menu-open' : 'gallery-menu'}
+          class=${menuClass}
           aria-label="Primary navigation"
           aria-hidden=${String(!this.menuOpen)}
         >
           ${this.links.map(
-            (link) => html`<a class="gallery-menu-link" href=${link.href} @click=${this.closeMenu}>${link.label}</a>`,
+            (link) => html`<a class=${styles.menuLink} href=${link.href} @click=${this.closeMenu}>${link.label}</a>`,
           )}
         </nav>
 
-        <div class="gallery-toolbar">
-          <a class="gallery-home-link" href="#top" aria-label="ZIRON home">
-            <ziron-logo variant="mark"></ziron-logo>
+        <div class=${styles.toolbar}>
+          <a class=${styles.homeLink} href="#top" aria-label="ZIRON home">
+            <brand-logo variant="mark"></brand-logo>
           </a>
           <button
-            class="gallery-menu-toggle"
+            class=${styles.menuToggle}
             type="button"
             aria-expanded=${String(this.menuOpen)}
             aria-controls="gallery-menu"
             @click=${this.toggleMenu}
           >
-            <ziron-logo variant="mark"></ziron-logo>
+            <brand-logo variant="mark"></brand-logo>
             <span>${this.menuOpen ? 'Close' : 'Click for more'}</span>
           </button>
 
-          <div class="gallery-desktop-links" aria-label="Primary navigation">
-            ${this.links.map(
-              (link) => html`<a class="gallery-desktop-link" href=${link.href}>${link.label}</a>`,
-            )}
-          </div>
+          <nav class=${styles.desktopLinks} aria-label="Primary navigation">
+            ${this.links.map((link) => html`<a class=${styles.desktopLink} href=${link.href}>${link.label}</a>`)}
+          </nav>
 
-          <div class="gallery-arrows">
-            <ziron-arrow-button
+          <div class=${styles.arrows}>
+            <gallery-arrow
               direction="previous"
               label="Previous project"
               @click=${this.showPrevious}
-            ></ziron-arrow-button>
-            <ziron-arrow-button label="Next project" @click=${this.showNext}></ziron-arrow-button>
+            ></gallery-arrow>
+            <gallery-arrow label="Next project" @click=${this.showNext}></gallery-arrow>
           </div>
         </div>
       </div>
@@ -86,6 +87,6 @@ export class ZironGalleryNavigation extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'ziron-gallery-navigation': ZironGalleryNavigation;
+    'gallery-navigation': GalleryNavigation;
   }
 }

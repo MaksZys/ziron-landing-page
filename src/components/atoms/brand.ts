@@ -1,8 +1,8 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-@customElement('ziron-brand')
-export class ZironBrand extends LitElement {
+@customElement('brand-name')
+export class BrandName extends LitElement {
   @property()
   href = '#top';
 
@@ -25,6 +25,6 @@ export class ZironBrand extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'ziron-brand': ZironBrand;
+    'brand-name': BrandName;
   }
 }

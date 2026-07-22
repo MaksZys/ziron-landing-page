@@ -4,8 +4,8 @@ import { customElement, property } from 'lit/decorators.js';
 const FULL_LOGO_URL = new URL('../../../assets/ziron-logo-big.png', import.meta.url).href;
 const MARK_LOGO_URL = new URL('../../../assets/ziron.jpg', import.meta.url).href;
 
-@customElement('ziron-logo')
-export class ZironLogo extends LitElement {
+@customElement('brand-logo')
+export class BrandLogo extends LitElement {
   @property({ reflect: true })
   variant: 'full' | 'mark' = 'full';
 
@@ -29,6 +29,6 @@ export class ZironLogo extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'ziron-logo': ZironLogo;
+    'brand-logo': BrandLogo;
   }
 }

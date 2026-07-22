@@ -1,4 +1,4 @@
-import type { NavigationLink } from '../components/molecules/ziron-navigation';
+import type { NavigationLink } from '../components/molecules/navigation';
 
 export const PRIMARY_NAVIGATION: NavigationLink[] = [
   { href: '#work', label: 'Work' },

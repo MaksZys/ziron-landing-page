@@ -1,0 +1,104 @@
+.homeView {
+  --stage-gutter: clamp(1rem, 3vw, 2rem);
+  --stage-frame-inset: clamp(0.75rem, 3vw, 1.5rem);
+  --stage-frame-inset-desktop: clamp(2rem, 14vw, 11rem);
+  --stage-control-size: 3.75rem;
+  --stage-logo-width: clamp(10rem, 38vw, 22rem);
+  --stage-identity-bottom: calc(var(--stage-control-size) + var(--stage-gutter) * 1.6);
+  --stage-identity-bottom-desktop: calc(var(--stage-control-size) + var(--stage-gutter) * 1.35);
+  --stage-scrim-stop: 46%;
+
+  position: relative;
+  height: 100dvh;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--color-base-100);
+  touch-action: none;
+}
+
+.empty {
+  display: grid;
+  place-items: center;
+  padding: var(--stage-gutter);
+}
+
+.media,
+.slide,
+.scrim {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.035);
+  transition:
+    opacity var(--duration-gallery) var(--ease-brand),
+    transform var(--duration-gallery) var(--ease-brand);
+}
+
+.slideActive {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.scrim {
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    var(--color-stage-shadow),
+    var(--color-stage-transparent) var(--stage-scrim-stop)
+  );
+  pointer-events: none;
+}
+
+.frame {
+  position: absolute;
+  z-index: 2;
+  inset: var(--stage-frame-inset);
+  border: var(--border) solid var(--color-stage-frame);
+  border-radius: var(--radius-stage);
+  box-shadow: inset 0 0 0 var(--border) var(--color-stage-shadow);
+  pointer-events: none;
+}
+
+.identity {
+  position: absolute;
+  z-index: 3;
+  right: 50%;
+  bottom: var(--stage-identity-bottom);
+  width: var(--stage-logo-width);
+  transform: translateX(50%);
+}
+
+.navigation {
+  position: absolute;
+  z-index: 4;
+  right: var(--stage-gutter);
+  bottom: calc(var(--stage-frame-inset) + var(--spacing-1));
+  left: var(--stage-gutter);
+  margin-inline: auto;
+}
+
+@media (min-width: 48rem) {
+  .homeView {
+    touch-action: auto;
+  }
+
+  .frame {
+    right: var(--stage-frame-inset-desktop);
+    left: var(--stage-frame-inset-desktop);
+  }
+
+  .identity {
+    bottom: var(--stage-identity-bottom-desktop);
+  }
+
+  .navigation {
+    bottom: calc(var(--stage-frame-inset) / 2);
+    width: min(var(--container-copy), calc(100% - var(--stage-gutter) * 2));
+  }
+}
