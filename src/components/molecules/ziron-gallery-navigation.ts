@@ -7,17 +7,11 @@ import '../atoms/ziron-logo';
 
 @customElement('ziron-gallery-navigation')
 export class ZironGalleryNavigation extends LitElement {
-  @property({ type: Number })
-  activeIndex = 0;
-
   @property({ attribute: false })
   links: NavigationLink[] = [];
 
   @property({ type: Boolean })
   menuOpen = false;
-
-  @property({ type: Number })
-  slideCount = 0;
 
   protected override createRenderRoot() {
     return this;
@@ -30,6 +24,7 @@ export class ZironGalleryNavigation extends LitElement {
           id="gallery-menu"
           class=${this.menuOpen ? 'gallery-menu gallery-menu-open' : 'gallery-menu'}
           aria-label="Primary navigation"
+          aria-hidden=${String(!this.menuOpen)}
         >
           ${this.links.map(
             (link) => html`<a class="gallery-menu-link" href=${link.href} @click=${this.closeMenu}>${link.label}</a>`,
@@ -48,7 +43,7 @@ export class ZironGalleryNavigation extends LitElement {
             @click=${this.toggleMenu}
           >
             <ziron-logo variant="mark"></ziron-logo>
-            <span>${this.menuOpen ? 'Close' : 'Explore'}</span>
+            <span>${this.menuOpen ? 'Close' : 'Click for more'}</span>
           </button>
 
           <div class="gallery-desktop-links" aria-label="Primary navigation">
@@ -57,11 +52,7 @@ export class ZironGalleryNavigation extends LitElement {
             )}
           </div>
 
-          <span class="gallery-counter" aria-live="polite">
-            ${String(this.activeIndex + 1).padStart(2, '0')} / ${String(this.slideCount).padStart(2, '0')}
-          </span>
-
-          <div class="flex items-center">
+          <div class="gallery-arrows">
             <ziron-arrow-button
               direction="previous"
               label="Previous project"

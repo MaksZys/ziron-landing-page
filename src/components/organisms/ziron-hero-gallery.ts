@@ -54,30 +54,13 @@ export class ZironHeroGallery extends LitElement {
         <div class="hero-gallery-scrim" aria-hidden="true"></div>
         <div class="hero-gallery-frame" aria-hidden="true"></div>
 
-        <header class="hero-gallery-header">
-          <span class="hero-gallery-kicker">ZIRON / Visual engineering</span>
-          <span class="hero-gallery-category">${activeSlide.category}</span>
-        </header>
-
         <div class="hero-gallery-identity">
-          <p class="hero-gallery-title">${activeSlide.title}</p>
           <ziron-logo></ziron-logo>
         </div>
 
-        <a
-          class="hero-gallery-credit"
-          href=${activeSlide.photographerProfileUrl}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Photo: ${activeSlide.photographerName} / Unsplash
-        </a>
-
         <ziron-gallery-navigation
-          .activeIndex=${this.activeIndex}
           .links=${this.links}
           .menuOpen=${this.menuOpen}
-          .slideCount=${this.slides.length}
           @gallery-next=${this.showNext}
           @gallery-previous=${this.showPrevious}
           @menu-toggle=${this.toggleMenu}
