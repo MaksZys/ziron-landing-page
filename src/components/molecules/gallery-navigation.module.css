@@ -19,11 +19,9 @@
   min-height: var(--stage-control-size);
   align-items: center;
   gap: var(--spacing-3);
-  padding: 0 var(--spacing-3) 0 0;
+  padding: 0;
   border: 0;
   border-radius: var(--radius-stage-control);
-  /* border-top-right-radius: var(--radius-stage-control);;
-  border-bottom-right-radius: var(--radius-stage-control);; */
   overflow: hidden;
   background: var(--color-stage-panel);
   box-shadow: var(--shadow-stage);
@@ -111,6 +109,7 @@
 
 .arrows {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   margin-left: auto;
 }
