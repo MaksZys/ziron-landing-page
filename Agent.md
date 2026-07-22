@@ -145,6 +145,8 @@ Tailwind and DaisyUI utilities must be able to reach rendered markup. Follow the
 - Import the module from its owning TypeScript file and reference the generated class map in the template.
 - Keep `src/styles/index.css` limited to Tailwind/DaisyUI setup, shared theme tokens, resets, and truly global base rules.
 - Do not collect unrelated view or component selectors in the global stylesheet.
+- Use Grid for layered page composition and Flexbox for one-dimensional controls or content rows.
+- Do not use `position: absolute` for view or component layout; express overlap and alignment with grid areas, alignment, and normal-flow spacing.
 
 When using light DOM:
 

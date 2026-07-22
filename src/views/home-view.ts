@@ -52,9 +52,8 @@ export class HomeView extends LitElement {
           )}
         </div>
         <div class=${styles.scrim} aria-hidden="true"></div>
-        <!-- <div class=${styles.frame} aria-hidden="true"></div> -->
 
-        <div class="flex items-center flex-col w-full bottom-3 h-min mb-4">
+        <div class=${styles.controls}>
           <brand-logo class=${styles.identity}></brand-logo>
 
           <gallery-navigation

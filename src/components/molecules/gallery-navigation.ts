@@ -19,10 +19,11 @@ export class GalleryNavigation extends LitElement {
   }
 
   protected override render() {
+    const dockClass = this.menuOpen ? `${styles.dock} ${styles.dockOpen}` : styles.dock;
     const menuClass = this.menuOpen ? `${styles.menu} ${styles.menuOpen}` : styles.menu;
 
     return html`
-      <div class=${styles.dock}>
+      <div class=${dockClass}>
         <nav
           id="gallery-menu"
           class=${menuClass}

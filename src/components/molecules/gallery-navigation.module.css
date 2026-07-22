@@ -1,18 +1,29 @@
 .dock {
   --gallery-menu-width: min(72%, var(--spacing-64));
 
-  position: relative;
+  display: grid;
+  grid-template-rows: 0fr auto;
+  justify-items: end;
+  transition: grid-template-rows var(--default-transition-duration) var(--ease-brand);
+}
+
+.dockOpen {
+  grid-template-rows: 1fr auto;
 }
 
 .toolbar {
-  position: relative;
+  z-index: 1;
+  grid-row: 2;
   display: flex;
+  width: 100%;
   min-height: var(--stage-control-size);
   align-items: center;
   gap: var(--spacing-3);
   padding: 0 var(--spacing-3) 0 0;
   border: 0;
   border-radius: var(--radius-stage-control);
+  /* border-top-right-radius: var(--radius-stage-control);;
+  border-bottom-right-radius: var(--radius-stage-control);; */
   overflow: hidden;
   background: var(--color-stage-panel);
   box-shadow: var(--shadow-stage);
@@ -47,30 +58,30 @@
 }
 
 .menu {
-  position: absolute;
-  right: 0;
-  bottom: calc(100% - var(--radius-stage-control));
+  grid-row: 1;
   display: grid;
   width: var(--gallery-menu-width);
+  min-height: 0;
   gap: 0;
-  padding: var(--spacing-3) var(--spacing-3) calc(var(--radius-stage-control) + var(--spacing-3));
+  padding: 0 var(--spacing-3);
   border: 0;
   border-radius: var(--radius-stage-control) var(--radius-stage-control) 0 0;
+  overflow: hidden;
   visibility: hidden;
   background: var(--color-stage-panel);
   box-shadow: var(--shadow-stage);
   opacity: 0;
-  transform: translateY(var(--spacing-2));
   transition:
     opacity var(--default-transition-duration) var(--ease-brand),
-    transform var(--default-transition-duration) var(--ease-brand),
+    padding var(--default-transition-duration) var(--ease-brand),
     visibility var(--default-transition-duration) var(--ease-brand);
 }
 
 .menuOpen {
+  padding-top: var(--spacing-3);
+  padding-bottom: calc(var(--radius-stage-control) + var(--spacing-3));
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
 }
 
 .menuLink,
@@ -105,9 +116,18 @@
 }
 
 @media (min-width: 48rem) {
+  .dock,
+  .dockOpen {
+    grid-template-rows: auto;
+  }
+
   .menu,
   .menuToggle {
     display: none;
+  }
+
+  .toolbar {
+    grid-row: 1;
   }
 
   .homeLink {
