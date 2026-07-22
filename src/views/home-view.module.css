@@ -9,6 +9,8 @@
   --stage-scrim-stop: 46%;
 
   position: relative;
+  display: flex;
+  flex-direction: column-reverse;
   height: 100dvh;
   overflow: hidden;
   isolation: isolate;
@@ -66,21 +68,20 @@
 }
 
 .identity {
-  position: absolute;
+  /* position: absolute; */
   z-index: 3;
   right: 50%;
   bottom: var(--stage-identity-bottom);
   width: var(--stage-logo-width);
-  transform: translateX(50%);
 }
 
 .navigation {
-  position: absolute;
+  /* position: absolute; */
   z-index: 4;
   right: var(--stage-gutter);
-  bottom: calc(var(--stage-frame-inset) + var(--spacing-1));
+  /* bottom: calc(var(--stage-frame-inset-desktop) + var(--spacing-1)); */
   left: var(--stage-gutter);
-  margin-inline: auto;
+  /* margin-inline: auto; */
 }
 
 @media (min-width: 48rem) {
