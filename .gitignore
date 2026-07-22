@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Production output
+dist/
+
+# Test and coverage output
+coverage/
+.nyc_output/
+
+# Tool caches
+.vite/
+.eslintcache
+*.tsbuildinfo
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
