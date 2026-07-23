@@ -118,7 +118,7 @@
 }
 
 .lightbox::backdrop {
-  background: var(--color-project-ink);
+  background: transparent;
 }
 
 .preview {
@@ -138,6 +138,19 @@
   max-height: calc(100dvh - clamp(9rem, 16vw, 14rem));
   object-fit: contain;
   filter: drop-shadow(0 1.5rem 3rem rgb(0 0 0 / 35%));
+}
+
+.transitionImage {
+  position: fixed;
+  z-index: 3;
+  display: block;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  filter: drop-shadow(0 1.5rem 3rem rgb(0 0 0 / 35%));
+  pointer-events: none;
+  transform-origin: center;
+  will-change: transform;
 }
 
 .previewForward {

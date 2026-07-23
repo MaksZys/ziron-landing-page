@@ -176,10 +176,16 @@ export class ProjectGallery extends LitElement {
     );
 
     if (target) {
-      await this.animatePreview(target.getBoundingClientRect(), true);
+      const targetImage = target.querySelector<HTMLImageElement>('img');
+      await this.animatePreview(
+        targetImage?.getBoundingClientRect() ?? target.getBoundingClientRect(),
+        true,
+      );
     }
 
-    this.querySelector<HTMLDialogElement>(`.${styles.lightbox}`)?.close();
+    const dialog = this.querySelector<HTMLDialogElement>(`.${styles.lightbox}`);
+    dialog?.close();
+    dialog?.style.removeProperty('background-color');
     this.activeIndex = null;
     await this.updateComplete;
     this.restoreBodyOverflow();
@@ -303,6 +309,11 @@ export class ProjectGallery extends LitElement {
       return;
     }
 
+    if (isClosing) {
+      await this.animateClosingPreview(dialog, previewImage, targetRect);
+      return;
+    }
+
     const previewRect = previewImage.getBoundingClientRect();
     const horizontalOffset =
       targetRect.left +
@@ -315,12 +326,11 @@ export class ProjectGallery extends LitElement {
     const horizontalScale = targetRect.width / previewRect.width;
     const verticalScale = targetRect.height / previewRect.height;
     const thumbnailTransform = `translate(${horizontalOffset}px, ${verticalOffset}px) scale(${horizontalScale}, ${verticalScale})`;
-    const imageFrames = isClosing
-      ? [{ transform: 'none' }, { transform: thumbnailTransform }]
-      : [{ transform: thumbnailTransform }, { transform: 'none' }];
-    const dialogFrames = isClosing
-      ? [{ opacity: 1 }, { opacity: 0 }]
-      : [{ opacity: 0 }, { opacity: 1 }];
+    const imageFrames = [
+      { transform: thumbnailTransform },
+      { transform: 'none' },
+    ];
+    const dialogFrames = [{ opacity: 0 }, { opacity: 1 }];
     const timing = {
       duration: PREVIEW_TRANSITION_DURATION_MS,
       easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
@@ -334,6 +344,84 @@ export class ProjectGallery extends LitElement {
     });
 
     await Promise.all([imageAnimation.finished, dialogAnimation.finished]);
+  }
+
+  private async animateClosingPreview(
+    dialog: HTMLDialogElement,
+    previewImage: HTMLImageElement,
+    targetRect: DOMRect,
+  ) {
+    const previewRect = previewImage.getBoundingClientRect();
+    const horizontalOffset =
+      targetRect.left +
+      targetRect.width / 2 -
+      (previewRect.left + previewRect.width / 2);
+    const verticalOffset =
+      targetRect.top +
+      targetRect.height / 2 -
+      (previewRect.top + previewRect.height / 2);
+    const horizontalScale = targetRect.width / previewRect.width;
+    const verticalScale = targetRect.height / previewRect.height;
+    const transitionImage = previewImage.cloneNode(true) as HTMLImageElement;
+    transitionImage.className = styles.transitionImage;
+    transitionImage.setAttribute('aria-hidden', 'true');
+    Object.assign(transitionImage.style, {
+      left: `${previewRect.left}px`,
+      top: `${previewRect.top}px`,
+      width: `${previewRect.width}px`,
+      height: `${previewRect.height}px`,
+    });
+    dialog.append(transitionImage);
+    previewImage.style.visibility = 'hidden';
+
+    const closingTransform = `translate3d(${horizontalOffset}px, ${verticalOffset}px, 0) scale(${horizontalScale}, ${verticalScale})`;
+    const timing = {
+      duration: PREVIEW_TRANSITION_DURATION_MS,
+      easing: 'cubic-bezier(0.4, 0, 0.2, 1)',
+      fill: 'forwards' as const,
+    };
+    const imageAnimation = transitionImage.animate(
+      [{ transform: 'translate3d(0, 0, 0) scale(1)' }, { transform: closingTransform }],
+      timing,
+    );
+    const backgroundAnimation = dialog.animate(
+      [
+        { backgroundColor: getComputedStyle(dialog).backgroundColor },
+        { backgroundColor: 'transparent' },
+      ],
+      timing,
+    );
+    const interfaceAnimations = [
+      ...dialog.querySelectorAll<HTMLElement>(
+        `.${styles.previewMeta}, .${styles.closeButton}, .${styles.galleryButton}`,
+      ),
+    ].map((element) =>
+      element.animate([{ opacity: 1 }, { opacity: 0 }], {
+        duration: Math.round(PREVIEW_TRANSITION_DURATION_MS * 0.35),
+        easing: 'linear',
+        fill: 'forwards',
+      }),
+    );
+    let didFinish = false;
+
+    try {
+      await Promise.all([
+        imageAnimation.finished,
+        backgroundAnimation.finished,
+        ...interfaceAnimations.map((animation) => animation.finished),
+      ]);
+      didFinish = true;
+    } finally {
+      if (didFinish) {
+        dialog.style.backgroundColor = 'transparent';
+      } else {
+        interfaceAnimations.forEach((animation) => animation.cancel());
+      }
+
+      backgroundAnimation.cancel();
+      previewImage.style.visibility = '';
+      transitionImage.remove();
+    }
   }
 
   private restoreBodyOverflow() {
