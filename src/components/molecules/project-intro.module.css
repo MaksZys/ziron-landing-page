@@ -18,9 +18,19 @@
   background: var(--color-project-cyan);
 }
 
+.projectMark {
+  display: grid;
+  width: 3.25rem;
+  height: 3.25rem;
+  place-items: center;
+  align-self: flex-start;
+  margin: 0 0 clamp(2rem, 4vw, 3rem);
+  background: var(--color-project-paper);
+}
+
 .category {
   max-width: 28rem;
-  margin: 0 0 2.25rem;
+  margin: clamp(1.25rem, 2vw, 1.75rem) 0 0;
   color: var(--color-project-steel);
   font-family: var(--font-project-utility);
   font-size: clamp(0.68rem, 0.85vw, 0.85rem);

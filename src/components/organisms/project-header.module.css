@@ -7,18 +7,9 @@
   width: 50%;
   min-height: 5rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 1rem clamp(1rem, 3vw, 3rem);
   background: var(--color-project-ink);
-}
-
-.homeLink {
-  display: inline-flex;
-  width: 3.25rem;
-  height: 3.25rem;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-project-paper);
 }
 
 .navigation {
@@ -43,7 +34,6 @@
   color: var(--color-project-cyan);
 }
 
-.homeLink:focus-visible,
 .navigationLink:focus-visible {
   outline-color: var(--color-project-cyan);
 }
@@ -54,11 +44,6 @@
     width: 100%;
     min-height: 4.25rem;
     padding: 0.5rem 0.75rem;
-  }
-
-  .homeLink {
-    width: 3rem;
-    height: 3rem;
   }
 
   .navigation {
