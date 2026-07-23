@@ -46,8 +46,8 @@ export class GalleryNavigation extends LitElement {
             aria-controls="gallery-menu"
             @click=${this.toggleMenu}
           >
-            <brand-logo variant="mark"></brand-logo>
-            <span>${this.menuOpen ? 'Close' : 'Click for more'}</span>
+            <span>${this.menuOpen ? 'Close' : 'Explore'}</span>
+            <span class=${styles.menuState} aria-hidden="true">${this.menuOpen ? 'Open' : 'Menu'}</span>
           </button>
 
           <nav class=${styles.desktopLinks} aria-label="Primary navigation">

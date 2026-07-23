@@ -65,9 +65,16 @@
   --color-stage-frame: oklch(20% 0 0 / 0.88);
   --color-stage-transparent: oklch(7% 0.02 253 / 0);
   --color-stage-shadow: oklch(5% 0.02 253 / 0.58);
+  --color-control-carbon: #0b0f14;
+  --color-control-gunmetal: #1a222c;
+  --color-control-accent: #1887ff;
+  --color-control-ice: #f5f8fc;
+  --color-control-steel: #8c99a8;
 
   --radius-stage: 1.25rem;
   --radius-stage-control: 0.5rem;
+
+  --stage-control-size: 4rem;
 
   --shadow-stage: 0 1.5rem 4rem var(--color-stage-shadow);
 
