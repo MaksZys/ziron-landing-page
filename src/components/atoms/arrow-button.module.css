@@ -1,22 +1,22 @@
 .button {
   border-radius: 0;
   background: transparent;
-  color: var(--color-brand-ceramic);
+  color: var(--color-brand-soft-white);
 }
 
 .button:active {
   background: transparent;
-  color: var(--color-brand-ceramic);
+  color: var(--color-brand-soft-white);
 }
 
 .button:focus-visible {
   outline: 0;
-  box-shadow: inset 0 0 0 var(--spacing-1) var(--color-brand-cyan);
+  box-shadow: inset 0 0 0 var(--spacing-1) var(--color-brand-ceramic);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .button:hover {
     background: var(--color-brand-metal);
-    color: var(--color-brand-cyan);
+    color: var(--color-brand-ceramic);
   }
 }

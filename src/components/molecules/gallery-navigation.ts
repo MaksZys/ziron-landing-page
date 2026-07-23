@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit';
+import { LitElement, html, type PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 import type { NavigationLink } from './navigation';
@@ -18,6 +18,24 @@ export class GalleryNavigation extends LitElement {
     return this;
   }
 
+  protected override updated(changedProperties: PropertyValues<this>) {
+    if (!changedProperties.has('menuOpen')) {
+      return;
+    }
+
+    if (this.menuOpen) {
+      document.addEventListener('pointerdown', this.handleOutsidePointerDown);
+      return;
+    }
+
+    document.removeEventListener('pointerdown', this.handleOutsidePointerDown);
+  }
+
+  override disconnectedCallback() {
+    document.removeEventListener('pointerdown', this.handleOutsidePointerDown);
+    super.disconnectedCallback();
+  }
+
   protected override render() {
     const dockClass = this.menuOpen ? `${styles.dock} ${styles.dockOpen}` : styles.dock;
     const menuClass = this.menuOpen ? `${styles.menu} ${styles.menuOpen}` : styles.menu;
@@ -29,6 +47,7 @@ export class GalleryNavigation extends LitElement {
           class=${menuClass}
           aria-label="Primary navigation"
           aria-hidden=${String(!this.menuOpen)}
+          ?inert=${!this.menuOpen}
         >
           ${this.links.map(
             (link) => html`
@@ -51,7 +70,6 @@ export class GalleryNavigation extends LitElement {
             @click=${this.toggleMenu}
           >
             <span class=${styles.menuLabel}>${this.menuOpen ? 'Close' : 'Explore'}</span>
-            <span class=${styles.menuState} aria-hidden="true">${this.menuOpen ? 'Open' : 'Menu'}</span>
           </button>
 
           <nav class=${styles.desktopLinks} aria-label="Primary navigation">
@@ -80,6 +98,16 @@ export class GalleryNavigation extends LitElement {
       this.toggleMenu();
     }
   }
+
+  private readonly handleOutsidePointerDown = (event: PointerEvent) => {
+    const target = event.target;
+
+    if (!this.menuOpen || !(target instanceof Node) || this.contains(target)) {
+      return;
+    }
+
+    this.toggleMenu();
+  };
 
   private showPrevious() {
     this.dispatchEvent(new CustomEvent('gallery-previous', { bubbles: true, composed: true }));

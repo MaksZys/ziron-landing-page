@@ -69,51 +69,19 @@
   --color-brand-carbon: #080a0c;
   --color-brand-metal: #171b1e;
   --color-brand-ceramic: #f7fafa;
-  --color-brand-cyan: #65e3f7;
-  --color-brand-blue: #176bff;
+  --color-brand-soft-white: #e9edee;
   --color-brand-steel: #929ca3;
 
   --radius-stage: 1.25rem;
   --radius-stage-control: 0.5rem;
 
   --stage-control-size: 4rem;
-  --stage-menu-blade-size: 3.5rem;
-
-  --shape-brand-rail: polygon(
-    0 0,
-    calc(100% - var(--spacing-3)) 0,
-    100% var(--spacing-3),
-    100% 100%,
-    var(--spacing-3) 100%,
-    0 calc(100% - var(--spacing-3))
-  );
-  --shape-brand-logo-gate: polygon(
-    0 0,
-    calc(100% - var(--spacing-3)) 0,
-    100% 50%,
-    calc(100% - var(--spacing-3)) 100%,
-    0 100%
-  );
-  --shape-brand-blade: polygon(
-    var(--spacing-3) 0,
-    calc(100% - var(--spacing-4)) 0,
-    100% 50%,
-    calc(100% - var(--spacing-4)) 100%,
-    0 100%,
-    var(--spacing-3) 50%
-  );
-  --shape-brand-wedge: polygon(0 0, 100% 50%, 0 100%);
 
   --shadow-stage: 0 1.5rem 4rem var(--color-stage-shadow);
-
-  --tracking-brand: 0.08em;
-  --tracking-utility: 0.12em;
 
   --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
   --default-transition-duration: 220ms;
   --default-transition-timing-function: var(--ease-brand);
-  --duration-blade-stagger: 45ms;
-  --duration-blade-stagger-long: 90ms;
   --duration-reduced: 1ms;
   --duration-gallery: 700ms;
 }
