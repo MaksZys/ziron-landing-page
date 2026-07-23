@@ -18,7 +18,7 @@ export class BrandLogo extends LitElement {
 
     return html`
       <img
-        class=${isMark ? 'block size-8 rounded-field object-cover' : 'block w-full object-contain'}
+        class=${isMark ? 'block size-8 object-cover' : 'block w-full object-contain'}
         src=${isMark ? MARK_LOGO_URL : FULL_LOGO_URL}
         alt=${isMark ? '' : 'ZIRON — Tworzymy to, o czym inni mówią'}
         aria-hidden=${isMark ? 'true' : 'false'}

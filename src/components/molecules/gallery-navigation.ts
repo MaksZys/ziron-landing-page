@@ -31,7 +31,11 @@ export class GalleryNavigation extends LitElement {
           aria-hidden=${String(!this.menuOpen)}
         >
           ${this.links.map(
-            (link) => html`<a class=${styles.menuLink} href=${link.href} @click=${this.closeMenu}>${link.label}</a>`,
+            (link) => html`
+              <a class=${styles.menuLink} href=${link.href} @click=${this.closeMenu}>
+                <span>${link.label}</span>
+              </a>
+            `,
           )}
         </nav>
 
@@ -46,7 +50,7 @@ export class GalleryNavigation extends LitElement {
             aria-controls="gallery-menu"
             @click=${this.toggleMenu}
           >
-            <span>${this.menuOpen ? 'Close' : 'Explore'}</span>
+            <span class=${styles.menuLabel}>${this.menuOpen ? 'Close' : 'Explore'}</span>
             <span class=${styles.menuState} aria-hidden="true">${this.menuOpen ? 'Open' : 'Menu'}</span>
           </button>
 
