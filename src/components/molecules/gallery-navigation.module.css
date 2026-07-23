@@ -30,7 +30,7 @@
   min-width: 0;
   min-height: var(--stage-control-size);
   align-items: center;
-  padding: 0 var(--spacing-4);
+  padding: 0 var(--spacing-5);
   border: 0;
   background: transparent;
   color: var(--color-brand-soft-white);
@@ -39,8 +39,9 @@
 }
 
 .menuLabel {
-  font-size: var(--text-base);
+  font-size: var(--text-xl);
   font-weight: 500;
+  line-height: var(--leading-control);
   text-align: left;
   white-space: nowrap;
 }
@@ -80,10 +81,12 @@
   opacity: 0;
   transition:
     opacity var(--default-transition-duration) var(--ease-brand),
+    padding var(--default-transition-duration) var(--ease-brand),
     visibility var(--default-transition-duration) var(--ease-brand);
 }
 
 .menuOpen {
+  padding-block: var(--spacing-2);
   visibility: visible;
   opacity: 1;
 }
@@ -91,8 +94,8 @@
 .menuLink,
 .desktopLink {
   color: var(--color-brand-soft-white);
-  font-size: var(--text-sm);
   font-weight: 500;
+  line-height: var(--leading-control);
   text-decoration: none;
   transition: color var(--default-transition-duration) var(--ease-brand);
 }
@@ -102,9 +105,9 @@
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  min-height: calc(var(--stage-control-size) - var(--spacing-4));
-  padding: 0 var(--spacing-4);
-  font-size: var(--text-base);
+  min-height: calc(var(--stage-control-size) - var(--spacing-3));
+  padding: 0 var(--spacing-5);
+  font-size: var(--text-lg);
 }
 
 .menuLink:focus-visible {
@@ -150,7 +153,7 @@
   .toolbar {
     grid-row: 1;
     grid-template-columns: var(--stage-control-size) minmax(0, 1fr) auto;
-    column-gap: var(--spacing-3);
+    column-gap: var(--spacing-4);
     border: 0;
     border-radius: 0;
     background: var(--color-brand-carbon);
@@ -167,6 +170,10 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-5);
+  }
+
+  .desktopLink {
+    font-size: var(--text-base);
   }
 
   .arrows {

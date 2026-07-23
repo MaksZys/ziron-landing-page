@@ -79,6 +79,8 @@
 
   --shadow-stage: 0 1.5rem 4rem var(--color-stage-shadow);
 
+  --leading-control: 1;
+
   --ease-brand: cubic-bezier(0.22, 1, 0.36, 1);
   --default-transition-duration: 220ms;
   --default-transition-timing-function: var(--ease-brand);

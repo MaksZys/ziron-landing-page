@@ -25,7 +25,7 @@ export class GalleryArrow extends LitElement {
         aria-label=${this.label}
       >
         <svg
-          class=${isPrevious ? 'size-4 rotate-180' : 'size-4'}
+          class=${isPrevious ? 'size-5 rotate-180' : 'size-5'}
           viewBox="0 0 24 24"
           aria-hidden="true"
           fill="none"
