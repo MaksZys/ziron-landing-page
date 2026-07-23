@@ -4,7 +4,7 @@
   --color-project-cyan: #71d9ed;
   --color-project-paper: #f2f4f3;
   --color-project-steel: #9ca7aa;
-  --font-project-display: "Arial Narrow", "Helvetica Neue Condensed", Impact, sans-serif;
+  --font-project-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-project-utility: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 
   min-height: 100dvh;

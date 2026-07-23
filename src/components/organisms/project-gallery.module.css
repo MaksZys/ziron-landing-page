@@ -15,7 +15,18 @@
   background: var(--color-project-metal);
 }
 
+.openButton {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
 .image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -87,6 +98,149 @@
   opacity: 1;
 }
 
+.openButton:focus-visible {
+  outline: 0;
+  box-shadow: inset 0 0 0 0.25rem var(--color-project-cyan);
+}
+
+.lightbox {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--color-project-ink) 97%, transparent);
+  color: var(--color-project-paper);
+  touch-action: pan-y;
+}
+
+.lightbox::backdrop {
+  background: var(--color-project-ink);
+}
+
+.preview {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  padding: clamp(4.5rem, 8vw, 7rem);
+}
+
+.previewImage {
+  grid-area: 1 / 1;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(100dvh - clamp(9rem, 16vw, 14rem));
+  object-fit: contain;
+  filter: drop-shadow(0 1.5rem 3rem rgb(0 0 0 / 35%));
+}
+
+.previewForward {
+  animation: preview-forward 400ms var(--ease-brand) both;
+}
+
+.previewBackward {
+  animation: preview-backward 400ms var(--ease-brand) both;
+}
+
+.previewMeta {
+  position: absolute;
+  right: clamp(1rem, 3vw, 3rem);
+  bottom: clamp(1rem, 2vw, 2rem);
+  left: clamp(1rem, 3vw, 3rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-project-utility);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.previewMeta a {
+  color: var(--color-project-steel);
+  text-decoration: none;
+}
+
+.closeButton,
+.galleryButton {
+  position: absolute;
+  z-index: 2;
+}
+
+.closeButton {
+  top: clamp(1rem, 2vw, 2rem);
+  right: clamp(1rem, 2vw, 2rem);
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--color-project-paper) 25%, transparent);
+  border-radius: 0;
+  background: var(--color-project-ink);
+  color: var(--color-project-paper);
+  cursor: pointer;
+}
+
+.closeButton span,
+.closeButton span::after {
+  display: block;
+  width: 1.35rem;
+  height: 1px;
+  background: currentColor;
+  transform: rotate(45deg);
+}
+
+.closeButton span::after {
+  content: '';
+  transform: rotate(90deg);
+}
+
+.galleryButton,
+.galleryButton > button {
+  width: var(--stage-control-size);
+  min-height: var(--stage-control-size);
+}
+
+.galleryButton {
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-brand-carbon);
+}
+
+.previousButton {
+  left: clamp(1rem, 2vw, 2rem);
+}
+
+.nextButton {
+  right: clamp(1rem, 2vw, 2rem);
+}
+
+.closeButton:focus-visible,
+.galleryButton:focus-within {
+  outline-color: var(--color-project-cyan);
+}
+
+@keyframes preview-forward {
+  from {
+    opacity: 0;
+    transform: translateX(4%);
+  }
+}
+
+@keyframes preview-backward {
+  from {
+    opacity: 0;
+    transform: translateX(-4%);
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
   .figure:hover .image {
     transform: scale(1.04);
@@ -95,21 +249,100 @@
 
 @media (max-width: 47.999rem) {
   .gallery {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: clamp(8rem, 38vw, 11rem);
     gap: 1px;
   }
 
   .figure {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: auto;
   }
 
-  .image2,
+  .image1 {
+    grid-column: 1 / -1;
+    grid-row: span 2;
+  }
+
+  .image2 {
+    grid-column: 1;
+    grid-row: span 2;
+  }
+
+  .image3,
+  .image4 {
+    grid-column: 2;
+    grid-row: span 1;
+  }
+
+  .image5 {
+    grid-column: 1 / -1;
+    grid-row: span 1;
+  }
+
+  .image6 {
+    grid-column: 1;
+    grid-row: span 1;
+  }
+
   .image7 {
-    aspect-ratio: 3 / 4;
+    grid-column: 2;
+    grid-row: span 2;
+  }
+
+  .image8 {
+    grid-column: 1;
+    grid-row: span 1;
   }
 
   .credit {
     opacity: 1;
+  }
+
+  .preview {
+    padding: 4.5rem 0.75rem 6rem;
+  }
+
+  .previewImage {
+    max-height: calc(100dvh - 10.5rem);
+  }
+
+  .previewMeta {
+    align-items: flex-end;
+    font-size: 0.62rem;
+  }
+
+  .previewMeta a {
+    max-width: 15rem;
+    text-align: right;
+  }
+
+  .galleryButton {
+    top: auto;
+    bottom: 1rem;
+    transform: none;
+  }
+
+  .galleryButton,
+  .galleryButton > button {
+    width: calc(var(--stage-control-size) - var(--spacing-4));
+    min-height: calc(var(--stage-control-size) - var(--spacing-4));
+  }
+
+  .previousButton {
+    left: 50%;
+    margin-left: -3.25rem;
+  }
+
+  .nextButton {
+    right: 50%;
+    margin-right: -3.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .previewForward,
+  .previewBackward {
+    animation: none;
   }
 }
