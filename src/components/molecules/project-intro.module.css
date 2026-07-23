@@ -1,0 +1,66 @@
+.intro {
+  position: relative;
+  display: flex;
+  min-height: 42rem;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(7rem, 13vw, 11rem) clamp(2rem, 7vw, 7rem) clamp(4rem, 8vw, 7rem);
+  background: var(--color-project-ink);
+  color: var(--color-project-paper);
+}
+
+.rail {
+  position: absolute;
+  top: 22%;
+  bottom: 22%;
+  left: 0;
+  width: 0.45rem;
+  background: var(--color-project-cyan);
+}
+
+.category {
+  max-width: 28rem;
+  margin: 0 0 2.25rem;
+  color: var(--color-project-steel);
+  font-family: var(--font-project-utility);
+  font-size: clamp(0.68rem, 0.85vw, 0.85rem);
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.title {
+  max-width: 9ch;
+  margin: 0;
+  color: var(--color-project-cyan);
+  font-family: var(--font-project-display);
+  font-size: clamp(3.4rem, 7.2vw, 7.2rem);
+  font-stretch: condensed;
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  line-height: 0.82;
+  text-transform: uppercase;
+}
+
+.summary {
+  max-width: 38rem;
+  margin: clamp(2.5rem, 5vw, 4rem) 0 0;
+  font-family: var(--font-project-utility);
+  font-size: clamp(0.78rem, 1vw, 1rem);
+  font-weight: 700;
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+
+@media (max-width: 47.999rem) {
+  .intro {
+    min-height: auto;
+    padding: 4rem 1.5rem 4.5rem 2rem;
+  }
+
+  .rail {
+    top: 3.75rem;
+    bottom: 3.75rem;
+    width: 0.3rem;
+  }
+}

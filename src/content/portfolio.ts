@@ -16,8 +16,6 @@ export type PortfolioProject = {
   title: string;
 };
 
-export const PORTFOLIO_PROJECTS: PortfolioProject[] = [];
-
 export type PortfolioSlide = {
   alt: string;
   category: string;

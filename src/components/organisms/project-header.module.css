@@ -1,0 +1,71 @@
+.header {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 50%;
+  min-height: 5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem clamp(1rem, 3vw, 3rem);
+  background: var(--color-project-ink);
+}
+
+.homeLink {
+  display: inline-flex;
+  width: 3.25rem;
+  height: 3.25rem;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-project-paper);
+}
+
+.navigation {
+  display: flex;
+  margin: 0;
+  gap: clamp(0.75rem, 2vw, 2rem);
+  padding: 0;
+  list-style: none;
+}
+
+.navigationLink {
+  color: var(--color-project-paper);
+  font-family: var(--font-project-utility);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigationLink[aria-current='page'] {
+  color: var(--color-project-cyan);
+}
+
+.homeLink:focus-visible,
+.navigationLink:focus-visible {
+  outline-color: var(--color-project-cyan);
+}
+
+@media (max-width: 47.999rem) {
+  .header {
+    position: relative;
+    width: 100%;
+    min-height: 4.25rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .homeLink {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .navigation {
+    gap: 0.85rem;
+  }
+
+  .navigationLink {
+    font-size: 0.65rem;
+  }
+}

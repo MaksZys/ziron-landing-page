@@ -207,6 +207,77 @@ The site should feel precise, engineered, and premium rather than like a generic
 
 Do not use placeholder text in completed sections. Example portfolio content may be fictional, but it should be credible and clearly presented as demonstration content where ambiguity matters.
 
+### Established Styling Language for Future UI
+
+Treat the current homepage gallery and its navigation as the visual baseline for new features. Extend this language instead of inventing a separate style for each section or component.
+
+#### Composition
+
+- Keep the portfolio image or video as the dominant visual surface. UI must support the media rather than compete with it.
+- On the homepage, media fills the visible viewport as a background using `object-fit: cover`; the logo and navigation are the only foreground content.
+- Preserve the no-scroll, full-viewport homepage composition unless the page requirements explicitly change.
+- Prefer a small number of visually strong elements over multiple cards, labels, indicators, or decorative layers.
+- Use Grid for media and control layering and Flexbox for navigation rows, toolbars, and aligned content.
+- Keep controls aligned to the shared stage gutters and container tokens.
+
+#### Color
+
+- Use `--color-brand-carbon` for primary navigation and control surfaces.
+- Use `--color-brand-ceramic` and `--color-brand-soft-white` for foreground content.
+- Use `--color-brand-steel` only for quiet secondary or pointer-hover states.
+- Let the cyan and blue inside the ZIRON logo carry the brand color in image-overlay controls. Do not repeat cyan or blue as decorative seams, gradients, borders, glows, or hover fills.
+- New content sections may use the semantic DaisyUI `primary` role when an actual primary action or information hierarchy requires it; do not add blue merely to decorate a component.
+- Pressed and selected controls must not unexpectedly change color. Touch interactions must remain visually stable.
+
+#### Geometry and Surfaces
+
+- Prefer sharp, square geometry for gallery controls and navigation.
+- Keep surfaces flat and monochrome. Avoid ornamental outlines, clipped polygons, staggered panels, glass effects, and nested containers.
+- Do not add separators when spacing and contrast already communicate grouping.
+- The white logo chamber is the visual anchor of the bottom rail. Preserve its square proportion and keep it equal to `--stage-control-size`.
+- Arrow controls remain flush with the end of the toolbar. Do not add trailing padding after the final arrow.
+- Use the shared stage shadow only where an overlay needs separation from changing photography.
+
+#### Typography
+
+- Use the shared Helvetica Neue system stack for interface and navigation text.
+- Use title case for navigation labels. Do not add uppercase transformation or wide letter spacing by default.
+- Use weight `500` for gallery navigation so hierarchy comes from scale and placement rather than heavy weight.
+- Preserve the established gallery hierarchy:
+  - Primary mobile action, such as `Explore` or `Close`: `--text-xl`.
+  - Expanded mobile navigation links: `--text-lg`.
+  - Desktop navigation links: `--text-base`.
+  - Control labels use `--leading-control`.
+- Keep labels direct and action-oriented. A control that opens navigation says `Explore`; the same control says `Close` while expanded.
+- Ensure primary labels remain complete at the minimum supported viewport. Do not truncate `Explore` to make room for secondary copy.
+
+#### Spacing and Sizing
+
+- Use `--stage-control-size` for the bottom rail and logo chamber.
+- Use `--spacing-5` as the standard horizontal padding for primary gallery labels and expanded mobile links.
+- Keep expanded link rows comfortably proportional to the rail, using theme-derived sizing rather than fixed one-off heights.
+- Maintain clear spacing between the logo, desktop navigation links, and arrow group while keeping the arrows flush to the panel edge.
+- Arrow glyphs use the established 1.25rem visual size while retaining their accessible theme-defined touch targets.
+- At narrow widths, remove redundant secondary information before reducing primary labels or touch targets.
+
+#### Navigation Behavior
+
+- Mobile uses one compact bottom rail: logo, full primary label, then previous and next controls.
+- The expanded mobile menu spans the full navigation width and keeps its links right-aligned.
+- Desktop shows navigation links directly in the bottom rail and does not expose the mobile expansion control.
+- Clicking or tapping outside an expanded menu closes it.
+- Selecting a navigation link, changing the gallery slide, or activating `Close` also closes the menu.
+- Outside-click listeners must exist only while the menu is open and must be removed when the component closes or disconnects.
+
+#### Interaction and Motion
+
+- Use one restrained expansion transition for the mobile menu. Do not add staggered link entrances or decorative control animation.
+- Apply hover styling only inside `@media (hover: hover) and (pointer: fine)` so touch taps do not leave sticky hover colors.
+- Preserve visible keyboard focus with an inset focus treatment when an outer outline would be clipped by the control surface.
+- Motion values must use the shared duration and easing tokens and respect reduced-motion preferences.
+
+Before adding a new visual device, compare it with this baseline. If spacing, typography, contrast, or the ZIRON mark can provide the needed hierarchy, do not add another color, shape, border, icon, or animation.
+
 ## 7. Responsive and Mobile-First Behavior
 
 Start every component with the smallest supported viewport. Add larger breakpoint behavior only when the content needs it.

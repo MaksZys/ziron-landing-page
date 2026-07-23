@@ -90,10 +90,8 @@
 
 @layer base {
   html,
-  body,
-  #app {
+  body {
     height: 100%;
-    overflow: hidden;
   }
 
   body {
@@ -103,6 +101,10 @@
     background: var(--color-base-100);
     color: var(--color-base-content);
     font-family: var(--font-sans);
+  }
+
+  #app {
+    min-height: 100%;
   }
 
   button,
