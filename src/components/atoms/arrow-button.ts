@@ -20,7 +20,7 @@ export class GalleryArrow extends LitElement {
 
     return html`
       <button
-        class=${`btn btn-ghost btn-square btn-sm text-white hover:bg-primary hover:text-primary-content ${styles.button}`}
+        class=${`btn btn-ghost btn-square btn-sm ${styles.button}`}
         type="button"
         aria-label=${this.label}
       >
