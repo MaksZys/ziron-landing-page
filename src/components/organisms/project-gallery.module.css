@@ -127,6 +127,7 @@
   height: 100%;
   place-items: center;
   padding: clamp(4.5rem, 8vw, 7rem);
+  pointer-events: none;
 }
 
 .previewImage {
@@ -138,6 +139,7 @@
   max-height: calc(100dvh - clamp(9rem, 16vw, 14rem));
   object-fit: contain;
   filter: drop-shadow(0 1.5rem 3rem rgb(0 0 0 / 35%));
+  pointer-events: auto;
 }
 
 .transitionImage {
@@ -173,6 +175,7 @@
   font-family: var(--font-project-utility);
   font-size: 0.7rem;
   letter-spacing: 0.08em;
+  pointer-events: auto;
   text-transform: uppercase;
 }
 
