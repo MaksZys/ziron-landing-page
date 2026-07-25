@@ -39,6 +39,7 @@
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
+    height: 100%;
   }
 
   .heroImage {
