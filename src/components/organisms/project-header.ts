@@ -11,6 +11,8 @@ export class ProjectHeader extends LitElement {
   }
 
   protected override render() {
+    const currentPath = window.location.search || './';
+
     return html`
       <header class=${styles.header}>
         <nav aria-label="Primary navigation">
@@ -21,7 +23,7 @@ export class ProjectHeader extends LitElement {
                   <a
                     class=${styles.navigationLink}
                     href=${link.href}
-                    aria-current=${link.href === '?view=project' ? 'page' : 'false'}
+                    aria-current=${link.href === currentPath ? 'page' : 'false'}
                   >
                     ${link.label}
                   </a>
