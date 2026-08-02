@@ -80,10 +80,10 @@
 @media (max-width: 47.999rem) {
   .header {
     min-height: calc(var(--stage-control-size) - var(--spacing-4));
+    gap: calc(var(--stage-control-size) - var(--spacing-4));
     grid-template-columns:
       calc(var(--stage-control-size) - var(--spacing-4))
-      minmax(0, 1fr)
-      calc(var(--stage-control-size) - var(--spacing-4));
+      minmax(0, 1fr);
     background-color: var(--color-brand-carbon);
   }
 
