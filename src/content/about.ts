@@ -8,18 +8,20 @@ export type AboutProfile = {
 
 export const ABOUT_PROFILES: AboutProfile[] = [
   {
-    name: 'Mateusz Kulesza',
-    nickname: 'KulasMGM',
-    role: 'Film / fotografia / montaż',
-    imageUrl: new URL('../../assets/about/mateusz-kulesza.jpg', import.meta.url).href,
-    imageAlt: 'Mateusz Kulesza, członek zespołu ZIRON',
+    name: "Mateusz Kulesza",
+    nickname: "KulasMGM",
+    role: "Film / fotografia / montaż",
+    imageUrl: new URL("../../assets/about/kulas_ziron.avif", import.meta.url)
+      .href,
+    imageAlt: "Mateusz Kulesza, członek zespołu ZIRON",
   },
   {
-    name: 'Mateusz Radkiewicz',
-    nickname: 'Radken',
-    role: 'Film / dron / postprodukcja',
-    imageUrl: new URL('../../assets/about/mateusz-radkiewicz.jpg', import.meta.url).href,
-    imageAlt: 'Mateusz Radkiewicz, członek zespołu ZIRON',
+    name: "Mateusz Radkiewicz",
+    nickname: "Radken",
+    role: "Film / dron / postprodukcja",
+    imageUrl: new URL("../../assets/about/radken_ziron.avif", import.meta.url)
+      .href,
+    imageAlt: "Mateusz Radkiewicz, członek zespołu ZIRON",
   },
 ];
 
