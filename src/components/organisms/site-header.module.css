@@ -1,15 +1,16 @@
 :global(site-header) {
   display: block;
-}
-
-.header {
   position: sticky;
   z-index: 4;
   top: 0;
+}
+
+.header {
   display: grid;
   min-height: var(--stage-control-size);
   grid-template-columns: var(--stage-control-size) minmax(0, 1fr);
-  background: var(--color-brand-carbon);
+  background-color: rgb(8 10 12 / 82%);
+  transition: background-color var(--default-transition-duration) var(--ease-brand);
 }
 
 .homeLink {
@@ -66,6 +67,11 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
+  .header:hover,
+  .header:focus-within {
+    background-color: var(--color-brand-carbon);
+  }
+
   .navigationLink:hover {
     color: #71d9ed;
   }
@@ -78,6 +84,7 @@
       calc(var(--stage-control-size) - var(--spacing-4))
       minmax(0, 1fr)
       calc(var(--stage-control-size) - var(--spacing-4));
+    background-color: var(--color-brand-carbon);
   }
 
   .homeLink {
@@ -110,5 +117,4 @@
     justify-content: center;
     font-size: var(--text-sm);
   }
-
 }

@@ -62,6 +62,22 @@ test('project navigation uses the brand mark as the home link', async ({
   await expect(homeLink).toHaveCSS('background-color', 'rgb(247, 250, 250)');
 });
 
+test('Project navigation remains at the top of the viewport while scrolling', async ({
+  page,
+}) => {
+  await openProject(page);
+
+  await page.evaluate(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  });
+
+  await expect.poll(async () => {
+    return page.locator('site-header').evaluate((header) => {
+      return Math.round(header.getBoundingClientRect().top);
+    });
+  }).toBe(0);
+});
+
 test('mobile navigation reserves a compact language-control bay', async ({
   page,
 }, testInfo) => {
@@ -75,6 +91,7 @@ test('mobile navigation reserves a compact language-control bay', async ({
   });
 
   await expect(header).toHaveCSS('min-height', '48px');
+  await expect(header).toHaveCSS('background-color', 'rgb(8, 10, 12)');
   await expect(homeLink).toHaveCSS('width', '48px');
   await expect(navigation).toHaveCSS('width', '294px');
 });
@@ -88,6 +105,7 @@ test('desktop navigation sits at the edge and uses cyan hover feedback', async (
   const navigationList = page.getByRole('navigation', {
     name: 'Primary navigation',
   }).locator('ul');
+  const header = page.locator('site-header header');
   const navigationBounds = await navigationList.boundingBox();
 
   if (!navigationBounds) {
@@ -95,6 +113,10 @@ test('desktop navigation sits at the edge and uses cyan hover feedback', async (
   }
 
   expect(navigationBounds.x + navigationBounds.width).toBe(1264);
+
+  await expect(header).toHaveCSS('background-color', 'rgba(8, 10, 12, 0.82)');
+  await header.hover();
+  await expect(header).toHaveCSS('background-color', 'rgb(8, 10, 12)');
 
   const aboutLink = page.getByRole('link', { name: 'About' });
   await aboutLink.hover();

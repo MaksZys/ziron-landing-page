@@ -45,3 +45,19 @@ test('About page keeps its navigation, CTA, and media self-contained', async ({
   await firstTeamProfile.scrollIntoViewIfNeeded();
   await expect(firstTeamProfile).toHaveClass(/profileInView/);
 });
+
+test('About navigation remains at the top of the viewport while scrolling', async ({
+  page,
+}) => {
+  await page.goto('/?view=about');
+
+  await page.evaluate(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  });
+
+  await expect.poll(async () => {
+    return page.locator('site-header header').evaluate((header) => {
+      return Math.round(header.getBoundingClientRect().top);
+    });
+  }).toBe(0);
+});
