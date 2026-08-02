@@ -79,6 +79,28 @@ test('mobile navigation reserves a compact language-control bay', async ({
   await expect(navigation).toHaveCSS('width', '294px');
 });
 
+test('desktop navigation sits at the edge and uses cyan hover feedback', async ({
+  page,
+}, testInfo) => {
+  test.skip(testInfo.project.name !== 'desktop-chromium', 'Desktop contract');
+  await openProject(page);
+
+  const navigationList = page.getByRole('navigation', {
+    name: 'Primary navigation',
+  }).locator('ul');
+  const navigationBounds = await navigationList.boundingBox();
+
+  if (!navigationBounds) {
+    throw new Error('The desktop navigation has no visible bounds.');
+  }
+
+  expect(navigationBounds.x + navigationBounds.width).toBe(1264);
+
+  const aboutLink = page.getByRole('link', { name: 'About' });
+  await aboutLink.hover();
+  await expect(aboutLink).toHaveCSS('color', 'rgb(113, 217, 237)');
+});
+
 test('mobile backdrop tap closes the image preview', async ({
   page,
 }, testInfo) => {
