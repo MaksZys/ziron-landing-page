@@ -44,7 +44,7 @@ test('approved project layout remains unchanged', async ({ page }) => {
   });
 });
 
-test('project navigation keeps Home separate from the project mark', async ({
+test('project navigation uses the brand mark as the home link', async ({
   page,
 }) => {
   await openProject(page);
@@ -52,13 +52,75 @@ test('project navigation keeps Home separate from the project mark', async ({
   const navigation = page.getByRole('navigation', {
     name: 'Primary navigation',
   });
-  await expect(navigation.getByRole('link')).toHaveText([
-    'Home',
-    'Work',
-    'About',
-    'Contact',
-  ]);
-  await expect(page.getByRole('link', { name: 'ZIRON home' })).toHaveCount(0);
+  await expect(page.locator('site-header')).toHaveCount(1);
+  await expect(navigation.getByRole('link')).toHaveText(['Work', 'About', 'Contact']);
+  const homeLink = page.getByRole('link', { name: 'ZIRON home' });
+  await expect(homeLink).toHaveAttribute(
+    'href',
+    './',
+  );
+  await expect(homeLink).toHaveCSS('background-color', 'rgb(247, 250, 250)');
+});
+
+test('Project navigation remains at the top of the viewport while scrolling', async ({
+  page,
+}) => {
+  await openProject(page);
+
+  await page.evaluate(() => {
+    window.scrollTo(0, document.body.scrollHeight);
+  });
+
+  await expect.poll(async () => {
+    return page.locator('site-header').evaluate((header) => {
+      return Math.round(header.getBoundingClientRect().top);
+    });
+  }).toBe(0);
+});
+
+test('mobile navigation reserves a compact language-control bay', async ({
+  page,
+}, testInfo) => {
+  test.skip(testInfo.project.name !== 'mobile-chromium', 'Mobile contract');
+  await openProject(page);
+
+  const header = page.locator('site-header header');
+  const homeLink = page.getByRole('link', { name: 'ZIRON home' });
+  const navigation = page.getByRole('navigation', {
+    name: 'Primary navigation',
+  });
+
+  await expect(header).toHaveCSS('min-height', '48px');
+  await expect(header).toHaveCSS('background-color', 'rgb(8, 10, 12)');
+  await expect(homeLink).toHaveCSS('width', '48px');
+  await expect(navigation).toHaveCSS('width', '294px');
+});
+
+test('desktop navigation sits at the edge and uses cyan hover feedback', async ({
+  page,
+}, testInfo) => {
+  test.skip(testInfo.project.name !== 'desktop-chromium', 'Desktop contract');
+  await openProject(page);
+
+  const navigationList = page.getByRole('navigation', {
+    name: 'Primary navigation',
+  }).locator('ul');
+  const header = page.locator('site-header header');
+  const navigationBounds = await navigationList.boundingBox();
+
+  if (!navigationBounds) {
+    throw new Error('The desktop navigation has no visible bounds.');
+  }
+
+  expect(navigationBounds.x + navigationBounds.width).toBe(1264);
+
+  await expect(header).toHaveCSS('background-color', 'rgba(8, 10, 12, 0.82)');
+  await header.hover();
+  await expect(header).toHaveCSS('background-color', 'rgb(8, 10, 12)');
+
+  const aboutLink = page.getByRole('link', { name: 'About' });
+  await aboutLink.hover();
+  await expect(aboutLink).toHaveCSS('color', 'rgb(113, 217, 237)');
 });
 
 test('mobile backdrop tap closes the image preview', async ({

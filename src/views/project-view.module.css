@@ -14,8 +14,8 @@
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100dvh;
-  min-height: min(47rem, 100dvh);
+  height: calc(100dvh - var(--stage-control-size));
+  min-height: min(47rem, calc(100dvh - var(--stage-control-size)));
 }
 
 .heroImage {

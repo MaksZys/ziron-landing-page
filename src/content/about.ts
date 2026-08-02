@@ -1,0 +1,29 @@
+export type AboutProfile = {
+  name: string;
+  nickname: string;
+  role: string;
+  imageUrl: string;
+  imageAlt: string;
+};
+
+export const ABOUT_PROFILES: AboutProfile[] = [
+  {
+    name: "Mateusz Kulesza",
+    nickname: "KulasMGM",
+    role: "Film / fotografia / montaż",
+    imageUrl: new URL("../../assets/about/kulas_ziron.avif", import.meta.url)
+      .href,
+    imageAlt: "Mateusz Kulesza, członek zespołu ZIRON",
+  },
+  {
+    name: "Mateusz Radkiewicz",
+    nickname: "Radken",
+    role: "Film / dron / postprodukcja",
+    imageUrl: new URL("../../assets/about/radken_ziron.avif", import.meta.url)
+      .href,
+    imageAlt: "Mateusz Radkiewicz, członek zespołu ZIRON",
+  },
+];
+
+export const ABOUT_HERO_IMAGE =
+  'https://images.unsplash.com/photo-1542248311-c6111015e3de?auto=format&fit=crop&q=86&w=2400';
