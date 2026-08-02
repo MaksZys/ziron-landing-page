@@ -31,4 +31,10 @@ test('About page keeps its navigation, CTA, and media self-contained', async ({
   expect(
     imageSources.every((source) => !source.includes('assets.zyrosite.com')),
   ).toBe(true);
+
+  const firstTeamProfile = page
+    .locator('section[aria-labelledby="team-title"] article')
+    .first();
+  await firstTeamProfile.scrollIntoViewIfNeeded();
+  await expect(firstTeamProfile).toHaveClass(/profileInView/);
 });

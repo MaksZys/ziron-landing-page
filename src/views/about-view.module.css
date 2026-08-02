@@ -450,10 +450,17 @@
 
   .profileGrid {
     grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    background: transparent;
   }
 
   .profileMedia img {
     transform: scale(1.08);
+    transition: transform 600ms var(--ease-brand), filter 1.2s var(--ease-brand);
+  }
+
+  .profile.profileInView .profileMedia img {
+    filter: grayscale(0) saturate(1);
   }
 
   .profileMeta {

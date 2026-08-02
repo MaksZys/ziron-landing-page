@@ -7,8 +7,30 @@ import styles from './about-view.module.css';
 
 @customElement('about-view')
 export class AboutView extends LitElement {
+  #profileObserver?: IntersectionObserver;
+
   protected override createRenderRoot() {
     return this;
+  }
+
+  protected override firstUpdated() {
+    this.#profileObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.parentElement?.classList.toggle(
+          styles.profileInView,
+          entry.isIntersecting,
+        );
+      });
+    }, { threshold: 0.5 });
+
+    this.querySelectorAll<HTMLElement>(`.${styles.profileMedia}`).forEach((media) => {
+      this.#profileObserver?.observe(media);
+    });
+  }
+
+  disconnectedCallback() {
+    this.#profileObserver?.disconnect();
+    super.disconnectedCallback();
   }
 
   protected override render() {
