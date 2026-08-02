@@ -24,4 +24,4 @@ export const ABOUT_PROFILES: AboutProfile[] = [
 ];
 
 export const ABOUT_HERO_IMAGE =
-  new URL('../../assets/about/production-workshop.jpg', import.meta.url).href;
+  'https://images.unsplash.com/photo-1542248311-c6111015e3de?auto=format&fit=crop&q=86&w=2400';

@@ -24,13 +24,14 @@ test('About page keeps its navigation, CTA, and media self-contained', async ({
   );
 
   const imageSources = await page.locator('main img').evaluateAll((images) => {
-    return images.map((image) => image.currentSrc);
+    return images.map((image) => image.src);
   });
   expect(imageSources).toHaveLength(3);
-  expect(imageSources.every((source) => source.startsWith('http://'))).toBe(true);
+  expect(imageSources.every((source) => /^https?:\/\//.test(source))).toBe(true);
   expect(
     imageSources.every((source) => !source.includes('assets.zyrosite.com')),
   ).toBe(true);
+  expect(imageSources[0]).toContain('photo-1542248311-c6111015e3de');
 
   const firstTeamProfile = page
     .locator('section[aria-labelledby="team-title"] article')

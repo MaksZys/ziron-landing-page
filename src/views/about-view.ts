@@ -70,7 +70,7 @@ export class AboutView extends LitElement {
           <div class=${styles.heroMedia}>
             <img
               src=${ABOUT_HERO_IMAGE}
-              alt="ZIRON — obraz z planu produkcyjnego"
+              alt="Dwóch mężczyzn stojących razem na dachu o zachodzie słońca"
               fetchpriority="high"
             />
             <span class=${styles.heroCaption}>PRODUCTION / MOTION</span>
