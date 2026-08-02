@@ -11,6 +11,8 @@
     "dev": "vite",
     "build": "npm run typecheck && vite build",
     "preview": "vite preview",
+    "test": "playwright test",
+    "test:update": "playwright test --update-snapshots",
     "typecheck": "tsc --noEmit",
     "lint": "eslint ."
   },
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",
+    "@playwright/test": "^1.61.1",
     "@tailwindcss/vite": "^4.0.0",
     "daisyui": "^5.0.0",
     "eslint": "^9.0.0",
