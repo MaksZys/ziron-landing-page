@@ -1,6 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 
+import '../components/organisms/site-header';
 import { ABOUT_HERO_IMAGE, ABOUT_PROFILES } from '../content/about';
 import { PRIMARY_NAVIGATION } from '../content/navigation';
 import styles from './about-view.module.css';
@@ -34,28 +35,9 @@ export class AboutView extends LitElement {
   }
 
   protected override render() {
-    const currentPath = window.location.search || './';
-
     return html`
       <main class=${styles.aboutView}>
-        <header class=${styles.header}>
-          <nav aria-label="Primary navigation">
-            <ul class=${styles.navigation}>
-              ${[{ href: './', label: 'Home' }, ...PRIMARY_NAVIGATION].map(
-                (link) => html`
-                  <li>
-                    <a
-                      href=${link.href}
-                      aria-current=${link.href === currentPath ? 'page' : 'false'}
-                    >
-                      ${link.label}
-                    </a>
-                  </li>
-                `,
-              )}
-            </ul>
-          </nav>
-        </header>
+        <site-header .links=${PRIMARY_NAVIGATION}></site-header>
 
         <section class=${styles.hero} aria-labelledby="about-title">
           <div class=${styles.heroCopy}>

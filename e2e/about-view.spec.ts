@@ -8,12 +8,18 @@ test('About page keeps its navigation, CTA, and media self-contained', async ({
   const navigation = page.getByRole('navigation', {
     name: 'Primary navigation',
   });
-  await expect(navigation.getByRole('link')).toHaveText([
-    'Home',
-    'Work',
-    'About',
-    'Contact',
-  ]);
+  await expect(page.locator('site-header')).toHaveCount(1);
+  await expect(navigation.getByRole('link')).toHaveText(['Work', 'About', 'Contact']);
+  const homeLink = page.getByRole('link', { name: 'ZIRON home' });
+  await expect(homeLink).toHaveAttribute(
+    'href',
+    './',
+  );
+  await expect(homeLink).toHaveCSS('background-color', 'rgb(247, 250, 250)');
+  await expect(navigation.getByRole('link', { name: 'Contact' })).toHaveAttribute(
+    'href',
+    '?view=about#contact',
+  );
   await expect(navigation.getByRole('link', { name: 'About' })).toHaveAttribute(
     'aria-current',
     'page',
@@ -23,7 +29,7 @@ test('About page keeps its navigation, CTA, and media self-contained', async ({
     'mailto:kontakt@ziron.pl',
   );
 
-  const imageSources = await page.locator('main img').evaluateAll((images) => {
+  const imageSources = await page.locator('main section img').evaluateAll((images) => {
     return images.map((image) => image.src);
   });
   expect(imageSources).toHaveLength(3);

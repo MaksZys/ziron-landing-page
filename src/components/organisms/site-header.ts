@@ -1,9 +1,9 @@
-import { LitElement, html } from 'lit';
+import { LitElement, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-import '../atoms/brand';
-import '../molecules/navigation';
+import '../atoms/logo';
 import type { NavigationLink } from '../molecules/navigation';
+import styles from './site-header.module.css';
 
 @customElement('site-header')
 export class SiteHeader extends LitElement {
@@ -16,11 +16,29 @@ export class SiteHeader extends LitElement {
 
   protected override render() {
     return html`
-      <header class="sticky top-0 z-50 border-b border-base-300 bg-base-100/90 backdrop-blur">
-        <div class="mx-auto flex max-w-content items-center justify-between px-4 sm:px-6 lg:px-8">
-          <brand-name></brand-name>
-          <primary-navigation .links=${this.links}></primary-navigation>
-        </div>
+      <header class=${styles.header}>
+        <a class=${styles.homeLink} href="./" aria-label="ZIRON home">
+          <brand-logo variant="mark"></brand-logo>
+        </a>
+        <nav class=${styles.navigation} aria-label="Primary navigation">
+          <ul class=${styles.navigationList}>
+            ${this.links.map((link) => {
+              const isCurrent = link.href === (window.location.search || './');
+
+              return html`
+                <li>
+                  <a
+                    class=${styles.navigationLink}
+                    href=${link.href}
+                    aria-current=${isCurrent ? 'page' : nothing}
+                  >
+                    ${link.label}
+                  </a>
+                </li>
+              `;
+            })}
+          </ul>
+        </nav>
       </header>
     `;
   }

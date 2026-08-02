@@ -44,7 +44,7 @@ test('approved project layout remains unchanged', async ({ page }) => {
   });
 });
 
-test('project navigation keeps Home separate from the project mark', async ({
+test('project navigation uses the brand mark as the home link', async ({
   page,
 }) => {
   await openProject(page);
@@ -52,13 +52,31 @@ test('project navigation keeps Home separate from the project mark', async ({
   const navigation = page.getByRole('navigation', {
     name: 'Primary navigation',
   });
-  await expect(navigation.getByRole('link')).toHaveText([
-    'Home',
-    'Work',
-    'About',
-    'Contact',
-  ]);
-  await expect(page.getByRole('link', { name: 'ZIRON home' })).toHaveCount(0);
+  await expect(page.locator('site-header')).toHaveCount(1);
+  await expect(navigation.getByRole('link')).toHaveText(['Work', 'About', 'Contact']);
+  const homeLink = page.getByRole('link', { name: 'ZIRON home' });
+  await expect(homeLink).toHaveAttribute(
+    'href',
+    './',
+  );
+  await expect(homeLink).toHaveCSS('background-color', 'rgb(247, 250, 250)');
+});
+
+test('mobile navigation reserves a compact language-control bay', async ({
+  page,
+}, testInfo) => {
+  test.skip(testInfo.project.name !== 'mobile-chromium', 'Mobile contract');
+  await openProject(page);
+
+  const header = page.locator('site-header header');
+  const homeLink = page.getByRole('link', { name: 'ZIRON home' });
+  const navigation = page.getByRole('navigation', {
+    name: 'Primary navigation',
+  });
+
+  await expect(header).toHaveCSS('min-height', '48px');
+  await expect(homeLink).toHaveCSS('width', '48px');
+  await expect(navigation).toHaveCSS('width', '294px');
 });
 
 test('mobile backdrop tap closes the image preview', async ({

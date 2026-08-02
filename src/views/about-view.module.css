@@ -6,47 +6,11 @@
   --about-cyan: #71d9ed;
 
   min-height: 100dvh;
-  overflow: hidden;
+  overflow: clip;
   background: var(--about-ink);
   color: var(--about-paper);
 }
 
-.header {
-  position: absolute;
-  z-index: 4;
-  top: 0;
-  right: 0;
-  left: 0;
-  display: flex;
-  min-height: 5rem;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 1rem clamp(1rem, 4vw, 4rem);
-}
-
-.navigation {
-  display: flex;
-  margin: 0;
-  gap: clamp(0.75rem, 2vw, 2rem);
-  padding: 0;
-  list-style: none;
-}
-
-.navigation a {
-  color: var(--about-paper);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.navigation a[aria-current='page'] {
-  color: var(--about-cyan);
-}
-
-.navigation a:focus-visible,
 .contact a:focus-visible {
   outline: 2px solid currentcolor;
   outline-offset: 0.3rem;
@@ -54,17 +18,17 @@
 
 .hero {
   display: grid;
-  min-height: 100dvh;
+  min-height: calc(100dvh - var(--stage-control-size));
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .heroCopy {
   position: relative;
   display: flex;
-  min-height: 100dvh;
+  min-height: calc(100dvh - var(--stage-control-size));
   flex-direction: column;
   justify-content: center;
-  padding: 8rem clamp(2rem, 7vw, 7rem) 5rem clamp(2rem, 7vw, 7rem);
+  padding: 5rem clamp(2rem, 7vw, 7rem);
   background: var(--about-ink);
 }
 
@@ -414,20 +378,6 @@
     top: 3rem;
     bottom: 3rem;
     width: 0.3rem;
-  }
-
-  .header {
-    min-height: 4.25rem;
-    padding: 0.5rem 0.75rem;
-    background: linear-gradient(180deg, rgb(10 11 12 / 88%), rgb(10 11 12 / 0%));
-  }
-
-  .navigation {
-    gap: 0.7rem;
-  }
-
-  .navigation a {
-    font-size: 0.75rem;
   }
 
   .heroCaption {
