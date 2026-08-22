@@ -4,6 +4,7 @@ import './styles/index.css';
 import './views/home-view';
 import './views/project-view';
 import './views/about-view';
+import './views/contact-view';
 import { applyLocaleFromUrl, canonicalizeLocaleInUrl } from './localization';
 
 const appRoot = document.querySelector<HTMLElement>('#app');
@@ -25,6 +26,8 @@ async function start() {
       ? html`<project-view></project-view>`
       : requestedView === 'about'
         ? html`<about-view></about-view>`
+        : requestedView === 'contact'
+          ? html`<contact-view></contact-view>`
         : html`<home-view></home-view>`,
     root,
   );

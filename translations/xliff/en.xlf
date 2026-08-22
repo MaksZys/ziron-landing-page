@@ -122,6 +122,54 @@
         <source>Write to us</source>
         <target>Write to us</target>
       </trans-unit>
+      <trans-unit id="contact.eyebrow">
+        <source>ZIRON / CONTACT</source>
+        <target>ZIRON / CONTACT</target>
+      </trans-unit>
+      <trans-unit id="contact.title">
+        <source>LET’S TALK.</source>
+        <target>LET’S TALK.</target>
+      </trans-unit>
+      <trans-unit id="contact.summary">
+        <source>Tell us what you want to show. We will turn it into a clear, memorable image.</source>
+        <target>Tell us what you want to show. We will turn it into a clear, memorable image.</target>
+      </trans-unit>
+      <trans-unit id="contact.firstName">
+        <source>First name</source>
+        <target>First name</target>
+      </trans-unit>
+      <trans-unit id="contact.lastName">
+        <source>Last name</source>
+        <target>Last name</target>
+      </trans-unit>
+      <trans-unit id="contact.email">
+        <source>Email address</source>
+        <target>Email address</target>
+      </trans-unit>
+      <trans-unit id="contact.message">
+        <source>Message</source>
+        <target>Message</target>
+      </trans-unit>
+      <trans-unit id="contact.submit">
+        <source>Send enquiry</source>
+        <target>Send enquiry</target>
+      </trans-unit>
+      <trans-unit id="contact.formNote">
+        <source>Your email app will open with your message ready to send.</source>
+        <target>Your email app will open with your message ready to send.</target>
+      </trans-unit>
+      <trans-unit id="contact.emailSubject">
+        <source>New project enquiry</source>
+        <target>New project enquiry</target>
+      </trans-unit>
+      <trans-unit id="contact.emailName">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="contact.emailAddress">
+        <source>Email</source>
+        <target>Email</target>
+      </trans-unit>
       <trans-unit id="brand.fullLogo">
         <source>ZIRON — We create what others talk about</source>
         <target>ZIRON — We create what others talk about</target>

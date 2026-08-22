@@ -122,6 +122,54 @@
         <source>Write to us</source>
         <target>Schreib uns</target>
       </trans-unit>
+      <trans-unit id="contact.eyebrow">
+        <source>ZIRON / CONTACT</source>
+        <target>ZIRON / KONTAKT</target>
+      </trans-unit>
+      <trans-unit id="contact.title">
+        <source>LET’S TALK.</source>
+        <target>LASS UNS SPRECHEN.</target>
+      </trans-unit>
+      <trans-unit id="contact.summary">
+        <source>Tell us what you want to show. We will turn it into a clear, memorable image.</source>
+        <target>Erzähl uns, was du zeigen möchtest. Wir machen daraus ein klares, einprägsames Bild.</target>
+      </trans-unit>
+      <trans-unit id="contact.firstName">
+        <source>First name</source>
+        <target>Vorname</target>
+      </trans-unit>
+      <trans-unit id="contact.lastName">
+        <source>Last name</source>
+        <target>Nachname</target>
+      </trans-unit>
+      <trans-unit id="contact.email">
+        <source>Email address</source>
+        <target>E-Mail-Adresse</target>
+      </trans-unit>
+      <trans-unit id="contact.message">
+        <source>Message</source>
+        <target>Nachricht</target>
+      </trans-unit>
+      <trans-unit id="contact.submit">
+        <source>Send enquiry</source>
+        <target>Anfrage senden</target>
+      </trans-unit>
+      <trans-unit id="contact.formNote">
+        <source>Your email app will open with your message ready to send.</source>
+        <target>Deine E-Mail-App öffnet sich mit einer versandfertigen Nachricht.</target>
+      </trans-unit>
+      <trans-unit id="contact.emailSubject">
+        <source>New project enquiry</source>
+        <target>Neue Projektanfrage</target>
+      </trans-unit>
+      <trans-unit id="contact.emailName">
+        <source>Name</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="contact.emailAddress">
+        <source>Email</source>
+        <target>E-Mail</target>
+      </trans-unit>
       <trans-unit id="brand.fullLogo">
         <source>ZIRON — We create what others talk about</source>
         <target>ZIRON — Wir schaffen, worüber andere sprechen</target>

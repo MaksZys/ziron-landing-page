@@ -29,6 +29,18 @@
 ,,contactTitleSecond,WITH THE IMAGE.,OD OBRAZU.,MIT DEM BILD.
 ,,contactSummary,Tell us what you want to show.,Opowiedz nam co chcesz pokazać.,Erzähl uns was du zeigen möchtest.
 ,,contactAction,Write to us,Napisz do nas,Schreib uns
+,contact,eyebrow,ZIRON / CONTACT,ZIRON / KONTAKT,ZIRON / KONTAKT
+,,title,LET’S TALK.,POROZMAWIAJMY.,LASS UNS SPRECHEN.
+,,summary,"Tell us what you want to show. We will turn it into a clear, memorable image.","Opowiedz nam, co chcesz pokazać. Zamienimy to w wyrazisty, zapadający w pamięć obraz.","Erzähl uns, was du zeigen möchtest. Wir machen daraus ein klares, einprägsames Bild."
+,,firstName,First name,Imię,Vorname
+,,lastName,Last name,Nazwisko,Nachname
+,,email,Email address,Adres e-mail,E-Mail-Adresse
+,,message,Message,Wiadomość,Nachricht
+,,submit,Send enquiry,Wyślij zapytanie,Anfrage senden
+,,formNote,Your email app will open with your message ready to send.,Twoja aplikacja pocztowa otworzy się z gotową wiadomością.,Deine E-Mail-App öffnet sich mit einer versandfertigen Nachricht.
+,,emailSubject,New project enquiry,Nowe zapytanie dotyczące projektu,Neue Projektanfrage
+,,emailName,Name,Imię i nazwisko,Name
+,,emailAddress,Email,E-mail,E-Mail
 ,brand,fullLogo,"ZIRON — We create what others talk about","ZIRON — Tworzymy to, o czym inni mówią","ZIRON — Wir schaffen, worüber andere sprechen"
 ,,homeLink,ZIRON home,ZIRON strona główna,ZIRON Startseite
 ,gallery,closePreview,Close image preview,Zamknij podgląd obrazu,Bildvorschau schließen
