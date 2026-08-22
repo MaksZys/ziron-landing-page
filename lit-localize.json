@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/lit/lit/main/packages/localize-tools/config.schema.json",
+  "sourceLocale": "en",
+  "targetLocales": ["pl", "de"],
+  "tsConfig": "./tsconfig.json",
+  "interchange": {
+    "format": "xliff",
+    "xliffDir": "./translations/xliff"
+  },
+  "output": {
+    "mode": "transform",
+    "outputDir": "./.lit-localize"
+  }
+}

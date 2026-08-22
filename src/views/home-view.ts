@@ -1,5 +1,6 @@
 import { LitElement, html } from "lit";
 import { customElement, state } from "lit/decorators.js";
+import { msg } from '@lit/localize';
 
 import type { PortfolioSlide } from "../content/portfolio";
 import { PRIMARY_NAVIGATION } from "../content/navigation";
@@ -31,7 +32,7 @@ export class HomeView extends LitElement {
 
     if (!activeSlide) {
       return html`<main class=${`${styles.homeView} ${styles.empty}`}>
-        Portfolio media is unavailable.
+        ${msg('Portfolio media is unavailable.', { id: 'home.mediaUnavailable' })}
       </main>`;
     }
 
@@ -40,7 +41,7 @@ export class HomeView extends LitElement {
         id="top"
         class=${styles.homeView}
         aria-roledescription="carousel"
-        aria-label="Selected ZIRON work"
+        aria-label=${msg('Selected ZIRON work', { id: 'home.selectedWork' })}
         tabindex="0"
         @keydown=${this.handleKeyDown}
         @touchstart=${this.handleTouchStart}

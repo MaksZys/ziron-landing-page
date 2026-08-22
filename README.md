@@ -24,6 +24,17 @@ npm run build
 
 Use `npm run preview` to inspect the production build locally after running `npm run build`.
 
+## Local translations
+
+Edit [translations/translations.csv](translations/translations.csv), using Babelsheet-style `>>>` path columns and `en`, `pl`, and `de` language columns. Then run:
+
+```sh
+npm run locales:sync
+npm run build:locales
+```
+
+This produces Lit-compatible XLIFF in `translations/xliff/`, the English bundle in `dist/`, and Polish/German bundles in `dist/pl` and `dist/de`, without Google credentials or runtime locale loading.
+
 ## Unsplash credentials
 
 Copy `.env.example` to `.env` and populate these keys locally:

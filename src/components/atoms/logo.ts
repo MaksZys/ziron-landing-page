@@ -1,5 +1,6 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import { msg } from '@lit/localize';
 
 const FULL_LOGO_URL = new URL('../../../assets/ziron-logo-big.png', import.meta.url).href;
 const MARK_LOGO_URL = new URL('../../../assets/ziron.jpg', import.meta.url).href;
@@ -20,7 +21,7 @@ export class BrandLogo extends LitElement {
       <img
         class=${isMark ? 'block size-8 object-cover' : 'block w-full object-contain'}
         src=${isMark ? MARK_LOGO_URL : FULL_LOGO_URL}
-        alt=${isMark ? '' : 'ZIRON — Tworzymy to, o czym inni mówią'}
+        alt=${isMark ? '' : msg('ZIRON — We create what others talk about', { id: 'brand.fullLogo' })}
         aria-hidden=${isMark ? 'true' : 'false'}
       />
     `;

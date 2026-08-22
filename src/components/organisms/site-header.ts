@@ -1,5 +1,6 @@
 import { LitElement, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import { msg } from '@lit/localize';
 
 import '../atoms/logo';
 import type { NavigationLink } from '../molecules/navigation';
@@ -17,10 +18,10 @@ export class SiteHeader extends LitElement {
   protected override render() {
     return html`
       <header class=${styles.header}>
-        <a class=${styles.homeLink} href="./" aria-label="ZIRON home">
+        <a class=${styles.homeLink} href="./" aria-label=${msg('ZIRON home', { id: 'brand.homeLink' })}>
           <brand-logo variant="mark"></brand-logo>
         </a>
-        <nav class=${styles.navigation} aria-label="Primary navigation">
+        <nav class=${styles.navigation} aria-label=${msg('Primary navigation', { id: 'nav.primary' })}>
           <ul class=${styles.navigationList}>
             ${this.links.map((link) => {
               const isCurrent = link.href === (window.location.search || './');

@@ -1,6 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { keyed } from 'lit/directives/keyed.js';
+import { msg } from '@lit/localize';
 
 import type { UnsplashImage } from '../../content/portfolio';
 import '../atoms/arrow-button';
@@ -35,7 +36,10 @@ export class ProjectGallery extends LitElement {
       this.activeIndex === null ? undefined : this.images[this.activeIndex];
 
     return html`
-      <section class=${styles.gallery} aria-label="Project gallery">
+      <section
+        class=${styles.gallery}
+        aria-label=${msg('Project gallery', { id: 'gallery.label' })}
+      >
         ${this.images.map(
           (image, index) => html`
             <figure class=${`${styles.figure} ${styles[`image${index + 1}`] ?? ''}`}>
@@ -43,7 +47,7 @@ export class ProjectGallery extends LitElement {
                 class=${styles.openButton}
                 type="button"
                 data-gallery-index=${index}
-                aria-label=${`Open image ${index + 1}: ${image.alt}`}
+                aria-label=${`${msg('Open image', { id: 'gallery.openImage' })} ${index + 1}: ${image.alt}`}
                 @click=${(event: MouseEvent) => this.openImage(index, event)}
               >
                 <img
@@ -55,7 +59,7 @@ export class ProjectGallery extends LitElement {
               </button>
               <figcaption class=${styles.credit}>
                 <a href=${image.sourceUrl} target="_blank" rel="noreferrer">
-                  Photo: ${image.photographerName} / Unsplash
+                  ${msg('Photo', { id: 'gallery.photo' })}: ${image.photographerName} / Unsplash
                 </a>
               </figcaption>
             </figure>
@@ -65,7 +69,7 @@ export class ProjectGallery extends LitElement {
 
       <dialog
         class=${styles.lightbox}
-        aria-label="Image preview"
+        aria-label=${msg('Image preview', { id: 'gallery.preview' })}
         @cancel=${this.handleCancel}
         @click=${this.handleBackdropClick}
         @keydown=${this.handleKeyDown}
@@ -104,7 +108,7 @@ export class ProjectGallery extends LitElement {
               <button
                 class=${styles.closeButton}
                 type="button"
-                aria-label="Close image preview"
+                aria-label=${msg('Close image preview', { id: 'gallery.closePreview' })}
                 @click=${this.closeImage}
               >
                 <span aria-hidden="true"></span>
@@ -113,12 +117,12 @@ export class ProjectGallery extends LitElement {
               <gallery-arrow
                 class=${`${styles.galleryButton} ${styles.previousButton}`}
                 direction="previous"
-                label="Previous image"
+                label=${msg('Previous image', { id: 'gallery.previousImage' })}
                 @click=${this.handlePreviousClick}
               ></gallery-arrow>
               <gallery-arrow
                 class=${`${styles.galleryButton} ${styles.nextButton}`}
-                label="Next image"
+                label=${msg('Next image', { id: 'gallery.nextImage' })}
                 @click=${this.handleNextClick}
               ></gallery-arrow>
             `

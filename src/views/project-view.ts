@@ -1,5 +1,6 @@
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
+import { msg } from '@lit/localize';
 
 import '../components/organisms/site-header';
 import { FEATURED_PROJECT } from '../content/portfolio.generated';
@@ -31,12 +32,19 @@ export class ProjectView extends LitElement {
                   fetchpriority="high"
                 />
               `
-            : html`<div class=${styles.heroFallback}>Project media is unavailable.</div>`}
+            : html`<div class=${styles.heroFallback}>
+                ${msg('Project media is unavailable.', { id: 'project.mediaUnavailable' })}
+              </div>`}
 
           <project-intro
-            .category=${FEATURED_PROJECT.category}
-            .summary=${FEATURED_PROJECT.summary}
-            .title=${FEATURED_PROJECT.title}
+            .category=${msg('Film production / Campaign 2026', {
+              id: 'project.category',
+            })}
+            .summary=${msg(
+              'Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.',
+              { id: 'project.summary' },
+            )}
+            .title=${msg('Strength in motion', { id: 'project.title' })}
           ></project-intro>
         </section>
 

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages">
+    <body>
+      <trans-unit id="brand.fullLogo">
+        <source>ZIRON — We create what others talk about</source>
+        <target>ZIRON — Wir schaffen, worüber andere sprechen</target>
+      </trans-unit>
+      <trans-unit id="brand.homeLink">
+        <source>ZIRON home</source>
+        <target>ZIRON Startseite</target>
+      </trans-unit>
+      <trans-unit id="gallery.closePreview">
+        <source>Close image preview</source>
+        <target>Bildvorschau schließen</target>
+      </trans-unit>
+      <trans-unit id="gallery.label">
+        <source>Project gallery</source>
+        <target>Projektgalerie</target>
+      </trans-unit>
+      <trans-unit id="gallery.nextImage">
+        <source>Next image</source>
+        <target>Nächstes Bild</target>
+      </trans-unit>
+      <trans-unit id="gallery.nextProject">
+        <source>Next project</source>
+        <target>Nächstes Projekt</target>
+      </trans-unit>
+      <trans-unit id="gallery.openImage">
+        <source>Open image</source>
+        <target>Bild öffnen</target>
+      </trans-unit>
+      <trans-unit id="gallery.photo">
+        <source>Photo</source>
+        <target>Foto</target>
+      </trans-unit>
+      <trans-unit id="gallery.previousImage">
+        <source>Previous image</source>
+        <target>Vorheriges Bild</target>
+      </trans-unit>
+      <trans-unit id="gallery.previousProject">
+        <source>Previous project</source>
+        <target>Vorheriges Projekt</target>
+      </trans-unit>
+      <trans-unit id="gallery.preview">
+        <source>Image preview</source>
+        <target>Bildvorschau</target>
+      </trans-unit>
+      <trans-unit id="home.mediaUnavailable">
+        <source>Portfolio media is unavailable.</source>
+        <target>Portfolio-Medien sind nicht verfügbar.</target>
+      </trans-unit>
+      <trans-unit id="home.selectedWork">
+        <source>Selected ZIRON work</source>
+        <target>Ausgewählte ZIRON-Arbeiten</target>
+      </trans-unit>
+      <trans-unit id="menu.close">
+        <source>Close</source>
+        <target>Schließen</target>
+      </trans-unit>
+      <trans-unit id="menu.explore">
+        <source>Explore</source>
+        <target>Entdecken</target>
+      </trans-unit>
+      <trans-unit id="nav.about">
+        <source>About</source>
+        <target>Über uns</target>
+      </trans-unit>
+      <trans-unit id="nav.contact">
+        <source>Contact</source>
+        <target>Kontakt</target>
+      </trans-unit>
+      <trans-unit id="nav.primary">
+        <source>Primary navigation</source>
+        <target>Hauptnavigation</target>
+      </trans-unit>
+      <trans-unit id="nav.work">
+        <source>Work</source>
+        <target>Arbeiten</target>
+      </trans-unit>
+      <trans-unit id="project.category">
+        <source>Film production / Campaign 2026</source>
+        <target>Filmproduktion / Kampagne 2026</target>
+      </trans-unit>
+      <trans-unit id="project.summary">
+        <source>Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.</source>
+        <target>Maschinen posieren nicht. Sie arbeiten. Wir haben ihre Stärke dort gezeigt, wo sie am authentischsten ist – in Staub, Schnee, Regen und bei voller Geschwindigkeit.</target>
+      </trans-unit>
+      <trans-unit id="project.title">
+        <source>Strength in motion</source>
+        <target>Stärke in Bewegung</target>
+      </trans-unit>
+      <trans-unit id="project.mediaUnavailable">
+        <source>Project media is unavailable.</source>
+        <target>Projektmedien sind nicht verfügbar.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
