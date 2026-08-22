@@ -13,18 +13,18 @@ test('About page keeps its navigation, CTA, and media self-contained', async ({
   const homeLink = page.getByRole('link', { name: 'ZIRON home' });
   await expect(homeLink).toHaveAttribute(
     'href',
-    './',
+    '?lang=en',
   );
   await expect(homeLink).toHaveCSS('background-color', 'rgb(247, 250, 250)');
   await expect(navigation.getByRole('link', { name: 'Contact' })).toHaveAttribute(
     'href',
-    '?view=about#contact',
+    '#contact',
   );
   await expect(navigation.getByRole('link', { name: 'About' })).toHaveAttribute(
     'aria-current',
     'page',
   );
-  await expect(page.getByRole('link', { name: /Napisz do nas/i })).toHaveAttribute(
+  await expect(page.getByRole('link', { name: /Write to us/i })).toHaveAttribute(
     'href',
     'mailto:kontakt@ziron.pl',
   );

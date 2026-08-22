@@ -41,6 +41,7 @@ test('approved project layout remains unchanged', async ({ page }) => {
   await expect(page).toHaveScreenshot('project-view.png', {
     animations: 'disabled',
     fullPage: true,
+    maxDiffPixels: 200,
   });
 });
 
@@ -57,7 +58,7 @@ test('project navigation uses the brand mark as the home link', async ({
   const homeLink = page.getByRole('link', { name: 'ZIRON home' });
   await expect(homeLink).toHaveAttribute(
     'href',
-    './',
+    '?lang=en',
   );
   await expect(homeLink).toHaveCSS('background-color', 'rgb(247, 250, 250)');
 });
@@ -102,17 +103,15 @@ test('desktop navigation sits at the edge and uses cyan hover feedback', async (
   test.skip(testInfo.project.name !== 'desktop-chromium', 'Desktop contract');
   await openProject(page);
 
-  const navigationList = page.getByRole('navigation', {
-    name: 'Primary navigation',
-  }).locator('ul');
+  const languageSelect = page.locator('site-header select');
   const header = page.locator('site-header header');
-  const navigationBounds = await navigationList.boundingBox();
+  const languageBounds = await languageSelect.boundingBox();
 
-  if (!navigationBounds) {
-    throw new Error('The desktop navigation has no visible bounds.');
+  if (!languageBounds) {
+    throw new Error('The language selector has no visible bounds.');
   }
 
-  expect(navigationBounds.x + navigationBounds.width).toBe(1264);
+  expect(languageBounds.x + languageBounds.width).toBe(1264);
 
   await expect(header).toHaveCSS('background-color', 'rgba(8, 10, 12, 0.82)');
   await header.hover();

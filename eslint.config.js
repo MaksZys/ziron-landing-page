@@ -4,7 +4,7 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
-    ignores: ['dist'],
+    ignores: ['dist', 'src/generated/locales'],
   },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,

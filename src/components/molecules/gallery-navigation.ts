@@ -1,5 +1,6 @@
 import { LitElement, html, type PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import type { NavigationLink } from './navigation';
 import '../atoms/arrow-button';
@@ -13,6 +14,11 @@ export class GalleryNavigation extends LitElement {
 
   @property({ type: Boolean })
   menuOpen = false;
+
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
 
   protected override createRenderRoot() {
     return this;
@@ -45,7 +51,7 @@ export class GalleryNavigation extends LitElement {
         <nav
           id="gallery-menu"
           class=${menuClass}
-          aria-label="Primary navigation"
+          aria-label=${msg('Primary navigation', { id: 'nav.primary' })}
           aria-hidden=${String(!this.menuOpen)}
           ?inert=${!this.menuOpen}
         >
@@ -59,7 +65,11 @@ export class GalleryNavigation extends LitElement {
         </nav>
 
         <div class=${styles.toolbar}>
-          <a class=${styles.homeLink} href="#top" aria-label="ZIRON home">
+          <a
+            class=${styles.homeLink}
+            href="#top"
+            aria-label=${msg('ZIRON home', { id: 'brand.homeLink' })}
+          >
             <brand-logo variant="mark"></brand-logo>
           </a>
           <button
@@ -69,20 +79,30 @@ export class GalleryNavigation extends LitElement {
             aria-controls="gallery-menu"
             @click=${this.toggleMenu}
           >
-            <span class=${styles.menuLabel}>${this.menuOpen ? 'Close' : 'Explore'}</span>
+            <span class=${styles.menuLabel}>
+              ${this.menuOpen
+                ? msg('Close', { id: 'menu.close' })
+                : msg('Explore', { id: 'menu.explore' })}
+            </span>
           </button>
 
-          <nav class=${styles.desktopLinks} aria-label="Primary navigation">
+          <nav
+            class=${styles.desktopLinks}
+            aria-label=${msg('Primary navigation', { id: 'nav.primary' })}
+          >
             ${this.links.map((link) => html`<a class=${styles.desktopLink} href=${link.href}>${link.label}</a>`)}
           </nav>
 
           <div class=${styles.arrows}>
             <gallery-arrow
               direction="previous"
-              label="Previous project"
+              label=${msg('Previous project', { id: 'gallery.previousProject' })}
               @click=${this.showPrevious}
             ></gallery-arrow>
-            <gallery-arrow label="Next project" @click=${this.showNext}></gallery-arrow>
+            <gallery-arrow
+              label=${msg('Next project', { id: 'gallery.nextProject' })}
+              @click=${this.showNext}
+            ></gallery-arrow>
           </div>
         </div>
       </div>

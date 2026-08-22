@@ -1,7 +1,12 @@
-import type { NavigationLink } from '../components/molecules/navigation';
+import { msg } from '@lit/localize';
 
-export const PRIMARY_NAVIGATION: NavigationLink[] = [
-  { href: '?view=project', label: 'Work' },
-  { href: '?view=about', label: 'About' },
-  { href: '?view=about#contact', label: 'Contact' },
-];
+import type { NavigationLink } from '../components/molecules/navigation';
+import { localizedViewUrl } from '../localization';
+
+export function getPrimaryNavigation(): NavigationLink[] {
+  return [
+    { href: localizedViewUrl('project'), label: msg('Work', { id: 'nav.work' }) },
+    { href: localizedViewUrl('about'), label: msg('About', { id: 'nav.about' }) },
+    { href: `#contact`, label: msg('Contact', { id: 'nav.contact' }) },
+  ];
+}
