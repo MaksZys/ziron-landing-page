@@ -53,7 +53,6 @@
   font-weight: 900;
   letter-spacing: -0.075em;
   line-height: 0.8;
-  overflow-wrap: anywhere;
   text-transform: uppercase;
 }
 
@@ -186,7 +185,8 @@
   }
 
   .intro h1 {
-    font-size: clamp(4rem, 21vw, 6.5rem);
+    max-width: none;
+    font-size: clamp(3.5rem, 18vw, 5rem);
   }
 
   .fieldGrid {

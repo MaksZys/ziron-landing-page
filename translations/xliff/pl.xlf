@@ -128,7 +128,7 @@
       </trans-unit>
       <trans-unit id="contact.title">
         <source>LET’S TALK.</source>
-        <target>POROZMAWIAJMY.</target>
+        <target>NAPISZ DO NAS.</target>
       </trans-unit>
       <trans-unit id="contact.summary">
         <source>Tell us what you want to show. We will turn it into a clear, memorable image.</source>
