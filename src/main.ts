@@ -4,7 +4,7 @@ import './styles/index.css';
 import './views/home-view';
 import './views/project-view';
 import './views/about-view';
-import { localeFromUrl, setLocale } from './localization';
+import { applyLocaleFromUrl, canonicalizeLocaleInUrl } from './localization';
 
 const appRoot = document.querySelector<HTMLElement>('#app');
 
@@ -15,7 +15,8 @@ if (!appRoot) {
 const root = appRoot;
 
 async function start() {
-  await setLocale(localeFromUrl());
+  canonicalizeLocaleInUrl();
+  await applyLocaleFromUrl();
 
   const requestedView = new URLSearchParams(window.location.search).get('view');
 
@@ -28,5 +29,10 @@ async function start() {
     root,
   );
 }
+
+window.addEventListener('popstate', () => {
+  canonicalizeLocaleInUrl();
+  void applyLocaleFromUrl();
+});
 
 void start();

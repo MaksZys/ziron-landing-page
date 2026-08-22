@@ -5,11 +5,11 @@ import { msg, updateWhenLocaleChanges } from '@lit/localize';
 import '../atoms/logo';
 import type { NavigationLink } from '../molecules/navigation';
 import {
-  getLocale,
+  applyLocaleFromUrl,
   LOCALES,
+  localeFromUrl,
   localizedHomeUrl,
   localizedUrl,
-  setLocale,
   type Locale,
 } from '../../localization';
 import styles from './site-header.module.css';
@@ -35,7 +35,7 @@ export class SiteHeader extends LitElement {
   }
 
   private get activeLocale(): Locale {
-    return getLocale() as Locale;
+    return localeFromUrl();
   }
 
   private async changeLanguage(event: Event) {
@@ -49,13 +49,13 @@ export class SiteHeader extends LitElement {
 
     this.isLanguageLoading = true;
     this.languageError = '';
+    window.history.replaceState(null, '', localizedUrl(locale));
 
     try {
-      await setLocale(locale);
-      window.history.replaceState(null, '', localizedUrl(locale));
+      await applyLocaleFromUrl();
     } catch (error) {
       console.error(`Unable to load ${locale} translations.`, error);
-      languageSelect.value = previousLocale;
+      window.history.replaceState(null, '', localizedUrl(previousLocale));
       this.languageError = msg('Unable to change language.', { id: 'language.loadFailed' });
     } finally {
       this.isLanguageLoading = false;
@@ -103,11 +103,14 @@ export class SiteHeader extends LitElement {
               aria-label=${msg('Language', { id: 'language.label' })}
               aria-busy=${String(this.isLanguageLoading)}
               ?disabled=${this.isLanguageLoading}
-              .value=${this.activeLocale}
               @change=${this.changeLanguage}
             >
               ${LOCALES.map(
-                (locale) => html`<option value=${locale}>${locale.toUpperCase()}</option>`,
+                (locale) => html`
+                  <option value=${locale} ?selected=${locale === this.activeLocale}>
+                    ${locale.toUpperCase()}
+                  </option>
+                `,
               )}
             </select>
           </label>

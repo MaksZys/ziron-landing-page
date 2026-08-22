@@ -96,11 +96,12 @@ Run the normal development server, then use the header selector or a shareable U
 npm run dev
 ```
 
-- English: `?lang=en` (or no `lang` parameter)
+- English: `?lang=en`
 - Polish About page: `?view=about&lang=pl`
 - German Project page: `?view=project&lang=de`
 
 The app loads Polish and German translation modules only when selected. `npm run preview` serves the same single production build after `npm run build`.
+URLs without a `lang` parameter or with an unsupported language are normalized to `?lang=en`.
 
 ### Validation errors
 
