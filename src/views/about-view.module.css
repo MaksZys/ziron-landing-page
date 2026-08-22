@@ -11,6 +11,45 @@
   color: var(--about-paper);
 }
 
+.eyebrow,
+.heroIndex,
+.heroCaption,
+.profileMeta span,
+.contactDetails p {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.title,
+.sectionIntro h2,
+.manifesto h2,
+.contact h2 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-weight: 900;
+  letter-spacing: -0.065em;
+  line-height: 0.86;
+  text-transform: uppercase;
+}
+
+.heroMedia,
+.profileMedia {
+  position: relative;
+  overflow: hidden;
+  background: var(--about-metal);
+}
+
+.heroMedia img,
+.profileMedia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .contact a:focus-visible {
   outline: 2px solid currentcolor;
   outline-offset: 0.3rem;
@@ -18,14 +57,13 @@
 
 .hero {
   display: grid;
-  min-height: calc(100dvh - var(--stage-control-size));
+  height: calc(100vh - var(--stage-control-size));
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .heroCopy {
   position: relative;
   display: flex;
-  min-height: calc(100dvh - var(--stage-control-size));
   flex-direction: column;
   justify-content: center;
   padding: 5rem clamp(2rem, 7vw, 7rem);
@@ -42,34 +80,9 @@
   content: '';
 }
 
-.eyebrow,
-.heroIndex,
-.heroCaption,
-.profileMeta span,
-.contactDetails p {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.11em;
-  line-height: 1.4;
-  text-transform: uppercase;
-}
-
 .eyebrow {
   margin: 0 0 2rem;
   color: var(--about-steel);
-}
-
-.title,
-.sectionIntro h2,
-.manifesto h2,
-.contact h2 {
-  margin: 0;
-  font-family: var(--font-sans);
-  font-weight: 900;
-  letter-spacing: -0.065em;
-  line-height: 0.86;
-  text-transform: uppercase;
 }
 
 .title {
@@ -95,10 +108,7 @@
 }
 
 .heroMedia {
-  position: relative;
   min-height: 42rem;
-  overflow: hidden;
-  background: var(--about-metal);
 }
 
 .heroMedia::after {
@@ -109,9 +119,6 @@
 }
 
 .heroMedia img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   filter: saturate(0.75) contrast(1.08);
 }
 
@@ -120,7 +127,48 @@
   right: 2rem;
   bottom: 2rem;
   z-index: 1;
-  color: var(--about-paper);
+}
+
+@media (min-width: 48rem) {
+  .hero {
+    height: auto;
+  }
+}
+
+@media (max-width: 47.999rem) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .heroCopy {
+    height: calc(100vh - var(--stage-control-size) / 2);
+  }
+
+  .heroMedia {
+    min-height: auto;
+  }
+
+  .heroCopy {
+    min-height: 32rem;
+    padding: 4rem 2rem 5rem;
+  }
+
+  .heroCopy::before {
+    top: 3rem;
+    bottom: 3rem;
+    width: 0.3rem;
+  }
+
+  .heroMedia {
+    height: 58vw;
+  }
+
+  .heroCaption {
+    right: 1rem;
+    bottom: 1rem;
+  }
 }
 
 .profiles {
@@ -132,14 +180,12 @@
 }
 
 .sectionIntro h2 {
-  color: var(--about-paper);
   font-size: clamp(2.7rem, 5vw, 5rem);
 }
 
 .sectionIntro > p:last-child {
   max-width: 24rem;
   margin: 2.5rem 0 0;
-  color: var(--about-paper);
   font-family: var(--font-sans);
   font-size: clamp(1.05rem, 1.35vw, 1.35rem);
   font-weight: 500;
@@ -160,33 +206,20 @@
 }
 
 .profileMedia {
-  position: relative;
   height: clamp(20rem, 38vw, 35rem);
-  overflow: hidden;
-  background: var(--about-metal);
 }
 
 .profileMedia img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   object-position: center;
   filter: grayscale(0.3) saturate(0.7);
   transition: transform 600ms var(--ease-brand), filter 600ms var(--ease-brand);
 }
 
-@media (min-width: 48rem) {
-  .profileMedia img {
-    transform: scale(1.25);
-  }
-}
-
 .profileNumber {
   position: absolute;
-  z-index: 1;
   top: 1rem;
   left: 1rem;
-  color: var(--about-paper);
+  z-index: 1;
   font-family: var(--font-mono);
   font-size: 0.7rem;
 }
@@ -197,7 +230,6 @@
 
 .profileMeta h3 {
   margin: 0;
-  color: var(--about-paper);
   font-size: clamp(1.15rem, 1.8vw, 1.8rem);
   font-weight: 900;
   letter-spacing: -0.04em;
@@ -214,6 +246,65 @@
 
 .profileMeta span {
   color: var(--about-steel);
+}
+
+@media (min-width: 48rem) {
+  .profileMedia img {
+    transform: scale(1.25);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .profile:hover .profileMedia img {
+    filter: grayscale(0) saturate(1);
+    transform: scale(1.3);
+  }
+}
+
+@media (max-width: 47.999rem) {
+  .profiles {
+    display: block;
+    padding: 4.5rem 1rem;
+  }
+
+  .sectionIntro {
+    padding: 0 1rem 3rem;
+  }
+
+  .profileGrid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    background: transparent;
+  }
+
+  .profileMedia {
+    height: 88vw;
+  }
+
+  .profileMedia img {
+    transform: scale(1.08);
+    transition: transform 600ms var(--ease-brand), filter 1.2s var(--ease-brand);
+  }
+
+  .profile.profileInView .profileMedia img {
+    filter: grayscale(0) saturate(1);
+  }
+
+  .profileMeta {
+    padding: 1.5rem 1.25rem 1.75rem;
+  }
+
+  .profileMeta h3 {
+    font-size: 1.5rem;
+  }
+
+  .profileMeta p {
+    font-size: 0.85rem;
+  }
+
+  .profileMeta span {
+    font-size: 0.78rem;
+  }
 }
 
 .manifesto {
@@ -279,6 +370,29 @@
   border-bottom: 1px solid var(--about-steel);
 }
 
+@media (max-width: 47.999rem) {
+  .manifesto {
+    padding: 5rem 2rem 6rem;
+  }
+
+  .manifestoRule {
+    left: 1rem;
+  }
+
+  .manifesto h2 {
+    font-size: clamp(2.8rem, 12vw, 3.5rem);
+  }
+
+  .manifestoBody {
+    display: block;
+    margin: 3rem 0 0;
+  }
+
+  .manifestoBody ul {
+    margin-top: 2.5rem;
+  }
+}
+
 .contact {
   display: flex;
   align-items: flex-end;
@@ -286,11 +400,6 @@
   gap: 3rem;
   padding: clamp(4rem, 8vw, 8rem) clamp(2rem, 7vw, 7rem);
   background: var(--about-metal);
-  color: var(--about-paper);
-}
-
-.contact .eyebrow {
-  color: var(--about-steel);
 }
 
 .contact h2 {
@@ -313,16 +422,16 @@
 }
 
 .contactDetails a {
-  color: var(--about-paper);
+  color: inherit;
 }
 
 .contactAction {
   display: inline-flex;
   align-items: center;
+  align-self: flex-end;
   gap: 1.5rem;
   margin: 0.75rem 0 1rem;
   padding: 0.85rem 1rem;
-  align-self: flex-end;
   background: var(--about-cyan);
   color: var(--about-ink) !important;
   font-family: var(--font-mono);
@@ -347,109 +456,7 @@
   text-underline-offset: 0.25rem;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .profile:hover .profileMedia img {
-    filter: grayscale(0) saturate(1);
-    transform: scale(1.3);
-  }
-}
-
 @media (max-width: 47.999rem) {
-  .hero {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .heroCopy,
-  .heroMedia {
-    min-height: auto;
-  }
-
-  .heroMedia {
-    height: 58vw;
-  }
-
-  .heroCopy {
-    min-height: 32rem;
-    padding: 4rem 2rem 5rem;
-  }
-
-  .heroCopy::before {
-    top: 3rem;
-    bottom: 3rem;
-    width: 0.3rem;
-  }
-
-  .heroCaption {
-    right: 1rem;
-    bottom: 1rem;
-  }
-
-  .profiles {
-    display: block;
-    padding: 4.5rem 1rem;
-  }
-
-  .sectionIntro {
-    padding: 0 1rem 3rem;
-  }
-
-  .profileMedia {
-    height: 88vw;
-  }
-
-  .profileGrid {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 2rem;
-    background: transparent;
-  }
-
-  .profileMedia img {
-    transform: scale(1.08);
-    transition: transform 600ms var(--ease-brand), filter 1.2s var(--ease-brand);
-  }
-
-  .profile.profileInView .profileMedia img {
-    filter: grayscale(0) saturate(1);
-  }
-
-  .profileMeta {
-    padding: 1.5rem 1.25rem 1.75rem;
-  }
-
-  .profileMeta h3 {
-    font-size: 1.5rem;
-  }
-
-  .profileMeta p {
-    font-size: 0.85rem;
-  }
-
-  .profileMeta span {
-    font-size: 0.78rem;
-  }
-
-  .manifesto {
-    padding: 5rem 2rem 6rem;
-  }
-
-  .manifesto h2 {
-    font-size: clamp(2.8rem, 12vw, 3.5rem);
-  }
-
-  .manifestoRule {
-    left: 1rem;
-  }
-
-  .manifestoBody {
-    display: block;
-    margin: 3rem 0 0;
-  }
-
-  .manifestoBody ul {
-    margin-top: 2.5rem;
-  }
-
   .contact {
     display: block;
     padding: 4rem 2rem 5rem;
