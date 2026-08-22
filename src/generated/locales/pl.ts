@@ -1,0 +1,66 @@
+
+    // Do not modify this file by hand!
+    // Re-generate this file by running lit-localize
+
+    
+    
+
+    /* eslint-disable no-irregular-whitespace */
+    /* eslint-disable @typescript-eslint/no-explicit-any */
+
+    export const templates = {
+      'about.contactAction': `Napisz do nas`,
+'about.contactEyebrow': `04 / KONTAKT`,
+'about.contactSummary': `Opowiedz nam co chcesz pokazać.`,
+'about.contactTitleFirst': `ZACZNIJMY`,
+'about.contactTitleSecond': `OD OBRAZU.`,
+'about.heroCaption': `PRODUKCJA / RUCH`,
+'about.heroEyebrow': `ZIRON / KIM JESTEŚMY`,
+'about.heroImageAlt': `Dwóch mężczyzn stojących razem na dachu o zachodzie słońca`,
+'about.heroIndex': `O NAS / 01`,
+'about.heroSummary': `Film. Fotografia. Ruch. Od pomysłu do gotowego materiału — prowadzimy cały proces.`,
+'about.heroTitleFirst': `TWORZYMY`,
+'about.heroTitleSecond': `WE DWOJE`,
+'about.kuleszaImageAlt': `Mateusz Kulesza, członek zespołu ZIRON`,
+'about.kuleszaRole': `Film / fotografia / montaż`,
+'about.methodExpertise': `Znajomość branży`,
+'about.methodEyebrow': `03 / SPOSÓB PRACY`,
+'about.methodProduction': `Pełny proces produkcji`,
+'about.methodQuality': `Jakość bez skrótów`,
+'about.methodSummary': `Zaczynaliśmy amatorsko, z pasji do nagrywania i opowiadania historii obrazem. Dziś tworzymy profesjonalne materiały dla firm z branż technicznych, przemysłowych i wszędzie tam, gdzie liczy się prawdziwa praca.`,
+'about.methodTitleFirst': `NIE TYLKO`,
+'about.methodTitleSecond': `REJESTRUJEMY.`,
+'about.radkenImageAlt': `Mateusz Radkiewicz, członek zespołu ZIRON`,
+'about.radkenRole': `Film / dron / postprodukcja`,
+'about.teamEyebrow': `02 / ZESPÓŁ`,
+'about.teamSummary': `Połączyła nas wspólna praca i podobne podejście do tworzenia obrazów. Uzupełniamy się umiejętnościami, ale za każdą realizację odpowiadamy razem.`,
+'about.teamTitleFirst': `DWA PUNKTY`,
+'about.teamTitleSecond': `WIDZENIA.`,
+'brand.fullLogo': `ZIRON — Tworzymy to, o czym inni mówią`,
+'brand.homeLink': `ZIRON strona główna`,
+'gallery.closePreview': `Zamknij podgląd obrazu`,
+'gallery.label': `Galeria projektu`,
+'gallery.nextImage': `Następne zdjęcie`,
+'gallery.nextProject': `Następny projekt`,
+'gallery.openImage': `Otwórz obraz`,
+'gallery.photo': `Zdjęcie`,
+'gallery.preview': `Podgląd obrazu`,
+'gallery.previousImage': `Poprzednie zdjęcie`,
+'gallery.previousProject': `Poprzedni projekt`,
+'home.mediaUnavailable': `Materiały portfolio są niedostępne.`,
+'home.selectedWork': `Wybrane realizacje ZIRON`,
+'language.label': `Język`,
+'language.loadFailed': `Nie udało się zmienić języka.`,
+'language.loading': `Zmienianie języka…`,
+'menu.close': `Zamknij`,
+'menu.explore': `Odkrywaj`,
+'nav.about': `O nas`,
+'nav.contact': `Kontakt`,
+'nav.primary': `Nawigacja główna`,
+'nav.work': `Realizacje`,
+'project.category': `Film produkcyjny / Kampania 2026`,
+'project.mediaUnavailable': `Materiały projektu są niedostępne.`,
+'project.summary': `Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie jest najbardziej prawdziwa — w pyle, śniegu, deszczu i pełnym tempie.`,
+'project.title': `Siła w ruchu`,
+    };
+  

@@ -2,6 +2,126 @@
 <xliff version="1.2">
   <file source-language="en" target-language="en" datatype="plaintext" original="messages">
     <body>
+      <trans-unit id="language.label">
+        <source>Language</source>
+        <target>Language</target>
+      </trans-unit>
+      <trans-unit id="language.loading">
+        <source>Changing language…</source>
+        <target>Changing language…</target>
+      </trans-unit>
+      <trans-unit id="language.loadFailed">
+        <source>Unable to change language.</source>
+        <target>Unable to change language.</target>
+      </trans-unit>
+      <trans-unit id="about.heroEyebrow">
+        <source>ZIRON / WHO WE ARE</source>
+        <target>ZIRON / WHO WE ARE</target>
+      </trans-unit>
+      <trans-unit id="about.heroTitleFirst">
+        <source>WE CREATE</source>
+        <target>WE CREATE</target>
+      </trans-unit>
+      <trans-unit id="about.heroTitleSecond">
+        <source>AS TWO</source>
+        <target>AS TWO</target>
+      </trans-unit>
+      <trans-unit id="about.heroSummary">
+        <source>Film. Photography. Movement. From idea to finished material — we lead the entire process.</source>
+        <target>Film. Photography. Movement. From idea to finished material — we lead the entire process.</target>
+      </trans-unit>
+      <trans-unit id="about.heroIndex">
+        <source>ABOUT / 01</source>
+        <target>ABOUT / 01</target>
+      </trans-unit>
+      <trans-unit id="about.heroImageAlt">
+        <source>Two men standing together on a rooftop at sunset</source>
+        <target>Two men standing together on a rooftop at sunset</target>
+      </trans-unit>
+      <trans-unit id="about.heroCaption">
+        <source>PRODUCTION / MOTION</source>
+        <target>PRODUCTION / MOTION</target>
+      </trans-unit>
+      <trans-unit id="about.teamEyebrow">
+        <source>02 / TEAM</source>
+        <target>02 / TEAM</target>
+      </trans-unit>
+      <trans-unit id="about.teamTitleFirst">
+        <source>TWO POINTS</source>
+        <target>TWO POINTS</target>
+      </trans-unit>
+      <trans-unit id="about.teamTitleSecond">
+        <source>OF VIEW.</source>
+        <target>OF VIEW.</target>
+      </trans-unit>
+      <trans-unit id="about.teamSummary">
+        <source>Our shared work and similar approach to creating images brought us together. Our skills complement each other, but we take responsibility for every project together.</source>
+        <target>Our shared work and similar approach to creating images brought us together. Our skills complement each other, but we take responsibility for every project together.</target>
+      </trans-unit>
+      <trans-unit id="about.kuleszaRole">
+        <source>Film / photography / editing</source>
+        <target>Film / photography / editing</target>
+      </trans-unit>
+      <trans-unit id="about.kuleszaImageAlt">
+        <source>Mateusz Kulesza, ZIRON team member</source>
+        <target>Mateusz Kulesza, ZIRON team member</target>
+      </trans-unit>
+      <trans-unit id="about.radkenRole">
+        <source>Film / drone / post-production</source>
+        <target>Film / drone / post-production</target>
+      </trans-unit>
+      <trans-unit id="about.radkenImageAlt">
+        <source>Mateusz Radkiewicz, ZIRON team member</source>
+        <target>Mateusz Radkiewicz, ZIRON team member</target>
+      </trans-unit>
+      <trans-unit id="about.methodEyebrow">
+        <source>03 / HOW WE WORK</source>
+        <target>03 / HOW WE WORK</target>
+      </trans-unit>
+      <trans-unit id="about.methodTitleFirst">
+        <source>WE DO MORE THAN</source>
+        <target>WE DO MORE THAN</target>
+      </trans-unit>
+      <trans-unit id="about.methodTitleSecond">
+        <source>RECORD.</source>
+        <target>RECORD.</target>
+      </trans-unit>
+      <trans-unit id="about.methodSummary">
+        <source>We started out as amateurs, driven by a passion for filming and telling stories through images. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.</source>
+        <target>We started out as amateurs, driven by a passion for filming and telling stories through images. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.</target>
+      </trans-unit>
+      <trans-unit id="about.methodExpertise">
+        <source>Industry expertise</source>
+        <target>Industry expertise</target>
+      </trans-unit>
+      <trans-unit id="about.methodProduction">
+        <source>Full production process</source>
+        <target>Full production process</target>
+      </trans-unit>
+      <trans-unit id="about.methodQuality">
+        <source>Quality without shortcuts</source>
+        <target>Quality without shortcuts</target>
+      </trans-unit>
+      <trans-unit id="about.contactEyebrow">
+        <source>04 / CONTACT</source>
+        <target>04 / CONTACT</target>
+      </trans-unit>
+      <trans-unit id="about.contactTitleFirst">
+        <source>LET&apos;S START</source>
+        <target>LET&apos;S START</target>
+      </trans-unit>
+      <trans-unit id="about.contactTitleSecond">
+        <source>WITH THE IMAGE.</source>
+        <target>WITH THE IMAGE.</target>
+      </trans-unit>
+      <trans-unit id="about.contactSummary">
+        <source>Tell us what you want to show.</source>
+        <target>Tell us what you want to show.</target>
+      </trans-unit>
+      <trans-unit id="about.contactAction">
+        <source>Write to us</source>
+        <target>Write to us</target>
+      </trans-unit>
       <trans-unit id="brand.fullLogo">
         <source>ZIRON — We create what others talk about</source>
         <target>ZIRON — We create what others talk about</target>

@@ -1,11 +1,16 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { msg } from '@lit/localize';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 @customElement('brand-name')
 export class BrandName extends LitElement {
   @property()
   href = '#top';
+
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
 
   protected override createRenderRoot() {
     return this;

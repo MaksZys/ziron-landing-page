@@ -1,6 +1,6 @@
 import { LitElement, html, type PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { msg } from '@lit/localize';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import type { NavigationLink } from './navigation';
 import '../atoms/arrow-button';
@@ -14,6 +14,11 @@ export class GalleryNavigation extends LitElement {
 
   @property({ type: Boolean })
   menuOpen = false;
+
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
 
   protected override createRenderRoot() {
     return this;

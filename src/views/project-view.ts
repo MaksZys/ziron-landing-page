@@ -1,16 +1,21 @@
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import { msg } from '@lit/localize';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import '../components/organisms/site-header';
 import { FEATURED_PROJECT } from '../content/portfolio.generated';
-import { PRIMARY_NAVIGATION } from '../content/navigation';
+import { getPrimaryNavigation } from '../content/navigation';
 import '../components/molecules/project-intro';
 import '../components/organisms/project-gallery';
 import styles from './project-view.module.css';
 
 @customElement('project-view')
 export class ProjectView extends LitElement {
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
+
   protected override createRenderRoot() {
     return this;
   }
@@ -20,7 +25,7 @@ export class ProjectView extends LitElement {
 
     return html`
       <main class=${styles.projectView}>
-        <site-header .links=${PRIMARY_NAVIGATION}></site-header>
+        <site-header .links=${getPrimaryNavigation()}></site-header>
 
         <section class=${styles.hero}>
           ${heroImage

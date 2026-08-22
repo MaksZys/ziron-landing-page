@@ -8,7 +8,8 @@
     "xliffDir": "./translations/xliff"
   },
   "output": {
-    "mode": "transform",
-    "outputDir": "./.lit-localize"
+    "mode": "runtime",
+    "outputDir": "./src/generated/locales",
+    "localeCodesModule": "./src/generated/locales/locale-codes.ts"
   }
 }

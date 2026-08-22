@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { keyed } from 'lit/directives/keyed.js';
-import { msg } from '@lit/localize';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import type { UnsplashImage } from '../../content/portfolio';
 import '../atoms/arrow-button';
@@ -26,6 +26,11 @@ export class ProjectGallery extends LitElement {
   private previousBodyOverflow = '';
   private touchStartX: number | null = null;
   private touchStartY: number | null = null;
+
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
 
   protected override createRenderRoot() {
     return this;

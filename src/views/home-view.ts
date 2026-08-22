@@ -1,9 +1,9 @@
 import { LitElement, html } from "lit";
 import { customElement, state } from "lit/decorators.js";
-import { msg } from '@lit/localize';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import type { PortfolioSlide } from "../content/portfolio";
-import { PRIMARY_NAVIGATION } from "../content/navigation";
+import { getPrimaryNavigation } from "../content/navigation";
 import { PORTFOLIO_SLIDES } from "../content/portfolio.generated";
 import "../components/atoms/logo";
 import "../components/molecules/gallery-navigation";
@@ -22,6 +22,11 @@ export class HomeView extends LitElement {
 
   private touchStartX: number | null = null;
   private touchStartY: number | null = null;
+
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
 
   protected override createRenderRoot() {
     return this;
@@ -59,7 +64,7 @@ export class HomeView extends LitElement {
 
           <gallery-navigation
             class=${styles.navigation}
-            .links=${PRIMARY_NAVIGATION}
+            .links=${getPrimaryNavigation()}
             .menuOpen=${this.isMenuOpen}
             @gallery-next=${this.showNext}
             @gallery-previous=${this.showPrevious}

@@ -37,7 +37,7 @@ The committed [translations/translations.csv](translations/translations.csv) is 
 npm run build
 ```
 
-`npm run build` extracts Lit messages, validates the CSV, regenerates XLIFF, type-checks the project, and builds every locale. It writes English to `dist/`, Polish to `dist/pl/`, and German to `dist/de/`.
+`npm run build` extracts Lit messages, validates the CSV, regenerates XLIFF and runtime locale modules, type-checks the project, and builds one application in `dist/`.
 
 To validate and regenerate XLIFF without building the site, use:
 
@@ -45,7 +45,7 @@ To validate and regenerate XLIFF without building the site, use:
 npm run locales:sync
 ```
 
-Never edit files in `translations/xliff/` by hand; they are generated from the CSV. Commit them with the CSV when translations change.
+Never edit files in `translations/xliff/` or `src/generated/locales/` by hand; they are generated from the CSV. Commit them with the CSV when translations change.
 
 ### Add a new message
 
@@ -80,24 +80,27 @@ Never edit files in `translations/xliff/` by hand; they are generated from the C
 
    Quote any field containing a comma, and escape a literal double quote as two double quotes, following normal CSV rules.
 
-3. Run `npm run build`. If it succeeds, the new message is included in all three locale bundles.
+3. Run `npm run build`. If it succeeds, the new message is included in the lazy Polish and German runtime locale modules.
 
 ### Change or remove a message
 
 - To change wording, keep the existing ID and update its `en`, `pl`, and `de` cells.
 - To remove a message, remove both its `msg()` call and its CSV row. The validator deliberately fails if either side remains.
-- To add a locale, update `TARGET_LOCALES` in [scripts/generate-translations.mjs](scripts/generate-translations.mjs), `targetLocales` in [lit-localize.json](lit-localize.json), the CSV header and values, and the Vite build script/configuration. The current project intentionally supports only `en`, `pl`, and `de`.
+- To add a locale, update `TARGET_LOCALES` in [scripts/generate-translations.mjs](scripts/generate-translations.mjs), `targetLocales` in [lit-localize.json](lit-localize.json), the CSV header and values, and the dynamic locale loader in `src/localization.ts`. The current project intentionally supports only `en`, `pl`, and `de`.
 
-### Preview a locale locally
+### Switch locale locally
 
-Generate translations first, then start Vite in the desired mode:
+Run the normal development server, then use the header selector or a shareable URL:
 
 ```sh
-npm run locales:sync
-npm run dev -- --mode pl
+npm run dev
 ```
 
-Replace `pl` with `en` or `de` as needed. Production outputs can be inspected after `npm run build` with `npm run preview` for English, or by serving the respective locale directory.
+- English: `?lang=en` (or no `lang` parameter)
+- Polish About page: `?view=about&lang=pl`
+- German Project page: `?view=project&lang=de`
+
+The app loads Polish and German translation modules only when selected. `npm run preview` serves the same single production build after `npm run build`.
 
 ### Validation errors
 

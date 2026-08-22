@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import { msg } from '@lit/localize';
+import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 const FULL_LOGO_URL = new URL('../../../assets/ziron-logo-big.png', import.meta.url).href;
 const MARK_LOGO_URL = new URL('../../../assets/ziron.jpg', import.meta.url).href;
@@ -9,6 +9,11 @@ const MARK_LOGO_URL = new URL('../../../assets/ziron.jpg', import.meta.url).href
 export class BrandLogo extends LitElement {
   @property({ reflect: true })
   variant: 'full' | 'mark' = 'full';
+
+  constructor() {
+    super();
+    updateWhenLocaleChanges(this);
+  }
 
   protected override createRenderRoot() {
     return this;
