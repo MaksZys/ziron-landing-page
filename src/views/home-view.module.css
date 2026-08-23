@@ -424,7 +424,7 @@
   }
 
   .hero {
-    min-height: calc(100dvh - var(--stage-control-size));
+    min-height: 100dvh;
   }
 
   .heroImage {
@@ -438,7 +438,7 @@
   }
 
   .heroContent {
-    padding-block: 4rem 9rem;
+    padding-block: 4rem 14rem;
   }
 
   .title {
@@ -448,7 +448,8 @@
 
   .proofRail {
     position: absolute;
-    right: 1.25rem;
+    left: 1.25rem;
+    right: auto;
     bottom: 1.25rem;
     width: min(12rem, calc(100% - 2.5rem));
     padding: 0;

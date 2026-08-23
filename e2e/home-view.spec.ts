@@ -52,6 +52,21 @@ test('Home page keeps its decision copy inside the mobile viewport', async ({ pa
       }),
       `${locale} home copy should not overflow`,
     ).toBe(false);
+
+    expect(
+      await page.locator('home-view .hero').evaluate((hero) => {
+        const actions = hero.querySelector('[class*="actions"]')?.getBoundingClientRect();
+        const proofRail = hero.querySelector('[class*="proofRail"]')?.getBoundingClientRect();
+        const heroBounds = hero.getBoundingClientRect();
+
+        return (
+          heroBounds.height >= window.innerHeight &&
+          (!proofRail || Math.round(proofRail.left) === Math.round(heroBounds.left + 20)) &&
+          (!actions || !proofRail || proofRail.top - actions.bottom >= 40)
+        );
+      }),
+      `${locale} mobile hero should reserve space for the left-aligned proof rail`,
+    ).toBe(true);
   }
 });
 
