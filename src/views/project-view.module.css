@@ -35,7 +35,85 @@
   font-family: var(--font-project-utility);
 }
 
+.contact {
+  padding: clamp(5rem, 10vw, 10rem) clamp(1.25rem, 6vw, 7rem);
+  background: var(--color-project-cyan);
+  color: var(--color-project-ink);
+}
+
+.contactEyebrow {
+  margin: 0;
+  color: #34535e;
+  font-family: var(--font-project-utility);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.contact h2 {
+  max-width: 11ch;
+  margin: 1.25rem 0 0;
+  font-family: var(--font-project-display);
+  font-size: clamp(3rem, 5.7vw, 7rem);
+  font-weight: 900;
+  letter-spacing: -0.075em;
+  line-height: 0.94;
+  text-transform: uppercase;
+}
+
+.contactSummary {
+  max-width: 35rem;
+  margin: 2rem 0 0;
+  font-size: clamp(1.05rem, 1.55vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.42;
+}
+
+.contactAction {
+  display: inline-flex;
+  min-height: 3.5rem;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+  padding: 0.9rem 1rem 0.9rem 1.25rem;
+  background: var(--color-project-ink);
+  color: var(--color-project-paper);
+  font-family: var(--font-project-utility);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color var(--default-transition-duration) var(--ease-brand), transform var(--default-transition-duration) var(--ease-brand);
+}
+
+.contactAction span {
+  font-size: 1.35rem;
+}
+
+.contactAction:focus-visible {
+  outline: 2px solid currentcolor;
+  outline-offset: 0.35rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .contactAction:hover {
+    background: var(--color-project-paper);
+    color: var(--color-project-ink);
+    transform: translate(0.2rem, -0.2rem);
+  }
+}
+
 @media (max-width: 47.999rem) {
+  .contact h2 {
+    max-width: none;
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;

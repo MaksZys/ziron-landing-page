@@ -558,6 +558,26 @@
         <source>Strength in motion</source>
         <target>Strength in motion</target>
       </trans-unit>
+      <trans-unit id="project.contactEyebrow">
+        <source>Your next realization starts here.</source>
+        <target>Your next realization starts here.</target>
+      </trans-unit>
+      <trans-unit id="project.contactTitleFirst">
+        <source>LET’S MAKE YOUR WORK</source>
+        <target>LET’S MAKE YOUR WORK</target>
+      </trans-unit>
+      <trans-unit id="project.contactTitleSecond">
+        <source>IMPOSSIBLE TO MISS.</source>
+        <target>IMPOSSIBLE TO MISS.</target>
+      </trans-unit>
+      <trans-unit id="project.contactSummary">
+        <source>Tell us what you want to show. We will come back with a clear direction for the realization.</source>
+        <target>Tell us what you want to show. We will come back with a clear direction for the realization.</target>
+      </trans-unit>
+      <trans-unit id="project.contactAction">
+        <source>Plan your realization</source>
+        <target>Plan your realization</target>
+      </trans-unit>
       <trans-unit id="project.mediaUnavailable">
         <source>Project media is unavailable.</source>
         <target>Project media is unavailable.</target>
