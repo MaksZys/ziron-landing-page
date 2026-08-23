@@ -1,0 +1,235 @@
+.contactView {
+  --contact-ink: #080a0c;
+  --contact-metal: #171b1e;
+  --contact-paper: #f2f4f3;
+  --contact-steel: #9ca7aa;
+  --contact-cyan: #71d9ed;
+
+  min-height: 100dvh;
+  background: var(--contact-ink);
+  color: var(--contact-paper);
+}
+
+.hero {
+  display: grid;
+  min-height: calc(100dvh - var(--stage-control-size));
+  grid-template-columns: minmax(16rem, 0.9fr) minmax(20rem, 1.1fr);
+}
+
+.intro,
+.form {
+  padding: 2rem clamp(2rem, 7vw, 7rem);
+}
+
+.intro {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--contact-metal);
+}
+
+.eyebrow,
+.form label span,
+.formNote {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  margin: 0 0 2rem;
+  color: var(--contact-steel);
+}
+
+.intro h1 {
+  max-width: 5ch;
+  margin: 0;
+  color: var(--contact-cyan);
+  font-size: clamp(4.25rem, 9vw, 9rem);
+  font-weight: 900;
+  letter-spacing: -0.075em;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.summary {
+  max-width: 24rem;
+  margin: 3rem 0 0;
+  font-size: clamp(1.05rem, 1.5vw, 1.35rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.directContact {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 3rem;
+}
+
+.directContact a {
+  width: fit-content;
+  color: var(--contact-paper);
+  font-family: var(--font-mono);
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  font-weight: 700;
+  text-decoration-color: var(--contact-cyan);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.35rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  background: var(--contact-ink);
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.form label {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.form label span {
+  color: var(--contact-steel);
+}
+
+.form input,
+.form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #586267;
+  border-radius: 0;
+  padding: 0.85rem 0;
+  color: var(--contact-paper);
+  background: transparent;
+  font: inherit;
+  line-height: 1.4;
+  outline: 0;
+  resize: vertical;
+  transition: border-color var(--default-transition-duration) var(--ease-brand), background-color var(--default-transition-duration) var(--ease-brand);
+}
+
+.form textarea {
+  min-height: 9rem;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: var(--contact-cyan);
+  background: rgb(113 217 237 / 8%);
+}
+
+.form button {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 3.5rem;
+  align-items: center;
+  gap: 2rem;
+  border: 0;
+  padding: 0.9rem 1rem 0.9rem 1.25rem;
+  color: var(--contact-ink);
+  background: var(--contact-cyan);
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  transition: background-color var(--default-transition-duration) var(--ease-brand), transform var(--default-transition-duration) var(--ease-brand);
+}
+
+.formActions {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.form button span {
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.form button:hover {
+  background: var(--contact-paper);
+  transform: translate(0.2rem, -0.2rem);
+}
+
+.form .clearDraft {
+  min-height: auto;
+  padding: 0;
+  color: var(--contact-paper);
+  background: transparent;
+  text-decoration: underline;
+  text-decoration-color: var(--contact-cyan);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25rem;
+}
+
+.form .clearDraft:hover {
+  color: var(--contact-cyan);
+  background: transparent;
+  transform: none;
+}
+
+.form button:focus-visible,
+.form .clearDraft:focus-visible,
+.directContact a:focus-visible {
+  outline: 2px solid var(--contact-cyan);
+  outline-offset: 0.3rem;
+}
+
+.formNote {
+  max-width: 27rem;
+  margin: 0;
+  color: var(--contact-steel);
+  letter-spacing: 0.06em;
+}
+
+.termsNote {
+  margin: -0.75rem 0 0;
+  color: var(--contact-steel);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.termsNote a {
+  color: var(--contact-paper);
+  text-decoration-color: var(--contact-cyan);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25rem;
+}
+
+@media (max-width: 47.999rem) {
+  .hero {
+    display: block;
+  }
+
+  .intro,
+  .form {
+    padding: 4.5rem 2rem;
+  }
+
+  .intro h1 {
+    max-width: none;
+    font-size: clamp(3.5rem, 18vw, 5rem);
+  }
+
+  .fieldGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

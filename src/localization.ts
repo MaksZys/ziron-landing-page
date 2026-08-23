@@ -49,7 +49,7 @@ export function localizedUrl(locale: Locale) {
   return `${url.search}${url.hash}`;
 }
 
-export function localizedViewUrl(view: 'project' | 'about') {
+export function localizedViewUrl(view: 'project' | 'about' | 'contact' | 'privacy') {
   const url = new URL(window.location.href);
   url.search = '';
   url.searchParams.set('view', view);

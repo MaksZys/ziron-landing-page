@@ -18,7 +18,7 @@ test('About page keeps its navigation, CTA, and media self-contained', async ({
   await expect(homeLink).toHaveCSS('background-color', 'rgb(247, 250, 250)');
   await expect(navigation.getByRole('link', { name: 'Contact' })).toHaveAttribute(
     'href',
-    '#contact',
+    '?view=contact&lang=en',
   );
   await expect(navigation.getByRole('link', { name: 'About' })).toHaveAttribute(
     'aria-current',
@@ -60,4 +60,15 @@ test('About navigation remains at the top of the viewport while scrolling', asyn
       return Math.round(header.getBoundingClientRect().top);
     });
   }).toBe(0);
+});
+
+test('About profile photos preserve the top of the portrait on ultrawide screens', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 2520, height: 1080 });
+  await page.goto('/?view=about');
+
+  await expect(
+    page.locator('section[aria-labelledby="team-title"] article img').first(),
+  ).toHaveCSS('object-position', '50% 0%');
 });

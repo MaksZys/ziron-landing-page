@@ -1,0 +1,33 @@
+import { expect, test } from '@playwright/test';
+
+test('Contact form links to the ZIRON privacy policy', async ({ page }) => {
+  await page.goto('/?view=contact');
+
+  await expect(page.getByRole('link', { name: 'privacy policy' })).toHaveAttribute(
+    'href',
+    '?view=privacy&lang=en',
+  );
+});
+
+test('Privacy page keeps the primary navigation and copied ZIRON policy text', async ({ page }) => {
+  await page.goto('/?view=privacy&lang=en');
+
+  await expect(page.locator('site-header')).toHaveCount(1);
+  await expect(page.getByRole('navigation', { name: 'Primary navigation' })
+    .getByRole('link')).toHaveText(['Work', 'About', 'Contact']);
+  await expect(page.getByRole('heading', { name: 'Privacy policy', exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '1. General information' })).toBeVisible();
+  await expect(page.locator('privacy-view strong').first()).toHaveText('ZIRON');
+  await expect(page.locator('privacy-view')).not.toContainText('ZION');
+  await expect(page.locator('privacy-view form')).toHaveCount(0);
+});
+
+test('Privacy page shows translated policy content', async ({ page }) => {
+  await page.goto('/?view=privacy&lang=pl');
+  await expect(page.getByRole('heading', { name: 'Polityka prywatności', exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '1. Informacje ogólne' })).toBeVisible();
+
+  await page.goto('/?view=privacy&lang=de');
+  await expect(page.getByRole('heading', { name: 'Datenschutzerklärung', exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '1. Allgemeine Informationen' })).toBeVisible();
+});
