@@ -446,6 +446,13 @@
     font-size: clamp(2.4rem, 10.6vw, 4.25rem);
   }
 
+  .outcomes h2,
+  .sectionHeading h2,
+  .process h2,
+  .contact h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
   .proofRail {
     position: absolute;
     left: 1.25rem;

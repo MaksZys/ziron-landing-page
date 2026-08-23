@@ -80,4 +80,8 @@
   .intro {
     margin-bottom: 3.5rem;
   }
+
+  .intro h1 {
+    font-size: clamp(1.75rem, 9vw, 2.6rem);
+  }
 }
