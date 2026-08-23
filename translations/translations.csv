@@ -43,6 +43,44 @@
 ,,emailAddress,Email,E-mail,E-Mail
 ,,termsNotice,"By sending a message, you accept our","Wysyłając wiadomość, akceptujesz nasze","Mit dem Senden deiner Nachricht akzeptierst du unsere"
 ,,termsLink,terms and conditions,warunki i zasady,Allgemeinen Geschäftsbedingungen
+,privacy,eyebrow,LEGAL / ZIRON,LEGAL / ZIRON,RECHTLICHES / ZIRON
+,,title,Privacy policy,Polityka prywatności,Datenschutzerklärung
+,,general.heading,1. General information,1. Informacje ogólne,1. Allgemeine Informationen
+,,general.brand,ZIRON,ZIRON,ZIRON
+,,general.controller,"is the controller of personal data and provides mobile washing services for machinery, vehicles and equipment.","jest administratorem danych osobowych i firmą świadczącą usługi mobilnego mycia maszyn, pojazdów i sprzętu.","ist Verantwortlicher für personenbezogene Daten und bietet mobile Reinigungsdienste für Maschinen, Fahrzeuge und Geräte."
+,,general.contact,"You can contact the controller using the contact form or the telephone number shown in advertisements.","Kontakt z administratorem danych możliwy jest za pośrednictwem formularza kontaktowego lub numeru telefonu podanego w reklamach.","Sie können den Verantwortlichen über das Kontaktformular oder die in den Anzeigen angegebene Telefonnummer erreichen."
+,,scope.heading,2. Scope of collected data,2. Zakres zbieranych danych,2. Umfang der erhobenen Daten
+,,scope.summary,"The following data may be collected through Meta (Facebook / Instagram) advertising forms:","Za pośrednictwem formularzy reklamowych Meta (Facebook / Instagram) zbierane mogą być następujące dane:","Über Werbeformulare von Meta (Facebook / Instagram) können folgende Daten erhoben werden:"
+,,scope.name,"first and last name,","imię i nazwisko,","Vor- und Nachname,"
+,,scope.phone,"telephone number,","numer telefonu,","Telefonnummer,"
+,,scope.email,"email address,","adres e-mail,","E-Mail-Adresse,"
+,,scope.other,"other information voluntarily provided in the submission.","inne informacje dobrowolnie podane w treści zgłoszenia.","weitere Angaben, die freiwillig im Formular gemacht werden."
+,,purpose.heading,3. Purpose of data processing,3. Cel przetwarzania danych,3. Zweck der Datenverarbeitung
+,,purpose.summary,"Personal data is processed solely to:","Dane osobowe przetwarzane są wyłącznie w celu:","Personenbezogene Daten werden ausschließlich verarbeitet, um:"
+,,purpose.contact,"contact the person who submitted the form,","kontaktu z osobą, która wysłała formularz,","die Person zu kontaktieren, die das Formular gesendet hat,"
+,,purpose.service,"prepare an offer and provide services,","przygotowania oferty i realizacji usług,","ein Angebot zu erstellen und Dienstleistungen zu erbringen,"
+,,purpose.response,"respond to an enquiry.","odpowiedzi na zapytanie.","auf eine Anfrage zu antworten."
+,,legalBasis.heading,4. Legal basis for processing,4. Podstawa prawna przetwarzania,4. Rechtsgrundlage der Verarbeitung
+,,legalBasis.summary,"Data is processed on the basis of:","Dane przetwarzane są na podstawie:","Die Daten werden auf folgender Grundlage verarbeitet:"
+,,legalBasis.consent,"Article 6(1)(a) GDPR – the user’s consent,","art. 6 ust. 1 lit. a RODO – zgoda użytkownika,","Art. 6 Abs. 1 lit. a DSGVO – Einwilligung der betroffenen Person,"
+,,legalBasis.contract,"Article 6(1)(b) GDPR – steps taken to conclude a contract.","art. 6 ust. 1 lit. b RODO – działania zmierzające do zawarcia umowy.","Art. 6 Abs. 1 lit. b DSGVO – Maßnahmen zur Durchführung eines Vertrags."
+,,sharing.heading,5. Data sharing,5. Udostępnianie danych,5. Weitergabe von Daten
+,,sharing.summary,"Personal data is not shared with third parties, except entities supporting advertising services (Meta Platforms Inc.) and only to the extent required for the forms to operate.","Dane osobowe nie są przekazywane osobom trzecim, z wyjątkiem podmiotów wspierających obsługę reklam (Meta Platforms Inc.) – wyłącznie w zakresie wymaganym do działania formularzy.","Personenbezogene Daten werden nicht an Dritte weitergegeben, mit Ausnahme von Unternehmen, die Werbedienste unterstützen (Meta Platforms Inc.), und nur soweit dies für den Betrieb der Formulare erforderlich ist."
+,,retention.heading,6. Data retention period,6. Okres przechowywania danych,6. Aufbewahrungsdauer der Daten
+,,retention.summary,"Data is retained for the period necessary to handle contact and prepare an offer, then may be deleted or anonymised.","Dane przechowywane są przez okres niezbędny do realizacji kontaktu i oferty, a następnie mogą zostać usunięte lub zanonimizowane.","Die Daten werden für den Zeitraum aufbewahrt, der für die Kontaktaufnahme und Angebotserstellung erforderlich ist; anschließend können sie gelöscht oder anonymisiert werden."
+,,rights.heading,7. Your rights,7. Prawa użytkownika,7. Ihre Rechte
+,,rights.summary,"Every data subject has the right to:","Każda osoba, której dane dotyczą, ma prawo do:","Jede betroffene Person hat das Recht auf:"
+,,rights.access,"access their data,","dostępu do swoich danych,","Auskunft über ihre Daten,"
+,,rights.correction,"correct it,","ich poprawiania,","Berichtigung ihrer Daten,"
+,,rights.deletion,"have it deleted,","usunięcia,","Löschung ihrer Daten,"
+,,rights.restriction,"restrict its processing,","ograniczenia przetwarzania,","Einschränkung der Verarbeitung,"
+,,rights.withdrawal,"withdraw consent at any time.","cofnięcia zgody w dowolnym momencie.","Widerruf der Einwilligung jederzeit."
+,,cookies.heading,8. Cookies,8. Pliki cookies,8. Cookies
+,,cookies.summary,"The website may use cookies for technical and statistical purposes, in accordance with Meta platform rules.","Strona może używać plików cookies w celach technicznych i statystycznych, zgodnie z zasadami platform Meta.","Die Website kann Cookies für technische und statistische Zwecke gemäß den Regeln der Meta-Plattform verwenden."
+,,changes.heading,9. Changes to this privacy policy,9. Zmiany w polityce prywatności,9. Änderungen dieser Datenschutzerklärung
+,,changes.summary,"The controller reserves the right to make changes to this privacy policy.","Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej polityce prywatności.","Der Verantwortliche behält sich das Recht vor, Änderungen an dieser Datenschutzerklärung vorzunehmen."
+,,contact.heading,10. Contact,10. Kontakt,10. Kontakt
+,,contact.summary,"For matters relating to personal data protection, please contact us using the form or telephone.","W sprawach związanych z ochroną danych osobowych prosimy o kontakt za pośrednictwem formularza lub telefonu.","Bei Fragen zum Schutz personenbezogener Daten kontaktieren Sie uns bitte über das Formular oder telefonisch."
 ,brand,fullLogo,"ZIRON — We create what others talk about","ZIRON — Tworzymy to, o czym inni mówią","ZIRON — Wir schaffen, worüber andere sprechen"
 ,,homeLink,ZIRON home,ZIRON strona główna,ZIRON Startseite
 ,gallery,closePreview,Close image preview,Zamknij podgląd obrazu,Bildvorschau schließen

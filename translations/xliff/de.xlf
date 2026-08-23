@@ -178,6 +178,158 @@
         <source>terms and conditions</source>
         <target>Allgemeinen Geschäftsbedingungen</target>
       </trans-unit>
+      <trans-unit id="privacy.eyebrow">
+        <source>LEGAL / ZIRON</source>
+        <target>RECHTLICHES / ZIRON</target>
+      </trans-unit>
+      <trans-unit id="privacy.title">
+        <source>Privacy policy</source>
+        <target>Datenschutzerklärung</target>
+      </trans-unit>
+      <trans-unit id="privacy.general.heading">
+        <source>1. General information</source>
+        <target>1. Allgemeine Informationen</target>
+      </trans-unit>
+      <trans-unit id="privacy.general.brand">
+        <source>ZIRON</source>
+        <target>ZIRON</target>
+      </trans-unit>
+      <trans-unit id="privacy.general.controller">
+        <source>is the controller of personal data and provides mobile washing services for machinery, vehicles and equipment.</source>
+        <target>ist Verantwortlicher für personenbezogene Daten und bietet mobile Reinigungsdienste für Maschinen, Fahrzeuge und Geräte.</target>
+      </trans-unit>
+      <trans-unit id="privacy.general.contact">
+        <source>You can contact the controller using the contact form or the telephone number shown in advertisements.</source>
+        <target>Sie können den Verantwortlichen über das Kontaktformular oder die in den Anzeigen angegebene Telefonnummer erreichen.</target>
+      </trans-unit>
+      <trans-unit id="privacy.scope.heading">
+        <source>2. Scope of collected data</source>
+        <target>2. Umfang der erhobenen Daten</target>
+      </trans-unit>
+      <trans-unit id="privacy.scope.summary">
+        <source>The following data may be collected through Meta (Facebook / Instagram) advertising forms:</source>
+        <target>Über Werbeformulare von Meta (Facebook / Instagram) können folgende Daten erhoben werden:</target>
+      </trans-unit>
+      <trans-unit id="privacy.scope.name">
+        <source>first and last name,</source>
+        <target>Vor- und Nachname,</target>
+      </trans-unit>
+      <trans-unit id="privacy.scope.phone">
+        <source>telephone number,</source>
+        <target>Telefonnummer,</target>
+      </trans-unit>
+      <trans-unit id="privacy.scope.email">
+        <source>email address,</source>
+        <target>E-Mail-Adresse,</target>
+      </trans-unit>
+      <trans-unit id="privacy.scope.other">
+        <source>other information voluntarily provided in the submission.</source>
+        <target>weitere Angaben, die freiwillig im Formular gemacht werden.</target>
+      </trans-unit>
+      <trans-unit id="privacy.purpose.heading">
+        <source>3. Purpose of data processing</source>
+        <target>3. Zweck der Datenverarbeitung</target>
+      </trans-unit>
+      <trans-unit id="privacy.purpose.summary">
+        <source>Personal data is processed solely to:</source>
+        <target>Personenbezogene Daten werden ausschließlich verarbeitet, um:</target>
+      </trans-unit>
+      <trans-unit id="privacy.purpose.contact">
+        <source>contact the person who submitted the form,</source>
+        <target>die Person zu kontaktieren, die das Formular gesendet hat,</target>
+      </trans-unit>
+      <trans-unit id="privacy.purpose.service">
+        <source>prepare an offer and provide services,</source>
+        <target>ein Angebot zu erstellen und Dienstleistungen zu erbringen,</target>
+      </trans-unit>
+      <trans-unit id="privacy.purpose.response">
+        <source>respond to an enquiry.</source>
+        <target>auf eine Anfrage zu antworten.</target>
+      </trans-unit>
+      <trans-unit id="privacy.legalBasis.heading">
+        <source>4. Legal basis for processing</source>
+        <target>4. Rechtsgrundlage der Verarbeitung</target>
+      </trans-unit>
+      <trans-unit id="privacy.legalBasis.summary">
+        <source>Data is processed on the basis of:</source>
+        <target>Die Daten werden auf folgender Grundlage verarbeitet:</target>
+      </trans-unit>
+      <trans-unit id="privacy.legalBasis.consent">
+        <source>Article 6(1)(a) GDPR – the user’s consent,</source>
+        <target>Art. 6 Abs. 1 lit. a DSGVO – Einwilligung der betroffenen Person,</target>
+      </trans-unit>
+      <trans-unit id="privacy.legalBasis.contract">
+        <source>Article 6(1)(b) GDPR – steps taken to conclude a contract.</source>
+        <target>Art. 6 Abs. 1 lit. b DSGVO – Maßnahmen zur Durchführung eines Vertrags.</target>
+      </trans-unit>
+      <trans-unit id="privacy.sharing.heading">
+        <source>5. Data sharing</source>
+        <target>5. Weitergabe von Daten</target>
+      </trans-unit>
+      <trans-unit id="privacy.sharing.summary">
+        <source>Personal data is not shared with third parties, except entities supporting advertising services (Meta Platforms Inc.) and only to the extent required for the forms to operate.</source>
+        <target>Personenbezogene Daten werden nicht an Dritte weitergegeben, mit Ausnahme von Unternehmen, die Werbedienste unterstützen (Meta Platforms Inc.), und nur soweit dies für den Betrieb der Formulare erforderlich ist.</target>
+      </trans-unit>
+      <trans-unit id="privacy.retention.heading">
+        <source>6. Data retention period</source>
+        <target>6. Aufbewahrungsdauer der Daten</target>
+      </trans-unit>
+      <trans-unit id="privacy.retention.summary">
+        <source>Data is retained for the period necessary to handle contact and prepare an offer, then may be deleted or anonymised.</source>
+        <target>Die Daten werden für den Zeitraum aufbewahrt, der für die Kontaktaufnahme und Angebotserstellung erforderlich ist; anschließend können sie gelöscht oder anonymisiert werden.</target>
+      </trans-unit>
+      <trans-unit id="privacy.rights.heading">
+        <source>7. Your rights</source>
+        <target>7. Ihre Rechte</target>
+      </trans-unit>
+      <trans-unit id="privacy.rights.summary">
+        <source>Every data subject has the right to:</source>
+        <target>Jede betroffene Person hat das Recht auf:</target>
+      </trans-unit>
+      <trans-unit id="privacy.rights.access">
+        <source>access their data,</source>
+        <target>Auskunft über ihre Daten,</target>
+      </trans-unit>
+      <trans-unit id="privacy.rights.correction">
+        <source>correct it,</source>
+        <target>Berichtigung ihrer Daten,</target>
+      </trans-unit>
+      <trans-unit id="privacy.rights.deletion">
+        <source>have it deleted,</source>
+        <target>Löschung ihrer Daten,</target>
+      </trans-unit>
+      <trans-unit id="privacy.rights.restriction">
+        <source>restrict its processing,</source>
+        <target>Einschränkung der Verarbeitung,</target>
+      </trans-unit>
+      <trans-unit id="privacy.rights.withdrawal">
+        <source>withdraw consent at any time.</source>
+        <target>Widerruf der Einwilligung jederzeit.</target>
+      </trans-unit>
+      <trans-unit id="privacy.cookies.heading">
+        <source>8. Cookies</source>
+        <target>8. Cookies</target>
+      </trans-unit>
+      <trans-unit id="privacy.cookies.summary">
+        <source>The website may use cookies for technical and statistical purposes, in accordance with Meta platform rules.</source>
+        <target>Die Website kann Cookies für technische und statistische Zwecke gemäß den Regeln der Meta-Plattform verwenden.</target>
+      </trans-unit>
+      <trans-unit id="privacy.changes.heading">
+        <source>9. Changes to this privacy policy</source>
+        <target>9. Änderungen dieser Datenschutzerklärung</target>
+      </trans-unit>
+      <trans-unit id="privacy.changes.summary">
+        <source>The controller reserves the right to make changes to this privacy policy.</source>
+        <target>Der Verantwortliche behält sich das Recht vor, Änderungen an dieser Datenschutzerklärung vorzunehmen.</target>
+      </trans-unit>
+      <trans-unit id="privacy.contact.heading">
+        <source>10. Contact</source>
+        <target>10. Kontakt</target>
+      </trans-unit>
+      <trans-unit id="privacy.contact.summary">
+        <source>For matters relating to personal data protection, please contact us using the form or telephone.</source>
+        <target>Bei Fragen zum Schutz personenbezogener Daten kontaktieren Sie uns bitte über das Formular oder telefonisch.</target>
+      </trans-unit>
       <trans-unit id="brand.fullLogo">
         <source>ZIRON — We create what others talk about</source>
         <target>ZIRON — Wir schaffen, worüber andere sprechen</target>
