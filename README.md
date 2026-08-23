@@ -2,6 +2,8 @@
 
 Mobile-first portfolio demo built with Lit, TypeScript, Tailwind CSS, DaisyUI, and Vite 8.
 
+> **This is not a production ready page. It's for the development preview only.**
+
 ## Requirements
 
 - Node.js 20.19 or newer
