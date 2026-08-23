@@ -8,14 +8,14 @@ const FIXTURE_IMAGE = `
   </svg>
 `;
 
-async function openProject(page: Page) {
+async function openProject(page: Page, locale = 'en') {
   await page.route('https://images.unsplash.com/**', async (route) => {
     await route.fulfill({
       body: FIXTURE_IMAGE,
       contentType: 'image/svg+xml',
     });
   });
-  await page.goto('/?view=project');
+  await page.goto(`/?view=project&lang=${locale}`);
 }
 
 async function openFirstPreview(page: Page) {
@@ -35,7 +35,7 @@ async function openFirstPreview(page: Page) {
   return dialog;
 }
 
-test('approved project layout remains unchanged', async ({ page }) => {
+test('project layout matches the approved design', async ({ page }) => {
   await openProject(page);
 
   await expect(page).toHaveScreenshot('project-view.png', {
@@ -43,6 +43,50 @@ test('approved project layout remains unchanged', async ({ page }) => {
     fullPage: true,
     maxDiffPixels: 200,
   });
+});
+
+test('project gallery ends with a localized contact action', async ({ page }) => {
+  await openProject(page);
+
+  const contactAction = page.getByRole('link', { name: 'Plan your realization' });
+
+  await expect(contactAction).toHaveAttribute('href', '?view=contact&lang=en');
+  await expect(contactAction).toBeVisible();
+});
+
+test('localized contact headline leaves clearance for diacritics', async ({ page }) => {
+  for (const locale of ['pl', 'de']) {
+    await openProject(page, locale);
+
+    const lineHeightRatio = await page.locator('#project-contact-title').evaluate((heading) => {
+      const styles = window.getComputedStyle(heading);
+
+      return Number.parseFloat(styles.lineHeight) / Number.parseFloat(styles.fontSize);
+    });
+
+    expect(lineHeightRatio).toBeGreaterThanOrEqual(0.94);
+  }
+});
+
+test('localized contact headline stays within the mobile viewport', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== 'mobile-chromium', 'Mobile contract');
+  await page.setViewportSize({ width: 320, height: 568 });
+
+  for (const locale of ['en', 'pl', 'de']) {
+    await openProject(page, locale);
+
+    const headingDimensions = await page.locator('#project-contact-title').evaluate((heading) => {
+      return {
+        clientWidth: heading.clientWidth,
+        scrollWidth: heading.scrollWidth,
+      };
+    });
+
+    expect(
+      headingDimensions.scrollWidth,
+      `${locale} headline overflows its ${headingDimensions.clientWidth}px content area`,
+    ).toBeLessThanOrEqual(headingDimensions.clientWidth);
+  }
 });
 
 test('project navigation uses the brand mark as the home link', async ({

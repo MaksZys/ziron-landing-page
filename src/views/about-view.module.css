@@ -169,6 +169,10 @@
     right: 1rem;
     bottom: 1rem;
   }
+
+  .title {
+    font-size: clamp(2.4rem, 12vw, 3.75rem);
+  }
 }
 
 .profiles {
@@ -311,6 +315,10 @@
   .profileMeta span {
     font-size: 0.78rem;
   }
+
+  .sectionIntro h2 {
+    font-size: clamp(2rem, 10vw, 2.7rem);
+  }
 }
 
 .manifesto {
@@ -386,7 +394,8 @@
   }
 
   .manifesto h2 {
-    font-size: clamp(2.8rem, 12vw, 3.5rem);
+    max-width: none;
+    font-size: clamp(2rem, 10vw, 2.8rem);
   }
 
   .manifestoBody {
@@ -466,6 +475,10 @@
   .contact {
     display: block;
     padding: 4rem 2rem 5rem;
+  }
+
+  .contact h2 {
+    font-size: clamp(2.5rem, 12vw, 3.3rem);
   }
 
   .contactDetails {

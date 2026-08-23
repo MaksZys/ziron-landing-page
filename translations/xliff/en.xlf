@@ -390,9 +390,137 @@
         <source>Portfolio media is unavailable.</source>
         <target>Portfolio media is unavailable.</target>
       </trans-unit>
-      <trans-unit id="home.selectedWork">
-        <source>Selected ZIRON work</source>
-        <target>Selected ZIRON work</target>
+      <trans-unit id="home.fieldNote">
+        <source>FIELD NOTE / 01</source>
+        <target>FIELD NOTE / 01</target>
+      </trans-unit>
+      <trans-unit id="home.titleFirst">
+        <source>FILM THE WORK</source>
+        <target>FILM THE WORK</target>
+      </trans-unit>
+      <trans-unit id="home.titleSecond">
+        <source>PEOPLE TRUST YOU TO DO.</source>
+        <target>PEOPLE TRUST YOU TO DO.</target>
+      </trans-unit>
+      <trans-unit id="home.summary">
+        <source>Film, photography, drone and social content for agricultural, industrial and technical brands.</source>
+        <target>Film, photography, drone and social content for agricultural, industrial and technical brands.</target>
+      </trans-unit>
+      <trans-unit id="home.contactAction">
+        <source>Plan a shoot</source>
+        <target>Plan a shoot</target>
+      </trans-unit>
+      <trans-unit id="home.workAction">
+        <source>See selected work</source>
+        <target>See selected work</target>
+      </trans-unit>
+      <trans-unit id="home.proofLabel">
+        <source>How we build proof</source>
+        <target>How we build proof</target>
+      </trans-unit>
+      <trans-unit id="home.proofTitle">
+        <source>Proof frame by frame</source>
+        <target>Proof frame by frame</target>
+      </trans-unit>
+      <trans-unit id="home.proofField">
+        <source>Field</source>
+        <target>Field</target>
+      </trans-unit>
+      <trans-unit id="home.proofDetail">
+        <source>Detail</source>
+        <target>Detail</target>
+      </trans-unit>
+      <trans-unit id="home.proofPeople">
+        <source>People</source>
+        <target>People</target>
+      </trans-unit>
+      <trans-unit id="home.proofScale">
+        <source>Scale</source>
+        <target>Scale</target>
+      </trans-unit>
+      <trans-unit id="home.outcomesEyebrow">
+        <source>One shoot. More ways to use it.</source>
+        <target>One shoot. More ways to use it.</target>
+      </trans-unit>
+      <trans-unit id="home.outcomesTitle">
+        <source>MAKE THE WORK EASY TO UNDERSTAND.</source>
+        <target>MAKE THE WORK EASY TO UNDERSTAND.</target>
+      </trans-unit>
+      <trans-unit id="home.outcomeExplain">
+        <source>Explain a process</source>
+        <target>Explain a process</target>
+      </trans-unit>
+      <trans-unit id="home.outcomeScale">
+        <source>Show the scale</source>
+        <target>Show the scale</target>
+      </trans-unit>
+      <trans-unit id="home.outcomeSales">
+        <source>Give sales usable assets</source>
+        <target>Give sales usable assets</target>
+      </trans-unit>
+      <trans-unit id="home.outcomeSocial">
+        <source>Keep social moving</source>
+        <target>Keep social moving</target>
+      </trans-unit>
+      <trans-unit id="home.workEyebrow">
+        <source>Selected work</source>
+        <target>Selected work</target>
+      </trans-unit>
+      <trans-unit id="home.workTitle">
+        <source>PROOF WITH A JOB TO DO.</source>
+        <target>PROOF WITH A JOB TO DO.</target>
+      </trans-unit>
+      <trans-unit id="home.workSummary">
+        <source>Show buyers how the product, process and people behind it actually work.</source>
+        <target>Show buyers how the product, process and people behind it actually work.</target>
+      </trans-unit>
+      <trans-unit id="home.workCardOne">
+        <source>Machinery in motion</source>
+        <target>Machinery in motion</target>
+      </trans-unit>
+      <trans-unit id="home.workCardTwo">
+        <source>Process, made visible</source>
+        <target>Process, made visible</target>
+      </trans-unit>
+      <trans-unit id="home.workCardThree">
+        <source>Scale behind the work</source>
+        <target>Scale behind the work</target>
+      </trans-unit>
+      <trans-unit id="home.processEyebrow">
+        <source>One small crew. Full ownership.</source>
+        <target>One small crew. Full ownership.</target>
+      </trans-unit>
+      <trans-unit id="home.processTitle">
+        <source>FROM BRIEF TO BUYER-READY.</source>
+        <target>FROM BRIEF TO BUYER-READY.</target>
+      </trans-unit>
+      <trans-unit id="home.processBrief">
+        <source>Brief</source>
+        <target>Brief</target>
+      </trans-unit>
+      <trans-unit id="home.processFieldDay">
+        <source>Field day</source>
+        <target>Field day</target>
+      </trans-unit>
+      <trans-unit id="home.processEdit">
+        <source>Edit</source>
+        <target>Edit</target>
+      </trans-unit>
+      <trans-unit id="home.processDelivery">
+        <source>Delivery</source>
+        <target>Delivery</target>
+      </trans-unit>
+      <trans-unit id="home.contactEyebrow">
+        <source>Start with the hard-to-explain part.</source>
+        <target>Start with the hard-to-explain part.</target>
+      </trans-unit>
+      <trans-unit id="home.contactTitle">
+        <source>BRING US THE WORK.</source>
+        <target>BRING US THE WORK.</target>
+      </trans-unit>
+      <trans-unit id="home.contactSummary">
+        <source>Tell us what needs to be seen. We will come back with a clear direction for the shoot.</source>
+        <target>Tell us what needs to be seen. We will come back with a clear direction for the shoot.</target>
       </trans-unit>
       <trans-unit id="menu.close">
         <source>Close</source>
@@ -429,6 +557,26 @@
       <trans-unit id="project.title">
         <source>Strength in motion</source>
         <target>Strength in motion</target>
+      </trans-unit>
+      <trans-unit id="project.contactEyebrow">
+        <source>Your next realization starts here.</source>
+        <target>Your next realization starts here.</target>
+      </trans-unit>
+      <trans-unit id="project.contactTitleFirst">
+        <source>LET’S MAKE YOUR WORK</source>
+        <target>LET’S MAKE YOUR WORK</target>
+      </trans-unit>
+      <trans-unit id="project.contactTitleSecond">
+        <source>IMPOSSIBLE TO MISS.</source>
+        <target>IMPOSSIBLE TO MISS.</target>
+      </trans-unit>
+      <trans-unit id="project.contactSummary">
+        <source>Tell us what you want to show. We will come back with a clear direction for the realization.</source>
+        <target>Tell us what you want to show. We will come back with a clear direction for the realization.</target>
+      </trans-unit>
+      <trans-unit id="project.contactAction">
+        <source>Plan your realization</source>
+        <target>Plan your realization</target>
       </trans-unit>
       <trans-unit id="project.mediaUnavailable">
         <source>Project media is unavailable.</source>

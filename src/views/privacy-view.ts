@@ -3,6 +3,7 @@ import { customElement } from 'lit/decorators.js';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import '../components/organisms/site-header';
+import '../components/organisms/site-footer';
 import { getPrimaryNavigation } from '../content/navigation';
 import styles from './privacy-view.module.css';
 
@@ -137,6 +138,7 @@ export class PrivacyView extends LitElement {
             </p>
           </section>
         </article>
+        <site-footer></site-footer>
       </main>
     `;
   }

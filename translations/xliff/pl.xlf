@@ -390,9 +390,137 @@
         <source>Portfolio media is unavailable.</source>
         <target>Materiały portfolio są niedostępne.</target>
       </trans-unit>
-      <trans-unit id="home.selectedWork">
-        <source>Selected ZIRON work</source>
-        <target>Wybrane realizacje ZIRON</target>
+      <trans-unit id="home.fieldNote">
+        <source>FIELD NOTE / 01</source>
+        <target>NOTATKA Z TERENU / 01</target>
+      </trans-unit>
+      <trans-unit id="home.titleFirst">
+        <source>FILM THE WORK</source>
+        <target>POKAŻCIE JAK DZIAŁA</target>
+      </trans-unit>
+      <trans-unit id="home.titleSecond">
+        <source>PEOPLE TRUST YOU TO DO.</source>
+        <target>WASZA FIRMA.</target>
+      </trans-unit>
+      <trans-unit id="home.summary">
+        <source>Film, photography, drone and social content for agricultural, industrial and technical brands.</source>
+        <target>Film, fotografia, dron i social media dla marek z branży rolniczej, przemysłowej i technicznej.</target>
+      </trans-unit>
+      <trans-unit id="home.contactAction">
+        <source>Plan a shoot</source>
+        <target>Porozmawiajmy o realizacji</target>
+      </trans-unit>
+      <trans-unit id="home.workAction">
+        <source>See selected work</source>
+        <target>Zobacz wybrane realizacje</target>
+      </trans-unit>
+      <trans-unit id="home.proofLabel">
+        <source>How we build proof</source>
+        <target>Jak budujemy dowód</target>
+      </trans-unit>
+      <trans-unit id="home.proofTitle">
+        <source>Proof frame by frame</source>
+        <target>Dowód klatka po klatce</target>
+      </trans-unit>
+      <trans-unit id="home.proofField">
+        <source>Field</source>
+        <target>Teren</target>
+      </trans-unit>
+      <trans-unit id="home.proofDetail">
+        <source>Detail</source>
+        <target>Detal</target>
+      </trans-unit>
+      <trans-unit id="home.proofPeople">
+        <source>People</source>
+        <target>Ludzie</target>
+      </trans-unit>
+      <trans-unit id="home.proofScale">
+        <source>Scale</source>
+        <target>Skala</target>
+      </trans-unit>
+      <trans-unit id="home.outcomesEyebrow">
+        <source>One shoot. More ways to use it.</source>
+        <target>Jedna realizacja. Więcej sposobów użycia.</target>
+      </trans-unit>
+      <trans-unit id="home.outcomesTitle">
+        <source>MAKE THE WORK EASY TO UNDERSTAND.</source>
+        <target>POKAŻCIE JAK TO DZIAŁA.</target>
+      </trans-unit>
+      <trans-unit id="home.outcomeExplain">
+        <source>Explain a process</source>
+        <target>Wyjaśnij proces</target>
+      </trans-unit>
+      <trans-unit id="home.outcomeScale">
+        <source>Show the scale</source>
+        <target>Pokaż skalę</target>
+      </trans-unit>
+      <trans-unit id="home.outcomeSales">
+        <source>Give sales usable assets</source>
+        <target>Daj handlowcom materiały do pracy</target>
+      </trans-unit>
+      <trans-unit id="home.outcomeSocial">
+        <source>Keep social moving</source>
+        <target>Utrzymaj ruch w social media</target>
+      </trans-unit>
+      <trans-unit id="home.workEyebrow">
+        <source>Selected work</source>
+        <target>Wybrane realizacje</target>
+      </trans-unit>
+      <trans-unit id="home.workTitle">
+        <source>PROOF WITH A JOB TO DO.</source>
+        <target>OBRAZY KTÓRE MAJĄ ZADANIE.</target>
+      </trans-unit>
+      <trans-unit id="home.workSummary">
+        <source>Show buyers how the product, process and people behind it actually work.</source>
+        <target>Pokaż odbiorcom, jak naprawdę działa produkt, proces i ludzie, którzy za nim stoją.</target>
+      </trans-unit>
+      <trans-unit id="home.workCardOne">
+        <source>Machinery in motion</source>
+        <target>Maszyny w ruchu</target>
+      </trans-unit>
+      <trans-unit id="home.workCardTwo">
+        <source>Process, made visible</source>
+        <target>Proces który widać</target>
+      </trans-unit>
+      <trans-unit id="home.workCardThree">
+        <source>Scale behind the work</source>
+        <target>Skala pracy</target>
+      </trans-unit>
+      <trans-unit id="home.processEyebrow">
+        <source>One small crew. Full ownership.</source>
+        <target>Mała ekipa. Pełna odpowiedzialność.</target>
+      </trans-unit>
+      <trans-unit id="home.processTitle">
+        <source>FROM BRIEF TO BUYER-READY.</source>
+        <target>OD BRIEFU DO GOTOWEGO MATERIAŁU.</target>
+      </trans-unit>
+      <trans-unit id="home.processBrief">
+        <source>Brief</source>
+        <target>Rozmowa</target>
+      </trans-unit>
+      <trans-unit id="home.processFieldDay">
+        <source>Field day</source>
+        <target>Dzień zdjęciowy</target>
+      </trans-unit>
+      <trans-unit id="home.processEdit">
+        <source>Edit</source>
+        <target>Montaż</target>
+      </trans-unit>
+      <trans-unit id="home.processDelivery">
+        <source>Delivery</source>
+        <target>Gotowy materiał</target>
+      </trans-unit>
+      <trans-unit id="home.contactEyebrow">
+        <source>Start with the hard-to-explain part.</source>
+        <target>Zacznijmy od tego co trudno wyjaśnić.</target>
+      </trans-unit>
+      <trans-unit id="home.contactTitle">
+        <source>BRING US THE WORK.</source>
+        <target>POKAŻ NAM SWOJĄ PRACĘ.</target>
+      </trans-unit>
+      <trans-unit id="home.contactSummary">
+        <source>Tell us what needs to be seen. We will come back with a clear direction for the shoot.</source>
+        <target>Powiedz nam, co trzeba pokazać. Wrócimy z konkretnym kierunkiem realizacji.</target>
       </trans-unit>
       <trans-unit id="menu.close">
         <source>Close</source>
@@ -429,6 +557,26 @@
       <trans-unit id="project.title">
         <source>Strength in motion</source>
         <target>Siła w ruchu</target>
+      </trans-unit>
+      <trans-unit id="project.contactEyebrow">
+        <source>Your next realization starts here.</source>
+        <target>Twoja kolejna realizacja zaczyna się tutaj.</target>
+      </trans-unit>
+      <trans-unit id="project.contactTitleFirst">
+        <source>LET’S MAKE YOUR WORK</source>
+        <target>POKAŻMY TWOJĄ PRACĘ</target>
+      </trans-unit>
+      <trans-unit id="project.contactTitleSecond">
+        <source>IMPOSSIBLE TO MISS.</source>
+        <target>NIE DO PRZEOCZENIA.</target>
+      </trans-unit>
+      <trans-unit id="project.contactSummary">
+        <source>Tell us what you want to show. We will come back with a clear direction for the realization.</source>
+        <target>Opowiedz nam co chcesz pokazać. Wrócimy z konkretnym kierunkiem realizacji.</target>
+      </trans-unit>
+      <trans-unit id="project.contactAction">
+        <source>Plan your realization</source>
+        <target>Zaplanujmy Twoją realizację</target>
       </trans-unit>
       <trans-unit id="project.mediaUnavailable">
         <source>Project media is unavailable.</source>

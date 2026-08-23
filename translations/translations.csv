@@ -96,7 +96,39 @@
 ,,previousProject,Previous project,Poprzedni projekt,Vorheriges Projekt
 ,,preview,Image preview,Podgląd obrazu,Bildvorschau
 ,home,mediaUnavailable,Portfolio media is unavailable.,Materiały portfolio są niedostępne.,Portfolio-Medien sind nicht verfügbar.
-,,selectedWork,Selected ZIRON work,Wybrane realizacje ZIRON,Ausgewählte ZIRON-Arbeiten
+,,fieldNote,FIELD NOTE / 01,NOTATKA Z TERENU / 01,FELDNOTIZ / 01
+,,titleFirst,FILM THE WORK,POKAŻCIE JAK DZIAŁA,ZEIGEN SIE WIE IHR UNTERNEHMEN
+,,titleSecond,PEOPLE TRUST YOU TO DO.,WASZA FIRMA.,ARBEITET.
+,,summary,"Film, photography, drone and social content for agricultural, industrial and technical brands.","Film, fotografia, dron i social media dla marek z branży rolniczej, przemysłowej i technicznej.","Film, Fotografie, Drohnenaufnahmen und Social Content für Marken aus Landwirtschaft, Industrie und Technik."
+,,contactAction,Plan a shoot,Porozmawiajmy o realizacji,Ein Dreh planen
+,,workAction,See selected work,Zobacz wybrane realizacje,Ausgewählte Arbeiten ansehen
+,,proofLabel,How we build proof,Jak budujemy dowód,Wie wir Belege schaffen
+,,proofTitle,Proof frame by frame,Dowód klatka po klatce,Beweis Bild für Bild
+,,proofField,Field,Teren,Umfeld
+,,proofDetail,Detail,Detal,Detail
+,,proofPeople,People,Ludzie,Menschen
+,,proofScale,Scale,Skala,Maßstab
+,,outcomesEyebrow,One shoot. More ways to use it.,Jedna realizacja. Więcej sposobów użycia.,Ein Dreh. Mehr Einsatzmöglichkeiten.
+,,outcomesTitle,MAKE THE WORK EASY TO UNDERSTAND.,POKAŻCIE JAK TO DZIAŁA.,MACHEN SIE DIE ARBEIT VERSTÄNDLICH.
+,,outcomeExplain,Explain a process,Wyjaśnij proces,Einen Prozess erklären
+,,outcomeScale,Show the scale,Pokaż skalę,Die Größe zeigen
+,,outcomeSales,Give sales usable assets,Daj handlowcom materiały do pracy,Dem Vertrieb nutzbare Inhalte geben
+,,outcomeSocial,Keep social moving,Utrzymaj ruch w social media,Social Media in Bewegung halten
+,,workEyebrow,Selected work,Wybrane realizacje,Ausgewählte Arbeiten
+,,workTitle,PROOF WITH A JOB TO DO.,OBRAZY KTÓRE MAJĄ ZADANIE.,BEWEISE MIT EINEM ZWECK.
+,,workSummary,"Show buyers how the product, process and people behind it actually work.","Pokaż odbiorcom, jak naprawdę działa produkt, proces i ludzie, którzy za nim stoją.","Zeigen Sie Interessenten, wie Produkt, Prozess und die Menschen dahinter wirklich arbeiten."
+,,workCardOne,Machinery in motion,Maszyny w ruchu,Maschinen in Bewegung
+,,workCardTwo,"Process, made visible",Proces który widać,Sichtbarer Prozess
+,,workCardThree,Scale behind the work,Skala pracy,Die Größe hinter der Arbeit
+,,processEyebrow,One small crew. Full ownership.,Mała ekipa. Pełna odpowiedzialność.,Kleines Team. Volle Verantwortung.
+,,processTitle,FROM BRIEF TO BUYER-READY.,OD BRIEFU DO GOTOWEGO MATERIAŁU.,VOM BRIEFING ZUM EINSATZBEREITEN MATERIAL.
+,,processBrief,Brief,Rozmowa,Briefing
+,,processFieldDay,Field day,Dzień zdjęciowy,Drehtag vor Ort
+,,processEdit,Edit,Montaż,Schnitt
+,,processDelivery,Delivery,Gotowy materiał,Übergabe
+,,contactEyebrow,Start with the hard-to-explain part.,Zacznijmy od tego co trudno wyjaśnić.,Beginnen wir mit dem schwer Erklärbaren.
+,,contactTitle,BRING US THE WORK.,POKAŻ NAM SWOJĄ PRACĘ.,ZEIGEN SIE UNS IHRE ARBEIT.
+,,contactSummary,"Tell us what needs to be seen. We will come back with a clear direction for the shoot.","Powiedz nam, co trzeba pokazać. Wrócimy z konkretnym kierunkiem realizacji.","Sagen Sie uns, was sichtbar werden soll. Wir kommen mit einer klaren Richtung für den Dreh zurück."
 ,menu,close,Close,Zamknij,Schließen
 ,,explore,Explore,Odkrywaj,Entdecken
 ,nav,about,About,O nas,Über uns
@@ -106,4 +138,9 @@
 ,project,category,"Film production / Campaign 2026","Film produkcyjny / Kampania 2026","Filmproduktion / Kampagne 2026"
 ,,summary,"Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.","Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie jest najbardziej prawdziwa — w pyle, śniegu, deszczu i pełnym tempie.","Maschinen posieren nicht. Sie arbeiten. Wir haben ihre Stärke dort gezeigt, wo sie am authentischsten ist – in Staub, Schnee, Regen und bei voller Geschwindigkeit."
 ,,title,Strength in motion,Siła w ruchu,Stärke in Bewegung
+,,contactEyebrow,Your next realization starts here.,Twoja kolejna realizacja zaczyna się tutaj.,Ihre nächste Produktion beginnt hier.
+,,contactTitleFirst,LET’S MAKE YOUR WORK,POKAŻMY TWOJĄ PRACĘ,WIR MACHEN IHRE ARBEIT
+,,contactTitleSecond,IMPOSSIBLE TO MISS.,NIE DO PRZEOCZENIA.,UNÜBERSEHBAR.
+,,contactSummary,Tell us what you want to show. We will come back with a clear direction for the realization.,Opowiedz nam co chcesz pokazać. Wrócimy z konkretnym kierunkiem realizacji.,Erzählen Sie uns was Sie zeigen möchten. Wir kommen mit einer klaren Richtung für die Produktion zurück.
+,,contactAction,Plan your realization,Zaplanujmy Twoją realizację,Planen wir Ihre Produktion
 ,,mediaUnavailable,Project media is unavailable.,Materiały projektu są niedostępne.,Projektmedien sind nicht verfügbar.

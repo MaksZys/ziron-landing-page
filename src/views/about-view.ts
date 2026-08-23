@@ -3,6 +3,7 @@ import { customElement } from 'lit/decorators.js';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import '../components/organisms/site-header';
+import '../components/organisms/site-footer';
 import { ABOUT_HERO_IMAGE, getAboutProfiles } from '../content/about';
 import { getPrimaryNavigation } from '../content/navigation';
 import styles from './about-view.module.css';
@@ -154,6 +155,7 @@ export class AboutView extends LitElement {
             <a class=${styles.contactLink} href="tel:+48694986722">+48 694 986 722</a>
           </div>
         </section>
+        <site-footer></site-footer>
       </main>
     `;
   }
