@@ -46,7 +46,7 @@ export class HomeView extends LitElement {
               ${msg('FIELD NOTE / 01', { id: 'home.fieldNote' })}
             </p>
             <h1 id="home-title" class=${styles.title}>
-              ${msg('FILM THE WORK', { id: 'home.titleFirst' })}<br />
+              ${msg('SHOW THE WORK', { id: 'home.titleFirst' })}<br />
               ${msg('PEOPLE TRUST YOU TO DO.', { id: 'home.titleSecond' })}
             </h1>
             <p class=${styles.summary}>
@@ -66,8 +66,8 @@ export class HomeView extends LitElement {
             </div>
           </div>
 
-          <div class=${styles.proofRail} aria-label=${msg('How we build proof', { id: 'home.proofLabel' })}>
-            <p>${msg('Proof frame by frame', { id: 'home.proofTitle' })}</p>
+          <div class=${styles.proofRail} aria-label=${msg('How we make the work credible', { id: 'home.proofLabel' })}>
+            <p>${msg('Trust, frame by frame', { id: 'home.proofTitle' })}</p>
             <ol>
               <li>${msg('Field', { id: 'home.proofField' })}</li>
               <li>${msg('Detail', { id: 'home.proofDetail' })}</li>
@@ -89,8 +89,8 @@ export class HomeView extends LitElement {
           <div class=${styles.outcomeList}>
             <p>${msg('Explain a process', { id: 'home.outcomeExplain' })}</p>
             <p>${msg('Show the scale', { id: 'home.outcomeScale' })}</p>
-            <p>${msg('Give sales usable assets', { id: 'home.outcomeSales' })}</p>
-            <p>${msg('Keep social moving', { id: 'home.outcomeSocial' })}</p>
+            <p>${msg('Give your sales team assets they can use', { id: 'home.outcomeSales' })}</p>
+            <p>${msg('Keep your social channels active', { id: 'home.outcomeSocial' })}</p>
           </div>
         </section>
 
@@ -99,10 +99,10 @@ export class HomeView extends LitElement {
             <p class=${styles.sectionLabel}>
               ${msg('Selected work', { id: 'home.workEyebrow' })}
             </p>
-            <h2 id="work-title">${msg('PROOF WITH A JOB TO DO.', { id: 'home.workTitle' })}</h2>
+            <h2 id="work-title">${msg('WORK THAT PROVES ITS VALUE.', { id: 'home.workTitle' })}</h2>
             <p class=${styles.workSummary}>
               ${msg(
-                'Show buyers how the product, process and people behind it actually work.',
+                'Show buyers how your products and processes work — and the people behind them.',
                 { id: 'home.workSummary' },
               )}
             </p>
@@ -115,13 +115,13 @@ export class HomeView extends LitElement {
         <section class=${styles.process} aria-labelledby="process-title">
           <div class=${styles.processIntro}>
             <p class=${styles.sectionLabel}>
-              ${msg('One small crew. Full ownership.', { id: 'home.processEyebrow' })}
+              ${msg('Tell us what needs showing. We’ll take it from there.', { id: 'home.processEyebrow' })}
             </p>
-            <h2 id="process-title">${msg('FROM BRIEF TO BUYER-READY.', { id: 'home.processTitle' })}</h2>
+            <h2 id="process-title">${msg('FROM FIRST CONVERSATION TO READY-TO-USE CONTENT.', { id: 'home.processTitle' })}</h2>
           </div>
           <ol class=${styles.processSteps}>
             <li><span>01</span>${msg('Brief', { id: 'home.processBrief' })}</li>
-            <li><span>02</span>${msg('Field day', { id: 'home.processFieldDay' })}</li>
+            <li><span>02</span>${msg('Shoot day', { id: 'home.processFieldDay' })}</li>
             <li><span>03</span>${msg('Edit', { id: 'home.processEdit' })}</li>
             <li><span>04</span>${msg('Delivery', { id: 'home.processDelivery' })}</li>
           </ol>
@@ -129,12 +129,12 @@ export class HomeView extends LitElement {
 
         <section class=${styles.contact} aria-labelledby="contact-title">
           <p class=${styles.sectionLabel}>
-            ${msg('Start with the hard-to-explain part.', { id: 'home.contactEyebrow' })}
+            ${msg('Tell us what you need. We’ll make the plan.', { id: 'home.contactEyebrow' })}
           </p>
-          <h2 id="contact-title">${msg('BRING US THE WORK.', { id: 'home.contactTitle' })}</h2>
+          <h2 id="contact-title">${msg('TELL US WHAT YOU NEED. WE’LL HANDLE THE REST.', { id: 'home.contactTitle' })}</h2>
           <p>
             ${msg(
-              'Tell us what needs to be seen. We will come back with a clear direction for the shoot.',
+              'Tell us what you need and what people should see. We’ll put together the brief, plan the shoot and show the work clearly.',
               { id: 'home.contactSummary' },
             )}
           </p>

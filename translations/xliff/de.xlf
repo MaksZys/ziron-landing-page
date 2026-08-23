@@ -87,8 +87,8 @@
         <target>NUR AUFZUNEHMEN.</target>
       </trans-unit>
       <trans-unit id="about.methodSummary">
-        <source>We started out as amateurs, driven by a passion for filming and telling stories through images. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.</source>
-        <target>Wir haben als Amateure begonnen, aus Leidenschaft für das Filmen und das Erzählen von Geschichten in Bildern. Heute erstellen wir professionelle Materialien für Unternehmen aus Technik und Industrie und überall dort, wo echte Arbeit zählt.</target>
+        <source>We began by filming out of a genuine love for the craft and for visual storytelling. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.</source>
+        <target>Wir haben als Amateure begonnen, aus Leidenschaft für das Filmen und das Erzählen von Geschichten in Bildern. Heute erstellen wir professionelle Materialien für Unternehmen aus technischen und industriellen Branchen – überall dort, wo echte Arbeit zählt.</target>
       </trans-unit>
       <trans-unit id="about.methodExpertise">
         <source>Industry expertise</source>
@@ -99,8 +99,8 @@
         <target>Vollständiger Produktionsprozess</target>
       </trans-unit>
       <trans-unit id="about.methodQuality">
-        <source>Quality without shortcuts</source>
-        <target>Qualität ohne Abkürzungen</target>
+        <source>No shortcuts on quality</source>
+        <target>Keine Kompromisse bei der Qualität</target>
       </trans-unit>
       <trans-unit id="about.contactEyebrow">
         <source>04 / CONTACT</source>
@@ -115,12 +115,12 @@
         <target>MIT DEM BILD.</target>
       </trans-unit>
       <trans-unit id="about.contactSummary">
-        <source>Tell us what you want to show.</source>
-        <target>Erzähl uns was du zeigen möchtest.</target>
+        <source>Tell us what you need. We’ll put together the brief and take care of the production.</source>
+        <target>czego potrzebujesz. Przygotujemy brief i zajmiemy się produkcją.</target>
       </trans-unit>
       <trans-unit id="about.contactAction">
         <source>Write to us</source>
-        <target>Schreib uns</target>
+        <target>Schreiben Sie uns</target>
       </trans-unit>
       <trans-unit id="contact.eyebrow">
         <source>ZIRON / CONTACT</source>
@@ -128,11 +128,11 @@
       </trans-unit>
       <trans-unit id="contact.title">
         <source>LET’S TALK.</source>
-        <target>SCHREIB UNS.</target>
+        <target>SCHREIBEN SIE UNS.</target>
       </trans-unit>
       <trans-unit id="contact.summary">
-        <source>Tell us what you want to show. We will turn it into a clear, memorable image.</source>
-        <target>Erzähl uns, was du zeigen möchtest. Wir machen daraus ein klares, einprägsames Bild.</target>
+        <source>Tell us what you need and what you want people to see. We’ll put together the brief, plan the production and guide you through the whole process.</source>
+        <target>Sagen Sie uns, was Sie brauchen und was andere sehen sollen. Wir erstellen das Briefing, planen die Produktion und begleiten Sie durch den gesamten Prozess.</target>
       </trans-unit>
       <trans-unit id="contact.firstName">
         <source>First name</source>
@@ -160,11 +160,11 @@
       </trans-unit>
       <trans-unit id="contact.formNote">
         <source>Your email app will open with your message ready to send.</source>
-        <target>Deine E-Mail-App öffnet sich mit einer versandfertigen Nachricht.</target>
+        <target>Ihre E-Mail-App öffnet sich mit einer versandfertigen Nachricht.</target>
       </trans-unit>
       <trans-unit id="contact.fallbackNotice">
         <source>If your email app does not open, email us directly at</source>
-        <target>Wenn sich deine E-Mail-App nicht öffnet, schreibe uns direkt an</target>
+        <target>Wenn sich Ihre E-Mail-App nicht öffnet, schreiben Sie uns direkt an</target>
       </trans-unit>
       <trans-unit id="contact.emailSubject">
         <source>New project enquiry</source>
@@ -180,7 +180,7 @@
       </trans-unit>
       <trans-unit id="contact.termsNotice">
         <source>By sending us a message, you consent to the processing of your personal data as described in our</source>
-        <target>Mit dem Senden einer Nachricht stimmst du der Verarbeitung deiner personenbezogenen Daten gemäß unserer</target>
+        <target>Mit dem Senden einer Nachricht stimmen Sie der Verarbeitung Ihrer personenbezogenen Daten gemäß unserer</target>
       </trans-unit>
       <trans-unit id="contact.termsLink">
         <source>privacy policy</source>
@@ -207,8 +207,8 @@
         <target>ZIRON</target>
       </trans-unit>
       <trans-unit id="privacy.general.controller">
-        <source>is the controller of personal data and provides mobile washing services for machinery, vehicles and equipment.</source>
-        <target>ist Verantwortlicher für personenbezogene Daten und bietet mobile Reinigungsdienste für Maschinen, Fahrzeuge und Geräte.</target>
+        <source>is the controller of personal data and provides film production, photography, drone and social content services.</source>
+        <target>ist Verantwortlicher für personenbezogene Daten und bietet Dienstleistungen in den Bereichen Filmproduktion, Fotografie, Drohnenaufnahmen und Social Content an.</target>
       </trans-unit>
       <trans-unit id="privacy.general.contact">
         <source>You can contact the controller using the contact form or the telephone number shown in advertisements.</source>
@@ -395,12 +395,12 @@
         <target>FELDNOTIZ / 01</target>
       </trans-unit>
       <trans-unit id="home.titleFirst">
-        <source>FILM THE WORK</source>
-        <target>ZEIGEN SIE WIE IHR UNTERNEHMEN</target>
+        <source>SHOW THE WORK</source>
+        <target>ZEIGEN SIE DIE ARBEIT</target>
       </trans-unit>
       <trans-unit id="home.titleSecond">
         <source>PEOPLE TRUST YOU TO DO.</source>
-        <target>ARBEITET.</target>
+        <target>FÜR DIE MAN IHNEN VERTRAUT.</target>
       </trans-unit>
       <trans-unit id="home.summary">
         <source>Film, photography, drone and social content for agricultural, industrial and technical brands.</source>
@@ -415,12 +415,12 @@
         <target>Ausgewählte Arbeiten ansehen</target>
       </trans-unit>
       <trans-unit id="home.proofLabel">
-        <source>How we build proof</source>
-        <target>Wie wir Belege schaffen</target>
+        <source>How we make the work credible</source>
+        <target>So wird aus Arbeit Vertrauen.</target>
       </trans-unit>
       <trans-unit id="home.proofTitle">
-        <source>Proof frame by frame</source>
-        <target>Beweis Bild für Bild</target>
+        <source>Trust, frame by frame</source>
+        <target>VERTRAUEN BILD FÜR BILD.</target>
       </trans-unit>
       <trans-unit id="home.proofField">
         <source>Field</source>
@@ -444,7 +444,7 @@
       </trans-unit>
       <trans-unit id="home.outcomesTitle">
         <source>MAKE THE WORK EASY TO UNDERSTAND.</source>
-        <target>MACHEN SIE DIE ARBEIT VERSTÄNDLICH.</target>
+        <target>MACHEN SIE IHRE ARBEIT VERSTÄNDLICH.</target>
       </trans-unit>
       <trans-unit id="home.outcomeExplain">
         <source>Explain a process</source>
@@ -455,24 +455,24 @@
         <target>Die Größe zeigen</target>
       </trans-unit>
       <trans-unit id="home.outcomeSales">
-        <source>Give sales usable assets</source>
-        <target>Dem Vertrieb nutzbare Inhalte geben</target>
+        <source>Give your sales team assets they can use</source>
+        <target>MATERIAL FÜR DEN VERTRIEB SCHAFFEN.</target>
       </trans-unit>
       <trans-unit id="home.outcomeSocial">
-        <source>Keep social moving</source>
-        <target>Social Media in Bewegung halten</target>
+        <source>Keep your social channels active</source>
+        <target>Social Media aktiv halten</target>
       </trans-unit>
       <trans-unit id="home.workEyebrow">
         <source>Selected work</source>
         <target>Ausgewählte Arbeiten</target>
       </trans-unit>
       <trans-unit id="home.workTitle">
-        <source>PROOF WITH A JOB TO DO.</source>
-        <target>BEWEISE MIT EINEM ZWECK.</target>
+        <source>WORK THAT PROVES ITS VALUE.</source>
+        <target>BILDER MIT KLAREM ZWECK.</target>
       </trans-unit>
       <trans-unit id="home.workSummary">
-        <source>Show buyers how the product, process and people behind it actually work.</source>
-        <target>Zeigen Sie Interessenten, wie Produkt, Prozess und die Menschen dahinter wirklich arbeiten.</target>
+        <source>Show buyers how your products and processes work — and the people behind them.</source>
+        <target>Zeigen Sie Interessenten, wie Produkte und Prozesse funktionieren – und wer die Menschen dahinter sind.</target>
       </trans-unit>
       <trans-unit id="home.workCardOne">
         <source>Machinery in motion</source>
@@ -484,22 +484,22 @@
       </trans-unit>
       <trans-unit id="home.workCardThree">
         <source>Scale behind the work</source>
-        <target>Die Größe hinter der Arbeit</target>
+        <target>DAS AUSMASS DER ARBEIT.</target>
       </trans-unit>
       <trans-unit id="home.processEyebrow">
-        <source>One small crew. Full ownership.</source>
-        <target>Kleines Team. Volle Verantwortung.</target>
+        <source>Tell us what needs showing. We’ll take it from there.</source>
+        <target>Sagen Sie uns</target>
       </trans-unit>
       <trans-unit id="home.processTitle">
-        <source>FROM BRIEF TO BUYER-READY.</source>
-        <target>VOM BRIEFING ZUM EINSATZBEREITEN MATERIAL.</target>
+        <source>FROM FIRST CONVERSATION TO READY-TO-USE CONTENT.</source>
+        <target>VOM ERSTEN GESPRÄCH BIS ZUM FERTIGEN MATERIAL.</target>
       </trans-unit>
       <trans-unit id="home.processBrief">
         <source>Brief</source>
         <target>Briefing</target>
       </trans-unit>
       <trans-unit id="home.processFieldDay">
-        <source>Field day</source>
+        <source>Shoot day</source>
         <target>Drehtag vor Ort</target>
       </trans-unit>
       <trans-unit id="home.processEdit">
@@ -511,16 +511,16 @@
         <target>Übergabe</target>
       </trans-unit>
       <trans-unit id="home.contactEyebrow">
-        <source>Start with the hard-to-explain part.</source>
-        <target>Beginnen wir mit dem schwer Erklärbaren.</target>
+        <source>Tell us what you need. We’ll make the plan.</source>
+        <target>czego potrzebujesz. Przygotujemy plan.</target>
       </trans-unit>
       <trans-unit id="home.contactTitle">
-        <source>BRING US THE WORK.</source>
-        <target>ZEIGEN SIE UNS IHRE ARBEIT.</target>
+        <source>TELL US WHAT YOU NEED. WE’LL HANDLE THE REST.</source>
+        <target>ZEIGEN SIE UNS IHRE ARBEIT. WIR ÜBERNEHMEN DEN REST.</target>
       </trans-unit>
       <trans-unit id="home.contactSummary">
-        <source>Tell us what needs to be seen. We will come back with a clear direction for the shoot.</source>
-        <target>Sagen Sie uns, was sichtbar werden soll. Wir kommen mit einer klaren Richtung für den Dreh zurück.</target>
+        <source>Tell us what you need and what people should see. We’ll put together the brief, plan the shoot and show the work clearly.</source>
+        <target>Sagen Sie uns, was Sie brauchen und was Menschen sehen sollen. Wir erstellen das Briefing, planen den Dreh und machen Ihre Arbeit sichtbar.</target>
       </trans-unit>
       <trans-unit id="menu.close">
         <source>Close</source>
@@ -552,35 +552,35 @@
       </trans-unit>
       <trans-unit id="project.summary">
         <source>Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.</source>
-        <target>Maschinen posieren nicht. Sie arbeiten. Wir haben ihre Stärke dort gezeigt, wo sie am authentischsten ist – in Staub, Schnee, Regen und bei voller Geschwindigkeit.</target>
+        <target>Maschinen posieren nicht. Sie arbeiten. Wir haben ihre Stärke dort gezeigt, wo sie am authentischsten ist – in Staub, Schnee, Regen und bei voller Fahrt.</target>
       </trans-unit>
       <trans-unit id="project.processSummary">
         <source>We followed the work closely, turning the steps, details and decisions behind it into a clear story.</source>
         <target>Wir haben die Arbeit aus nächster Nähe begleitet und ihre Schritte, Details und Entscheidungen zu einer klaren Geschichte verdichtet.</target>
       </trans-unit>
       <trans-unit id="project.scaleSummary">
-        <source>We put the size of the operation in frame, so the work feels as substantial as it is in real life.</source>
-        <target>Wir haben die Größe des Einsatzes ins Bild gesetzt, damit die Arbeit so greifbar wirkt wie im echten Leben.</target>
+        <source>We captured the scale of the operation, so the work feels as substantial on screen as it does in real life.</source>
+        <target>Wir haben den Umfang der Arbeit ins Bild gesetzt, damit sie so greifbar wirkt wie im echten Leben.</target>
       </trans-unit>
       <trans-unit id="project.contactEyebrow">
-        <source>Your next realization starts here.</source>
-        <target>Ihre nächste Produktion beginnt hier.</target>
+        <source>Tell us the goal. We’ll make the plan.</source>
+        <target>jaki masz cel. Przygotujemy plan.</target>
       </trans-unit>
       <trans-unit id="project.contactTitleFirst">
-        <source>LET’S MAKE YOUR WORK</source>
-        <target>WIR MACHEN IHRE ARBEIT</target>
+        <source>TELL US WHAT YOU NEED.</source>
+        <target>ZEIGEN SIE UNS IHRE ARBEIT.</target>
       </trans-unit>
       <trans-unit id="project.contactTitleSecond">
-        <source>IMPOSSIBLE TO MISS.</source>
-        <target>UNÜBERSEHBAR.</target>
+        <source>WE HANDLE THE REST.</source>
+        <target>WIR ÜBERNEHMEN DEN REST.</target>
       </trans-unit>
       <trans-unit id="project.contactSummary">
-        <source>Tell us what you want to show. We will come back with a clear direction for the realization.</source>
-        <target>Erzählen Sie uns was Sie zeigen möchten. Wir kommen mit einer klaren Richtung für die Produktion zurück.</target>
+        <source>Tell us what you need and what people should see. We’ll put together the brief, plan the production and deliver the finished material.</source>
+        <target>Sagen Sie uns, was Sie brauchen und was Menschen sehen sollen. Wir erstellen das Briefing, planen die Produktion und liefern das fertige Material.</target>
       </trans-unit>
       <trans-unit id="project.contactAction">
-        <source>Plan your realization</source>
-        <target>Planen wir Ihre Produktion</target>
+        <source>Plan your project</source>
+        <target>LASSEN SIE UNS IHRE PRODUKTION PLANEN.</target>
       </trans-unit>
       <trans-unit id="project.mediaUnavailable">
         <source>Project media is unavailable.</source>

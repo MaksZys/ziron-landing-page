@@ -48,7 +48,7 @@ test('project layout matches the approved design', async ({ page }) => {
 test('project gallery ends with a localized contact action', async ({ page }) => {
   await openProject(page);
 
-  const contactAction = page.getByRole('link', { name: 'Plan your realization' });
+  const contactAction = page.getByRole('link', { name: 'Plan your project' });
 
   await expect(contactAction).toHaveAttribute('href', '?view=contact&lang=en');
   await expect(contactAction).toBeVisible();

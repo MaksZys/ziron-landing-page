@@ -87,8 +87,8 @@
         <target>RECORD.</target>
       </trans-unit>
       <trans-unit id="about.methodSummary">
-        <source>We started out as amateurs, driven by a passion for filming and telling stories through images. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.</source>
-        <target>We started out as amateurs, driven by a passion for filming and telling stories through images. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.</target>
+        <source>We began by filming out of a genuine love for the craft and for visual storytelling. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.</source>
+        <target>We began by filming out of a genuine love for the craft and for visual storytelling. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.</target>
       </trans-unit>
       <trans-unit id="about.methodExpertise">
         <source>Industry expertise</source>
@@ -99,8 +99,8 @@
         <target>Full production process</target>
       </trans-unit>
       <trans-unit id="about.methodQuality">
-        <source>Quality without shortcuts</source>
-        <target>Quality without shortcuts</target>
+        <source>No shortcuts on quality</source>
+        <target>No shortcuts on quality</target>
       </trans-unit>
       <trans-unit id="about.contactEyebrow">
         <source>04 / CONTACT</source>
@@ -115,8 +115,8 @@
         <target>WITH THE IMAGE.</target>
       </trans-unit>
       <trans-unit id="about.contactSummary">
-        <source>Tell us what you want to show.</source>
-        <target>Tell us what you want to show.</target>
+        <source>Tell us what you need. We’ll put together the brief and take care of the production.</source>
+        <target>Tell us what you need. We’ll put together the brief and take care of the production.</target>
       </trans-unit>
       <trans-unit id="about.contactAction">
         <source>Write to us</source>
@@ -131,8 +131,8 @@
         <target>LET’S TALK.</target>
       </trans-unit>
       <trans-unit id="contact.summary">
-        <source>Tell us what you want to show. We will turn it into a clear, memorable image.</source>
-        <target>Tell us what you want to show. We will turn it into a clear, memorable image.</target>
+        <source>Tell us what you need and what you want people to see. We’ll put together the brief, plan the production and guide you through the whole process.</source>
+        <target>Tell us what you need and what you want people to see. We’ll put together the brief, plan the production and guide you through the whole process.</target>
       </trans-unit>
       <trans-unit id="contact.firstName">
         <source>First name</source>
@@ -207,8 +207,8 @@
         <target>ZIRON</target>
       </trans-unit>
       <trans-unit id="privacy.general.controller">
-        <source>is the controller of personal data and provides mobile washing services for machinery, vehicles and equipment.</source>
-        <target>is the controller of personal data and provides mobile washing services for machinery, vehicles and equipment.</target>
+        <source>is the controller of personal data and provides film production, photography, drone and social content services.</source>
+        <target>is the controller of personal data and provides film production, photography, drone and social content services.</target>
       </trans-unit>
       <trans-unit id="privacy.general.contact">
         <source>You can contact the controller using the contact form or the telephone number shown in advertisements.</source>
@@ -395,8 +395,8 @@
         <target>FIELD NOTE / 01</target>
       </trans-unit>
       <trans-unit id="home.titleFirst">
-        <source>FILM THE WORK</source>
-        <target>FILM THE WORK</target>
+        <source>SHOW THE WORK</source>
+        <target>SHOW THE WORK</target>
       </trans-unit>
       <trans-unit id="home.titleSecond">
         <source>PEOPLE TRUST YOU TO DO.</source>
@@ -415,12 +415,12 @@
         <target>See selected work</target>
       </trans-unit>
       <trans-unit id="home.proofLabel">
-        <source>How we build proof</source>
-        <target>How we build proof</target>
+        <source>How we make the work credible</source>
+        <target>How we make the work credible</target>
       </trans-unit>
       <trans-unit id="home.proofTitle">
-        <source>Proof frame by frame</source>
-        <target>Proof frame by frame</target>
+        <source>Trust, frame by frame</source>
+        <target>Trust, frame by frame</target>
       </trans-unit>
       <trans-unit id="home.proofField">
         <source>Field</source>
@@ -455,24 +455,24 @@
         <target>Show the scale</target>
       </trans-unit>
       <trans-unit id="home.outcomeSales">
-        <source>Give sales usable assets</source>
-        <target>Give sales usable assets</target>
+        <source>Give your sales team assets they can use</source>
+        <target>Give your sales team assets they can use</target>
       </trans-unit>
       <trans-unit id="home.outcomeSocial">
-        <source>Keep social moving</source>
-        <target>Keep social moving</target>
+        <source>Keep your social channels active</source>
+        <target>Keep your social channels active</target>
       </trans-unit>
       <trans-unit id="home.workEyebrow">
         <source>Selected work</source>
         <target>Selected work</target>
       </trans-unit>
       <trans-unit id="home.workTitle">
-        <source>PROOF WITH A JOB TO DO.</source>
-        <target>PROOF WITH A JOB TO DO.</target>
+        <source>WORK THAT PROVES ITS VALUE.</source>
+        <target>WORK THAT PROVES ITS VALUE.</target>
       </trans-unit>
       <trans-unit id="home.workSummary">
-        <source>Show buyers how the product, process and people behind it actually work.</source>
-        <target>Show buyers how the product, process and people behind it actually work.</target>
+        <source>Show buyers how your products and processes work — and the people behind them.</source>
+        <target>Show buyers how your products and processes work — and the people behind them.</target>
       </trans-unit>
       <trans-unit id="home.workCardOne">
         <source>Machinery in motion</source>
@@ -487,20 +487,20 @@
         <target>Scale behind the work</target>
       </trans-unit>
       <trans-unit id="home.processEyebrow">
-        <source>One small crew. Full ownership.</source>
-        <target>One small crew. Full ownership.</target>
+        <source>Tell us what needs showing. We’ll take it from there.</source>
+        <target>Tell us what needs showing. We’ll take it from there.</target>
       </trans-unit>
       <trans-unit id="home.processTitle">
-        <source>FROM BRIEF TO BUYER-READY.</source>
-        <target>FROM BRIEF TO BUYER-READY.</target>
+        <source>FROM FIRST CONVERSATION TO READY-TO-USE CONTENT.</source>
+        <target>FROM FIRST CONVERSATION TO READY-TO-USE CONTENT.</target>
       </trans-unit>
       <trans-unit id="home.processBrief">
         <source>Brief</source>
         <target>Brief</target>
       </trans-unit>
       <trans-unit id="home.processFieldDay">
-        <source>Field day</source>
-        <target>Field day</target>
+        <source>Shoot day</source>
+        <target>Shoot day</target>
       </trans-unit>
       <trans-unit id="home.processEdit">
         <source>Edit</source>
@@ -511,16 +511,16 @@
         <target>Delivery</target>
       </trans-unit>
       <trans-unit id="home.contactEyebrow">
-        <source>Start with the hard-to-explain part.</source>
-        <target>Start with the hard-to-explain part.</target>
+        <source>Tell us what you need. We’ll make the plan.</source>
+        <target>Tell us what you need. We’ll make the plan.</target>
       </trans-unit>
       <trans-unit id="home.contactTitle">
-        <source>BRING US THE WORK.</source>
-        <target>BRING US THE WORK.</target>
+        <source>TELL US WHAT YOU NEED. WE’LL HANDLE THE REST.</source>
+        <target>TELL US WHAT YOU NEED. WE’LL HANDLE THE REST.</target>
       </trans-unit>
       <trans-unit id="home.contactSummary">
-        <source>Tell us what needs to be seen. We will come back with a clear direction for the shoot.</source>
-        <target>Tell us what needs to be seen. We will come back with a clear direction for the shoot.</target>
+        <source>Tell us what you need and what people should see. We’ll put together the brief, plan the shoot and show the work clearly.</source>
+        <target>Tell us what you need and what people should see. We’ll put together the brief, plan the shoot and show the work clearly.</target>
       </trans-unit>
       <trans-unit id="menu.close">
         <source>Close</source>
@@ -559,28 +559,28 @@
         <target>We followed the work closely, turning the steps, details and decisions behind it into a clear story.</target>
       </trans-unit>
       <trans-unit id="project.scaleSummary">
-        <source>We put the size of the operation in frame, so the work feels as substantial as it is in real life.</source>
-        <target>We put the size of the operation in frame, so the work feels as substantial as it is in real life.</target>
+        <source>We captured the scale of the operation, so the work feels as substantial on screen as it does in real life.</source>
+        <target>We captured the scale of the operation, so the work feels as substantial on screen as it does in real life.</target>
       </trans-unit>
       <trans-unit id="project.contactEyebrow">
-        <source>Your next realization starts here.</source>
-        <target>Your next realization starts here.</target>
+        <source>Tell us the goal. We’ll make the plan.</source>
+        <target>Tell us the goal. We’ll make the plan.</target>
       </trans-unit>
       <trans-unit id="project.contactTitleFirst">
-        <source>LET’S MAKE YOUR WORK</source>
-        <target>LET’S MAKE YOUR WORK</target>
+        <source>TELL US WHAT YOU NEED.</source>
+        <target>TELL US WHAT YOU NEED.</target>
       </trans-unit>
       <trans-unit id="project.contactTitleSecond">
-        <source>IMPOSSIBLE TO MISS.</source>
-        <target>IMPOSSIBLE TO MISS.</target>
+        <source>WE HANDLE THE REST.</source>
+        <target>WE HANDLE THE REST.</target>
       </trans-unit>
       <trans-unit id="project.contactSummary">
-        <source>Tell us what you want to show. We will come back with a clear direction for the realization.</source>
-        <target>Tell us what you want to show. We will come back with a clear direction for the realization.</target>
+        <source>Tell us what you need and what people should see. We’ll put together the brief, plan the production and deliver the finished material.</source>
+        <target>Tell us what you need and what people should see. We’ll put together the brief, plan the production and deliver the finished material.</target>
       </trans-unit>
       <trans-unit id="project.contactAction">
-        <source>Plan your realization</source>
-        <target>Plan your realization</target>
+        <source>Plan your project</source>
+        <target>Plan your project</target>
       </trans-unit>
       <trans-unit id="project.mediaUnavailable">
         <source>Project media is unavailable.</source>

@@ -124,14 +124,14 @@ export class AboutView extends LitElement {
           <div class=${styles.manifestoBody}>
             <p>
               ${msg(
-                'We started out as amateurs, driven by a passion for filming and telling stories through images. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.',
+                'We began by filming out of a genuine love for the craft and for visual storytelling. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.',
                 { id: 'about.methodSummary' },
               )}
             </p>
             <ul>
               <li>${msg('Industry expertise', { id: 'about.methodExpertise' })}</li>
               <li>${msg('Full production process', { id: 'about.methodProduction' })}</li>
-              <li>${msg('Quality without shortcuts', { id: 'about.methodQuality' })}</li>
+              <li>${msg('No shortcuts on quality', { id: 'about.methodQuality' })}</li>
             </ul>
           </div>
         </section>
@@ -146,7 +146,7 @@ export class AboutView extends LitElement {
             </h2>
           </div>
           <div class=${styles.contactDetails}>
-            <p>${msg('Tell us what you want to show.', { id: 'about.contactSummary' })}</p>
+            <p>${msg('Tell us what you need. We’ll put together the brief and take care of the production.', { id: 'about.contactSummary' })}</p>
             <a class=${styles.contactAction} href="mailto:kontakt@ziron.pl">
               ${msg('Write to us', { id: 'about.contactAction' })}
               <span aria-hidden="true">→</span>

@@ -33,20 +33,20 @@ export class ProjectView extends LitElement {
 
         <section class=${styles.contact} aria-labelledby="project-contact-title">
           <p class=${styles.contactEyebrow}>
-            ${msg('Your next realization starts here.', { id: 'project.contactEyebrow' })}
+            ${msg('Tell us the goal. We’ll make the plan.', { id: 'project.contactEyebrow' })}
           </p>
           <h2 id="project-contact-title">
-            ${msg('LET’S MAKE YOUR WORK', { id: 'project.contactTitleFirst' })}<br />
-            ${msg('IMPOSSIBLE TO MISS.', { id: 'project.contactTitleSecond' })}
+            ${msg('TELL US WHAT YOU NEED.', { id: 'project.contactTitleFirst' })}<br />
+            ${msg('WE HANDLE THE REST.', { id: 'project.contactTitleSecond' })}
           </h2>
           <p class=${styles.contactSummary}>
             ${msg(
-              'Tell us what you want to show. We will come back with a clear direction for the realization.',
+              'Tell us what you need and what people should see. We’ll put together the brief, plan the production and deliver the finished material.',
               { id: 'project.contactSummary' },
             )}
           </p>
           <a class=${styles.contactAction} href=${localizedViewUrl('contact')}>
-            ${msg('Plan your realization', { id: 'project.contactAction' })}
+            ${msg('Plan your project', { id: 'project.contactAction' })}
             <span aria-hidden="true">↗</span>
           </a>
         </section>

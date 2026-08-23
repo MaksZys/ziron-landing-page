@@ -146,7 +146,7 @@ export function getFeaturedWorkSections(): FeaturedWorkSection[] {
       galleryImages: AGRICULTURE_IMAGES,
       image: AGRICULTURE_IMAGES[0],
       summary: msg(
-        'We put the size of the operation in frame, so the work feels as substantial as it is in real life.',
+        'We captured the scale of the operation, so the work feels as substantial on screen as it does in real life.',
         { id: 'project.scaleSummary' },
       ),
       title: msg('Scale behind the work', { id: 'home.workCardThree' }),

@@ -3,7 +3,6 @@ import { customElement, state } from 'lit/decorators.js';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import '../components/organisms/site-header';
-import '../components/organisms/site-footer';
 import { getPrimaryNavigation } from '../content/navigation';
 import { localeFromUrl, localizedViewUrl } from '../localization';
 import styles from './contact-view.module.css';
@@ -153,7 +152,7 @@ export class ContactView extends LitElement {
             <h1 id="contact-title">${msg('LET’S TALK.', { id: 'contact.title' })}</h1>
             <p class=${styles.summary}>
               ${msg(
-                'Tell us what you want to show. We will turn it into a clear, memorable image.',
+                'Tell us what you need and what you want people to see. We’ll put together the brief, plan the production and guide you through the whole process.',
                 { id: 'contact.summary' },
               )}
             </p>
@@ -213,7 +212,6 @@ export class ContactView extends LitElement {
             </p>
           </form>
         </section>
-        <site-footer></site-footer>
       </main>
     `;
   }
