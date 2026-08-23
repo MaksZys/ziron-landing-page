@@ -5,7 +5,7 @@ import { msg, updateWhenLocaleChanges } from '@lit/localize';
 import '../components/organisms/site-header';
 import '../components/organisms/site-footer';
 import { getPrimaryNavigation } from '../content/navigation';
-import { FEATURED_PROJECT } from '../content/portfolio.generated';
+import { getFeaturedWorkSections } from '../content/featured-work';
 import { localizedViewUrl } from '../localization';
 import styles from './home-view.module.css';
 
@@ -21,8 +21,8 @@ export class HomeView extends LitElement {
   }
 
   protected override render() {
-    const workImages = FEATURED_PROJECT.images.slice(0, 3);
-    const heroImage = workImages[1] ?? workImages[0];
+    const workSections = getFeaturedWorkSections();
+    const heroImage = workSections[1]?.image ?? workSections[0]?.image;
 
     return html`
       <main class=${styles.homeView}>
@@ -108,7 +108,7 @@ export class HomeView extends LitElement {
             </p>
           </div>
           <div class=${styles.workGrid}>
-            ${workImages.map((image, index) => this.renderWorkCard(image, index))}
+            ${workSections.map((section, index) => this.renderWorkCard(section, index))}
           </div>
         </section>
 
@@ -149,20 +149,18 @@ export class HomeView extends LitElement {
   }
 
   private renderWorkCard(
-    image: (typeof FEATURED_PROJECT.images)[number],
+    section: ReturnType<typeof getFeaturedWorkSections>[number],
     index: number,
   ) {
-    const labels = [
-      msg('Machinery in motion', { id: 'home.workCardOne' }),
-      msg('Process, made visible', { id: 'home.workCardTwo' }),
-      msg('Scale behind the work', { id: 'home.workCardThree' }),
-    ];
+    if (!section.image) {
+      return null;
+    }
 
     return html`
-      <a class=${styles.workCard} href=${localizedViewUrl('project')}>
-        <img src=${image.imageUrl} alt=${image.alt} loading="lazy" />
+      <a class=${styles.workCard} href=${`${localizedViewUrl('project')}#${section.anchor}`}>
+        <img src=${section.image.imageUrl} alt=${section.image.alt} loading="lazy" />
         <span>${String(index + 1).padStart(2, '0')}</span>
-        <strong>${labels[index]}</strong>
+        <strong>${section.title}</strong>
       </a>
     `;
   }

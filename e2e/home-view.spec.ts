@@ -31,6 +31,30 @@ test('Home page makes the offer and project contact action clear in every locale
   }
 });
 
+test('selected work cards open their matching project sections', async ({ page }) => {
+  const workSections = [
+    'machinery-in-motion',
+    'process-made-visible',
+    'scale-behind-the-work',
+  ];
+
+  for (const anchor of workSections) {
+    await page.goto('/?lang=en');
+
+    const card = page.locator(`home-view a[href="?view=project&lang=en#${anchor}"]`);
+    const title = await card.locator('strong').textContent();
+    const imageSource = await card.locator('img').getAttribute('src');
+
+    await card.click();
+
+    await expect(page).toHaveURL(`/?view=project&lang=en#${anchor}`);
+
+    const projectSection = page.locator(`#${anchor}`);
+    await expect(projectSection.getByRole('heading')).toHaveText(title ?? '');
+    await expect(projectSection.locator('img').first()).toHaveAttribute('src', imageSource ?? '');
+  }
+});
+
 test('Home page keeps its decision copy inside the mobile viewport', async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== 'mobile-chromium', 'Mobile contract');
   await page.setViewportSize({ width: 320, height: 568 });

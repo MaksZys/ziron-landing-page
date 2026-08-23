@@ -152,7 +152,8 @@
 'project.contactTitleFirst': `POKAŻMY TWOJĄ PRACĘ`,
 'project.contactTitleSecond': `NIE DO PRZEOCZENIA.`,
 'project.mediaUnavailable': `Materiały projektu są niedostępne.`,
+'project.processSummary': `Pokazaliśmy pracę z bliska, zmieniając jej kroki, detale i decyzje w czytelną historię.`,
+'project.scaleSummary': `Pokazaliśmy skalę działania w kadrze, aby praca była tak wyrazista jak w rzeczywistości.`,
 'project.summary': `Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie jest najbardziej prawdziwa — w pyle, śniegu, deszczu i pełnym tempie.`,
-'project.title': `Siła w ruchu`,
     };
   

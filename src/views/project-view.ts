@@ -4,7 +4,7 @@ import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import '../components/organisms/site-header';
 import '../components/organisms/site-footer';
-import { FEATURED_PROJECT } from '../content/portfolio.generated';
+import { getFeaturedWorkSections } from '../content/featured-work';
 import { getPrimaryNavigation } from '../content/navigation';
 import { localizedViewUrl } from '../localization';
 import '../components/molecules/project-intro';
@@ -23,39 +23,13 @@ export class ProjectView extends LitElement {
   }
 
   protected override render() {
-    const heroImage = FEATURED_PROJECT.images[0];
+    const workSections = getFeaturedWorkSections();
 
     return html`
       <main class=${styles.projectView}>
         <site-header .links=${getPrimaryNavigation()}></site-header>
 
-        <section class=${styles.hero}>
-          ${heroImage
-            ? html`
-                <img
-                  class=${styles.heroImage}
-                  src=${heroImage.imageUrl}
-                  alt=${heroImage.alt}
-                  fetchpriority="high"
-                />
-              `
-            : html`<div class=${styles.heroFallback}>
-                ${msg('Project media is unavailable.', { id: 'project.mediaUnavailable' })}
-              </div>`}
-
-          <project-intro
-            .category=${msg('Film production / Campaign 2026', {
-              id: 'project.category',
-            })}
-            .summary=${msg(
-              'Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.',
-              { id: 'project.summary' },
-            )}
-            .title=${msg('Strength in motion', { id: 'project.title' })}
-          ></project-intro>
-        </section>
-
-        <project-gallery .images=${FEATURED_PROJECT.images}></project-gallery>
+        ${workSections.map((section, index) => this.renderProjectSection(section, index))}
 
         <section class=${styles.contact} aria-labelledby="project-contact-title">
           <p class=${styles.contactEyebrow}>
@@ -78,6 +52,44 @@ export class ProjectView extends LitElement {
         </section>
         <site-footer></site-footer>
       </main>
+    `;
+  }
+
+  private renderProjectSection(
+    section: ReturnType<typeof getFeaturedWorkSections>[number],
+    index: number,
+  ) {
+    const headingId = `${section.anchor}-title`;
+
+    return html`
+      <section id=${section.anchor} class=${styles.projectSection} aria-labelledby=${headingId}>
+        <div class=${styles.hero}>
+          ${section.image
+            ? html`
+                <img
+                  class=${styles.heroImage}
+                  src=${section.image.imageUrl}
+                  alt=${section.image.alt}
+                  fetchpriority=${index === 0 ? 'high' : 'auto'}
+                />
+              `
+            : html`<div class=${styles.heroFallback}>
+                ${msg('Project media is unavailable.', { id: 'project.mediaUnavailable' })}
+              </div>`}
+
+          <project-intro
+            .category=${msg('Film production / Campaign 2026', {
+              id: 'project.category',
+            })}
+            .headingId=${headingId}
+            .headingLevel=${index === 0 ? 1 : 2}
+            .summary=${section.summary}
+            .title=${section.title}
+          ></project-intro>
+        </div>
+
+        <project-gallery .images=${section.galleryImages}></project-gallery>
+      </section>
     `;
   }
 }

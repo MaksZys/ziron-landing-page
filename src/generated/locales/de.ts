@@ -152,7 +152,8 @@
 'project.contactTitleFirst': `WIR MACHEN IHRE ARBEIT`,
 'project.contactTitleSecond': `UNÜBERSEHBAR.`,
 'project.mediaUnavailable': `Projektmedien sind nicht verfügbar.`,
+'project.processSummary': `Wir haben die Arbeit aus nächster Nähe begleitet und ihre Schritte, Details und Entscheidungen zu einer klaren Geschichte verdichtet.`,
+'project.scaleSummary': `Wir haben die Größe des Einsatzes ins Bild gesetzt, damit die Arbeit so greifbar wirkt wie im echten Leben.`,
 'project.summary': `Maschinen posieren nicht. Sie arbeiten. Wir haben ihre Stärke dort gezeigt, wo sie am authentischsten ist – in Staub, Schnee, Regen und bei voller Geschwindigkeit.`,
-'project.title': `Stärke in Bewegung`,
     };
   

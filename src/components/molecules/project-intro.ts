@@ -10,6 +10,12 @@ export class ProjectIntro extends LitElement {
   category = '';
 
   @property()
+  headingId = '';
+
+  @property({ type: Number })
+  headingLevel = 2;
+
+  @property()
   summary = '';
 
   @property()
@@ -21,12 +27,14 @@ export class ProjectIntro extends LitElement {
 
   protected override render() {
     return html`
-      <section class=${styles.intro} aria-labelledby="project-title">
+      <section class=${styles.intro} aria-labelledby=${this.headingId}>
         <div class=${styles.rail} aria-hidden="true"></div>
         <div class=${styles.projectMark} aria-hidden="true">
           <brand-logo variant="mark"></brand-logo>
         </div>
-        <h1 id="project-title" class=${styles.title}>${this.title}</h1>
+        ${this.headingLevel === 1
+          ? html`<h1 id=${this.headingId} class=${styles.title}>${this.title}</h1>`
+          : html`<h2 id=${this.headingId} class=${styles.title}>${this.title}</h2>`}
         <p class=${styles.summary}>${this.summary}</p>
         <p class=${styles.category}>${this.category}</p>
       </section>

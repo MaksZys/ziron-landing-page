@@ -554,9 +554,13 @@
         <source>Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.</source>
         <target>Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.</target>
       </trans-unit>
-      <trans-unit id="project.title">
-        <source>Strength in motion</source>
-        <target>Strength in motion</target>
+      <trans-unit id="project.processSummary">
+        <source>We followed the work closely, turning the steps, details and decisions behind it into a clear story.</source>
+        <target>We followed the work closely, turning the steps, details and decisions behind it into a clear story.</target>
+      </trans-unit>
+      <trans-unit id="project.scaleSummary">
+        <source>We put the size of the operation in frame, so the work feels as substantial as it is in real life.</source>
+        <target>We put the size of the operation in frame, so the work feels as substantial as it is in real life.</target>
       </trans-unit>
       <trans-unit id="project.contactEyebrow">
         <source>Your next realization starts here.</source>

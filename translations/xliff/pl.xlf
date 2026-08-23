@@ -554,9 +554,13 @@
         <source>Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.</source>
         <target>Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie jest najbardziej prawdziwa — w pyle, śniegu, deszczu i pełnym tempie.</target>
       </trans-unit>
-      <trans-unit id="project.title">
-        <source>Strength in motion</source>
-        <target>Siła w ruchu</target>
+      <trans-unit id="project.processSummary">
+        <source>We followed the work closely, turning the steps, details and decisions behind it into a clear story.</source>
+        <target>Pokazaliśmy pracę z bliska, zmieniając jej kroki, detale i decyzje w czytelną historię.</target>
+      </trans-unit>
+      <trans-unit id="project.scaleSummary">
+        <source>We put the size of the operation in frame, so the work feels as substantial as it is in real life.</source>
+        <target>Pokazaliśmy skalę działania w kadrze, aby praca była tak wyrazista jak w rzeczywistości.</target>
       </trans-unit>
       <trans-unit id="project.contactEyebrow">
         <source>Your next realization starts here.</source>
