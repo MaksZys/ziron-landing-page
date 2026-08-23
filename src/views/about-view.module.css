@@ -254,6 +254,12 @@
   }
 }
 
+@media (min-width: 48rem) and (min-aspect-ratio: 2 / 1) {
+  .profileMedia img {
+    object-position: center top;
+  }
+}
+
 @media (hover: hover) and (pointer: fine) {
   .profile:hover .profileMedia img {
     filter: grayscale(0) saturate(1);

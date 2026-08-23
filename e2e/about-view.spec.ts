@@ -61,3 +61,14 @@ test('About navigation remains at the top of the viewport while scrolling', asyn
     });
   }).toBe(0);
 });
+
+test('About profile photos preserve the top of the portrait on ultrawide screens', async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 2520, height: 1080 });
+  await page.goto('/?view=about');
+
+  await expect(
+    page.locator('section[aria-labelledby="team-title"] article img').first(),
+  ).toHaveCSS('object-position', '50% 0%');
+});
