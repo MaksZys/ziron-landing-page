@@ -158,6 +158,10 @@
         <source>Your email app will open with your message ready to send.</source>
         <target>Deine E-Mail-App öffnet sich mit einer versandfertigen Nachricht.</target>
       </trans-unit>
+      <trans-unit id="contact.fallbackNotice">
+        <source>If your email app does not open, email us directly at</source>
+        <target>Wenn sich deine E-Mail-App nicht öffnet, schreibe uns direkt an</target>
+      </trans-unit>
       <trans-unit id="contact.emailSubject">
         <source>New project enquiry</source>
         <target>Neue Projektanfrage</target>
@@ -171,12 +175,16 @@
         <target>E-Mail</target>
       </trans-unit>
       <trans-unit id="contact.termsNotice">
-        <source>By sending a message, you accept our</source>
-        <target>Mit dem Senden deiner Nachricht akzeptierst du unsere</target>
+        <source>By sending us a message, you consent to the processing of your personal data as described in our</source>
+        <target>Mit dem Senden einer Nachricht stimmst du der Verarbeitung deiner personenbezogenen Daten gemäß unserer</target>
       </trans-unit>
       <trans-unit id="contact.termsLink">
-        <source>terms and conditions</source>
-        <target>Allgemeinen Geschäftsbedingungen</target>
+        <source>privacy policy</source>
+        <target>Datenschutzrichtlinie</target>
+      </trans-unit>
+      <trans-unit id="contact.termsSuffix">
+        <source>.</source>
+        <target>zu.</target>
       </trans-unit>
       <trans-unit id="privacy.eyebrow">
         <source>LEGAL / ZIRON</source>

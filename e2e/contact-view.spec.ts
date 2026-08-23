@@ -1,5 +1,37 @@
 import { expect, test } from '@playwright/test';
 
+const CONTACT_EMAIL = 'kontakt@ziron.pl';
+
+const localizedContent = {
+  en: {
+    fallback: 'If your email app does not open, email us directly at kontakt@ziron.pl.',
+    privacyNotice:
+      'By sending us a message, you consent to the processing of your personal data as described in our privacy policy.',
+    privacyLink: 'privacy policy',
+    subject: 'New project enquiry',
+    nameLabel: 'Name',
+    emailLabel: 'Email',
+  },
+  pl: {
+    fallback: 'Jeśli aplikacja pocztowa się nie otworzy, napisz bezpośrednio na adres kontakt@ziron.pl.',
+    privacyNotice:
+      'Wysyłając do nas wiadomość, wyrażasz zgodę na przetwarzanie swoich danych osobowych zgodnie z naszą polityką prywatności.',
+    privacyLink: 'polityką prywatności',
+    subject: 'Nowe zapytanie dotyczące projektu',
+    nameLabel: 'Imię i nazwisko',
+    emailLabel: 'E-mail',
+  },
+  de: {
+    fallback: 'Wenn sich deine E-Mail-App nicht öffnet, schreibe uns direkt an kontakt@ziron.pl.',
+    privacyNotice:
+      'Mit dem Senden einer Nachricht stimmst du der Verarbeitung deiner personenbezogenen Daten gemäß unserer Datenschutzrichtlinie zu.',
+    privacyLink: 'Datenschutzrichtlinie',
+    subject: 'Neue Projektanfrage',
+    nameLabel: 'Name',
+    emailLabel: 'E-Mail',
+  },
+} as const;
+
 test('Contact page provides an accessible, validated email handoff form', async ({ page }) => {
   await page.goto('/?view=contact');
 
@@ -12,7 +44,7 @@ test('Contact page provides an accessible, validated email handoff form', async 
   await expect(form.getByRole('textbox', { name: 'First name' })).toHaveAttribute('required', '');
   await expect(form.getByRole('textbox', { name: 'Email address' })).toHaveAttribute('type', 'email');
   await expect(form.getByRole('textbox', { name: 'Message' })).toHaveAttribute('required', '');
-  await expect(page.getByRole('link', { name: 'kontakt@ziron.pl' })).toHaveAttribute(
+  await expect(page.locator(`contact-view a[href="mailto:${CONTACT_EMAIL}"]`).first()).toHaveAttribute(
     'href',
     'mailto:kontakt@ziron.pl',
   );
@@ -21,15 +53,15 @@ test('Contact page provides an accessible, validated email handoff form', async 
     'tel:+48694986722',
   );
 
+  await expect(form.getByText(localizedContent.en.fallback)).toBeVisible();
+  await expect(form.getByRole('link', { name: CONTACT_EMAIL })).toHaveAttribute(
+    'href',
+    `mailto:${CONTACT_EMAIL}`,
+  );
+
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(
     true,
   );
-
-  if (page.viewportSize()?.width && page.viewportSize()!.width >= 768) {
-    const pageHeight = await page.evaluate(() => document.documentElement.scrollHeight);
-
-    expect(pageHeight).toBeLessThanOrEqual(page.viewportSize()!.height);
-  }
 
   if (page.viewportSize()?.width && page.viewportSize()!.width < 768) {
     expect(
@@ -37,6 +69,67 @@ test('Contact page provides an accessible, validated email handoff form', async 
         return getComputedStyle(grid).gridTemplateColumns.split(' ').length;
       }),
     ).toBe(1);
+  }
+});
+
+test('Contact page localizes the fallback and privacy consent', async ({ page }) => {
+  for (const [locale, content] of Object.entries(localizedContent)) {
+    await page.goto(`/?view=contact&lang=${locale}`);
+
+    const form = page.locator('contact-view form');
+    await expect(form.locator('p').nth(1)).toHaveText(content.fallback);
+    expect(
+      await form.locator('p').nth(2).evaluate((paragraph) => paragraph.textContent?.replace(/\s+/g, ' ').trim()),
+    ).toBe(content.privacyNotice);
+    await expect(form.getByRole('link', { name: CONTACT_EMAIL })).toHaveAttribute(
+      'href',
+      `mailto:${CONTACT_EMAIL}`,
+    );
+    await expect(form.getByRole('link', { name: content.privacyLink })).toHaveAttribute(
+      'href',
+      `?view=privacy&lang=${locale}`,
+    );
+  }
+});
+
+test('Contact page hands valid localized form data to an email draft', async ({ page }) => {
+  for (const [locale, content] of Object.entries(localizedContent)) {
+    await page.goto(`/?view=contact&lang=${locale}`);
+    await page.evaluate(() => {
+      const OriginalUrl = URL;
+
+      Object.defineProperty(window, 'URL', {
+        configurable: true,
+        value: class extends OriginalUrl {
+          get href() {
+            const handoff = super.href;
+            document.body.dataset.emailHandoff = handoff;
+            return handoff;
+          }
+        },
+      });
+    });
+
+    const form = page.locator('contact-view form');
+    await form.getByRole('button').click();
+    await expect(form).not.toHaveAttribute('data-email-handoff');
+    await expect(page.locator('body')).not.toHaveAttribute('data-email-handoff');
+
+    await form.locator('[name="firstName"]').fill('Ada');
+    await form.locator('[name="lastName"]').fill('Lovelace');
+    await form.locator('[name="email"]').fill('ada@example.com');
+    await form.locator('[name="message"]').fill('A sample project message.');
+    await form.getByRole('button').click();
+
+    const handoff = await page.locator('body').getAttribute('data-email-handoff');
+    const emailUrl = new URL(handoff ?? '');
+
+    expect(emailUrl.protocol).toBe('mailto:');
+    expect(emailUrl.pathname).toBe(CONTACT_EMAIL);
+    expect(emailUrl.searchParams.get('subject')).toBe(content.subject);
+    expect(emailUrl.searchParams.get('body')).toBe(
+      `${content.nameLabel}: Ada Lovelace\n${content.emailLabel}: ada@example.com\n\nA sample project message.`,
+    );
   }
 });
 

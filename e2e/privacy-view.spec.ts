@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 test('Contact form links to the ZIRON privacy policy', async ({ page }) => {
   await page.goto('/?view=contact');
 
-  await expect(page.getByRole('link', { name: 'terms and conditions' })).toHaveAttribute(
+  await expect(page.getByRole('link', { name: 'privacy policy' })).toHaveAttribute(
     'href',
     '?view=privacy&lang=en',
   );

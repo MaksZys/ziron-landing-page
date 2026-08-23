@@ -4,7 +4,7 @@ import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import '../components/organisms/site-header';
 import { getPrimaryNavigation } from '../content/navigation';
-import { localizedViewUrl } from '../localization';
+import { localeFromUrl, localizedViewUrl } from '../localization';
 import styles from './contact-view.module.css';
 
 const CONTACT_EMAIL = 'kontakt@ziron.pl';
@@ -91,10 +91,17 @@ export class ContactView extends LitElement {
               ${msg('Your email app will open with your message ready to send.', { id: 'contact.formNote' })}
             </p>
             <p class=${styles.termsNote}>
-              ${msg('By sending a message, you accept our', { id: 'contact.termsNotice' })}
-              <a href=${localizedViewUrl('privacy')}>
-                ${msg('terms and conditions', { id: 'contact.termsLink' })}
-              </a>.
+              ${msg('If your email app does not open, email us directly at', { id: 'contact.fallbackNotice' })}
+              <a href=${`mailto:${CONTACT_EMAIL}`}>${CONTACT_EMAIL}</a>.
+            </p>
+            <p class=${styles.termsNote}>
+              ${msg('By sending us a message, you consent to the processing of your personal data as described in our', {
+                id: 'contact.termsNotice',
+              })}
+              ${' '}
+              <a href=${localizedViewUrl('privacy')}>${msg('privacy policy', { id: 'contact.termsLink' })}</a>${
+                localeFromUrl() === 'de' ? ' ' : ''
+              }${msg('.', { id: 'contact.termsSuffix' })}
             </p>
           </form>
         </section>
