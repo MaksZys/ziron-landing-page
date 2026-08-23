@@ -38,6 +38,7 @@
 'about.teamTitleSecond': `WIDZENIA.`,
 'brand.fullLogo': `ZIRON — Tworzymy to, o czym inni mówią`,
 'brand.homeLink': `ZIRON strona główna`,
+'contact.clearDraft': `Wyczyść zapisany szkic`,
 'contact.email': `Adres e-mail`,
 'contact.emailAddress': `E-mail`,
 'contact.emailName': `Imię i nazwisko`,

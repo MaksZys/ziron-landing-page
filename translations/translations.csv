@@ -37,6 +37,7 @@
 ,,email,Email address,Adres e-mail,E-Mail-Adresse
 ,,message,Message,Wiadomość,Nachricht
 ,,submit,Send enquiry,Wyślij zapytanie,Anfrage senden
+,,clearDraft,Clear saved draft,Wyczyść zapisany szkic,Gespeicherten Entwurf löschen
 ,,formNote,Your email app will open with your message ready to send.,Twoja aplikacja pocztowa otworzy się z gotową wiadomością.,Deine E-Mail-App öffnet sich mit einer versandfertigen Nachricht.
 ,,fallbackNotice,"If your email app does not open, email us directly at","Jeśli aplikacja pocztowa się nie otworzy, napisz bezpośrednio na adres","Wenn sich deine E-Mail-App nicht öffnet, schreibe uns direkt an"
 ,,emailSubject,New project enquiry,Nowe zapytanie dotyczące projektu,Neue Projektanfrage

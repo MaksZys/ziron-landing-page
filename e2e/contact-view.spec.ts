@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 
 const CONTACT_EMAIL = 'kontakt@ziron.pl';
+const CONTACT_DRAFT_STORAGE_KEY = 'ziron.contact-draft';
 
 const localizedContent = {
   en: {
@@ -65,7 +66,7 @@ test('Contact page provides an accessible, validated email handoff form', async 
 
   if (page.viewportSize()?.width && page.viewportSize()!.width < 768) {
     expect(
-      await page.locator('contact-view form > div').evaluate((grid) => {
+      await page.locator('contact-view form > div:first-child').evaluate((grid) => {
         return getComputedStyle(grid).gridTemplateColumns.split(' ').length;
       }),
     ).toBe(1);
@@ -111,11 +112,11 @@ test('Contact page hands valid localized form data to an email draft', async ({ 
     });
 
     const form = page.locator('contact-view form');
-    await form.getByRole('button').click();
-    await expect(form).not.toHaveAttribute('data-email-handoff');
-    await expect(page.locator('body')).not.toHaveAttribute('data-email-handoff');
-
     await form.locator('[name="firstName"]').fill('Ada');
+    await form.getByRole('button').click();
+    await expect(page.locator('body')).not.toHaveAttribute('data-email-handoff');
+    expect(await page.evaluate((key) => localStorage.getItem(key), CONTACT_DRAFT_STORAGE_KEY)).not.toBeNull();
+
     await form.locator('[name="lastName"]').fill('Lovelace');
     await form.locator('[name="email"]').fill('ada@example.com');
     await form.locator('[name="message"]').fill('A sample project message.');
@@ -130,7 +131,36 @@ test('Contact page hands valid localized form data to an email draft', async ({ 
     expect(emailUrl.searchParams.get('body')).toBe(
       `${content.nameLabel}: Ada Lovelace\n${content.emailLabel}: ada@example.com\n\nA sample project message.`,
     );
+    expect(await page.evaluate((key) => localStorage.getItem(key), CONTACT_DRAFT_STORAGE_KEY)).toBeNull();
   }
+});
+
+test('Contact page restores and clears an unsent draft', async ({ page }) => {
+  await page.goto('/?view=contact');
+
+  const form = page.locator('contact-view form');
+  await form.locator('[name="firstName"]').fill('Ada');
+  await form.locator('[name="lastName"]').fill('Lovelace');
+  await form.locator('[name="email"]').fill('ada@example.com');
+  await form.locator('[name="message"]').fill('A saved project message.');
+
+  await page.reload();
+
+  const restoredForm = page.locator('contact-view form');
+  await expect(restoredForm.locator('[name="firstName"]')).toHaveValue('Ada');
+  await expect(restoredForm.locator('[name="lastName"]')).toHaveValue('Lovelace');
+  await expect(restoredForm.locator('[name="email"]')).toHaveValue('ada@example.com');
+  await expect(restoredForm.locator('[name="message"]')).toHaveValue('A saved project message.');
+  await expect(restoredForm.getByRole('button', { name: 'Clear saved draft' })).toBeVisible();
+
+  await restoredForm.getByRole('button', { name: 'Clear saved draft' }).click();
+
+  await expect(restoredForm.locator('[name="firstName"]')).toHaveValue('');
+  await expect(restoredForm.locator('[name="lastName"]')).toHaveValue('');
+  await expect(restoredForm.locator('[name="email"]')).toHaveValue('');
+  await expect(restoredForm.locator('[name="message"]')).toHaveValue('');
+  await expect(restoredForm.getByRole('button', { name: 'Clear saved draft' })).toHaveCount(0);
+  expect(await page.evaluate((key) => localStorage.getItem(key), CONTACT_DRAFT_STORAGE_KEY)).toBeNull();
 });
 
 test('Contact page keeps every locale within the mobile viewport', async ({ page }) => {

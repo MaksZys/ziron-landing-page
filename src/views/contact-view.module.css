@@ -139,7 +139,6 @@
   align-items: center;
   gap: 2rem;
   border: 0;
-  margin-top: 0.5rem;
   padding: 0.9rem 1rem 0.9rem 1.25rem;
   color: var(--contact-ink);
   background: var(--contact-cyan);
@@ -152,6 +151,14 @@
   transition: background-color var(--default-transition-duration) var(--ease-brand), transform var(--default-transition-duration) var(--ease-brand);
 }
 
+.formActions {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
 .form button span {
   font-size: 1.3rem;
   line-height: 1;
@@ -162,7 +169,25 @@
   transform: translate(0.2rem, -0.2rem);
 }
 
+.form .clearDraft {
+  min-height: auto;
+  padding: 0;
+  color: var(--contact-paper);
+  background: transparent;
+  text-decoration: underline;
+  text-decoration-color: var(--contact-cyan);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25rem;
+}
+
+.form .clearDraft:hover {
+  color: var(--contact-cyan);
+  background: transparent;
+  transform: none;
+}
+
 .form button:focus-visible,
+.form .clearDraft:focus-visible,
 .directContact a:focus-visible {
   outline: 2px solid var(--contact-cyan);
   outline-offset: 0.3rem;

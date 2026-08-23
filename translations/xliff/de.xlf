@@ -154,6 +154,10 @@
         <source>Send enquiry</source>
         <target>Anfrage senden</target>
       </trans-unit>
+      <trans-unit id="contact.clearDraft">
+        <source>Clear saved draft</source>
+        <target>Gespeicherten Entwurf löschen</target>
+      </trans-unit>
       <trans-unit id="contact.formNote">
         <source>Your email app will open with your message ready to send.</source>
         <target>Deine E-Mail-App öffnet sich mit einer versandfertigen Nachricht.</target>

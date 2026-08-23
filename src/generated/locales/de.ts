@@ -38,6 +38,7 @@
 'about.teamTitleSecond': `AUF DIE DINGE.`,
 'brand.fullLogo': `ZIRON — Wir schaffen, worüber andere sprechen`,
 'brand.homeLink': `ZIRON Startseite`,
+'contact.clearDraft': `Gespeicherten Entwurf löschen`,
 'contact.email': `E-Mail-Adresse`,
 'contact.emailAddress': `E-Mail`,
 'contact.emailName': `Name`,
