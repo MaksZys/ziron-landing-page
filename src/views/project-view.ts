@@ -3,6 +3,7 @@ import { customElement } from 'lit/decorators.js';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import '../components/organisms/site-header';
+import '../components/organisms/site-footer';
 import { FEATURED_PROJECT } from '../content/portfolio.generated';
 import { getPrimaryNavigation } from '../content/navigation';
 import '../components/molecules/project-intro';
@@ -54,6 +55,7 @@ export class ProjectView extends LitElement {
         </section>
 
         <project-gallery .images=${FEATURED_PROJECT.images}></project-gallery>
+        <site-footer></site-footer>
       </main>
     `;
   }

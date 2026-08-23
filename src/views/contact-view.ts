@@ -3,6 +3,7 @@ import { customElement, state } from 'lit/decorators.js';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import '../components/organisms/site-header';
+import '../components/organisms/site-footer';
 import { getPrimaryNavigation } from '../content/navigation';
 import { localeFromUrl, localizedViewUrl } from '../localization';
 import styles from './contact-view.module.css';
@@ -212,6 +213,7 @@ export class ContactView extends LitElement {
             </p>
           </form>
         </section>
+        <site-footer></site-footer>
       </main>
     `;
   }
