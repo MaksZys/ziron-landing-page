@@ -20,8 +20,24 @@ const { setLocale: loadLocale } = configureLocalization({
   },
 });
 
+function localeFromBrowser(): Locale {
+  for (const language of navigator.languages) {
+    const locale = language.split('-')[0].toLowerCase();
+
+    if (LOCALES.some((supportedLocale) => supportedLocale === locale)) {
+      return locale as Locale;
+    }
+  }
+
+  return 'en';
+}
+
 export function localeFromUrl(): Locale {
   const locale = new URL(window.location.href).searchParams.get('lang');
+
+  if (locale === null) {
+    return localeFromBrowser();
+  }
 
   return LOCALES.find((supportedLocale) => supportedLocale === locale) ?? 'en';
 }

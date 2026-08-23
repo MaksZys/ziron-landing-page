@@ -1,5 +1,26 @@
 import { expect, test } from '@playwright/test';
 
+test('uses the browser language when the URL has no language', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, 'languages', { value: ['pl-PL'] });
+  });
+  await page.goto('/?view=about');
+
+  await expect(page.locator('#about-title')).toHaveText('TWORZYMYWE DWOJE');
+  await expect(page).toHaveURL(/\?view=about&lang=pl$/);
+  await expect(page.locator('site-header select')).toHaveValue('pl');
+});
+
+test('keeps the URL language instead of using the browser language', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, 'languages', { value: ['pl-PL'] });
+  });
+  await page.goto('/?view=about&lang=de');
+
+  await expect(page.locator('#about-title')).toHaveText('WIR SCHAFFENZU ZWEIT');
+  await expect(page.locator('site-header select')).toHaveValue('de');
+});
+
 test('loads a locale from the URL before rendering', async ({ page }) => {
   await page.goto('/?view=about&lang=pl');
 
