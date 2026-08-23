@@ -226,7 +226,7 @@
 
   .intro h1 {
     max-width: none;
-    font-size: clamp(3.5rem, 18vw, 5rem);
+    font-size: clamp(3rem, 15vw, 4rem);
   }
 
   .fieldGrid {

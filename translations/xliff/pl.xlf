@@ -56,7 +56,7 @@
       </trans-unit>
       <trans-unit id="about.teamSummary">
         <source>Our shared work and similar approach to creating images brought us together. Our skills complement each other, but we take responsibility for every project together.</source>
-        <target>Połączyła nas wspólna praca i podobne podejście do tworzenia obrazów. Uzupełniamy się umiejętnościami, ale za każdą realizację odpowiadamy razem.</target>
+        <target>Połączyła nas wspólna praca i podobne podejście do tworzenia obrazów. Nasze umiejętności się uzupełniają, ale za każdą realizację odpowiadamy wspólnie.</target>
       </trans-unit>
       <trans-unit id="about.kuleszaRole">
         <source>Film / photography / editing</source>
@@ -87,7 +87,7 @@
         <target>REJESTRUJEMY.</target>
       </trans-unit>
       <trans-unit id="about.methodSummary">
-        <source>We started out as amateurs, driven by a passion for filming and telling stories through images. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.</source>
+        <source>We began by filming out of a genuine love for the craft and for visual storytelling. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.</source>
         <target>Zaczynaliśmy amatorsko, z pasji do nagrywania i opowiadania historii obrazem. Dziś tworzymy profesjonalne materiały dla firm z branż technicznych, przemysłowych i wszędzie tam, gdzie liczy się prawdziwa praca.</target>
       </trans-unit>
       <trans-unit id="about.methodExpertise">
@@ -99,7 +99,7 @@
         <target>Pełny proces produkcji</target>
       </trans-unit>
       <trans-unit id="about.methodQuality">
-        <source>Quality without shortcuts</source>
+        <source>No shortcuts on quality</source>
         <target>Jakość bez skrótów</target>
       </trans-unit>
       <trans-unit id="about.contactEyebrow">
@@ -115,8 +115,8 @@
         <target>OD OBRAZU.</target>
       </trans-unit>
       <trans-unit id="about.contactSummary">
-        <source>Tell us what you want to show.</source>
-        <target>Opowiedz nam co chcesz pokazać.</target>
+        <source>Tell us what you need. We’ll put together the brief and take care of the production.</source>
+        <target>Powiedz nam</target>
       </trans-unit>
       <trans-unit id="about.contactAction">
         <source>Write to us</source>
@@ -131,8 +131,8 @@
         <target>NAPISZ DO NAS.</target>
       </trans-unit>
       <trans-unit id="contact.summary">
-        <source>Tell us what you want to show. We will turn it into a clear, memorable image.</source>
-        <target>Opowiedz nam, co chcesz pokazać. Zamienimy to w wyrazisty, zapadający w pamięć obraz.</target>
+        <source>Tell us what you need and what you want people to see. We’ll put together the brief, plan the production and guide you through the whole process.</source>
+        <target>Powiedz nam, czego potrzebujesz i co chcesz pokazać. Przygotujemy brief, zaplanujemy produkcję i przeprowadzimy Cię przez cały proces.</target>
       </trans-unit>
       <trans-unit id="contact.firstName">
         <source>First name</source>
@@ -207,8 +207,8 @@
         <target>ZIRON</target>
       </trans-unit>
       <trans-unit id="privacy.general.controller">
-        <source>is the controller of personal data and provides mobile washing services for machinery, vehicles and equipment.</source>
-        <target>jest administratorem danych osobowych i firmą świadczącą usługi mobilnego mycia maszyn, pojazdów i sprzętu.</target>
+        <source>is the controller of personal data and provides film production, photography, drone and social content services.</source>
+        <target>jest administratorem danych osobowych i świadczy usługi produkcji filmowej, fotografii, ujęć z drona oraz tworzenia treści do mediów społecznościowych.</target>
       </trans-unit>
       <trans-unit id="privacy.general.contact">
         <source>You can contact the controller using the contact form or the telephone number shown in advertisements.</source>
@@ -395,12 +395,12 @@
         <target>NOTATKA Z TERENU / 01</target>
       </trans-unit>
       <trans-unit id="home.titleFirst">
-        <source>FILM THE WORK</source>
-        <target>POKAŻCIE JAK DZIAŁA</target>
+        <source>SHOW THE WORK</source>
+        <target>POKAŻ JAK DZIAŁA</target>
       </trans-unit>
       <trans-unit id="home.titleSecond">
         <source>PEOPLE TRUST YOU TO DO.</source>
-        <target>WASZA FIRMA.</target>
+        <target>TWOJA FIRMA.</target>
       </trans-unit>
       <trans-unit id="home.summary">
         <source>Film, photography, drone and social content for agricultural, industrial and technical brands.</source>
@@ -415,12 +415,12 @@
         <target>Zobacz wybrane realizacje</target>
       </trans-unit>
       <trans-unit id="home.proofLabel">
-        <source>How we build proof</source>
-        <target>Jak budujemy dowód</target>
+        <source>How we make the work credible</source>
+        <target>Jak pokazujemy fakty</target>
       </trans-unit>
       <trans-unit id="home.proofTitle">
-        <source>Proof frame by frame</source>
-        <target>Dowód klatka po klatce</target>
+        <source>Trust, frame by frame</source>
+        <target>Konkrety, klatka po klatce</target>
       </trans-unit>
       <trans-unit id="home.proofField">
         <source>Field</source>
@@ -440,11 +440,11 @@
       </trans-unit>
       <trans-unit id="home.outcomesEyebrow">
         <source>One shoot. More ways to use it.</source>
-        <target>Jedna realizacja. Więcej sposobów użycia.</target>
+        <target>Jedna realizacja. Wiele zastosowań.</target>
       </trans-unit>
       <trans-unit id="home.outcomesTitle">
         <source>MAKE THE WORK EASY TO UNDERSTAND.</source>
-        <target>POKAŻCIE JAK TO DZIAŁA.</target>
+        <target>POKAŻ JAK TO DZIAŁA.</target>
       </trans-unit>
       <trans-unit id="home.outcomeExplain">
         <source>Explain a process</source>
@@ -455,24 +455,24 @@
         <target>Pokaż skalę</target>
       </trans-unit>
       <trans-unit id="home.outcomeSales">
-        <source>Give sales usable assets</source>
-        <target>Daj handlowcom materiały do pracy</target>
+        <source>Give your sales team assets they can use</source>
+        <target>Daj działowi handlowemu materiały które wykorzysta</target>
       </trans-unit>
       <trans-unit id="home.outcomeSocial">
-        <source>Keep social moving</source>
-        <target>Utrzymaj ruch w social media</target>
+        <source>Keep your social channels active</source>
+        <target>Bądź aktywny w mediach społecznościowych</target>
       </trans-unit>
       <trans-unit id="home.workEyebrow">
         <source>Selected work</source>
         <target>Wybrane realizacje</target>
       </trans-unit>
       <trans-unit id="home.workTitle">
-        <source>PROOF WITH A JOB TO DO.</source>
-        <target>OBRAZY KTÓRE MAJĄ ZADANIE.</target>
+        <source>WORK THAT PROVES ITS VALUE.</source>
+        <target>OBRAZY, KTÓRE MAJĄ SWÓJ CEL.</target>
       </trans-unit>
       <trans-unit id="home.workSummary">
-        <source>Show buyers how the product, process and people behind it actually work.</source>
-        <target>Pokaż odbiorcom, jak naprawdę działa produkt, proces i ludzie, którzy za nim stoją.</target>
+        <source>Show buyers how your products and processes work — and the people behind them.</source>
+        <target>Pokaż odbiorcom, jak w praktyce działają produkt i proces oraz kim są ludzie, którzy za nimi stoją.</target>
       </trans-unit>
       <trans-unit id="home.workCardOne">
         <source>Machinery in motion</source>
@@ -487,19 +487,19 @@
         <target>Skala pracy</target>
       </trans-unit>
       <trans-unit id="home.processEyebrow">
-        <source>One small crew. Full ownership.</source>
-        <target>Mała ekipa. Pełna odpowiedzialność.</target>
+        <source>Tell us what needs showing. We’ll take it from there.</source>
+        <target>Powiedz nam czym się zajmujesz. Resztą zajmiemy się my.</target>
       </trans-unit>
       <trans-unit id="home.processTitle">
-        <source>FROM BRIEF TO BUYER-READY.</source>
-        <target>OD BRIEFU DO GOTOWEGO MATERIAŁU.</target>
+        <source>FROM FIRST CONVERSATION TO READY-TO-USE CONTENT.</source>
+        <target>OD PIERWSZEJ ROZMOWY DO GOTOWEGO MATERIAŁU.</target>
       </trans-unit>
       <trans-unit id="home.processBrief">
         <source>Brief</source>
         <target>Rozmowa</target>
       </trans-unit>
       <trans-unit id="home.processFieldDay">
-        <source>Field day</source>
+        <source>Shoot day</source>
         <target>Dzień zdjęciowy</target>
       </trans-unit>
       <trans-unit id="home.processEdit">
@@ -511,16 +511,16 @@
         <target>Gotowy materiał</target>
       </trans-unit>
       <trans-unit id="home.contactEyebrow">
-        <source>Start with the hard-to-explain part.</source>
-        <target>Zacznijmy od tego co trudno wyjaśnić.</target>
+        <source>Tell us what you need. We’ll make the plan.</source>
+        <target>Powiedz nam</target>
       </trans-unit>
       <trans-unit id="home.contactTitle">
-        <source>BRING US THE WORK.</source>
-        <target>POKAŻ NAM SWOJĄ PRACĘ.</target>
+        <source>TELL US WHAT YOU NEED. WE’LL HANDLE THE REST.</source>
+        <target>POWIEDZ NAM CZEGO POTRZEBUJESZ. MY ZAJMIEMY SIĘ RESZTĄ.</target>
       </trans-unit>
       <trans-unit id="home.contactSummary">
-        <source>Tell us what needs to be seen. We will come back with a clear direction for the shoot.</source>
-        <target>Powiedz nam, co trzeba pokazać. Wrócimy z konkretnym kierunkiem realizacji.</target>
+        <source>Tell us what you need and what people should see. We’ll put together the brief, plan the shoot and show the work clearly.</source>
+        <target>Powiedz nam, czego potrzebujesz i co ma zobaczyć odbiorca. Przygotujemy brief, zaplanujemy zdjęcia i sprawimy, że Twoja praca będzie widoczna.</target>
       </trans-unit>
       <trans-unit id="menu.close">
         <source>Close</source>
@@ -552,30 +552,34 @@
       </trans-unit>
       <trans-unit id="project.summary">
         <source>Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.</source>
-        <target>Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie jest najbardziej prawdziwa — w pyle, śniegu, deszczu i pełnym tempie.</target>
+        <target>Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie widać ją najlepiej — w pyle, śniegu, deszczu i przy pełnym tempie pracy.</target>
       </trans-unit>
-      <trans-unit id="project.title">
-        <source>Strength in motion</source>
-        <target>Siła w ruchu</target>
+      <trans-unit id="project.processSummary">
+        <source>We followed the work closely, turning the steps, details and decisions behind it into a clear story.</source>
+        <target>Towarzyszyliśmy pracy z bliska i zamieniliśmy jej kolejne etapy, detale oraz decyzje w czytelną historię.</target>
+      </trans-unit>
+      <trans-unit id="project.scaleSummary">
+        <source>We captured the scale of the operation, so the work feels as substantial on screen as it does in real life.</source>
+        <target>Ujęliśmy skalę działania tak, by była równie odczuwalna jak na miejscu.</target>
       </trans-unit>
       <trans-unit id="project.contactEyebrow">
-        <source>Your next realization starts here.</source>
-        <target>Twoja kolejna realizacja zaczyna się tutaj.</target>
+        <source>Tell us the goal. We’ll make the plan.</source>
+        <target>Powiedz nam</target>
       </trans-unit>
       <trans-unit id="project.contactTitleFirst">
-        <source>LET’S MAKE YOUR WORK</source>
-        <target>POKAŻMY TWOJĄ PRACĘ</target>
+        <source>TELL US WHAT YOU NEED.</source>
+        <target>POWIEDZ NAM CZEGO POTRZEBUJESZ.</target>
       </trans-unit>
       <trans-unit id="project.contactTitleSecond">
-        <source>IMPOSSIBLE TO MISS.</source>
-        <target>NIE DO PRZEOCZENIA.</target>
+        <source>WE HANDLE THE REST.</source>
+        <target>MY ZAJMUJEMY SIĘ RESZTĄ.</target>
       </trans-unit>
       <trans-unit id="project.contactSummary">
-        <source>Tell us what you want to show. We will come back with a clear direction for the realization.</source>
-        <target>Opowiedz nam co chcesz pokazać. Wrócimy z konkretnym kierunkiem realizacji.</target>
+        <source>Tell us what you need and what people should see. We’ll put together the brief, plan the production and deliver the finished material.</source>
+        <target>Powiedz nam, czego potrzebujesz i co ma zobaczyć odbiorca. Przygotujemy brief, zaplanujemy produkcję i dostarczymy gotowy materiał.</target>
       </trans-unit>
       <trans-unit id="project.contactAction">
-        <source>Plan your realization</source>
+        <source>Plan your project</source>
         <target>Zaplanujmy Twoją realizację</target>
       </trans-unit>
       <trans-unit id="project.mediaUnavailable">

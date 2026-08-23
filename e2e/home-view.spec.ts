@@ -2,19 +2,19 @@ import { expect, test } from '@playwright/test';
 
 const localizedContent = {
   en: {
-    title: 'FILM THE WORK PEOPLE TRUST YOU TO DO.',
+    title: 'SHOW THE WORK PEOPLE TRUST YOU TO DO.',
     contactAction: 'Plan a shoot',
-    proof: 'Proof frame by frame',
+    proof: 'Trust, frame by frame',
   },
   pl: {
-    title: 'POKAŻCIE JAK DZIAŁA WASZA FIRMA.',
+    title: 'POKAŻ JAK DZIAŁA TWOJA FIRMA.',
     contactAction: 'Porozmawiajmy o realizacji',
-    proof: 'Dowód klatka po klatce',
+    proof: 'Konkrety, klatka po klatce',
   },
   de: {
-    title: 'ZEIGEN SIE WIE IHR UNTERNEHMEN ARBEITET.',
+    title: 'ZEIGEN SIE DIE ARBEIT FÜR DIE MAN IHNEN VERTRAUT.',
     contactAction: 'Ein Dreh planen',
-    proof: 'Beweis Bild für Bild',
+    proof: 'VERTRAUEN BILD FÜR BILD.',
   },
 } as const;
 
@@ -28,6 +28,30 @@ test('Home page makes the offer and project contact action clear in every locale
       'href',
       `?view=contact&lang=${locale}`,
     );
+  }
+});
+
+test('selected work cards open their matching project sections', async ({ page }) => {
+  const workSections = [
+    'machinery-in-motion',
+    'process-made-visible',
+    'scale-behind-the-work',
+  ];
+
+  for (const anchor of workSections) {
+    await page.goto('/?lang=en');
+
+    const card = page.locator(`home-view a[href="?view=project&lang=en#${anchor}"]`);
+    const title = await card.locator('strong').textContent();
+    const imageSource = await card.locator('img').getAttribute('src');
+
+    await card.click();
+
+    await expect(page).toHaveURL(`/?view=project&lang=en#${anchor}`);
+
+    const projectSection = page.locator(`#${anchor}`);
+    await expect(projectSection.getByRole('heading')).toHaveText(title ?? '');
+    await expect(projectSection.locator('img').first()).toHaveAttribute('src', imageSource ?? '');
   }
 });
 

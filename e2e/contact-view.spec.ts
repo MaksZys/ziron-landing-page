@@ -23,9 +23,9 @@ const localizedContent = {
     emailLabel: 'E-mail',
   },
   de: {
-    fallback: 'Wenn sich deine E-Mail-App nicht öffnet, schreibe uns direkt an kontakt@ziron.pl.',
+    fallback: 'Wenn sich Ihre E-Mail-App nicht öffnet, schreiben Sie uns direkt an kontakt@ziron.pl.',
     privacyNotice:
-      'Mit dem Senden einer Nachricht stimmst du der Verarbeitung deiner personenbezogenen Daten gemäß unserer Datenschutzrichtlinie zu.',
+      'Mit dem Senden einer Nachricht stimmen Sie der Verarbeitung Ihrer personenbezogenen Daten gemäß unserer Datenschutzrichtlinie zu.',
     privacyLink: 'Datenschutzrichtlinie',
     subject: 'Neue Projektanfrage',
     nameLabel: 'Name',

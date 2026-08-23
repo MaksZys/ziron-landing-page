@@ -12,7 +12,7 @@
 ,,teamEyebrow,02 / TEAM,02 / ZESPÓŁ,02 / TEAM
 ,,teamTitleFirst,TWO POINTS,DWA PUNKTY,ZWEI PERSPEKTIVEN
 ,,teamTitleSecond,OF VIEW.,WIDZENIA.,AUF DIE DINGE.
-,,teamSummary,"Our shared work and similar approach to creating images brought us together. Our skills complement each other, but we take responsibility for every project together.","Połączyła nas wspólna praca i podobne podejście do tworzenia obrazów. Uzupełniamy się umiejętnościami, ale za każdą realizację odpowiadamy razem.","Gemeinsame Arbeit und ein ähnlicher Blick auf die Bildgestaltung haben uns zusammengebracht. Unsere Fähigkeiten ergänzen sich, doch für jedes Projekt stehen wir gemeinsam ein."
+,,teamSummary,"Our shared work and similar approach to creating images brought us together. Our skills complement each other, but we take responsibility for every project together.","Połączyła nas wspólna praca i podobne podejście do tworzenia obrazów. Nasze umiejętności się uzupełniają, ale za każdą realizację odpowiadamy wspólnie.","Gemeinsame Arbeit und ein ähnlicher Blick auf die Bildgestaltung haben uns zusammengebracht. Unsere Fähigkeiten ergänzen sich, doch für jedes Projekt stehen wir gemeinsam ein."
 ,,kuleszaRole,Film / photography / editing,Film / fotografia / montaż,Film / Fotografie / Schnitt
 ,,kuleszaImageAlt,"Mateusz Kulesza, ZIRON team member","Mateusz Kulesza, członek zespołu ZIRON","Mateusz Kulesza, Mitglied des ZIRON-Teams"
 ,,radkenRole,Film / drone / post-production,Film / dron / postprodukcja,Film / Drohne / Postproduktion
@@ -20,37 +20,37 @@
 ,,methodEyebrow,03 / HOW WE WORK,03 / SPOSÓB PRACY,03 / UNSERE ARBEITSWEISE
 ,,methodTitleFirst,WE DO MORE THAN,NIE TYLKO,WIR TUN MEHR ALS
 ,,methodTitleSecond,RECORD.,REJESTRUJEMY.,NUR AUFZUNEHMEN.
-,,methodSummary,"We started out as amateurs, driven by a passion for filming and telling stories through images. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.","Zaczynaliśmy amatorsko, z pasji do nagrywania i opowiadania historii obrazem. Dziś tworzymy profesjonalne materiały dla firm z branż technicznych, przemysłowych i wszędzie tam, gdzie liczy się prawdziwa praca.","Wir haben als Amateure begonnen, aus Leidenschaft für das Filmen und das Erzählen von Geschichten in Bildern. Heute erstellen wir professionelle Materialien für Unternehmen aus Technik und Industrie und überall dort, wo echte Arbeit zählt."
+,,methodSummary,"We began by filming out of a genuine love for the craft and for visual storytelling. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.","Zaczynaliśmy amatorsko, z pasji do nagrywania i opowiadania historii obrazem. Dziś tworzymy profesjonalne materiały dla firm z branż technicznych, przemysłowych i wszędzie tam, gdzie liczy się prawdziwa praca.","Wir haben als Amateure begonnen, aus Leidenschaft für das Filmen und das Erzählen von Geschichten in Bildern. Heute erstellen wir professionelle Materialien für Unternehmen aus technischen und industriellen Branchen – überall dort, wo echte Arbeit zählt."
 ,,methodExpertise,Industry expertise,Znajomość branży,Branchenkenntnis
 ,,methodProduction,Full production process,Pełny proces produkcji,Vollständiger Produktionsprozess
-,,methodQuality,Quality without shortcuts,Jakość bez skrótów,Qualität ohne Abkürzungen
+,,methodQuality,No shortcuts on quality,Jakość bez skrótów,Keine Kompromisse bei der Qualität
 ,,contactEyebrow,04 / CONTACT,04 / KONTAKT,04 / KONTAKT
 ,,contactTitleFirst,LET'S START,ZACZNIJMY,LASS UNS BEGINNEN
 ,,contactTitleSecond,WITH THE IMAGE.,OD OBRAZU.,MIT DEM BILD.
-,,contactSummary,Tell us what you want to show.,Opowiedz nam co chcesz pokazać.,Erzähl uns was du zeigen möchtest.
-,,contactAction,Write to us,Napisz do nas,Schreib uns
+,,contactSummary,Tell us what you need. We’ll put together the brief and take care of the production.,Powiedz nam, czego potrzebujesz. Przygotujemy brief i zajmiemy się produkcją.,Sagen Sie uns, was Sie brauchen. Wir erstellen das Briefing und übernehmen die Produktion.
+,,contactAction,Write to us,Napisz do nas,Schreiben Sie uns
 ,contact,eyebrow,ZIRON / CONTACT,ZIRON / KONTAKT,ZIRON / KONTAKT
-,,title,LET’S TALK.,NAPISZ DO NAS.,SCHREIB UNS.
-,,summary,"Tell us what you want to show. We will turn it into a clear, memorable image.","Opowiedz nam, co chcesz pokazać. Zamienimy to w wyrazisty, zapadający w pamięć obraz.","Erzähl uns, was du zeigen möchtest. Wir machen daraus ein klares, einprägsames Bild."
+,,title,LET’S TALK.,NAPISZ DO NAS.,SCHREIBEN SIE UNS.
+,,summary,"Tell us what you need and what you want people to see. We’ll put together the brief, plan the production and guide you through the whole process.","Powiedz nam, czego potrzebujesz i co chcesz pokazać. Przygotujemy brief, zaplanujemy produkcję i przeprowadzimy Cię przez cały proces.","Sagen Sie uns, was Sie brauchen und was andere sehen sollen. Wir erstellen das Briefing, planen die Produktion und begleiten Sie durch den gesamten Prozess."
 ,,firstName,First name,Imię,Vorname
 ,,lastName,Last name,Nazwisko,Nachname
 ,,email,Email address,Adres e-mail,E-Mail-Adresse
 ,,message,Message,Wiadomość,Nachricht
 ,,submit,Send enquiry,Wyślij zapytanie,Anfrage senden
 ,,clearDraft,Clear saved draft,Wyczyść zapisany szkic,Gespeicherten Entwurf löschen
-,,formNote,Your email app will open with your message ready to send.,Twoja aplikacja pocztowa otworzy się z gotową wiadomością.,Deine E-Mail-App öffnet sich mit einer versandfertigen Nachricht.
-,,fallbackNotice,"If your email app does not open, email us directly at","Jeśli aplikacja pocztowa się nie otworzy, napisz bezpośrednio na adres","Wenn sich deine E-Mail-App nicht öffnet, schreibe uns direkt an"
+,,formNote,Your email app will open with your message ready to send.,Twoja aplikacja pocztowa otworzy się z gotową wiadomością.,Ihre E-Mail-App öffnet sich mit einer versandfertigen Nachricht.
+,,fallbackNotice,"If your email app does not open, email us directly at","Jeśli aplikacja pocztowa się nie otworzy, napisz bezpośrednio na adres","Wenn sich Ihre E-Mail-App nicht öffnet, schreiben Sie uns direkt an"
 ,,emailSubject,New project enquiry,Nowe zapytanie dotyczące projektu,Neue Projektanfrage
 ,,emailName,Name,Imię i nazwisko,Name
 ,,emailAddress,Email,E-mail,E-Mail
-,,termsNotice,"By sending us a message, you consent to the processing of your personal data as described in our","Wysyłając do nas wiadomość, wyrażasz zgodę na przetwarzanie swoich danych osobowych zgodnie z naszą","Mit dem Senden einer Nachricht stimmst du der Verarbeitung deiner personenbezogenen Daten gemäß unserer"
+,,termsNotice,"By sending us a message, you consent to the processing of your personal data as described in our","Wysyłając do nas wiadomość, wyrażasz zgodę na przetwarzanie swoich danych osobowych zgodnie z naszą","Mit dem Senden einer Nachricht stimmen Sie der Verarbeitung Ihrer personenbezogenen Daten gemäß unserer"
 ,,termsLink,privacy policy,polityką prywatności,Datenschutzrichtlinie
 ,,termsSuffix,.,.,zu.
 ,privacy,eyebrow,LEGAL / ZIRON,LEGAL / ZIRON,RECHTLICHES / ZIRON
 ,,title,Privacy policy,Polityka prywatności,Datenschutzerklärung
 ,,general.heading,1. General information,1. Informacje ogólne,1. Allgemeine Informationen
 ,,general.brand,ZIRON,ZIRON,ZIRON
-,,general.controller,"is the controller of personal data and provides mobile washing services for machinery, vehicles and equipment.","jest administratorem danych osobowych i firmą świadczącą usługi mobilnego mycia maszyn, pojazdów i sprzętu.","ist Verantwortlicher für personenbezogene Daten und bietet mobile Reinigungsdienste für Maschinen, Fahrzeuge und Geräte."
+,,general.controller,"is the controller of personal data and provides film production, photography, drone and social content services.","jest administratorem danych osobowych i świadczy usługi produkcji filmowej, fotografii, ujęć z drona oraz tworzenia treści do mediów społecznościowych.","ist Verantwortlicher für personenbezogene Daten und bietet Dienstleistungen in den Bereichen Filmproduktion, Fotografie, Drohnenaufnahmen und Social Content an."
 ,,general.contact,"You can contact the controller using the contact form or the telephone number shown in advertisements.","Kontakt z administratorem danych możliwy jest za pośrednictwem formularza kontaktowego lub numeru telefonu podanego w reklamach.","Sie können den Verantwortlichen über das Kontaktformular oder die in den Anzeigen angegebene Telefonnummer erreichen."
 ,,scope.heading,2. Scope of collected data,2. Zakres zbieranych danych,2. Umfang der erhobenen Daten
 ,,scope.summary,"The following data may be collected through Meta (Facebook / Instagram) advertising forms:","Za pośrednictwem formularzy reklamowych Meta (Facebook / Instagram) zbierane mogą być następujące dane:","Über Werbeformulare von Meta (Facebook / Instagram) können folgende Daten erhoben werden:"
@@ -97,38 +97,38 @@
 ,,preview,Image preview,Podgląd obrazu,Bildvorschau
 ,home,mediaUnavailable,Portfolio media is unavailable.,Materiały portfolio są niedostępne.,Portfolio-Medien sind nicht verfügbar.
 ,,fieldNote,FIELD NOTE / 01,NOTATKA Z TERENU / 01,FELDNOTIZ / 01
-,,titleFirst,FILM THE WORK,POKAŻCIE JAK DZIAŁA,ZEIGEN SIE WIE IHR UNTERNEHMEN
-,,titleSecond,PEOPLE TRUST YOU TO DO.,WASZA FIRMA.,ARBEITET.
+,,titleFirst,SHOW THE WORK,POKAŻ JAK DZIAŁA,ZEIGEN SIE DIE ARBEIT
+,,titleSecond,PEOPLE TRUST YOU TO DO.,TWOJA FIRMA.,FÜR DIE MAN IHNEN VERTRAUT.
 ,,summary,"Film, photography, drone and social content for agricultural, industrial and technical brands.","Film, fotografia, dron i social media dla marek z branży rolniczej, przemysłowej i technicznej.","Film, Fotografie, Drohnenaufnahmen und Social Content für Marken aus Landwirtschaft, Industrie und Technik."
 ,,contactAction,Plan a shoot,Porozmawiajmy o realizacji,Ein Dreh planen
 ,,workAction,See selected work,Zobacz wybrane realizacje,Ausgewählte Arbeiten ansehen
-,,proofLabel,How we build proof,Jak budujemy dowód,Wie wir Belege schaffen
-,,proofTitle,Proof frame by frame,Dowód klatka po klatce,Beweis Bild für Bild
+,,proofLabel,How we make the work credible,Jak pokazujemy fakty,So wird aus Arbeit Vertrauen.
+,,proofTitle,"Trust, frame by frame","Konkrety, klatka po klatce",VERTRAUEN BILD FÜR BILD.
 ,,proofField,Field,Teren,Umfeld
 ,,proofDetail,Detail,Detal,Detail
 ,,proofPeople,People,Ludzie,Menschen
 ,,proofScale,Scale,Skala,Maßstab
-,,outcomesEyebrow,One shoot. More ways to use it.,Jedna realizacja. Więcej sposobów użycia.,Ein Dreh. Mehr Einsatzmöglichkeiten.
-,,outcomesTitle,MAKE THE WORK EASY TO UNDERSTAND.,POKAŻCIE JAK TO DZIAŁA.,MACHEN SIE DIE ARBEIT VERSTÄNDLICH.
+,,outcomesEyebrow,One shoot. More ways to use it.,Jedna realizacja. Wiele zastosowań.,Ein Dreh. Mehr Einsatzmöglichkeiten.
+,,outcomesTitle,MAKE THE WORK EASY TO UNDERSTAND.,POKAŻ JAK TO DZIAŁA.,MACHEN SIE IHRE ARBEIT VERSTÄNDLICH.
 ,,outcomeExplain,Explain a process,Wyjaśnij proces,Einen Prozess erklären
 ,,outcomeScale,Show the scale,Pokaż skalę,Die Größe zeigen
-,,outcomeSales,Give sales usable assets,Daj handlowcom materiały do pracy,Dem Vertrieb nutzbare Inhalte geben
-,,outcomeSocial,Keep social moving,Utrzymaj ruch w social media,Social Media in Bewegung halten
+,,outcomeSales,Give your sales team assets they can use,Daj działowi handlowemu materiały które wykorzysta,MATERIAL FÜR DEN VERTRIEB SCHAFFEN.
+,,outcomeSocial,Keep your social channels active,Bądź aktywny w mediach społecznościowych,Social Media aktiv halten
 ,,workEyebrow,Selected work,Wybrane realizacje,Ausgewählte Arbeiten
-,,workTitle,PROOF WITH A JOB TO DO.,OBRAZY KTÓRE MAJĄ ZADANIE.,BEWEISE MIT EINEM ZWECK.
-,,workSummary,"Show buyers how the product, process and people behind it actually work.","Pokaż odbiorcom, jak naprawdę działa produkt, proces i ludzie, którzy za nim stoją.","Zeigen Sie Interessenten, wie Produkt, Prozess und die Menschen dahinter wirklich arbeiten."
+,,workTitle,WORK THAT PROVES ITS VALUE.,"OBRAZY, KTÓRE MAJĄ SWÓJ CEL.",BILDER MIT KLAREM ZWECK.
+,,workSummary,"Show buyers how your products and processes work — and the people behind them.","Pokaż odbiorcom, jak w praktyce działają produkt i proces oraz kim są ludzie, którzy za nimi stoją.","Zeigen Sie Interessenten, wie Produkte und Prozesse funktionieren – und wer die Menschen dahinter sind."
 ,,workCardOne,Machinery in motion,Maszyny w ruchu,Maschinen in Bewegung
 ,,workCardTwo,"Process, made visible",Proces który widać,Sichtbarer Prozess
-,,workCardThree,Scale behind the work,Skala pracy,Die Größe hinter der Arbeit
-,,processEyebrow,One small crew. Full ownership.,Mała ekipa. Pełna odpowiedzialność.,Kleines Team. Volle Verantwortung.
-,,processTitle,FROM BRIEF TO BUYER-READY.,OD BRIEFU DO GOTOWEGO MATERIAŁU.,VOM BRIEFING ZUM EINSATZBEREITEN MATERIAL.
+,,workCardThree,Scale behind the work,Skala pracy,DAS AUSMASS DER ARBEIT.
+,,processEyebrow,Tell us what needs showing. We’ll take it from there.,Powiedz nam czym się zajmujesz. Resztą zajmiemy się my.,Sagen Sie uns, was Sie brauchen. Wir übernehmen den Rest.
+,,processTitle,FROM FIRST CONVERSATION TO READY-TO-USE CONTENT.,OD PIERWSZEJ ROZMOWY DO GOTOWEGO MATERIAŁU.,VOM ERSTEN GESPRÄCH BIS ZUM FERTIGEN MATERIAL.
 ,,processBrief,Brief,Rozmowa,Briefing
-,,processFieldDay,Field day,Dzień zdjęciowy,Drehtag vor Ort
+,,processFieldDay,Shoot day,Dzień zdjęciowy,Drehtag vor Ort
 ,,processEdit,Edit,Montaż,Schnitt
 ,,processDelivery,Delivery,Gotowy materiał,Übergabe
-,,contactEyebrow,Start with the hard-to-explain part.,Zacznijmy od tego co trudno wyjaśnić.,Beginnen wir mit dem schwer Erklärbaren.
-,,contactTitle,BRING US THE WORK.,POKAŻ NAM SWOJĄ PRACĘ.,ZEIGEN SIE UNS IHRE ARBEIT.
-,,contactSummary,"Tell us what needs to be seen. We will come back with a clear direction for the shoot.","Powiedz nam, co trzeba pokazać. Wrócimy z konkretnym kierunkiem realizacji.","Sagen Sie uns, was sichtbar werden soll. Wir kommen mit einer klaren Richtung für den Dreh zurück."
+,,contactEyebrow,Tell us what you need. We’ll make the plan.,Powiedz nam, czego potrzebujesz. Przygotujemy plan.,Sagen Sie uns, was Sie brauchen. Wir erstellen den Plan.
+,,contactTitle,TELL US WHAT YOU NEED. WE’LL HANDLE THE REST.,POWIEDZ NAM CZEGO POTRZEBUJESZ. MY ZAJMIEMY SIĘ RESZTĄ.,ZEIGEN SIE UNS IHRE ARBEIT. WIR ÜBERNEHMEN DEN REST.
+,,contactSummary,"Tell us what you need and what people should see. We’ll put together the brief, plan the shoot and show the work clearly.","Powiedz nam, czego potrzebujesz i co ma zobaczyć odbiorca. Przygotujemy brief, zaplanujemy zdjęcia i sprawimy, że Twoja praca będzie widoczna.","Sagen Sie uns, was Sie brauchen und was Menschen sehen sollen. Wir erstellen das Briefing, planen den Dreh und machen Ihre Arbeit sichtbar."
 ,menu,close,Close,Zamknij,Schließen
 ,,explore,Explore,Odkrywaj,Entdecken
 ,nav,about,About,O nas,Über uns
@@ -136,11 +136,12 @@
 ,,primary,Primary navigation,Nawigacja główna,Hauptnavigation
 ,,work,Work,Realizacje,Arbeiten
 ,project,category,"Film production / Campaign 2026","Film produkcyjny / Kampania 2026","Filmproduktion / Kampagne 2026"
-,,summary,"Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.","Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie jest najbardziej prawdziwa — w pyle, śniegu, deszczu i pełnym tempie.","Maschinen posieren nicht. Sie arbeiten. Wir haben ihre Stärke dort gezeigt, wo sie am authentischsten ist – in Staub, Schnee, Regen und bei voller Geschwindigkeit."
-,,title,Strength in motion,Siła w ruchu,Stärke in Bewegung
-,,contactEyebrow,Your next realization starts here.,Twoja kolejna realizacja zaczyna się tutaj.,Ihre nächste Produktion beginnt hier.
-,,contactTitleFirst,LET’S MAKE YOUR WORK,POKAŻMY TWOJĄ PRACĘ,WIR MACHEN IHRE ARBEIT
-,,contactTitleSecond,IMPOSSIBLE TO MISS.,NIE DO PRZEOCZENIA.,UNÜBERSEHBAR.
-,,contactSummary,Tell us what you want to show. We will come back with a clear direction for the realization.,Opowiedz nam co chcesz pokazać. Wrócimy z konkretnym kierunkiem realizacji.,Erzählen Sie uns was Sie zeigen möchten. Wir kommen mit einer klaren Richtung für die Produktion zurück.
-,,contactAction,Plan your realization,Zaplanujmy Twoją realizację,Planen wir Ihre Produktion
+,,summary,"Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.","Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie widać ją najlepiej — w pyle, śniegu, deszczu i przy pełnym tempie pracy.","Maschinen posieren nicht. Sie arbeiten. Wir haben ihre Stärke dort gezeigt, wo sie am authentischsten ist – in Staub, Schnee, Regen und bei voller Fahrt."
+,,processSummary,"We followed the work closely, turning the steps, details and decisions behind it into a clear story.","Towarzyszyliśmy pracy z bliska i zamieniliśmy jej kolejne etapy, detale oraz decyzje w czytelną historię.","Wir haben die Arbeit aus nächster Nähe begleitet und ihre Schritte, Details und Entscheidungen zu einer klaren Geschichte verdichtet."
+,,scaleSummary,"We captured the scale of the operation, so the work feels as substantial on screen as it does in real life.","Ujęliśmy skalę działania tak, by była równie odczuwalna jak na miejscu.","Wir haben den Umfang der Arbeit ins Bild gesetzt, damit sie so greifbar wirkt wie im echten Leben."
+,,contactEyebrow,Tell us the goal. We’ll make the plan.,Powiedz nam, jaki masz cel. Przygotujemy plan.,Sagen Sie uns das Ziel. Wir erstellen den Plan.
+,,contactTitleFirst,TELL US WHAT YOU NEED.,POWIEDZ NAM CZEGO POTRZEBUJESZ.,ZEIGEN SIE UNS IHRE ARBEIT.
+,,contactTitleSecond,WE HANDLE THE REST.,MY ZAJMUJEMY SIĘ RESZTĄ.,WIR ÜBERNEHMEN DEN REST.
+,,contactSummary,"Tell us what you need and what people should see. We’ll put together the brief, plan the production and deliver the finished material.","Powiedz nam, czego potrzebujesz i co ma zobaczyć odbiorca. Przygotujemy brief, zaplanujemy produkcję i dostarczymy gotowy materiał.","Sagen Sie uns, was Sie brauchen und was Menschen sehen sollen. Wir erstellen das Briefing, planen die Produktion und liefern das fertige Material."
+,,contactAction,Plan your project,Zaplanujmy Twoją realizację,LASSEN SIE UNS IHRE PRODUKTION PLANEN.
 ,,mediaUnavailable,Project media is unavailable.,Materiały projektu są niedostępne.,Projektmedien sind nicht verfügbar.

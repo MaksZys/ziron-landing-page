@@ -11,6 +11,10 @@
   background: var(--color-project-ink);
 }
 
+.projectSection {
+  scroll-margin-top: var(--stage-control-size);
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;

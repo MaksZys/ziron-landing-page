@@ -34,7 +34,7 @@ export class PrivacyView extends LitElement {
             <p>
               <strong>${msg('ZIRON', { id: 'privacy.general.brand' })}</strong>
               ${msg(
-                'is the controller of personal data and provides mobile washing services for machinery, vehicles and equipment.',
+                'is the controller of personal data and provides film production, photography, drone and social content services.',
                 { id: 'privacy.general.controller' },
               )}
             </p>
