@@ -170,6 +170,14 @@
         <source>Email</source>
         <target>Email</target>
       </trans-unit>
+      <trans-unit id="contact.termsNotice">
+        <source>By sending a message, you accept our</source>
+        <target>By sending a message, you accept our</target>
+      </trans-unit>
+      <trans-unit id="contact.termsLink">
+        <source>terms and conditions</source>
+        <target>terms and conditions</target>
+      </trans-unit>
       <trans-unit id="brand.fullLogo">
         <source>ZIRON — We create what others talk about</source>
         <target>ZIRON — We create what others talk about</target>

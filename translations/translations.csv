@@ -41,6 +41,8 @@
 ,,emailSubject,New project enquiry,Nowe zapytanie dotyczące projektu,Neue Projektanfrage
 ,,emailName,Name,Imię i nazwisko,Name
 ,,emailAddress,Email,E-mail,E-Mail
+,,termsNotice,"By sending a message, you accept our","Wysyłając wiadomość, akceptujesz nasze","Mit dem Senden deiner Nachricht akzeptierst du unsere"
+,,termsLink,terms and conditions,warunki i zasady,Allgemeinen Geschäftsbedingungen
 ,brand,fullLogo,"ZIRON — We create what others talk about","ZIRON — Tworzymy to, o czym inni mówią","ZIRON — Wir schaffen, worüber andere sprechen"
 ,,homeLink,ZIRON home,ZIRON strona główna,ZIRON Startseite
 ,gallery,closePreview,Close image preview,Zamknij podgląd obrazu,Bildvorschau schließen

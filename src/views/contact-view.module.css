@@ -18,7 +18,7 @@
 
 .intro,
 .form {
-  padding: clamp(3rem, 8vw, 8rem) clamp(2rem, 7vw, 7rem);
+  padding: 2rem clamp(2rem, 7vw, 7rem);
 }
 
 .intro {
@@ -83,8 +83,9 @@
 }
 
 .form {
-  display: grid;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 1.5rem;
   background: var(--contact-ink);
 }
@@ -172,6 +173,20 @@
   margin: 0;
   color: var(--contact-steel);
   letter-spacing: 0.06em;
+}
+
+.termsNote {
+  margin: -0.75rem 0 0;
+  color: var(--contact-steel);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.termsNote a {
+  color: var(--contact-paper);
+  text-decoration-color: var(--contact-cyan);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25rem;
 }
 
 @media (max-width: 47.999rem) {

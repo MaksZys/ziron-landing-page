@@ -5,6 +5,7 @@ import './views/home-view';
 import './views/project-view';
 import './views/about-view';
 import './views/contact-view';
+import './views/privacy-view';
 import { applyLocaleFromUrl, canonicalizeLocaleInUrl } from './localization';
 
 const appRoot = document.querySelector<HTMLElement>('#app');
@@ -28,7 +29,9 @@ async function start() {
         ? html`<about-view></about-view>`
         : requestedView === 'contact'
           ? html`<contact-view></contact-view>`
-        : html`<home-view></home-view>`,
+          : requestedView === 'privacy'
+            ? html`<privacy-view></privacy-view>`
+          : html`<home-view></home-view>`,
     root,
   );
 }

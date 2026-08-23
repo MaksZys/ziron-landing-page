@@ -49,6 +49,8 @@
 'contact.message': `Nachricht`,
 'contact.submit': `Anfrage senden`,
 'contact.summary': `Erzähl uns, was du zeigen möchtest. Wir machen daraus ein klares, einprägsames Bild.`,
+'contact.termsLink': `Allgemeinen Geschäftsbedingungen`,
+'contact.termsNotice': `Mit dem Senden deiner Nachricht akzeptierst du unsere`,
 'contact.title': `SCHREIB UNS.`,
 'gallery.closePreview': `Bildvorschau schließen`,
 'gallery.label': `Projektgalerie`,

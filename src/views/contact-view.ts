@@ -4,6 +4,7 @@ import { msg, updateWhenLocaleChanges } from '@lit/localize';
 
 import '../components/organisms/site-header';
 import { getPrimaryNavigation } from '../content/navigation';
+import { localizedViewUrl } from '../localization';
 import styles from './contact-view.module.css';
 
 const CONTACT_EMAIL = 'kontakt@ziron.pl';
@@ -88,6 +89,12 @@ export class ContactView extends LitElement {
             </button>
             <p class=${styles.formNote}>
               ${msg('Your email app will open with your message ready to send.', { id: 'contact.formNote' })}
+            </p>
+            <p class=${styles.termsNote}>
+              ${msg('By sending a message, you accept our', { id: 'contact.termsNotice' })}
+              <a href=${localizedViewUrl('privacy')}>
+                ${msg('terms and conditions', { id: 'contact.termsLink' })}
+              </a>.
             </p>
           </form>
         </section>

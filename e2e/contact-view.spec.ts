@@ -25,6 +25,12 @@ test('Contact page provides an accessible, validated email handoff form', async 
     true,
   );
 
+  if (page.viewportSize()?.width && page.viewportSize()!.width >= 768) {
+    const pageHeight = await page.evaluate(() => document.documentElement.scrollHeight);
+
+    expect(pageHeight).toBeLessThanOrEqual(page.viewportSize()!.height);
+  }
+
   if (page.viewportSize()?.width && page.viewportSize()!.width < 768) {
     expect(
       await page.locator('contact-view form > div').evaluate((grid) => {

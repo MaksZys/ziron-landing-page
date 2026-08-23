@@ -49,6 +49,8 @@
 'contact.message': `Wiadomość`,
 'contact.submit': `Wyślij zapytanie`,
 'contact.summary': `Opowiedz nam, co chcesz pokazać. Zamienimy to w wyrazisty, zapadający w pamięć obraz.`,
+'contact.termsLink': `warunki i zasady`,
+'contact.termsNotice': `Wysyłając wiadomość, akceptujesz nasze`,
 'contact.title': `NAPISZ DO NAS.`,
 'gallery.closePreview': `Zamknij podgląd obrazu`,
 'gallery.label': `Galeria projektu`,
