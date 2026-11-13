@@ -46,8 +46,8 @@ export class HomeView extends LitElement {
               ${msg('FIELD NOTE / 01', { id: 'home.fieldNote' })}
             </p>
             <h1 id="home-title" class=${styles.title}>
-              ${msg('SHOW THE WORK', { id: 'home.titleFirst' })}<br />
-              ${msg('PEOPLE TRUST YOU TO DO.', { id: 'home.titleSecond' })}
+              ${msg('Show the work', { id: 'home.titleFirst' })}<br />
+              ${msg('people trust you to do.', { id: 'home.titleSecond' })}
             </h1>
             <p class=${styles.summary}>
               ${msg(
@@ -83,7 +83,7 @@ export class HomeView extends LitElement {
               ${msg('One shoot. More ways to use it.', { id: 'home.outcomesEyebrow' })}
             </p>
             <h2 id="outcomes-title">
-              ${msg('MAKE THE WORK EASY TO UNDERSTAND.', { id: 'home.outcomesTitle' })}
+              ${msg('Make the work easy to understand.', { id: 'home.outcomesTitle' })}
             </h2>
           </div>
           <div class=${styles.outcomeList}>
@@ -99,7 +99,7 @@ export class HomeView extends LitElement {
             <p class=${styles.sectionLabel}>
               ${msg('Selected work', { id: 'home.workEyebrow' })}
             </p>
-            <h2 id="work-title">${msg('WORK THAT PROVES ITS VALUE.', { id: 'home.workTitle' })}</h2>
+            <h2 id="work-title">${msg('Work that proves its value.', { id: 'home.workTitle' })}</h2>
             <p class=${styles.workSummary}>
               ${msg(
                 'Show buyers how your products and processes work — and the people behind them.',
@@ -117,7 +117,7 @@ export class HomeView extends LitElement {
             <p class=${styles.sectionLabel}>
               ${msg('Tell us what needs showing. We’ll take it from there.', { id: 'home.processEyebrow' })}
             </p>
-            <h2 id="process-title">${msg('FROM FIRST CONVERSATION TO READY-TO-USE CONTENT.', { id: 'home.processTitle' })}</h2>
+            <h2 id="process-title">${msg('From first conversation to ready-to-use content.', { id: 'home.processTitle' })}</h2>
           </div>
           <ol class=${styles.processSteps}>
             <li><span>01</span>${msg('Brief', { id: 'home.processBrief' })}</li>
@@ -131,7 +131,7 @@ export class HomeView extends LitElement {
           <p class=${styles.sectionLabel}>
             ${msg('Tell us what you need. We’ll make the plan.', { id: 'home.contactEyebrow' })}
           </p>
-          <h2 id="contact-title">${msg('TELL US WHAT YOU NEED. WE’LL HANDLE THE REST.', { id: 'home.contactTitle' })}</h2>
+          <h2 id="contact-title">${msg('Tell us what you need. We’ll handle the rest.', { id: 'home.contactTitle' })}</h2>
           <p>
             ${msg(
               'Tell us what you need and what people should see. We’ll put together the brief, plan the shoot and show the work clearly.',

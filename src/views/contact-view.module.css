@@ -50,10 +50,10 @@
   margin: 0;
   color: var(--contact-cyan);
   font-size: clamp(4.25rem, 9vw, 9rem);
-  font-weight: 900;
-  letter-spacing: -0.075em;
-  line-height: 0.8;
-  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  line-height: calc(0.86 + var(--display-heading-leading-adjustment));
+  text-transform: var(--display-heading-transform);
 }
 
 .summary {

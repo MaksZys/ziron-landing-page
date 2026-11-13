@@ -19,12 +19,12 @@
         <target>ZIRON / WER WIR SIND</target>
       </trans-unit>
       <trans-unit id="about.heroTitleFirst">
-        <source>WE CREATE</source>
-        <target>WIR SCHAFFEN</target>
+        <source>We create</source>
+        <target>Wir schaffen</target>
       </trans-unit>
       <trans-unit id="about.heroTitleSecond">
-        <source>AS TWO</source>
-        <target>ZU ZWEIT</target>
+        <source>as two</source>
+        <target>zu zweit</target>
       </trans-unit>
       <trans-unit id="about.heroSummary">
         <source>Film. Photography. Movement. From idea to finished material — we lead the entire process.</source>
@@ -47,12 +47,12 @@
         <target>02 / TEAM</target>
       </trans-unit>
       <trans-unit id="about.teamTitleFirst">
-        <source>TWO POINTS</source>
-        <target>ZWEI PERSPEKTIVEN</target>
+        <source>Two points</source>
+        <target>Zwei Perspektiven</target>
       </trans-unit>
       <trans-unit id="about.teamTitleSecond">
-        <source>OF VIEW.</source>
-        <target>AUF DIE DINGE.</target>
+        <source>of view.</source>
+        <target>auf die Dinge.</target>
       </trans-unit>
       <trans-unit id="about.teamSummary">
         <source>Our shared work and similar approach to creating images brought us together. Our skills complement each other, but we take responsibility for every project together.</source>
@@ -79,12 +79,12 @@
         <target>03 / UNSERE ARBEITSWEISE</target>
       </trans-unit>
       <trans-unit id="about.methodTitleFirst">
-        <source>WE DO MORE THAN</source>
-        <target>WIR TUN MEHR ALS</target>
+        <source>We do more than</source>
+        <target>Wir tun mehr als</target>
       </trans-unit>
       <trans-unit id="about.methodTitleSecond">
-        <source>RECORD.</source>
-        <target>NUR AUFZUNEHMEN.</target>
+        <source>record.</source>
+        <target>nur aufzunehmen.</target>
       </trans-unit>
       <trans-unit id="about.methodSummary">
         <source>We began by filming out of a genuine love for the craft and for visual storytelling. Today, we create professional materials for companies in technical and industrial sectors and wherever real work matters.</source>
@@ -107,12 +107,12 @@
         <target>04 / KONTAKT</target>
       </trans-unit>
       <trans-unit id="about.contactTitleFirst">
-        <source>LET&apos;S START</source>
-        <target>LASS UNS BEGINNEN</target>
+        <source>Let's start</source>
+        <target>Lass uns beginnen</target>
       </trans-unit>
       <trans-unit id="about.contactTitleSecond">
-        <source>WITH THE IMAGE.</source>
-        <target>MIT DEM BILD.</target>
+        <source>with the image.</source>
+        <target>mit dem Bild.</target>
       </trans-unit>
       <trans-unit id="about.contactSummary">
         <source>Tell us what you need. We’ll put together the brief and take care of the production.</source>
@@ -127,8 +127,8 @@
         <target>ZIRON / KONTAKT</target>
       </trans-unit>
       <trans-unit id="contact.title">
-        <source>LET’S TALK.</source>
-        <target>SCHREIBEN SIE UNS.</target>
+        <source>Let’s talk.</source>
+        <target>Schreiben Sie uns.</target>
       </trans-unit>
       <trans-unit id="contact.summary">
         <source>Tell us what you need and what you want people to see. We’ll put together the brief, plan the production and guide you through the whole process.</source>
@@ -395,12 +395,12 @@
         <target>FELDNOTIZ / 01</target>
       </trans-unit>
       <trans-unit id="home.titleFirst">
-        <source>SHOW THE WORK</source>
-        <target>ZEIGEN SIE DIE ARBEIT</target>
+        <source>Show the work</source>
+        <target>Zeigen Sie die Arbeit</target>
       </trans-unit>
       <trans-unit id="home.titleSecond">
-        <source>PEOPLE TRUST YOU TO DO.</source>
-        <target>FÜR DIE MAN IHNEN VERTRAUT.</target>
+        <source>people trust you to do.</source>
+        <target>für die man Ihnen vertraut.</target>
       </trans-unit>
       <trans-unit id="home.summary">
         <source>Film, photography, drone and social content for agricultural, industrial and technical brands.</source>
@@ -443,8 +443,8 @@
         <target>Ein Dreh. Mehr Einsatzmöglichkeiten.</target>
       </trans-unit>
       <trans-unit id="home.outcomesTitle">
-        <source>MAKE THE WORK EASY TO UNDERSTAND.</source>
-        <target>MACHEN SIE IHRE ARBEIT VERSTÄNDLICH.</target>
+        <source>Make the work easy to understand.</source>
+        <target>Machen Sie Ihre Arbeit verständlich.</target>
       </trans-unit>
       <trans-unit id="home.outcomeExplain">
         <source>Explain a process</source>
@@ -467,8 +467,8 @@
         <target>Ausgewählte Arbeiten</target>
       </trans-unit>
       <trans-unit id="home.workTitle">
-        <source>WORK THAT PROVES ITS VALUE.</source>
-        <target>BILDER MIT KLAREM ZWECK.</target>
+        <source>Work that proves its value.</source>
+        <target>Bilder mit klarem Zweck.</target>
       </trans-unit>
       <trans-unit id="home.workSummary">
         <source>Show buyers how your products and processes work — and the people behind them.</source>
@@ -491,8 +491,8 @@
         <target>Sagen Sie uns</target>
       </trans-unit>
       <trans-unit id="home.processTitle">
-        <source>FROM FIRST CONVERSATION TO READY-TO-USE CONTENT.</source>
-        <target>VOM ERSTEN GESPRÄCH BIS ZUM FERTIGEN MATERIAL.</target>
+        <source>From first conversation to ready-to-use content.</source>
+        <target>Vom ersten Gespräch bis zum fertigen Material.</target>
       </trans-unit>
       <trans-unit id="home.processBrief">
         <source>Brief</source>
@@ -515,8 +515,8 @@
         <target>czego potrzebujesz. Przygotujemy plan.</target>
       </trans-unit>
       <trans-unit id="home.contactTitle">
-        <source>TELL US WHAT YOU NEED. WE’LL HANDLE THE REST.</source>
-        <target>ZEIGEN SIE UNS IHRE ARBEIT. WIR ÜBERNEHMEN DEN REST.</target>
+        <source>Tell us what you need. We’ll handle the rest.</source>
+        <target>Zeigen Sie uns Ihre Arbeit. Wir übernehmen den Rest.</target>
       </trans-unit>
       <trans-unit id="home.contactSummary">
         <source>Tell us what you need and what people should see. We’ll put together the brief, plan the shoot and show the work clearly.</source>
@@ -567,12 +567,12 @@
         <target>jaki masz cel. Przygotujemy plan.</target>
       </trans-unit>
       <trans-unit id="project.contactTitleFirst">
-        <source>TELL US WHAT YOU NEED.</source>
-        <target>ZEIGEN SIE UNS IHRE ARBEIT.</target>
+        <source>Tell us what you need.</source>
+        <target>Zeigen Sie uns Ihre Arbeit.</target>
       </trans-unit>
       <trans-unit id="project.contactTitleSecond">
-        <source>WE HANDLE THE REST.</source>
-        <target>WIR ÜBERNEHMEN DEN REST.</target>
+        <source>We handle the rest.</source>
+        <target>Wir übernehmen den Rest.</target>
       </trans-unit>
       <trans-unit id="project.contactSummary">
         <source>Tell us what you need and what people should see. We’ll put together the brief, plan the production and deliver the finished material.</source>

@@ -50,7 +50,7 @@ export class AboutView extends LitElement {
           <div class=${styles.heroCopy}>
             <p class=${styles.eyebrow}>${msg('ZIRON / WHO WE ARE', { id: 'about.heroEyebrow' })}</p>
             <h1 id="about-title" class=${styles.title}>
-              ${msg('WE CREATE', { id: 'about.heroTitleFirst' })}<br />${msg('AS TWO', {
+              ${msg('We create', { id: 'about.heroTitleFirst' })}<br />${msg('as two', {
                 id: 'about.heroTitleSecond',
               })}
             </h1>
@@ -82,7 +82,7 @@ export class AboutView extends LitElement {
           <div class=${styles.sectionIntro}>
             <p class=${styles.eyebrow}>${msg('02 / TEAM', { id: 'about.teamEyebrow' })}</p>
             <h2 id="team-title">
-              ${msg('TWO POINTS', { id: 'about.teamTitleFirst' })}<br />${msg('OF VIEW.', {
+              ${msg('Two points', { id: 'about.teamTitleFirst' })}<br />${msg('of view.', {
                 id: 'about.teamTitleSecond',
               })}
             </h2>
@@ -117,8 +117,8 @@ export class AboutView extends LitElement {
           <div class=${styles.manifestoRule} aria-hidden="true"></div>
           <p class=${styles.eyebrow}>${msg('03 / HOW WE WORK', { id: 'about.methodEyebrow' })}</p>
           <h2 id="manifesto-title">
-            ${msg('WE DO MORE THAN', { id: 'about.methodTitleFirst' })}<br /><span
-              >${msg('RECORD.', { id: 'about.methodTitleSecond' })}</span
+            ${msg('We do more than', { id: 'about.methodTitleFirst' })}<br /><span
+              >${msg('record.', { id: 'about.methodTitleSecond' })}</span
             >
           </h2>
           <div class=${styles.manifestoBody}>
@@ -140,7 +140,7 @@ export class AboutView extends LitElement {
           <div>
             <p class=${styles.eyebrow}>${msg('04 / CONTACT', { id: 'about.contactEyebrow' })}</p>
             <h2 id="contact-title">
-              ${msg("LET'S START", { id: 'about.contactTitleFirst' })}<br />${msg('WITH THE IMAGE.', {
+              ${msg("Let's start", { id: 'about.contactTitleFirst' })}<br />${msg('with the image.', {
                 id: 'about.contactTitleSecond',
               })}
             </h2>

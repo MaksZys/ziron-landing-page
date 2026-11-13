@@ -36,8 +36,8 @@ export class ProjectView extends LitElement {
             ${msg('Tell us the goal. We’ll make the plan.', { id: 'project.contactEyebrow' })}
           </p>
           <h2 id="project-contact-title">
-            ${msg('TELL US WHAT YOU NEED.', { id: 'project.contactTitleFirst' })}<br />
-            ${msg('WE HANDLE THE REST.', { id: 'project.contactTitleSecond' })}
+            ${msg('Tell us what you need.', { id: 'project.contactTitleFirst' })}<br />
+            ${msg('We handle the rest.', { id: 'project.contactTitleSecond' })}
           </h2>
           <p class=${styles.contactSummary}>
             ${msg(

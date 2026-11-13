@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss" source("../");
 
 @plugin "daisyui" {
@@ -42,8 +43,8 @@
 }
 
 @theme {
-  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-sans: "Montserrat", Arial, sans-serif;
+  --font-mono: "Montserrat", Arial, sans-serif;
 
   --breakpoint-sm: 40rem;
   --breakpoint-md: 48rem;
@@ -89,6 +90,16 @@
 }
 
 @layer base {
+  :root {
+    --display-heading-transform: uppercase;
+    --display-heading-leading-adjustment: 0;
+  }
+
+  :root[data-display-case='normal'] {
+    --display-heading-transform: none;
+    --display-heading-leading-adjustment: 0.2;
+  }
+
   html,
   body {
     height: 100%;

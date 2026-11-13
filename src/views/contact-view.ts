@@ -149,7 +149,7 @@ export class ContactView extends LitElement {
         <section class=${styles.hero} aria-labelledby="contact-title">
           <div class=${styles.intro}>
             <p class=${styles.eyebrow}>${msg('ZIRON / CONTACT', { id: 'contact.eyebrow' })}</p>
-            <h1 id="contact-title">${msg('LET’S TALK.', { id: 'contact.title' })}</h1>
+            <h1 id="contact-title">${msg('Let’s talk.', { id: 'contact.title' })}</h1>
             <p class=${styles.summary}>
               ${msg(
                 'Tell us what you need and what you want people to see. We’ll put together the brief, plan the production and guide you through the whole process.',
