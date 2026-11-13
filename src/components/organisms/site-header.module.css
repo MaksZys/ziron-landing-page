@@ -9,8 +9,23 @@
   display: grid;
   min-height: var(--stage-control-size);
   grid-template-columns: var(--stage-control-size) minmax(0, 1fr);
-  background-color: rgb(8 10 12 / 82%);
-  transition: background-color var(--default-transition-duration) var(--ease-brand);
+  background-color: var(--color-brand-carbon);
+  transition: transform 260ms var(--ease-brand), background-color var(--default-transition-duration) var(--ease-brand);
+  will-change: transform;
+}
+
+.visible {
+  transform: translateY(0);
+}
+
+.hidden {
+  pointer-events: none;
+  transform: translateY(-100%);
+}
+
+.hidden:focus-within {
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .homeLink {
@@ -20,6 +35,12 @@
   align-items: center;
   justify-content: center;
   background: var(--color-brand-ceramic);
+}
+
+.homeLink :global(brand-logo[variant='black']) {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .navigation {
@@ -120,6 +141,11 @@
   .homeLink :global(img) {
     width: 1.5rem;
     height: 1.5rem;
+  }
+
+  .homeLink :global(brand-logo[variant='black'] img) {
+    width: 100%;
+    height: 100%;
   }
 
   .navigation {

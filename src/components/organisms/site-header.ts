@@ -25,9 +25,25 @@ export class SiteHeader extends LitElement {
   @state()
   private languageError = '';
 
+  @state()
+  private isVisible = true;
+
+  private previousScrollPosition = 0;
+
   constructor() {
     super();
     updateWhenLocaleChanges(this);
+  }
+
+  connectedCallback() {
+    super.connectedCallback();
+    this.previousScrollPosition = window.scrollY;
+    window.addEventListener('scroll', this.handleScroll, { passive: true });
+  }
+
+  disconnectedCallback() {
+    window.removeEventListener('scroll', this.handleScroll);
+    super.disconnectedCallback();
   }
 
   protected override createRenderRoot() {
@@ -37,6 +53,19 @@ export class SiteHeader extends LitElement {
   private get activeLocale(): Locale {
     return localeFromUrl();
   }
+
+  private handleScroll = () => {
+    const currentScrollPosition = window.scrollY;
+    const scrollDelta = currentScrollPosition - this.previousScrollPosition;
+
+    if (currentScrollPosition <= 8) {
+      this.isVisible = true;
+    } else if (Math.abs(scrollDelta) >= 8) {
+      this.isVisible = scrollDelta < 0;
+    }
+
+    this.previousScrollPosition = currentScrollPosition;
+  };
 
   private async changeLanguage(event: Event) {
     const languageSelect = event.currentTarget as HTMLSelectElement;
@@ -64,13 +93,13 @@ export class SiteHeader extends LitElement {
 
   protected override render() {
     return html`
-      <header class=${styles.header}>
+      <header class=${`${styles.header} ${this.isVisible ? styles.visible : styles.hidden}`}>
         <a
           class=${styles.homeLink}
           href=${localizedHomeUrl()}
           aria-label=${msg('ZIRON home', { id: 'brand.homeLink' })}
         >
-          <brand-logo variant="mark"></brand-logo>
+          <brand-logo variant="black"></brand-logo>
         </a>
         <nav class=${styles.navigation} aria-label=${msg('Primary navigation', { id: 'nav.primary' })}>
           <ul class=${styles.navigationList}>
