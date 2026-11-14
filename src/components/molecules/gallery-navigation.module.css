@@ -53,6 +53,7 @@
   align-items: center;
   justify-content: center;
   background: var(--color-brand-ceramic);
+  color: var(--color-brand-carbon);
 }
 
 .menuToggle:focus-visible {

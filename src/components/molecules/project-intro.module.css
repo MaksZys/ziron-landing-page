@@ -26,6 +26,7 @@
   align-self: flex-start;
   margin: 0 0 clamp(2rem, 4vw, 3rem);
   background: var(--color-project-paper);
+  color: var(--color-project-ink);
 }
 
 .category {
