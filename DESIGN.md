@@ -16,7 +16,7 @@ Scores, so later work does not drift:
 - Variance: 7. Asymmetric splits. The photograph and the headline occupy different cells.
 - Motion: 3. Restrained. One easing curve, no spring, no perpetual loop.
 
-The signature is the nameplate. A display line set in Helvetica Neue at weight 900, uppercase, tracking `-0.07em`, line-height under `0.9`, sitting on Carbon or Ceramic in its own cell. Beside it, one full-height photograph of a machine or a site, desaturated. Instrument Cyan appears on a strict budget. That pairing — stamped metal type next to a quiet photograph — is the only memorable device. Do not add a second one.
+The signature is the nameplate. A display line set in Rajdhani at weight 700, uppercase, tracking `-0.07em`, line-height under `0.9`, sitting on Carbon or Ceramic in its own cell. Beside it, one full-height photograph of a machine or a site, desaturated. Instrument Cyan appears on a strict budget. That pairing — stamped metal type next to a quiet photograph — is the only memorable device. Do not add a second one.
 
 Material reference: carbon steel, ceramic instrument housings, engraved serial plates, and the single cyan spark already cut into the ZIRON mark. Not a studio loft, not a newspaper, not a startup dashboard.
 
@@ -82,21 +82,21 @@ Do not communicate state by color alone. The current navigation item is Soft Whi
 
 Two families. No third.
 
-- **Display and body:** `"Helvetica Neue", Helvetica, Arial, sans-serif` via `--font-sans`.
-- **Utility:** `"SFMono-Regular", Consolas, "Liberation Mono", monospace` via `--font-mono`.
+- **Primary, titles and other large text:** Rajdhani via `--font-sans`. Its heaviest real weight is 700. Do not set 800 or 900.
+- **Secondary, descriptions, lists, navigation, and controls:** Exo 2 via `--font-body`. `--font-mono` is the same face, kept so existing label selectors stay on the secondary font.
 
-Helvetica Neue is the nameplate. Do not replace it with Inter, Geist, Satoshi, Outfit, Cabinet Grotesk, or any serif, including Fraunces, Instrument Serif, and Editorial New. Do not load a webfont to “upgrade” the stack.
+Load only the weights in use: Rajdhani at 700; Exo 2 at 400, 500, and 700. Do not add a third family. Do not substitute Inter, Geist, Satoshi, Outfit, Cabinet Grotesk, Helvetica, or any serif.
 
 ### Roles
 
 | Role | Size | Weight | Tracking | Leading | Case | Face |
 | --- | --- | --- | --- | --- | --- | --- |
-| Display XL | `clamp(3.5rem, 6.2vw, 8.5rem)` | 900 | `-0.07em` | 0.82 | Uppercase | Sans |
-| Display L | `clamp(3rem, 5.7vw, 7rem)` | 900 | `-0.07em` | 0.86 | Uppercase | Sans |
-| Display S | `clamp(1.6rem, 2.4vw, 3.4rem)` | 900 | `-0.04em` | 0.9 | Uppercase | Sans |
-| Body | `clamp(1.05rem, 1.55vw, 1.35rem)` | 500 | `-0.025em` | 1.42 | Sentence | Sans |
-| Utility | `0.75rem` | 700 | `0.11em` | 1.4 | Uppercase | Mono |
-| Button and nav | `0.75rem` | 700 | `0.09em` | 1 | Uppercase | Mono |
+| Display XL | `clamp(3.5rem, 6.2vw, 8.5rem)` | 700 | `-0.07em` | 0.82 | Uppercase | Rajdhani |
+| Display L | `clamp(3rem, 5.7vw, 7rem)` | 700 | `-0.07em` | 0.86 | Uppercase | Rajdhani |
+| Display S | `clamp(1.6rem, 2.4vw, 3.4rem)` | 700 | `-0.04em` | 0.9 | Uppercase | Rajdhani |
+| Body | `clamp(1.05rem, 1.55vw, 1.35rem)` | 500 | `-0.025em` | 1.42 | Sentence | Exo 2 |
+| Utility | `0.75rem` | 700 | `0.11em` | 1.4 | Uppercase | Exo 2 |
+| Button and nav | `0.75rem` | 700 | `0.09em` | 1 | Uppercase | Exo 2 |
 
 Mobile display, below `48rem`:
 
@@ -109,7 +109,7 @@ Body stays at least `1rem`. Do not set a paragraph below that.
 
 - Body max-width: `35rem`. Hard stop: `65ch`.
 - A display line is a nameplate, not a sentence. Keep it to a few words. When a line must stay short, cap it near `8ch` to `11ch` and let the body carry the rest.
-- Utility text is one line: an eyebrow, a button, a nav label, a caption, an index. Do not set paragraphs in mono uppercase.
+- Utility text is one line: an eyebrow, a button, a nav label, a caption, an index. Do not set paragraphs in that uppercase label style.
 
 ### Language
 
@@ -174,7 +174,7 @@ Do not build a row of three equal cards with an icon, a title, and a paragraph. 
 - Field: transparent, radius `0`, bottom border `1px` Metal Seam, padding `0.85rem 0`, body type, Ceramic text.
 - Focus: border Instrument Cyan, background Cyan Wash. No floating label.
 - Error text below the field, in the theme error color, stating what failed and how to correct it.
-- Helper text is optional and uses Steel at body size `0.8rem` minimum, sentence case, not uppercase mono.
+- Helper text is optional and uses Steel at body size `0.8rem` minimum, sentence case, in Exo 2.
 - Textareas start at `min-height: 9rem`.
 
 ### Header, footer, logo
@@ -318,14 +318,14 @@ These are failures, not suggestions.
 - A second accent, a blue focus glow, an ochre highlight, or any use of Mark Spark outside the logo file.
 - Per-view copies of the palette (`--about-cyan`, `--contact-ink`, raw hex in a module).
 - Pure black, pure white, neon glow, gradient text, glass, noise, or a custom cursor.
-- Inter, Geist, Satoshi, Outfit, or any serif.
+- A third typeface, or a substitute for Exo 2 and Rajdhani.
 - Centered heroes, photographs set inside a headline, and text placed on an image.
 - Three equal feature cards, icon rows, and invented statistics.
 - More than one primary button on a view, or a “Learn more” beside the real action.
 - Thick decorative bars, ornamental borders, badges, and clipped shapes.
 - Perpetual animation, staggered entrances, spring overshoot, and scroll-jacking.
 - `100vh` for a full-height section.
-- Mono uppercase paragraphs.
+- Uppercase paragraphs. Descriptions and bullet lists stay in Exo 2, sentence case.
 - Placeholder names, lorem ipsum, or a fake client.
 - Display tracking looser than `-0.04em`, or utility tracking used on body text.
 - Hover styles that stick after a touch.

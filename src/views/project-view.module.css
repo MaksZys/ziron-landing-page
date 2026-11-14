@@ -4,8 +4,8 @@
   --color-project-cyan: #71d9ed;
   --color-project-paper: #f2f4f3;
   --color-project-steel: #9ca7aa;
-  --font-project-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-project-utility: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-project-display: var(--font-sans);
+  --font-project-utility: var(--font-body);
 
   min-height: 100dvh;
   background: var(--color-project-ink);
@@ -61,7 +61,7 @@
   margin: 1.25rem 0 0;
   font-family: var(--font-project-display);
   font-size: clamp(3rem, 5.7vw, 7rem);
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.075em;
   line-height: 0.94;
   text-transform: uppercase;

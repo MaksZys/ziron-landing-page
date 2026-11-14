@@ -242,7 +242,7 @@ Treat the current homepage gallery and its navigation as the visual baseline for
 
 #### Typography
 
-- Use the shared Helvetica Neue system stack for interface and navigation text.
+- Use Exo 2 (`--font-body`) for interface text, navigation, descriptions, and lists. Use Rajdhani (`--font-sans`) for titles and other large text. Rajdhani stops at weight 700.
 - Use title case for navigation labels. Do not add uppercase transformation or wide letter spacing by default.
 - Use weight `500` for gallery navigation so hierarchy comes from scale and placement rather than heavy weight.
 - Preserve the established gallery hierarchy:

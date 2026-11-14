@@ -42,8 +42,9 @@
 }
 
 @theme {
-  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-sans: "Rajdhani", sans-serif;
+  --font-body: "Exo 2", sans-serif;
+  --font-mono: "Exo 2", sans-serif;
 
   --breakpoint-sm: 40rem;
   --breakpoint-md: 48rem;
@@ -100,6 +101,12 @@
     margin: 0;
     background: var(--color-base-100);
     color: var(--color-base-content);
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3 {
     font-family: var(--font-sans);
   }
 
