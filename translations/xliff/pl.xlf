@@ -27,8 +27,8 @@
         <target>WE DWOJE</target>
       </trans-unit>
       <trans-unit id="about.heroSummary">
-        <source>Film. Photography. Movement. From idea to finished material — we lead the entire process.</source>
-        <target>Film. Fotografia. Ruch. Od pomysłu do gotowego materiału — prowadzimy cały proces.</target>
+        <source>Film. Photography. Movement. From idea to finished material - we lead the entire process.</source>
+        <target>Film. Fotografia. Ruch. Od pomysłu do gotowego materiału - prowadzimy cały proces.</target>
       </trans-unit>
       <trans-unit id="about.heroIndex">
         <source>ABOUT / 01</source>
@@ -343,8 +343,8 @@
         <target>W sprawach związanych z ochroną danych osobowych prosimy o kontakt za pośrednictwem formularza lub telefonu.</target>
       </trans-unit>
       <trans-unit id="brand.fullLogo">
-        <source>ZIRON — We create what others talk about</source>
-        <target>ZIRON — Tworzymy to, o czym inni mówią</target>
+        <source>ZIRON - We create what others talk about</source>
+        <target>ZIRON - Tworzymy to, o czym inni mówią</target>
       </trans-unit>
       <trans-unit id="brand.homeLink">
         <source>ZIRON home</source>
@@ -471,7 +471,7 @@
         <target>OBRAZY, KTÓRE MAJĄ SWÓJ CEL.</target>
       </trans-unit>
       <trans-unit id="home.workSummary">
-        <source>Show buyers how your products and processes work — and the people behind them.</source>
+        <source>Show buyers how your products and processes work - and the people behind them.</source>
         <target>Pokaż odbiorcom, jak w praktyce działają produkt i proces oraz kim są ludzie, którzy za nimi stoją.</target>
       </trans-unit>
       <trans-unit id="home.workCardOne">
@@ -555,8 +555,8 @@
         <target>Film produkcyjny / Kampania 2026</target>
       </trans-unit>
       <trans-unit id="project.summary">
-        <source>Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.</source>
-        <target>Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie widać ją najlepiej — w pyle, śniegu, deszczu i przy pełnym tempie pracy.</target>
+        <source>Machines do not pose. They work. We showed their strength where it is most real - in dust, snow, rain, and at full speed.</source>
+        <target>Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie widać ją najlepiej - w pyle, śniegu, deszczu i przy pełnym tempie pracy.</target>
       </trans-unit>
       <trans-unit id="project.processSummary">
         <source>We followed the work closely, turning the steps, details and decisions behind it into a clear story.</source>

@@ -26,6 +26,7 @@
   min-width: 0;
   flex-direction: column;
   justify-content: center;
+  container-type: inline-size;
   background: var(--contact-metal);
 }
 
@@ -46,13 +47,13 @@
 }
 
 .intro h1 {
-  max-width: 5ch;
+  max-width: max(5ch, min-content);
   margin: 0;
   color: var(--contact-cyan);
-  font-size: clamp(4.25rem, 9vw, 9rem);
+  font-size: clamp(2.75rem, 18cqi, 7rem);
   font-weight: 700;
-  letter-spacing: -0.075em;
-  line-height: 0.8;
+  letter-spacing: 0.02em;
+  line-height: 1;
   text-transform: uppercase;
 }
 

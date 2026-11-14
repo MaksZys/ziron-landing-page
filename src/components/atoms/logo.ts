@@ -34,7 +34,7 @@ export class BrandLogo extends LitElement {
       <img
         class="block w-full object-contain"
         src=${FULL_LOGO_URL}
-        alt=${msg('ZIRON — We create what others talk about', { id: 'brand.fullLogo' })}
+        alt=${msg('ZIRON - We create what others talk about', { id: 'brand.fullLogo' })}
         aria-hidden="false"
       />
     `;

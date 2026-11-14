@@ -27,8 +27,8 @@
         <target>AS TWO</target>
       </trans-unit>
       <trans-unit id="about.heroSummary">
-        <source>Film. Photography. Movement. From idea to finished material — we lead the entire process.</source>
-        <target>Film. Photography. Movement. From idea to finished material — we lead the entire process.</target>
+        <source>Film. Photography. Movement. From idea to finished material - we lead the entire process.</source>
+        <target>Film. Photography. Movement. From idea to finished material - we lead the entire process.</target>
       </trans-unit>
       <trans-unit id="about.heroIndex">
         <source>ABOUT / 01</source>
@@ -343,8 +343,8 @@
         <target>For matters relating to personal data protection, please contact us using the form or telephone.</target>
       </trans-unit>
       <trans-unit id="brand.fullLogo">
-        <source>ZIRON — We create what others talk about</source>
-        <target>ZIRON — We create what others talk about</target>
+        <source>ZIRON - We create what others talk about</source>
+        <target>ZIRON - We create what others talk about</target>
       </trans-unit>
       <trans-unit id="brand.homeLink">
         <source>ZIRON home</source>
@@ -471,8 +471,8 @@
         <target>WORK THAT PROVES ITS VALUE.</target>
       </trans-unit>
       <trans-unit id="home.workSummary">
-        <source>Show buyers how your products and processes work — and the people behind them.</source>
-        <target>Show buyers how your products and processes work — and the people behind them.</target>
+        <source>Show buyers how your products and processes work - and the people behind them.</source>
+        <target>Show buyers how your products and processes work - and the people behind them.</target>
       </trans-unit>
       <trans-unit id="home.workCardOne">
         <source>Machinery in motion</source>
@@ -555,8 +555,8 @@
         <target>Film production / Campaign 2026</target>
       </trans-unit>
       <trans-unit id="project.summary">
-        <source>Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.</source>
-        <target>Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.</target>
+        <source>Machines do not pose. They work. We showed their strength where it is most real - in dust, snow, rain, and at full speed.</source>
+        <target>Machines do not pose. They work. We showed their strength where it is most real - in dust, snow, rain, and at full speed.</target>
       </trans-unit>
       <trans-unit id="project.processSummary">
         <source>We followed the work closely, turning the steps, details and decisions behind it into a clear story.</source>

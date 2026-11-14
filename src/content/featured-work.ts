@@ -126,7 +126,7 @@ export function getFeaturedWorkSections(): FeaturedWorkSection[] {
       galleryImages: images,
       image: images[0],
       summary: msg(
-        'Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.',
+        'Machines do not pose. They work. We showed their strength where it is most real - in dust, snow, rain, and at full speed.',
         { id: 'project.summary' },
       ),
       title: msg('Machinery in motion', { id: 'home.workCardOne' }),

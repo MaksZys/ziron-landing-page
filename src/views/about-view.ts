@@ -56,7 +56,7 @@ export class AboutView extends LitElement {
             </h1>
             <p class=${styles.heroSummary}>
               ${msg(
-                'Film. Photography. Movement. From idea to finished material — we lead the entire process.',
+                'Film. Photography. Movement. From idea to finished material - we lead the entire process.',
                 { id: 'about.heroSummary' },
               )}
             </p>

@@ -93,8 +93,8 @@
   margin: 0;
   font-family: var(--font-sans);
   font-weight: 700;
-  letter-spacing: -0.075em;
-  line-height: 0.82;
+  letter-spacing: 0.02em;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -228,7 +228,7 @@
   font-family: var(--font-sans);
   font-size: clamp(1.1rem, 1.7vw, 1.55rem);
   font-weight: 700;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.02em;
 }
 
 .outcomeList p::before {
@@ -311,12 +311,12 @@
 }
 
 .workCard strong {
-  max-width: 10ch;
+  max-width: max(10ch, min-content);
   font-family: var(--font-sans);
   font-size: clamp(1.6rem, 3.1vw, 3.4rem);
   font-weight: 700;
-  letter-spacing: -0.06em;
-  line-height: 0.9;
+  letter-spacing: 0.02em;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -348,7 +348,7 @@
   font-family: var(--font-sans);
   font-size: clamp(1.25rem, 2vw, 2rem);
   font-weight: 700;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.02em;
 }
 
 .processSteps span {
@@ -366,7 +366,7 @@
 }
 
 .contact h2 {
-  max-width: 8ch;
+  max-width: max(8ch, min-content);
 }
 
 .contact > p:not(.sectionLabel) {
