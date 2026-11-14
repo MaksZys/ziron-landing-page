@@ -9,7 +9,7 @@ test('About page keeps its navigation, CTA, and media self-contained', async ({
     name: 'Primary navigation',
   });
   await expect(page.locator('site-header')).toHaveCount(1);
-  await expect(navigation.getByRole('link')).toHaveText(['Work', 'About', 'Contact']);
+  await expect(navigation.getByRole('link')).toHaveText(['Homepage', 'Work', 'About', 'Contact']);
   const homeLink = page.getByRole('link', { name: 'ZIRON home' });
   await expect(homeLink).toHaveAttribute(
     'href',

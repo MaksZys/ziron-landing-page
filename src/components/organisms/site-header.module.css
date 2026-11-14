@@ -23,6 +23,11 @@
   color: var(--color-brand-ceramic);
 }
 
+.homeLink :global(svg) {
+  width: 3rem;
+  height: 3rem;
+}
+
 .navigation {
   display: flex;
   min-width: 0;
@@ -111,7 +116,7 @@
 @media (max-width: 47.999rem) {
   .header {
     min-height: calc(var(--stage-control-size) - var(--spacing-4));
-    gap: calc(var(--stage-control-size) - var(--spacing-4));
+    gap: var(--spacing-2);
     grid-template-columns:
       calc(var(--stage-control-size) - var(--spacing-4))
       minmax(0, 1fr);
@@ -125,8 +130,8 @@
 
   .homeLink :global(img),
   .homeLink :global(svg) {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.25rem;
+    height: 2.25rem;
   }
 
   .navigation {
@@ -135,19 +140,21 @@
 
   .navigationList {
     flex: 1;
-    gap: 0;
+    gap: 0.35rem;
+    justify-content: flex-end;
   }
 
   .navigationList li {
     display: flex;
-    flex: 1;
+    flex: 0 0 auto;
   }
 
   .navigationLink {
-    width: 100%;
     min-height: calc(var(--stage-control-size) - var(--spacing-4));
     justify-content: center;
-    font-size: 0.68rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
   }
 
   .languageControl {
@@ -156,6 +163,22 @@
 
   .languageSelect {
     min-height: calc(var(--stage-control-size) - var(--spacing-4));
-    font-size: 0.68rem;
+    font-size: 0.62rem;
+  }
+}
+
+@media (max-width: 23.5rem) {
+  :global(site-header) .header {
+    gap: var(--spacing-1);
+  }
+
+  :global(site-header) .navigationList {
+    gap: 0.2rem;
+  }
+
+  :global(site-header) .navigationLink,
+  :global(site-header) .languageSelect {
+    font-size: 0.56rem;
+    letter-spacing: 0.02em;
   }
 }
