@@ -204,18 +204,9 @@
   cursor: pointer;
 }
 
-.closeButton span,
-.closeButton span::after {
-  display: block;
+.closeIcon {
   width: 1.35rem;
-  height: 1px;
-  background: currentColor;
-  transform: rotate(45deg);
-}
-
-.closeButton span::after {
-  content: '';
-  transform: rotate(90deg);
+  height: 1.35rem;
 }
 
 .galleryButton,

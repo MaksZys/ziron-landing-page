@@ -1,7 +1,9 @@
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
+import { ArrowUpRight } from 'lucide';
 
+import { icon } from '../components/atoms/icon';
 import '../components/organisms/site-header';
 import '../components/organisms/site-footer';
 import { getPrimaryNavigation } from '../content/navigation';
@@ -58,7 +60,7 @@ export class HomeView extends LitElement {
             <div class=${styles.actions}>
               <a class=${styles.primaryAction} href=${localizedViewUrl('contact')}>
                 ${msg('Plan a shoot', { id: 'home.contactAction' })}
-                <span aria-hidden="true">↗</span>
+                ${icon(ArrowUpRight)}
               </a>
               <a class=${styles.workAction} href="#selected-work">
                 ${msg('See selected work', { id: 'home.workAction' })}
@@ -87,10 +89,16 @@ export class HomeView extends LitElement {
             </h2>
           </div>
           <div class=${styles.outcomeList}>
-            <p>${msg('Explain a process', { id: 'home.outcomeExplain' })}</p>
-            <p>${msg('Show the scale', { id: 'home.outcomeScale' })}</p>
-            <p>${msg('Give your sales team assets they can use', { id: 'home.outcomeSales' })}</p>
-            <p>${msg('Keep your social channels active', { id: 'home.outcomeSocial' })}</p>
+            <p>${icon(ArrowUpRight)}${msg('Explain a process', { id: 'home.outcomeExplain' })}</p>
+            <p>${icon(ArrowUpRight)}${msg('Show the scale', { id: 'home.outcomeScale' })}</p>
+            <p>
+              ${icon(ArrowUpRight)}${msg('Give your sales team assets they can use', {
+                id: 'home.outcomeSales',
+              })}
+            </p>
+            <p>
+              ${icon(ArrowUpRight)}${msg('Keep your social channels active', { id: 'home.outcomeSocial' })}
+            </p>
           </div>
         </section>
 
@@ -140,7 +148,7 @@ export class HomeView extends LitElement {
           </p>
           <a class=${styles.primaryAction} href=${localizedViewUrl('contact')}>
             ${msg('Plan a shoot', { id: 'home.contactAction' })}
-            <span aria-hidden="true">↗</span>
+            ${icon(ArrowUpRight)}
           </a>
         </section>
         <site-footer></site-footer>

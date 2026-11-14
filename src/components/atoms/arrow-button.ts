@@ -1,6 +1,8 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import { ArrowLeft, ArrowRight } from 'lucide';
 
+import { icon } from './icon';
 import styles from './arrow-button.module.css';
 
 @customElement('gallery-arrow')
@@ -24,18 +26,7 @@ export class GalleryArrow extends LitElement {
         type="button"
         aria-label=${this.label}
       >
-        <svg
-          class=${isPrevious ? 'size-5 rotate-180' : 'size-5'}
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-        >
-          <path d="M5 12h14M13 6l6 6-6 6" />
-        </svg>
+        ${icon(isPrevious ? ArrowLeft : ArrowRight, 'size-5')}
       </button>
     `;
   }
