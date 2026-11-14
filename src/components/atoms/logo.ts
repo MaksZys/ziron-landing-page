@@ -1,9 +1,15 @@
 import { LitElement, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
+import { unsafeSVG } from 'lit/directives/unsafe-svg.js';
+
+import markSvg from '../../../assets/ziron-mark.svg?raw';
 
 const FULL_LOGO_URL = new URL('../../../assets/ziron-logo-big.png', import.meta.url).href;
-const MARK_LOGO_URL = new URL('../../../assets/ziron.jpg', import.meta.url).href;
+const MARK_SVG = markSvg.replace(
+  '<svg ',
+  '<svg class="block size-8" aria-hidden="true" ',
+);
 
 @customElement('brand-logo')
 export class BrandLogo extends LitElement {
@@ -20,14 +26,16 @@ export class BrandLogo extends LitElement {
   }
 
   protected override render() {
-    const isMark = this.variant === 'mark';
+    if (this.variant === 'mark') {
+      return html`${unsafeSVG(MARK_SVG)}`;
+    }
 
     return html`
       <img
-        class=${isMark ? 'block size-8 object-cover' : 'block w-full object-contain'}
-        src=${isMark ? MARK_LOGO_URL : FULL_LOGO_URL}
-        alt=${isMark ? '' : msg('ZIRON — We create what others talk about', { id: 'brand.fullLogo' })}
-        aria-hidden=${isMark ? 'true' : 'false'}
+        class="block w-full object-contain"
+        src=${FULL_LOGO_URL}
+        alt=${msg('ZIRON — We create what others talk about', { id: 'brand.fullLogo' })}
+        aria-hidden="false"
       />
     `;
   }

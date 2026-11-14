@@ -104,7 +104,7 @@ test('project navigation uses the brand mark as the home link', async ({
     'href',
     '?lang=en',
   );
-  await expect(homeLink).toHaveCSS('background-color', 'rgb(247, 250, 250)');
+  await expect(homeLink).toHaveCSS('background-color', 'rgb(8, 10, 12)');
 });
 
 test('Project navigation remains at the top of the viewport while scrolling', async ({
