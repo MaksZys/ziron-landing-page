@@ -21,6 +21,8 @@ This repository is a demo, but its components must be production-minded:
 - Use **Tailwind CSS** for utility styling.
 - Use **DaisyUI** for suitable primitives and theme integration.
 - Use **npm** as the package manager.
+- Use **Lucide** (`lucide`) for interface icons. Render one with `icon()` from `src/components/atoms/icon.ts`, and import only the named icons that file uses.
+- Keep the ZIRON mark and social brand marks as their own artwork. Lucide does not ship trademark logos, so do not swap those SVGs for a generic Lucide icon.
 - Use the repository's existing build tool and scripts when present. If no build tool exists, prefer Vite because it supports Lit and static builds cleanly.
 - Do not introduce a second component framework or styling system.
 - Do not replace a DaisyUI primitive with a custom implementation unless the required behavior cannot be achieved accessibly with that primitive.
@@ -135,6 +137,13 @@ Never import upward or create circular dependencies.
 - Avoid boolean combinations that permit contradictory states. Use a discriminated state or explicit variant when necessary.
 - Do not add a property or variant until a real call site needs it.
 - Preserve native HTML semantics inside components.
+
+### Icons
+
+- Every interface icon (arrows, close, and any new symbol) comes from Lucide through `icon()`.
+- Do not use Unicode arrows (`↗`, `→`, `←`) or a hand-drawn SVG path when Lucide already has the icon.
+- `icon()` sets `aria-hidden="true"`. Icon-only controls still need an accessible name on the control.
+- Do not replace the logo or social brand marks with Lucide icons.
 
 ### Styling Lit Components
 
@@ -414,7 +423,8 @@ Accessibility is part of component correctness.
 - Lazy-load below-the-fold portfolio images.
 - Do not lazy-load the primary hero image if it is the likely largest contentful paint element.
 - Avoid layout shifts by declaring image dimensions or aspect ratios.
-- Avoid shipping unused icon libraries, fonts, DaisyUI themes, or large animation libraries.
+- Do not add another icon library beside Lucide. Import individual Lucide icons so unused icons stay out of the bundle.
+- Avoid shipping unused fonts, DaisyUI themes, or large animation libraries.
 - Prefer CSS transitions and the platform's animation APIs for the required interactions.
 - Do not add an animation dependency until native CSS and browser APIs are demonstrably insufficient.
 - Pause or stop expensive offscreen work.
@@ -470,7 +480,8 @@ Use existing repository scripts. Do not suppress TypeScript, lint, accessibility
 - Do not create generic `utils`, `helpers`, or `common` directories for a single function.
 - Do not duplicate theme values in component files.
 - Do not create a large universal component controlled by many unrelated properties.
-- Do not add a router, state library, animation framework, carousel package, or icon package without a demonstrated need.
+- Do not add a router, state library, animation framework, or carousel package without a demonstrated need.
+- Do not add a second icon package. Interface icons use Lucide.
 - Do not edit generated output by hand.
 - Do not weaken accessibility or error handling for demo speed.
 - Do not claim completion without performing the applicable verification.

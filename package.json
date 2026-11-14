@@ -23,7 +23,8 @@
   },
   "dependencies": {
     "@lit/localize": "^0.12.2",
-    "lit": "^3.0.0"
+    "lit": "^3.0.0",
+    "lucide": "^1.73.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",

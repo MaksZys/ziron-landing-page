@@ -2,8 +2,10 @@ import { LitElement, html } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { keyed } from 'lit/directives/keyed.js';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
+import { X } from 'lucide';
 
 import type { UnsplashImage } from '../../content/portfolio';
+import { icon } from '../atoms/icon';
 import '../atoms/arrow-button';
 import styles from './project-gallery.module.css';
 
@@ -116,7 +118,7 @@ export class ProjectGallery extends LitElement {
                 aria-label=${msg('Close image preview', { id: 'gallery.closePreview' })}
                 @click=${this.closeImage}
               >
-                <span aria-hidden="true"></span>
+                ${icon(X, styles.closeIcon)}
               </button>
 
               <gallery-arrow

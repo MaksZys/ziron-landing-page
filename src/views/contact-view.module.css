@@ -160,9 +160,10 @@
   margin-top: 0.5rem;
 }
 
-.form button span {
-  font-size: 1.3rem;
-  line-height: 1;
+.form button svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: none;
 }
 
 .form button:hover {

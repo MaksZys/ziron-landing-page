@@ -1,7 +1,9 @@
 import { LitElement, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
+import { ArrowUpRight } from 'lucide';
 
+import { icon } from '../components/atoms/icon';
 import '../components/organisms/site-header';
 import { getPrimaryNavigation } from '../content/navigation';
 import { localeFromUrl, localizedViewUrl } from '../localization';
@@ -184,7 +186,7 @@ export class ContactView extends LitElement {
             <div class=${styles.formActions}>
               <button type="submit">
                 ${msg('Send enquiry', { id: 'contact.submit' })}
-                <span aria-hidden="true">↗</span>
+                ${icon(ArrowUpRight)}
               </button>
               ${this.hasRestoredDraft
                 ? html`

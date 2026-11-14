@@ -1,7 +1,9 @@
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
+import { ArrowRight } from 'lucide';
 
+import { icon } from '../components/atoms/icon';
 import '../components/organisms/site-header';
 import '../components/organisms/site-footer';
 import { ABOUT_HERO_IMAGE, getAboutProfiles } from '../content/about';
@@ -149,7 +151,7 @@ export class AboutView extends LitElement {
             <p>${msg('Tell us what you need. We’ll put together the brief and take care of the production.', { id: 'about.contactSummary' })}</p>
             <a class=${styles.contactAction} href="mailto:kontakt@ziron.pl">
               ${msg('Write to us', { id: 'about.contactAction' })}
-              <span aria-hidden="true">→</span>
+              ${icon(ArrowRight)}
             </a>
             <a class=${styles.contactLink} href="mailto:kontakt@ziron.pl">kontakt@ziron.pl</a>
             <a class=${styles.contactLink} href="tel:+48694986722">+48 694 986 722</a>

@@ -130,7 +130,7 @@ Shadows are off, except `--shadow-stage` where a control must separate from a ch
 
 One primary button per view. It is the action that continues the job: contact, send, open the piece of work.
 
-- Min-height `3.5rem`. Padding `0.9rem 1rem 0.9rem 1.25rem`. Gap `2rem` between the label and a single arrow glyph (`→`).
+- Min-height `3.5rem`. Padding `0.9rem 1rem 0.9rem 1.25rem`. Gap `2rem` between the label and one Lucide arrow (`arrow-up-right`, or `arrow-right` when the action reads as a straight next step).
 - Fill: Instrument Cyan. Label: Carbon Ground. Utility type.
 - Hover, only inside `@media (hover: hover) and (pointer: fine)`: fill becomes Ceramic. Transform `translate(0.2rem, -0.2rem)`. Duration `220ms`, easing `--ease-brand`.
 - Active: `translate(0.1rem, -0.1rem)`. No glow.

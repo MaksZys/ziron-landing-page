@@ -1,7 +1,9 @@
 import { LitElement, html } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
+import { ArrowUpRight } from 'lucide';
 
+import { icon } from '../components/atoms/icon';
 import '../components/organisms/site-header';
 import '../components/organisms/site-footer';
 import { getFeaturedWorkSections } from '../content/featured-work';
@@ -47,7 +49,7 @@ export class ProjectView extends LitElement {
           </p>
           <a class=${styles.contactAction} href=${localizedViewUrl('contact')}>
             ${msg('Plan your project', { id: 'project.contactAction' })}
-            <span aria-hidden="true">↗</span>
+            ${icon(ArrowUpRight)}
           </a>
         </section>
         <site-footer></site-footer>

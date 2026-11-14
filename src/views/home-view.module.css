@@ -142,8 +142,10 @@
   transition: background-color var(--default-transition-duration) var(--ease-brand), transform var(--default-transition-duration) var(--ease-brand);
 }
 
-.primaryAction span {
-  font-size: 1.35rem;
+.primaryAction svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: none;
 }
 
 .workAction {
@@ -223,6 +225,9 @@
 }
 
 .outcomeList p {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
   margin: 0;
   padding: 1rem 0;
   border-bottom: 1px solid #a6b0b3;
@@ -232,10 +237,11 @@
   letter-spacing: calc(0.04 * clamp(1.1rem, 1.7vw, 1.55rem));
 }
 
-.outcomeList p::before {
-  margin-right: 0.8rem;
+.outcomeList svg {
+  width: 1em;
+  height: 1em;
+  flex: none;
   color: #4a646d;
-  content: '↗';
 }
 
 .work {
