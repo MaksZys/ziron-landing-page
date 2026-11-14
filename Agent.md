@@ -195,6 +195,8 @@ Prefer semantic DaisyUI theme roles such as `primary`, `secondary`, `accent`, `b
 
 ## 6. Visual Direction
 
+Visual taste for new UI is defined in [DESIGN.md](DESIGN.md). Follow that file for color, type, layout, motion, and component styling. The gallery-stage rules later in this section still apply to the full-viewport media rail.
+
 The site should feel precise, engineered, and premium rather than like a generic template.
 
 - Let portfolio imagery carry the visual weight.
