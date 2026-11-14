@@ -19,7 +19,7 @@ export class BrandName extends LitElement {
   protected override render() {
     return html`
       <a
-        class="inline-flex min-h-12 items-center text-xl font-black tracking-widest text-base-content transition-colors hover:text-primary"
+        class="inline-flex min-h-12 items-center text-xl font-black tracking-[0.125rem] text-base-content transition-colors hover:text-primary"
         href=${this.href}
         aria-label=${msg('ZIRON home', { id: 'brand.homeLink' })}
       >

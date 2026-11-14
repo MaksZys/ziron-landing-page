@@ -16,7 +16,7 @@ Scores, so later work does not drift:
 - Variance: 7. Asymmetric splits. The photograph and the headline occupy different cells.
 - Motion: 3. Restrained. One easing curve, no spring, no perpetual loop.
 
-The signature is the nameplate. A display line set in Rajdhani at weight 700, uppercase, tracking `0.02em`, line-height `1`, sitting on Carbon or Ceramic in its own cell. Beside it, one full-height photograph of a machine or a site, desaturated. Instrument Cyan appears on a strict budget. That pairing - stamped metal type next to a quiet photograph - is the only memorable device. Do not add a second one.
+The signature is the nameplate. A display line set in Blinker at weight 700, uppercase, tracking `-0.025rem`, line-height `1`, sitting on Carbon or Ceramic in its own cell. Beside it, one full-height photograph of a machine or a site, desaturated. Instrument Cyan appears on a strict budget. That pairing - stamped metal type next to a quiet photograph - is the only memorable device. Do not add a second one.
 
 Material reference: carbon steel, ceramic instrument housings, engraved serial plates, and the single cyan spark already cut into the ZIRON mark. Not a studio loft, not a newspaper, not a startup dashboard.
 
@@ -82,21 +82,22 @@ Do not communicate state by color alone. The current navigation item is Soft Whi
 
 Two families. No third.
 
-- **Primary, titles and other large text:** Rajdhani via `--font-sans`. Its heaviest real weight is 700. Do not set 800 or 900.
-- **Secondary, descriptions, lists, navigation, and controls:** Exo 2 via `--font-body`. `--font-mono` is the same face, kept so existing label selectors stay on the secondary font.
+- **Primary, titles and other large text:** Blinker via `--font-sans`. Display uses weight 700. Do not load other Blinker weights.
+- **Secondary, descriptions, lists, and controls:** Exo 2 via `--font-body`. `--font-mono` is the same face, kept so existing label selectors stay on the secondary font. The site navigation uses Blinker, same as the titles.
 
-Load only the weights in use: Rajdhani at 700; Exo 2 at 400, 500, and 700. Do not add a third family. Do not substitute Inter, Geist, Satoshi, Outfit, Cabinet Grotesk, Helvetica, or any serif.
+Load only the weights in use: Blinker at 700; Exo 2 at 400, 500, and 700. Do not add a third family. Do not substitute Inter, Geist, Satoshi, Outfit, Cabinet Grotesk, Helvetica, or any serif.
 
 ### Roles
 
 | Role | Size | Weight | Tracking | Leading | Case | Face |
 | --- | --- | --- | --- | --- | --- | --- |
-| Display XL | `clamp(3.5rem, 6.2vw, 8.5rem)` | 700 | `0.02em` | 1 | Uppercase | Rajdhani |
-| Display L | `clamp(3rem, 5.7vw, 7rem)` | 700 | `0.02em` | 1 | Uppercase | Rajdhani |
-| Display S | `clamp(1.6rem, 2.4vw, 3.4rem)` | 700 | `0.02em` | 1 | Uppercase | Rajdhani |
-| Body | `clamp(1.05rem, 1.55vw, 1.35rem)` | 500 | `-0.025em` | 1.42 | Sentence | Exo 2 |
-| Utility | `0.75rem` | 700 | `0.11em` | 1.4 | Uppercase | Exo 2 |
-| Button and nav | `0.75rem` | 700 | `0.09em` | 1 | Uppercase | Exo 2 |
+| Display XL | `clamp(3.5rem, 6.2vw, 8.5rem)` | 700 | `-0.025rem` | 1 | Uppercase | Blinker |
+| Display L | `clamp(3rem, 5.7vw, 7rem)` | 700 | `-0.025rem` | 1 | Uppercase | Blinker |
+| Display S | `clamp(1.6rem, 2.4vw, 3.4rem)` | 700 | `calc(0.04 * size)` | 1 | Uppercase | Blinker |
+| Body | `clamp(1.05rem, 1.55vw, 1.35rem)` | 500 | `calc(-0.025 * size)` | 1.42 | Sentence | Exo 2 |
+| Utility | `0.75rem` | 700 | `0.0825rem` | 1.4 | Uppercase | Exo 2 |
+| Button | `0.75rem` | 700 | `0.0675rem` | 1 | Uppercase | Exo 2 |
+| Site navigation | `0.75rem` | 700 | `0.075rem` | 1 | Uppercase | Blinker |
 
 Mobile display, below `48rem`:
 
@@ -113,11 +114,11 @@ Body stays at least `1rem`. Do not set a paragraph below that.
 
 ### Language
 
-English, Polish, and German ship together. Size every display line against the longest of the three. Keep display tracking at `0.02em` and leading at `1` so Polish and German diacritics do not touch the next glyph or the line below. If a translation overflows, lower the clamp ceiling. Do not tighten tracking, hyphenate a display word, or truncate the label. The header may drop nav type to `0.62rem` and tracking to `0.03em` below `48rem`, and to `0.56rem` below `23.5rem`, only so Homepage, Work, About, and Contact still fit. That exception is the header rail, not a new style.
+English, Polish, and German ship together. Size every display line against the longest of the three. Keep large-headline tracking at `-0.025rem` and leading at `1`. Smaller display lines stay at 4% of the font size, in rem, so Polish and German diacritics do not touch the next glyph or the line below. If a translation overflows, lower the clamp ceiling. Do not tighten tracking, hyphenate a display word, or truncate the label. The header may drop nav type to `0.62rem` and tracking to `0.0186rem` below `48rem`, and to `0.0112rem` below `23.5rem`, only so Homepage, Work, About, and Contact still fit. That exception is the header rail, not a new style.
 
 ### Hierarchy
 
-Hierarchy comes from size, weight, and placement. Do not add a third color to create it. Keep display tracking at `0.02em`. Do not letter-space body text.
+Hierarchy comes from size, weight, and placement. Do not add a third color to create it. Keep large-headline tracking at `-0.025rem`. Smaller display lines stay at 4% of the font size, in rem. Do not letter-space body text.
 
 ## 4. Component Stylings
 
@@ -318,7 +319,7 @@ These are failures, not suggestions.
 - A second accent, a blue focus glow, an ochre highlight, or any use of Mark Spark outside the logo file.
 - Per-view copies of the palette (`--about-cyan`, `--contact-ink`, raw hex in a module).
 - Pure black, pure white, neon glow, gradient text, glass, noise, or a custom cursor.
-- A third typeface, or a substitute for Exo 2 and Rajdhani.
+- A third typeface, or a substitute for Exo 2 and Blinker.
 - Centered heroes, photographs set inside a headline, and text placed on an image.
 - Three equal feature cards, icon rows, and invented statistics.
 - More than one primary button on a view, or a “Learn more” beside the real action.
@@ -327,7 +328,7 @@ These are failures, not suggestions.
 - `100vh` for a full-height section.
 - Uppercase paragraphs. Descriptions and bullet lists stay in Exo 2, sentence case.
 - Placeholder names, lorem ipsum, or a fake client.
-- Display tracking tighter than `0.02em`, or utility tracking used on body text.
+- Large-headline tracking other than `-0.025rem`, smaller display tracking tighter than 4% of the font size, or utility tracking used on body text. Use `rem` for tracking. Do not use `em`.
 - Hover styles that stick after a touch.
 - A new visual device - color, shape, icon, shadow, or animation - added while spacing, type, or the mark would have done the job.
 

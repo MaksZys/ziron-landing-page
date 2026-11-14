@@ -19,7 +19,7 @@
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.0825rem;
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -31,7 +31,6 @@
   margin: 0;
   font-family: var(--font-sans);
   font-weight: 700;
-  letter-spacing: 0.02em;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -88,6 +87,7 @@
 .title {
   color: var(--about-cyan);
   font-size: clamp(3.75rem, 5.8vw, 6.75rem);
+  letter-spacing: -0.025rem;
 }
 
 .heroSummary {
@@ -185,6 +185,7 @@
 
 .sectionIntro h2 {
   font-size: clamp(2.7rem, 5vw, 5rem);
+  letter-spacing: -0.025rem;
 }
 
 .sectionIntro > p:last-child {
@@ -193,7 +194,7 @@
   font-family: var(--font-body);
   font-size: clamp(1.05rem, 1.35vw, 1.35rem);
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: calc(-0.025 * clamp(1.05rem, 1.35vw, 1.35rem));
   line-height: 1.4;
 }
 
@@ -236,7 +237,7 @@
   margin: 0;
   font-size: clamp(1.15rem, 1.8vw, 1.8rem);
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: calc(0.04 * clamp(1.15rem, 1.8vw, 1.8rem));
   text-transform: uppercase;
 }
 
@@ -306,6 +307,7 @@
 
   .profileMeta h3 {
     font-size: 1.5rem;
+    letter-spacing: 0.06rem;
   }
 
   .profileMeta p {
@@ -314,6 +316,7 @@
 
   .profileMeta span {
     font-size: 0.78rem;
+    letter-spacing: 0.0858rem;
   }
 
   .sectionIntro h2 {
@@ -340,6 +343,7 @@
   max-width: max(8ch, min-content);
   color: var(--about-cyan);
   font-size: clamp(4rem, 9vw, 9rem);
+  letter-spacing: -0.025rem;
 }
 
 .manifesto h2 span {
@@ -419,6 +423,7 @@
 
 .contact h2 {
   font-size: clamp(3.3rem, 7vw, 7rem);
+  letter-spacing: -0.025rem;
 }
 
 .contactDetails {
@@ -451,7 +456,7 @@
   color: var(--about-ink) !important;
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06rem;
   text-transform: uppercase;
 }
 
@@ -462,7 +467,7 @@
 
 .contactLink {
   font-size: clamp(1rem, 1.7vw, 1.6rem);
-  letter-spacing: -0.04em;
+  letter-spacing: calc(-0.04 * clamp(1rem, 1.7vw, 1.6rem));
   text-decoration: none;
 }
 

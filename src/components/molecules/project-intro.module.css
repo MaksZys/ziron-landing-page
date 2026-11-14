@@ -36,7 +36,7 @@
   font-family: var(--font-project-utility);
   font-size: clamp(0.68rem, 0.85vw, 0.85rem);
   font-weight: 700;
-  letter-spacing: 0.11em;
+  letter-spacing: calc(0.11 * clamp(0.68rem, 0.85vw, 0.85rem));
   text-transform: uppercase;
 }
 
@@ -47,7 +47,7 @@
   font-family: var(--font-project-display);
   font-size: clamp(3.25rem, 6.8vw, 6.8rem);
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.025rem;
   line-height: 1;
   text-transform: uppercase;
 }

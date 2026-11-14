@@ -19,7 +19,7 @@
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.0792rem;
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -93,7 +93,6 @@
   margin: 0;
   font-family: var(--font-sans);
   font-weight: 700;
-  letter-spacing: 0.02em;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -102,6 +101,7 @@
   max-width: 100%;
   margin-top: 1.5rem;
   font-size: clamp(3.5rem, 6.2vw, 8.5rem);
+  letter-spacing: -0.025rem;
 }
 
 .summary,
@@ -112,7 +112,7 @@
   color: var(--home-paper);
   font-size: clamp(1.05rem, 1.55vw, 1.35rem);
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: calc(-0.025 * clamp(1.05rem, 1.55vw, 1.35rem));
   line-height: 1.42;
 }
 
@@ -135,7 +135,7 @@
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.0675rem;
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
@@ -151,7 +151,7 @@
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.075rem;
   text-decoration-color: var(--home-cyan);
   text-decoration-thickness: 1px;
   text-underline-offset: 0.35rem;
@@ -214,6 +214,7 @@
   max-width: 100%;
   margin-top: 1.25rem;
   font-size: clamp(3rem, 5.7vw, 7rem);
+  letter-spacing: -0.025rem;
 }
 
 .outcomeList {
@@ -228,7 +229,7 @@
   font-family: var(--font-sans);
   font-size: clamp(1.1rem, 1.7vw, 1.55rem);
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: calc(0.04 * clamp(1.1rem, 1.7vw, 1.55rem));
 }
 
 .outcomeList p::before {
@@ -315,7 +316,7 @@
   font-family: var(--font-sans);
   font-size: clamp(1.6rem, 3.1vw, 3.4rem);
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: calc(0.04 * clamp(1.6rem, 3.1vw, 3.4rem));
   line-height: 1;
   text-transform: uppercase;
 }
@@ -348,7 +349,7 @@
   font-family: var(--font-sans);
   font-size: clamp(1.25rem, 2vw, 2rem);
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: calc(0.04 * clamp(1.25rem, 2vw, 2rem));
 }
 
 .processSteps span {
