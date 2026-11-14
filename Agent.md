@@ -1,4 +1,4 @@
-# ZIRON Landing Page — Agent Guidance
+# ZIRON Landing Page - Agent Guidance
 
 > Direction: build a mobile-first portfolio demo from small, reusable Lit components. Use Tailwind CSS and DaisyUI through one shared theme, keep every implementation choice compatible with static GitHub Pages hosting, and treat the demo as a source of components that may later move into the production project.
 
@@ -476,3 +476,11 @@ Use existing repository scripts. Do not suppress TypeScript, lint, accessibility
 - Do not claim completion without performing the applicable verification.
 
 When a requirement conflicts with an established repository pattern, preserve correctness and local consistency, then document the deliberate deviation in the change rationale.
+
+## 16. Writing
+
+Never use an em dash (`—`, U+2014). Use a hyphen (`-`) in prose, titles, UI copy, translations, comments, and documentation.
+
+```text
+From idea to finished material - we lead the process.
+```

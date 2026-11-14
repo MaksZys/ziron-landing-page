@@ -31,8 +31,8 @@
   margin: 0;
   font-family: var(--font-sans);
   font-weight: 700;
-  letter-spacing: -0.065em;
-  line-height: 0.86;
+  letter-spacing: 0.02em;
+  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -236,7 +236,7 @@
   margin: 0;
   font-size: clamp(1.15rem, 1.8vw, 1.8rem);
   font-weight: 700;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
 }
 
@@ -337,7 +337,7 @@
 }
 
 .manifesto h2 {
-  max-width: 8ch;
+  max-width: max(8ch, min-content);
   color: var(--about-cyan);
   font-size: clamp(4rem, 9vw, 9rem);
 }

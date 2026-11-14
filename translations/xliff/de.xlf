@@ -27,8 +27,8 @@
         <target>ZU ZWEIT</target>
       </trans-unit>
       <trans-unit id="about.heroSummary">
-        <source>Film. Photography. Movement. From idea to finished material — we lead the entire process.</source>
-        <target>Film. Fotografie. Bewegung. Von der Idee bis zum fertigen Material — wir begleiten den gesamten Prozess.</target>
+        <source>Film. Photography. Movement. From idea to finished material - we lead the entire process.</source>
+        <target>Film. Fotografie. Bewegung. Von der Idee bis zum fertigen Material - wir begleiten den gesamten Prozess.</target>
       </trans-unit>
       <trans-unit id="about.heroIndex">
         <source>ABOUT / 01</source>
@@ -343,8 +343,8 @@
         <target>Bei Fragen zum Schutz personenbezogener Daten kontaktieren Sie uns bitte über das Formular oder telefonisch.</target>
       </trans-unit>
       <trans-unit id="brand.fullLogo">
-        <source>ZIRON — We create what others talk about</source>
-        <target>ZIRON — Wir schaffen, worüber andere sprechen</target>
+        <source>ZIRON - We create what others talk about</source>
+        <target>ZIRON - Wir schaffen, worüber andere sprechen</target>
       </trans-unit>
       <trans-unit id="brand.homeLink">
         <source>ZIRON home</source>
@@ -471,7 +471,7 @@
         <target>BILDER MIT KLAREM ZWECK.</target>
       </trans-unit>
       <trans-unit id="home.workSummary">
-        <source>Show buyers how your products and processes work — and the people behind them.</source>
+        <source>Show buyers how your products and processes work - and the people behind them.</source>
         <target>Zeigen Sie Interessenten, wie Produkte und Prozesse funktionieren – und wer die Menschen dahinter sind.</target>
       </trans-unit>
       <trans-unit id="home.workCardOne">
@@ -555,7 +555,7 @@
         <target>Filmproduktion / Kampagne 2026</target>
       </trans-unit>
       <trans-unit id="project.summary">
-        <source>Machines do not pose. They work. We showed their strength where it is most real — in dust, snow, rain, and at full speed.</source>
+        <source>Machines do not pose. They work. We showed their strength where it is most real - in dust, snow, rain, and at full speed.</source>
         <target>Maschinen posieren nicht. Sie arbeiten. Wir haben ihre Stärke dort gezeigt, wo sie am authentischsten ist – in Staub, Schnee, Regen und bei voller Fahrt.</target>
       </trans-unit>
       <trans-unit id="project.processSummary">

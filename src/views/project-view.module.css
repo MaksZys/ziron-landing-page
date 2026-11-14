@@ -57,13 +57,13 @@
 }
 
 .contact h2 {
-  max-width: 11ch;
+  max-width: max(11ch, min-content);
   margin: 1.25rem 0 0;
   font-family: var(--font-project-display);
   font-size: clamp(3rem, 5.7vw, 7rem);
   font-weight: 700;
-  letter-spacing: -0.075em;
-  line-height: 0.94;
+  letter-spacing: 0.02em;
+  line-height: 1;
   text-transform: uppercase;
 }
 

@@ -2,7 +2,7 @@
 
 Strict visual reference for every new ZIRON screen. Engineering, component, and accessibility rules stay in `Agent.md`. If a color, type, layout, or motion choice in `Agent.md` disagrees with this file, this file wins.
 
-ZIRON is a two-person studio. Mateusz Kulesza and Mateusz Radkiewicz film, photograph, and finish marketing material for businesses that run machines — agriculture first, then technical and industrial work. The page’s job is to show that work with the same precision as the equipment, and to make contact the obvious next step.
+ZIRON is a two-person studio. Mateusz Kulesza and Mateusz Radkiewicz film, photograph, and finish marketing material for businesses that run machines - agriculture first, then technical and industrial work. The page’s job is to show that work with the same precision as the equipment, and to make contact the obvious next step.
 
 The audience is an owner or marketing lead at a machinery company. They should recognize their own world in the first screen: a machine, a field, a workshop, a nameplate. They should not recognize a software template.
 
@@ -16,7 +16,7 @@ Scores, so later work does not drift:
 - Variance: 7. Asymmetric splits. The photograph and the headline occupy different cells.
 - Motion: 3. Restrained. One easing curve, no spring, no perpetual loop.
 
-The signature is the nameplate. A display line set in Rajdhani at weight 700, uppercase, tracking `-0.07em`, line-height under `0.9`, sitting on Carbon or Ceramic in its own cell. Beside it, one full-height photograph of a machine or a site, desaturated. Instrument Cyan appears on a strict budget. That pairing — stamped metal type next to a quiet photograph — is the only memorable device. Do not add a second one.
+The signature is the nameplate. A display line set in Rajdhani at weight 700, uppercase, tracking `0.02em`, line-height `1`, sitting on Carbon or Ceramic in its own cell. Beside it, one full-height photograph of a machine or a site, desaturated. Instrument Cyan appears on a strict budget. That pairing - stamped metal type next to a quiet photograph - is the only memorable device. Do not add a second one.
 
 Material reference: carbon steel, ceramic instrument housings, engraved serial plates, and the single cyan spark already cut into the ZIRON mark. Not a studio loft, not a newspaper, not a startup dashboard.
 
@@ -26,26 +26,26 @@ One cool gray axis. No warm gray mixed into cool gray. No second accent. No pure
 
 ### Principal colors
 
-- **Carbon Ground** (`#080A0C`) — page background, text on Ceramic and on Instrument Cyan, the header rail. Token: `--color-brand-carbon`.
-- **Machine Metal** (`#171B1E`) — the panel beside a carbon panel, image fallbacks, quiet alternate sections. Token: `--color-brand-metal`.
-- **Ceramic** (`#F7FAFA`) — light section ground, primary text on Carbon, the logo chamber. Token: `--color-brand-ceramic`.
-- **Soft White** (`#E9EDEE`) — secondary text on Carbon, the current navigation label. Dimmer than Ceramic so a headline can outrank a label. Token: `--color-brand-soft-white`.
-- **Steel** (`#929CA3`) — inactive navigation, captions, helper text, timestamps. Never body paragraphs. Token: `--color-brand-steel`.
-- **Instrument Cyan** (`#71D9ED`) — the only accent. Saturation stays under 80%. Token: `--color-brand-cyan`. Map DaisyUI `secondary` to this value. Do not introduce another chromatic color.
+- **Carbon Ground** (`#080A0C`) - page background, text on Ceramic and on Instrument Cyan, the header rail. Token: `--color-brand-carbon`.
+- **Machine Metal** (`#171B1E`) - the panel beside a carbon panel, image fallbacks, quiet alternate sections. Token: `--color-brand-metal`.
+- **Ceramic** (`#F7FAFA`) - light section ground, primary text on Carbon, the logo chamber. Token: `--color-brand-ceramic`.
+- **Soft White** (`#E9EDEE`) - secondary text on Carbon, the current navigation label. Dimmer than Ceramic so a headline can outrank a label. Token: `--color-brand-soft-white`.
+- **Steel** (`#929CA3`) - inactive navigation, captions, helper text, timestamps. Never body paragraphs. Token: `--color-brand-steel`.
+- **Instrument Cyan** (`#71D9ED`) - the only accent. Saturation stays under 80%. Token: `--color-brand-cyan`. Map DaisyUI `secondary` to this value. Do not introduce another chromatic color.
 
 ### Structural tints
 
 These are mixes of the principal colors for rules and for text that sits on a light or cyan field. They are not a second palette.
 
-- **Cyan Ink** (`#34535E`) — utility labels on an Instrument Cyan field. Token: `--color-brand-cyan-ink`.
-- **Field Ink** (`#4A646D`) — utility labels on Ceramic. Token: `--color-brand-field-ink`.
-- **Ceramic Seam** (`#A6B0B3`) — 1px rules on Ceramic. Token: `--color-brand-ceramic-seam`.
-- **Metal Seam** (`#516066`) — 1px rules on Carbon or Machine Metal, including form underlines. Token: `--color-brand-metal-seam`.
-- **Cyan Wash** (`rgb(113 217 237 / 8%)`) — focused field background only. Token: `--color-brand-cyan-wash`.
+- **Cyan Ink** (`#34535E`) - utility labels on an Instrument Cyan field. Token: `--color-brand-cyan-ink`.
+- **Field Ink** (`#4A646D`) - utility labels on Ceramic. Token: `--color-brand-field-ink`.
+- **Ceramic Seam** (`#A6B0B3`) - 1px rules on Ceramic. Token: `--color-brand-ceramic-seam`.
+- **Metal Seam** (`#516066`) - 1px rules on Carbon or Machine Metal, including form underlines. Token: `--color-brand-metal-seam`.
+- **Cyan Wash** (`rgb(113 217 237 / 8%)`) - focused field background only. Token: `--color-brand-cyan-wash`.
 
 ### Reserved
 
-- **Mark Spark** (`#8CEDFF`) — the cyan path inside `assets/ziron-mark.svg` only. Never a button, headline, border, or hover.
+- **Mark Spark** (`#8CEDFF`) - the cyan path inside `assets/ziron-mark.svg` only. Never a button, headline, border, or hover.
 
 ### Banned colors
 
@@ -91,9 +91,9 @@ Load only the weights in use: Rajdhani at 700; Exo 2 at 400, 500, and 700. Do no
 
 | Role | Size | Weight | Tracking | Leading | Case | Face |
 | --- | --- | --- | --- | --- | --- | --- |
-| Display XL | `clamp(3.5rem, 6.2vw, 8.5rem)` | 700 | `-0.07em` | 0.82 | Uppercase | Rajdhani |
-| Display L | `clamp(3rem, 5.7vw, 7rem)` | 700 | `-0.07em` | 0.86 | Uppercase | Rajdhani |
-| Display S | `clamp(1.6rem, 2.4vw, 3.4rem)` | 700 | `-0.04em` | 0.9 | Uppercase | Rajdhani |
+| Display XL | `clamp(3.5rem, 6.2vw, 8.5rem)` | 700 | `0.02em` | 1 | Uppercase | Rajdhani |
+| Display L | `clamp(3rem, 5.7vw, 7rem)` | 700 | `0.02em` | 1 | Uppercase | Rajdhani |
+| Display S | `clamp(1.6rem, 2.4vw, 3.4rem)` | 700 | `0.02em` | 1 | Uppercase | Rajdhani |
 | Body | `clamp(1.05rem, 1.55vw, 1.35rem)` | 500 | `-0.025em` | 1.42 | Sentence | Exo 2 |
 | Utility | `0.75rem` | 700 | `0.11em` | 1.4 | Uppercase | Exo 2 |
 | Button and nav | `0.75rem` | 700 | `0.09em` | 1 | Uppercase | Exo 2 |
@@ -113,11 +113,11 @@ Body stays at least `1rem`. Do not set a paragraph below that.
 
 ### Language
 
-English, Polish, and German ship together. Size every display line against the longest of the three. If a translation overflows, lower the clamp ceiling. Do not loosen tracking, hyphenate a display word, or truncate the label. The header may drop nav type to `0.62rem` and tracking to `0.03em` below `48rem`, and to `0.56rem` below `23.5rem`, only so Homepage, Work, About, and Contact still fit. That exception is the header rail, not a new style.
+English, Polish, and German ship together. Size every display line against the longest of the three. Keep display tracking at `0.02em` and leading at `1` so Polish and German diacritics do not touch the next glyph or the line below. If a translation overflows, lower the clamp ceiling. Do not tighten tracking, hyphenate a display word, or truncate the label. The header may drop nav type to `0.62rem` and tracking to `0.03em` below `48rem`, and to `0.56rem` below `23.5rem`, only so Homepage, Work, About, and Contact still fit. That exception is the header rail, not a new style.
 
 ### Hierarchy
 
-Hierarchy comes from size, weight, and placement. Do not add a third color to create it. Do not letter-space a display line open. Do not letter-space body text.
+Hierarchy comes from size, weight, and placement. Do not add a third color to create it. Keep display tracking at `0.02em`. Do not letter-space body text.
 
 ## 4. Component Stylings
 
@@ -302,8 +302,8 @@ The register is plain and specific. Sentence case in body. Uppercase is a proper
 
 Real facts that may be stated, because they are published:
 
-- Mateusz Kulesza (KulasMGM) — film, photography, editing.
-- Mateusz Radkiewicz (Radken) — film, drone, post-production.
+- Mateusz Kulesza (KulasMGM) - film, photography, editing.
+- Mateusz Radkiewicz (Radken) - film, drone, post-production.
 - `kontakt@ziron.pl`, `+48 694 986 722`.
 - Telephone hours 08:00–18:00, reply within 24 hours.
 
@@ -327,9 +327,9 @@ These are failures, not suggestions.
 - `100vh` for a full-height section.
 - Uppercase paragraphs. Descriptions and bullet lists stay in Exo 2, sentence case.
 - Placeholder names, lorem ipsum, or a fake client.
-- Display tracking looser than `-0.04em`, or utility tracking used on body text.
+- Display tracking tighter than `0.02em`, or utility tracking used on body text.
 - Hover styles that stick after a touch.
-- A new visual device — color, shape, icon, shadow, or animation — added while spacing, type, or the mark would have done the job.
+- A new visual device - color, shape, icon, shadow, or animation - added while spacing, type, or the mark would have done the job.
 
 ## 9. Check before shipping a screen
 

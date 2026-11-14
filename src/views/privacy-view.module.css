@@ -30,8 +30,8 @@
   color: #71d9ed;
   font-size: clamp(2.6rem, 7vw, 5rem);
   font-weight: 700;
-  letter-spacing: -0.065em;
-  line-height: 0.9;
+  letter-spacing: 0.02em;
+  line-height: 1;
 }
 
 .policy section {
@@ -44,7 +44,7 @@
   color: #71d9ed;
   font-size: clamp(1.1rem, 2vw, 1.35rem);
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.02em;
 }
 
 .policy p,

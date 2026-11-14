@@ -1,0 +1,13 @@
+---
+description: Never use an em dash; use a hyphen
+alwaysApply: true
+---
+
+# No long dashes
+
+Never write an em dash (`—`, U+2014). Use a hyphen (`-`) instead, in prose, titles, UI copy, translations, and comments.
+
+```
+Bad:  From idea to finished material — we lead the process.
+Good: From idea to finished material - we lead the process.
+```

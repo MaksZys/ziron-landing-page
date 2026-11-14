@@ -102,7 +102,7 @@ export class HomeView extends LitElement {
             <h2 id="work-title">${msg('WORK THAT PROVES ITS VALUE.', { id: 'home.workTitle' })}</h2>
             <p class=${styles.workSummary}>
               ${msg(
-                'Show buyers how your products and processes work — and the people behind them.',
+                'Show buyers how your products and processes work - and the people behind them.',
                 { id: 'home.workSummary' },
               )}
             </p>

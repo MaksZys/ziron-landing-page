@@ -118,6 +118,6 @@ export const FEATURED_PROJECT = {
       "width": 2400
     }
   ],
-  "summary": "Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie jest najbardziej prawdziwa — w pyle, śniegu, deszczu i pełnym tempie.",
+  "summary": "Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie jest najbardziej prawdziwa - w pyle, śniegu, deszczu i pełnym tempie.",
   "title": "Siła w ruchu"
 } satisfies PortfolioProject;

@@ -1,4 +1,4 @@
-# Ziron official-site audit — 2026-08-23
+# Ziron official-site audit - 2026-08-23
 
 Scope: read-only review of the publicly accessible official `ziron.pl` site. This records what the source supports, rather than proposed copy or unverified claims.
 
@@ -44,7 +44,7 @@ Video, photography, aerial/drone footage, edited and graphically post-processed 
 
 ## Team and differentiators
 
-The studio names Mateusz Kulesza (KulasMGM) and Mateusz Radkiewicz (Radken): [about](https://ziron.pl/kim-jestesmy). They describe a path from a shared early passion for recording and visual storytelling to professional projects for companies. Each claims hands-on understanding of capture through delivery—filming, photography, drone work, editing, and graphic treatment—which is the strongest defensible differentiator for a refreshed site.
+The studio names Mateusz Kulesza (KulasMGM) and Mateusz Radkiewicz (Radken): [about](https://ziron.pl/kim-jestesmy). They describe a path from a shared early passion for recording and visual storytelling to professional projects for companies. Each claims hands-on understanding of capture through delivery-filming, photography, drone work, editing, and graphic treatment-which is the strongest defensible differentiator for a refreshed site.
 
 Their stated strengths are knowledge of the industries they serve (especially technical and industrial), creativity at any scale, and visible passion for the work. Their collaboration promise is open communication, individual treatment of each project, timeliness, quality, and a real effect: [about](https://ziron.pl/kim-jestesmy), [collaboration](https://ziron.pl/wspolpraca).
 
@@ -77,7 +77,7 @@ The refresh should source verified material for a work portfolio (client permiss
 ## Recommended information architecture
 
 1. Homepage: a single chosen niche/promise, selected work, primary CTA.
-2. Services: Photography, Film Production, Drone, Social Media—each with what it solves and concrete deliverables only once confirmed.
+2. Services: Photography, Film Production, Drone, Social Media-each with what it solves and concrete deliverables only once confirmed.
 3. Work: named, permissioned projects with client context, visual assets, and verified outcomes.
 4. About: Mateusz Kulesza and Mateusz Radkiewicz, roles, complementary skills, and the small-team ownership advantage.
 5. Process: Conversation → tailored concept → production → post-production → optional publication/social media.

@@ -18,7 +18,7 @@
 'about.heroEyebrow': `ZIRON / KIM JESTEŚMY`,
 'about.heroImageAlt': `Dwóch mężczyzn stojących razem na dachu o zachodzie słońca`,
 'about.heroIndex': `O NAS / 01`,
-'about.heroSummary': `Film. Fotografia. Ruch. Od pomysłu do gotowego materiału — prowadzimy cały proces.`,
+'about.heroSummary': `Film. Fotografia. Ruch. Od pomysłu do gotowego materiału - prowadzimy cały proces.`,
 'about.heroTitleFirst': `TWORZYMY`,
 'about.heroTitleSecond': `WE DWOJE`,
 'about.kuleszaImageAlt': `Mateusz Kulesza, członek zespołu ZIRON`,
@@ -36,7 +36,7 @@
 'about.teamSummary': `Połączyła nas wspólna praca i podobne podejście do tworzenia obrazów. Nasze umiejętności się uzupełniają, ale za każdą realizację odpowiadamy wspólnie.`,
 'about.teamTitleFirst': `DWA PUNKTY`,
 'about.teamTitleSecond': `WIDZENIA.`,
-'brand.fullLogo': `ZIRON — Tworzymy to, o czym inni mówią`,
+'brand.fullLogo': `ZIRON - Tworzymy to, o czym inni mówią`,
 'brand.homeLink': `ZIRON strona główna`,
 'contact.clearDraft': `Wyczyść zapisany szkic`,
 'contact.email': `Adres e-mail`,
@@ -155,6 +155,6 @@
 'project.mediaUnavailable': `Materiały projektu są niedostępne.`,
 'project.processSummary': `Towarzyszyliśmy pracy z bliska i zamieniliśmy jej kolejne etapy, detale oraz decyzje w czytelną historię.`,
 'project.scaleSummary': `Ujęliśmy skalę działania tak, by była równie odczuwalna jak na miejscu.`,
-'project.summary': `Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie widać ją najlepiej — w pyle, śniegu, deszczu i przy pełnym tempie pracy.`,
+'project.summary': `Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie widać ją najlepiej - w pyle, śniegu, deszczu i przy pełnym tempie pracy.`,
     };
   
