@@ -95,9 +95,9 @@ Load only the weights in use: Blinker at 700; Exo 2 at 400, 500, and 700. Do not
 | Display L | `clamp(3rem, 5.7vw, 7rem)` | 700 | `-0.025rem` | 1 | Uppercase | Blinker |
 | Display S | `clamp(1.6rem, 2.4vw, 3.4rem)` | 700 | `calc(0.04 * size)` | 1 | Uppercase | Blinker |
 | Body | `clamp(1.05rem, 1.55vw, 1.35rem)` | 500 | `calc(-0.025 * size)` | 1.42 | Sentence | Exo 2 |
-| Utility | `0.75rem` | 700 | `0.0825rem` | 1.4 | Uppercase | Exo 2 |
-| Button | `0.75rem` | 700 | `0.0675rem` | 1 | Uppercase | Exo 2 |
-| Site navigation | `0.75rem` | 700 | `0.075rem` | 1 | Uppercase | Blinker |
+| Utility | `0.75rem` | 700 | `0` | 1.4 | Uppercase | Exo 2 |
+| Button | `0.75rem` | 700 | `0` | 1 | Uppercase | Exo 2 |
+| Site navigation | `0.75rem` | 700 | `0` | 1 | Uppercase | Blinker |
 
 Mobile display, below `48rem`:
 
@@ -114,11 +114,11 @@ Body stays at least `1rem`. Do not set a paragraph below that.
 
 ### Language
 
-English, Polish, and German ship together. Size every display line against the longest of the three. Keep large-headline tracking at `-0.025rem` and leading at `1`. Smaller display lines stay at 4% of the font size, in rem, so Polish and German diacritics do not touch the next glyph or the line below. If a translation overflows, lower the clamp ceiling. Do not tighten tracking, hyphenate a display word, or truncate the label. The header may drop nav type to `0.62rem` and tracking to `0.0186rem` below `48rem`, and to `0.0112rem` below `23.5rem`, only so Homepage, Work, About, and Contact still fit. That exception is the header rail, not a new style.
+English, Polish, and German ship together. Size every display line against the longest of the three. Keep large-headline tracking at `-0.025rem` and leading at `1`. Smaller display lines stay at 4% of the font size, in rem, so Polish and German diacritics do not touch the next glyph or the line below. If a translation overflows, lower the clamp ceiling. Do not tighten tracking, hyphenate a display word, or truncate the label. The header may drop nav type to `0.62rem` below `48rem`, and to `0.56rem` below `23.5rem`, only so Homepage, Work, About, and Contact still fit. Tracking stays `0`. That size exception is the header rail, not a new style.
 
 ### Hierarchy
 
-Hierarchy comes from size, weight, and placement. Do not add a third color to create it. Keep large-headline tracking at `-0.025rem`. Smaller display lines stay at 4% of the font size, in rem. Do not letter-space body text.
+Hierarchy comes from size, weight, and placement. Do not add a third color to create it. Keep large-headline tracking at `-0.025rem`. Smaller display lines stay at 4% of the font size, in rem. Utility text, buttons, and site navigation use `0`. Do not letter-space body text.
 
 ## 4. Component Stylings
 
@@ -328,7 +328,7 @@ These are failures, not suggestions.
 - `100vh` for a full-height section.
 - Uppercase paragraphs. Descriptions and bullet lists stay in Exo 2, sentence case.
 - Placeholder names, lorem ipsum, or a fake client.
-- Large-headline tracking other than `-0.025rem`, smaller display tracking tighter than 4% of the font size, or utility tracking used on body text. Use `rem` for tracking. Do not use `em`.
+- Large-headline tracking other than `-0.025rem`, smaller display tracking other than 4% of the font size, or letter-spacing on utility text, buttons, and navigation. Use `rem` for tracking. Do not use `em`.
 - Hover styles that stick after a touch.
 - A new visual device - color, shape, icon, shadow, or animation - added while spacing, type, or the mark would have done the job.
 

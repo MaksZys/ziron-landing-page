@@ -51,7 +51,7 @@
   font-family: var(--font-project-utility);
   font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.0792rem;
+  letter-spacing: 0;
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -88,7 +88,7 @@
   font-family: var(--font-project-utility);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.0675rem;
+  letter-spacing: 0;
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;

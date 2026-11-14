@@ -36,7 +36,7 @@
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.0825rem;
+  letter-spacing: 0;
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -147,7 +147,7 @@
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.0675rem;
+  letter-spacing: 0;
   text-transform: uppercase;
   transition: background-color var(--default-transition-duration) var(--ease-brand), transform var(--default-transition-duration) var(--ease-brand);
 }
@@ -198,7 +198,6 @@
   max-width: 27rem;
   margin: 0;
   color: var(--contact-steel);
-  letter-spacing: 0.045rem;
 }
 
 .termsNote {

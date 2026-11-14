@@ -19,7 +19,7 @@
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.0825rem;
+  letter-spacing: 0;
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -316,7 +316,6 @@
 
   .profileMeta span {
     font-size: 0.78rem;
-    letter-spacing: 0.0858rem;
   }
 
   .sectionIntro h2 {
@@ -456,7 +455,7 @@
   color: var(--about-ink) !important;
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
