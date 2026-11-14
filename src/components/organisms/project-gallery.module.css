@@ -83,7 +83,7 @@
   background: color-mix(in srgb, var(--color-project-ink) 88%, transparent);
   font-family: var(--font-project-utility);
   font-size: 0.58rem;
-  letter-spacing: 0.0116rem;
+  letter-spacing: 0;
   opacity: 0;
   transition: opacity var(--default-transition-duration) var(--ease-brand);
 }
@@ -174,7 +174,7 @@
   gap: 1rem;
   font-family: var(--font-project-utility);
   font-size: 0.7rem;
-  letter-spacing: 0.056rem;
+  letter-spacing: 0;
   pointer-events: auto;
   text-transform: uppercase;
 }
@@ -326,7 +326,6 @@
   .previewMeta {
     align-items: flex-end;
     font-size: 0.62rem;
-    letter-spacing: 0.0496rem;
   }
 
   .previewMeta a {
