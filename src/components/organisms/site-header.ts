@@ -75,11 +75,9 @@ export class SiteHeader extends LitElement {
         <nav class=${styles.navigation} aria-label=${msg('Primary navigation', { id: 'nav.primary' })}>
           <ul class=${styles.navigationList}>
             ${this.links.map((link) => {
-              const linkView = link.href.startsWith('?')
-                ? new URLSearchParams(link.href).get('view')
-                : null;
+              const linkView = new URLSearchParams(link.href).get('view');
               const currentView = new URLSearchParams(window.location.search).get('view');
-              const isCurrent = linkView !== null && linkView === currentView;
+              const isCurrent = linkView === currentView;
 
               return html`
                 <li>

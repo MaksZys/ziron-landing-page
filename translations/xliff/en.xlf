@@ -538,6 +538,10 @@
         <source>Contact</source>
         <target>Contact</target>
       </trans-unit>
+      <trans-unit id="nav.home">
+        <source>Homepage</source>
+        <target>Homepage</target>
+      </trans-unit>
       <trans-unit id="nav.primary">
         <source>Primary navigation</source>
         <target>Primary navigation</target>

@@ -98,7 +98,7 @@ test('project navigation uses the brand mark as the home link', async ({
     name: 'Primary navigation',
   });
   await expect(page.locator('site-header')).toHaveCount(1);
-  await expect(navigation.getByRole('link')).toHaveText(['Work', 'About', 'Contact']);
+  await expect(navigation.getByRole('link')).toHaveText(['Homepage', 'Work', 'About', 'Contact']);
   const homeLink = page.getByRole('link', { name: 'ZIRON home' });
   await expect(homeLink).toHaveAttribute(
     'href',
@@ -138,7 +138,7 @@ test('mobile navigation reserves a compact language-control bay', async ({
   await expect(header).toHaveCSS('min-height', '48px');
   await expect(header).toHaveCSS('background-color', 'rgb(8, 10, 12)');
   await expect(homeLink).toHaveCSS('width', '48px');
-  await expect(navigation).toHaveCSS('width', '294px');
+  await expect(navigation).toHaveCSS('width', '334px');
 });
 
 test('desktop navigation sits at the edge and uses cyan hover feedback', async ({

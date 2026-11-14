@@ -105,6 +105,7 @@
 'menu.explore': `Odkrywaj`,
 'nav.about': `O nas`,
 'nav.contact': `Kontakt`,
+'nav.home': `Strona Główna`,
 'nav.primary': `Nawigacja główna`,
 'nav.work': `Realizacje`,
 'privacy.changes.heading': `9. Zmiany w polityce prywatności`,

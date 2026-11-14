@@ -14,7 +14,7 @@ test('Privacy page keeps the primary navigation and copied ZIRON policy text', a
 
   await expect(page.locator('site-header')).toHaveCount(1);
   await expect(page.getByRole('navigation', { name: 'Primary navigation' })
-    .getByRole('link')).toHaveText(['Work', 'About', 'Contact']);
+    .getByRole('link')).toHaveText(['Homepage', 'Work', 'About', 'Contact']);
   await expect(page.getByRole('heading', { name: 'Privacy policy', exact: true })).toBeVisible();
   await expect(page.getByRole('heading', { name: '1. General information' })).toBeVisible();
   await expect(page.locator('privacy-view strong').first()).toHaveText('ZIRON');
