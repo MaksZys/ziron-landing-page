@@ -51,7 +51,7 @@
   font-family: var(--font-project-utility);
   font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.0792rem;
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -62,7 +62,7 @@
   font-family: var(--font-project-display);
   font-size: clamp(3rem, 5.7vw, 7rem);
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.025rem;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -72,7 +72,7 @@
   margin: 2rem 0 0;
   font-size: clamp(1.05rem, 1.55vw, 1.35rem);
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: calc(-0.025 * clamp(1.05rem, 1.55vw, 1.35rem));
   line-height: 1.42;
 }
 
@@ -88,7 +88,7 @@
   font-family: var(--font-project-utility);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.0675rem;
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;

@@ -36,7 +36,7 @@
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.0825rem;
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -52,7 +52,7 @@
   color: var(--contact-cyan);
   font-size: clamp(2.75rem, 18cqi, 7rem);
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.025rem;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -62,7 +62,7 @@
   margin: 3rem 0 0;
   font-size: clamp(1.05rem, 1.5vw, 1.35rem);
   font-weight: 500;
-  letter-spacing: -0.025em;
+  letter-spacing: calc(-0.025 * clamp(1.05rem, 1.5vw, 1.35rem));
   line-height: 1.4;
 }
 
@@ -147,7 +147,7 @@
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.0675rem;
   text-transform: uppercase;
   transition: background-color var(--default-transition-duration) var(--ease-brand), transform var(--default-transition-duration) var(--ease-brand);
 }
@@ -198,7 +198,7 @@
   max-width: 27rem;
   margin: 0;
   color: var(--contact-steel);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.045rem;
 }
 
 .termsNote {
