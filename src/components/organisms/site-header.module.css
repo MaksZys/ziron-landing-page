@@ -19,7 +19,7 @@
   min-height: var(--stage-control-size);
   align-items: center;
   justify-content: center;
-  background: var(--color-brand-carbon);
+  background: transparent;
   color: var(--color-brand-ceramic);
 }
 

@@ -15,7 +15,7 @@ test('About page keeps its navigation, CTA, and media self-contained', async ({
     'href',
     '?lang=en',
   );
-  await expect(homeLink).toHaveCSS('background-color', 'rgb(8, 10, 12)');
+  await expect(homeLink).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
   await expect(navigation.getByRole('link', { name: 'Contact' })).toHaveAttribute(
     'href',
     '?view=contact&lang=en',
