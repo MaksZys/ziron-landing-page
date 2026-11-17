@@ -119,6 +119,13 @@ export class SiteHeader extends LitElement {
 
   protected override render() {
     const currentView = new URLSearchParams(window.location.search).get('view');
+    const mobileLinks: NavigationLink[] = [
+      {
+        href: 'https://ziron.erli.pl/',
+        label: msg('Shop', { id: 'nav.shop' }),
+      },
+      ...this.links,
+    ];
 
     return html`
       <header class=${styles.header}>
@@ -202,9 +209,9 @@ export class SiteHeader extends LitElement {
         aria-hidden=${String(!this.isMobileMenuOpen)}
       >
         <ul class=${styles.mobileMenuList}>
-          ${this.links.map((link) => {
+          ${mobileLinks.map((link) => {
             const linkView = new URLSearchParams(link.href).get('view');
-            const isCurrent = linkView === currentView;
+            const isCurrent = !link.href.startsWith('https://') && linkView === currentView;
 
             return html`
               <li>

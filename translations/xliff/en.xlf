@@ -554,6 +554,10 @@
         <source>Primary navigation</source>
         <target>Primary navigation</target>
       </trans-unit>
+      <trans-unit id="nav.shop">
+        <source>Shop</source>
+        <target>Shop</target>
+      </trans-unit>
       <trans-unit id="nav.work">
         <source>Work</source>
         <target>Work</target>

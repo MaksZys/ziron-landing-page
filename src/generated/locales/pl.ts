@@ -109,6 +109,7 @@
 'nav.home': `Strona Główna`,
 'nav.open': `Otwórz nawigację`,
 'nav.primary': `Nawigacja główna`,
+'nav.shop': `Sklep`,
 'nav.work': `Realizacje`,
 'privacy.changes.heading': `9. Zmiany w polityce prywatności`,
 'privacy.changes.summary': `Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszej polityce prywatności.`,

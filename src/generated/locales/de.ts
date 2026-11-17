@@ -109,6 +109,7 @@
 'nav.home': `Startseite`,
 'nav.open': `Navigation öffnen`,
 'nav.primary': `Hauptnavigation`,
+'nav.shop': `Shop`,
 'nav.work': `Arbeiten`,
 'privacy.changes.heading': `9. Änderungen dieser Datenschutzerklärung`,
 'privacy.changes.summary': `Der Verantwortliche behält sich das Recht vor, Änderungen an dieser Datenschutzerklärung vorzunehmen.`,
