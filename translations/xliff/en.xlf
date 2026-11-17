@@ -534,6 +534,10 @@
         <source>About</source>
         <target>About</target>
       </trans-unit>
+      <trans-unit id="nav.close">
+        <source>Close navigation</source>
+        <target>Close navigation</target>
+      </trans-unit>
       <trans-unit id="nav.contact">
         <source>Contact</source>
         <target>Contact</target>
@@ -541,6 +545,10 @@
       <trans-unit id="nav.home">
         <source>Homepage</source>
         <target>Homepage</target>
+      </trans-unit>
+      <trans-unit id="nav.open">
+        <source>Open navigation</source>
+        <target>Open navigation</target>
       </trans-unit>
       <trans-unit id="nav.primary">
         <source>Primary navigation</source>

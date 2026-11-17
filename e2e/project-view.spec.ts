@@ -123,7 +123,7 @@ test('Project navigation remains at the top of the viewport while scrolling', as
   }).toBe(0);
 });
 
-test('mobile navigation reserves a compact language-control bay', async ({
+test('mobile navigation opens an accessible drawer beside the language control', async ({
   page,
 }, testInfo) => {
   test.skip(testInfo.project.name !== 'mobile-chromium', 'Mobile contract');
@@ -131,14 +131,26 @@ test('mobile navigation reserves a compact language-control bay', async ({
 
   const header = page.locator('site-header header');
   const homeLink = page.getByRole('link', { name: 'ZIRON home' });
-  const navigation = page.getByRole('navigation', {
-    name: 'Primary navigation',
-  });
+  const menuToggle = page.getByRole('button', { name: 'Open navigation' });
+  const mobileNavigation = page.locator('#mobile-navigation');
 
   await expect(header).toHaveCSS('min-height', '48px');
   await expect(header).toHaveCSS('background-color', 'rgb(8, 10, 12)');
   await expect(homeLink).toHaveCSS('width', '48px');
-  await expect(navigation).toHaveCSS('width', '334px');
+  await expect(menuToggle).toBeVisible();
+  await expect(mobileNavigation).toHaveAttribute('aria-hidden', 'true');
+
+  await menuToggle.click();
+
+  await expect(mobileNavigation).toHaveAttribute('aria-hidden', 'false');
+  await expect(mobileNavigation.getByRole('link', { name: 'Homepage' })).toBeVisible();
+  await expect(mobileNavigation.getByRole('link', { name: 'Work' })).toBeVisible();
+  await expect(page.locator('body')).toHaveAttribute('data-mobile-menu-open', '');
+
+  await page.keyboard.press('Escape');
+
+  await expect(mobileNavigation).toHaveAttribute('aria-hidden', 'true');
+  await expect(page.locator('body')).not.toHaveAttribute('data-mobile-menu-open');
 });
 
 test('desktop navigation sits at the edge and uses cyan hover feedback', async ({

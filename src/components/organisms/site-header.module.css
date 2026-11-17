@@ -5,6 +5,10 @@
   top: 0;
 }
 
+:global(body[data-mobile-menu-open]) {
+  overflow: hidden;
+}
+
 .header {
   display: grid;
   min-height: var(--stage-control-size);
@@ -86,6 +90,12 @@
   letter-spacing: 0;
 }
 
+.mobileMenuToggle,
+.mobileMenu,
+.mobileMenuBackdrop {
+  display: none;
+}
+
 .visuallyHidden {
   position: absolute;
   width: 1px;
@@ -139,21 +149,7 @@
   }
 
   .navigationList {
-    flex: 1;
-    gap: 0.35rem;
-    justify-content: flex-end;
-  }
-
-  .navigationList li {
-    display: flex;
-    flex: 0 0 auto;
-  }
-
-  .navigationLink {
-    min-height: calc(var(--stage-control-size) - var(--spacing-4));
-    justify-content: center;
-    font-size: 0.62rem;
-    white-space: nowrap;
+    display: none;
   }
 
   .languageControl {
@@ -164,6 +160,104 @@
     min-height: calc(var(--stage-control-size) - var(--spacing-4));
     font-size: 0.62rem;
   }
+
+  .mobileMenuToggle {
+    display: inline-grid;
+    width: calc(var(--stage-control-size) - var(--spacing-4));
+    min-height: calc(var(--stage-control-size) - var(--spacing-4));
+    place-items: center;
+    border: 0;
+    padding: 0;
+    color: var(--color-brand-ceramic);
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .mobileMenuToggle:focus-visible {
+    outline: 0;
+    box-shadow: inset 0 0 0 var(--spacing-1) var(--color-brand-ceramic);
+  }
+
+  .mobileMenuBackdrop {
+    position: fixed;
+    top: calc(var(--stage-control-size) - var(--spacing-4));
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+    display: block;
+    border: 0;
+    padding: 0;
+    opacity: 0;
+    background: rgb(8 10 12 / 52%);
+    cursor: default;
+    pointer-events: none;
+    transition: opacity 260ms var(--ease-brand), visibility 260ms var(--ease-brand);
+    visibility: hidden;
+  }
+
+  .mobileMenuBackdropOpen {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .mobileMenu {
+    position: fixed;
+    top: calc(var(--stage-control-size) - var(--spacing-4));
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    display: block;
+    width: min(85vw, 24rem);
+    overflow-y: auto;
+    background: var(--color-brand-carbon);
+    box-shadow: -1.5rem 0 3rem rgb(5 7 8 / 24%);
+    transform: translateX(100%);
+    transition: transform 260ms var(--ease-brand);
+    visibility: hidden;
+  }
+
+  .mobileMenuOpen {
+    transform: translateX(0);
+    visibility: visible;
+  }
+
+  .mobileMenuList {
+    margin: 0;
+    padding: 1.5rem;
+    list-style: none;
+  }
+
+  .mobileMenuList li:not(:last-child)::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--color-secondary);
+    content: '';
+  }
+
+  .mobileMenuLink {
+    display: block;
+    padding: 1.5rem 0 1.75rem;
+    color: var(--color-brand-ceramic);
+    font-family: var(--font-sans);
+    font-size: clamp(1rem, 4vw, 1.25rem);
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .mobileMenuLink[aria-current='page'] {
+    color: var(--color-secondary);
+  }
+
+  .mobileMenuLink:focus-visible {
+    outline: 2px solid var(--color-brand-ceramic);
+    outline-offset: 0.35rem;
+  }
 }
 
 @media (max-width: 23.5rem) {
@@ -171,11 +265,6 @@
     gap: var(--spacing-1);
   }
 
-  :global(site-header) .navigationList {
-    gap: 0.2rem;
-  }
-
-  :global(site-header) .navigationLink,
   :global(site-header) .languageSelect {
     font-size: 0.56rem;
   }

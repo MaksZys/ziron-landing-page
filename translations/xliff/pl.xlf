@@ -534,6 +534,10 @@
         <source>About</source>
         <target>O nas</target>
       </trans-unit>
+      <trans-unit id="nav.close">
+        <source>Close navigation</source>
+        <target>Zamknij nawigację</target>
+      </trans-unit>
       <trans-unit id="nav.contact">
         <source>Contact</source>
         <target>Kontakt</target>
@@ -541,6 +545,10 @@
       <trans-unit id="nav.home">
         <source>Homepage</source>
         <target>Strona Główna</target>
+      </trans-unit>
+      <trans-unit id="nav.open">
+        <source>Open navigation</source>
+        <target>Otwórz nawigację</target>
       </trans-unit>
       <trans-unit id="nav.primary">
         <source>Primary navigation</source>
