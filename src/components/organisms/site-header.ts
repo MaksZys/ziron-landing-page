@@ -1,7 +1,7 @@
 import { LitElement, html, nothing } from 'lit';
 import { customElement, property, state } from 'lit/decorators.js';
 import { msg, updateWhenLocaleChanges } from '@lit/localize';
-import { Menu, X } from 'lucide';
+import { ArrowUpRight, Menu, X } from 'lucide';
 
 import { icon } from '../atoms/icon';
 import '../atoms/logo';
@@ -217,12 +217,15 @@ export class SiteHeader extends LitElement {
             return html`
               <li>
                 <a
-                  class=${styles.mobileMenuLink}
+                  class=${`${styles.mobileMenuLink} ${link.href === shopLink.href ? styles.mobileMenuShopLink : ''}`}
                   href=${link.href}
                   aria-current=${isCurrent ? 'page' : nothing}
                   @click=${this.closeMobileMenu}
                 >
-                  ${link.label}
+                  <span>${link.label}</span>
+                  ${link.href === shopLink.href
+                    ? html`<span class=${styles.mobileMenuShopIcon}>${icon(ArrowUpRight)}</span>`
+                    : nothing}
                 </a>
               </li>
             `;
