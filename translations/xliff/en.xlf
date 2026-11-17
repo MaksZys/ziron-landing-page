@@ -562,6 +562,10 @@
         <source>Work</source>
         <target>Work</target>
       </trans-unit>
+      <trans-unit id="social.follow">
+        <source>Follow us</source>
+        <target>Follow us</target>
+      </trans-unit>
       <trans-unit id="project.category">
         <source>Film production / Campaign 2026</source>
         <target>Film production / Campaign 2026</target>

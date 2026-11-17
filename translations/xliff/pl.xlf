@@ -562,6 +562,10 @@
         <source>Work</source>
         <target>Realizacje</target>
       </trans-unit>
+      <trans-unit id="social.follow">
+        <source>Follow us</source>
+        <target>Obserwuj nas</target>
+      </trans-unit>
       <trans-unit id="project.category">
         <source>Film production / Campaign 2026</source>
         <target>Film produkcyjny / Kampania 2026</target>

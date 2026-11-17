@@ -159,5 +159,6 @@
 'project.processSummary': `Wir haben die Arbeit aus nächster Nähe begleitet und ihre Schritte, Details und Entscheidungen zu einer klaren Geschichte verdichtet.`,
 'project.scaleSummary': `Wir haben den Umfang der Arbeit ins Bild gesetzt, damit sie so greifbar wirkt wie im echten Leben.`,
 'project.summary': `Maschinen posieren nicht. Sie arbeiten. Wir haben ihre Stärke dort gezeigt, wo sie am authentischsten ist – in Staub, Schnee, Regen und bei voller Fahrt.`,
+'social.follow': `Folgen Sie uns`,
     };
   

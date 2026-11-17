@@ -5,7 +5,9 @@ import { Menu, X } from 'lucide';
 
 import { icon } from '../atoms/icon';
 import '../atoms/logo';
+import { socialIcon } from '../atoms/social-icon';
 import type { NavigationLink } from '../molecules/navigation';
+import { SOCIAL_LINKS } from '../../content/social-links';
 import {
   applyLocaleFromUrl,
   LOCALES,
@@ -226,6 +228,22 @@ export class SiteHeader extends LitElement {
             `;
           })}
         </ul>
+        <section class=${styles.mobileSocial} aria-label=${msg('Follow us', { id: 'social.follow' })}>
+          <p class=${styles.mobileSocialLabel}>${msg('Follow us', { id: 'social.follow' })}</p>
+          <div class=${styles.mobileSocialRule} aria-hidden="true"></div>
+          <ul class=${styles.mobileSocialList}>
+            ${SOCIAL_LINKS.map(
+              ({ icon, label, href }) => html`
+                <li>
+                  <a href=${href} target="_blank" rel="noopener noreferrer">
+                    ${socialIcon(icon)}
+                    <span>${label}</span>
+                  </a>
+                </li>
+              `,
+            )}
+          </ul>
+        </section>
       </nav>
     `;
   }

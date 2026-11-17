@@ -159,5 +159,6 @@
 'project.processSummary': `Towarzyszyliśmy pracy z bliska i zamieniliśmy jej kolejne etapy, detale oraz decyzje w czytelną historię.`,
 'project.scaleSummary': `Ujęliśmy skalę działania tak, by była równie odczuwalna jak na miejscu.`,
 'project.summary': `Maszyny nie pozują. Pracują. Pokazaliśmy ich siłę tam, gdzie widać ją najlepiej - w pyle, śniegu, deszczu i przy pełnym tempie pracy.`,
+'social.follow': `Obserwuj nas`,
     };
   
