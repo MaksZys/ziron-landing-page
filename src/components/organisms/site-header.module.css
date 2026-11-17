@@ -124,24 +124,29 @@
 }
 
 @media (max-width: 47.999rem) {
+  :global(site-header) {
+    --mobile-header-control-size: 3rem;
+    --mobile-menu-toggle-size: 2.25rem;
+  }
+
   .header {
-    min-height: calc(var(--stage-control-size) - var(--spacing-4));
+    min-height: var(--mobile-header-control-size);
     gap: var(--spacing-2);
     grid-template-columns:
-      calc(var(--stage-control-size) - var(--spacing-4))
+      var(--mobile-header-control-size)
       minmax(0, 1fr);
     background-color: var(--color-brand-carbon);
   }
 
   .homeLink {
-    width: calc(var(--stage-control-size) - var(--spacing-4));
-    min-height: calc(var(--stage-control-size) - var(--spacing-4));
+    width: var(--mobile-header-control-size);
+    min-height: var(--mobile-header-control-size);
   }
 
   .homeLink :global(img),
   .homeLink :global(svg) {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 2.75rem;
+    height: 2.75rem;
   }
 
   .navigation {
@@ -154,23 +159,29 @@
 
   .languageControl {
     margin-inline-start: 0;
+    margin-inline-end: var(--spacing-3);
   }
 
   .languageSelect {
-    min-height: calc(var(--stage-control-size) - var(--spacing-4));
-    font-size: 0.62rem;
+    min-height: var(--mobile-header-control-size);
+    font-size: 0.875rem;
   }
 
   .mobileMenuToggle {
     display: inline-grid;
-    width: calc(var(--stage-control-size) - var(--spacing-4));
-    min-height: calc(var(--stage-control-size) - var(--spacing-4));
+    width: var(--mobile-menu-toggle-size);
+    min-height: var(--mobile-menu-toggle-size);
     place-items: center;
     border: 0;
     padding: 0;
     color: var(--color-brand-ceramic);
     background: transparent;
     cursor: pointer;
+  }
+
+  .mobileMenuToggle :global(svg) {
+    width: 1.375rem;
+    height: 1.375rem;
   }
 
   .mobileMenuToggle:focus-visible {
@@ -180,7 +191,7 @@
 
   .mobileMenuBackdrop {
     position: fixed;
-    top: calc(var(--stage-control-size) - var(--spacing-4));
+    top: var(--mobile-header-control-size);
     right: 0;
     bottom: 0;
     left: 0;
@@ -204,7 +215,7 @@
 
   .mobileMenu {
     position: fixed;
-    top: calc(var(--stage-control-size) - var(--spacing-4));
+    top: var(--mobile-header-control-size);
     right: 0;
     bottom: 0;
     z-index: 5;
@@ -266,6 +277,6 @@
   }
 
   :global(site-header) .languageSelect {
-    font-size: 0.56rem;
+    font-size: 0.75rem;
   }
 }
